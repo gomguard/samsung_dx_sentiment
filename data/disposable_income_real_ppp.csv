@@ -1,0 +1,700 @@
+﻿year,country_code,country_name,value,unit,source
+1990,AUS,Australia,16780.0,USD (PPP),World Bank
+1991,AUS,Australia,17120.0,USD (PPP),World Bank
+1992,AUS,Australia,17550.0,USD (PPP),World Bank
+1993,AUS,Australia,18710.0,USD (PPP),World Bank
+1994,AUS,Australia,19730.0,USD (PPP),World Bank
+1995,AUS,Australia,20310.0,USD (PPP),World Bank
+1996,AUS,Australia,21350.0,USD (PPP),World Bank
+1997,AUS,Australia,22350.0,USD (PPP),World Bank
+1998,AUS,Australia,23610.0,USD (PPP),World Bank
+1999,AUS,Australia,24690.0,USD (PPP),World Bank
+2000,AUS,Australia,25780.0,USD (PPP),World Bank
+2001,AUS,Australia,26870.0,USD (PPP),World Bank
+2002,AUS,Australia,28250.0,USD (PPP),World Bank
+2003,AUS,Australia,29270.0,USD (PPP),World Bank
+2004,AUS,Australia,30860.0,USD (PPP),World Bank
+2005,AUS,Australia,31810.0,USD (PPP),World Bank
+2006,AUS,Australia,33490.0,USD (PPP),World Bank
+2007,AUS,Australia,35020.0,USD (PPP),World Bank
+2008,AUS,Australia,36000.0,USD (PPP),World Bank
+2009,AUS,Australia,38900.0,USD (PPP),World Bank
+2010,AUS,Australia,37840.0,USD (PPP),World Bank
+2011,AUS,Australia,40330.0,USD (PPP),World Bank
+2012,AUS,Australia,41560.0,USD (PPP),World Bank
+2013,AUS,Australia,44790.0,USD (PPP),World Bank
+2014,AUS,Australia,45680.0,USD (PPP),World Bank
+2015,AUS,Australia,45320.0,USD (PPP),World Bank
+2016,AUS,Australia,46140.0,USD (PPP),World Bank
+2017,AUS,Australia,47040.0,USD (PPP),World Bank
+2018,AUS,Australia,48600.0,USD (PPP),World Bank
+2019,AUS,Australia,50900.0,USD (PPP),World Bank
+2020,AUS,Australia,52760.0,USD (PPP),World Bank
+2021,AUS,Australia,57530.0,USD (PPP),World Bank
+2022,AUS,Australia,63370.0,USD (PPP),World Bank
+2023,AUS,Australia,67480.0,USD (PPP),World Bank
+2024,AUS,Australia,68800.0,USD (PPP),World Bank
+1990,BRA,Brazil,6510.0,USD (PPP),World Bank
+1991,BRA,Brazil,6710.0,USD (PPP),World Bank
+1992,BRA,Brazil,6740.0,USD (PPP),World Bank
+1993,BRA,Brazil,7080.0,USD (PPP),World Bank
+1994,BRA,Brazil,7430.0,USD (PPP),World Bank
+1995,BRA,Brazil,7980.0,USD (PPP),World Bank
+1996,BRA,Brazil,8190.0,USD (PPP),World Bank
+1997,BRA,Brazil,8460.0,USD (PPP),World Bank
+1998,BRA,Brazil,8420.0,USD (PPP),World Bank
+1999,BRA,Brazil,8370.0,USD (PPP),World Bank
+2000,BRA,Brazil,8830.0,USD (PPP),World Bank
+2001,BRA,Brazil,9000.0,USD (PPP),World Bank
+2002,BRA,Brazil,9290.0,USD (PPP),World Bank
+2003,BRA,Brazil,9490.0,USD (PPP),World Bank
+2004,BRA,Brazil,10210.0,USD (PPP),World Bank
+2005,BRA,Brazil,10760.0,USD (PPP),World Bank
+2006,BRA,Brazil,11460.0,USD (PPP),World Bank
+2007,BRA,Brazil,12400.0,USD (PPP),World Bank
+2008,BRA,Brazil,13120.0,USD (PPP),World Bank
+2009,BRA,Brazil,13090.0,USD (PPP),World Bank
+2010,BRA,Brazil,14010.0,USD (PPP),World Bank
+2011,BRA,Brazil,14820.0,USD (PPP),World Bank
+2012,BRA,Brazil,14820.0,USD (PPP),World Bank
+2013,BRA,Brazil,15500.0,USD (PPP),World Bank
+2014,BRA,Brazil,15530.0,USD (PPP),World Bank
+2015,BRA,Brazil,14540.0,USD (PPP),World Bank
+2016,BRA,Brazil,14010.0,USD (PPP),World Bank
+2017,BRA,Brazil,14290.0,USD (PPP),World Bank
+2018,BRA,Brazil,15030.0,USD (PPP),World Bank
+2019,BRA,Brazil,15640.0,USD (PPP),World Bank
+2020,BRA,Brazil,15770.0,USD (PPP),World Bank
+2021,BRA,Brazil,17510.0,USD (PPP),World Bank
+2022,BRA,Brazil,19300.0,USD (PPP),World Bank
+2023,BRA,Brazil,20500.0,USD (PPP),World Bank
+2024,BRA,Brazil,21650.0,USD (PPP),World Bank
+1990,CAN,Canada,19500.0,USD (PPP),World Bank
+1991,CAN,Canada,19550.0,USD (PPP),World Bank
+1992,CAN,Canada,19890.0,USD (PPP),World Bank
+1993,CAN,Canada,20710.0,USD (PPP),World Bank
+1994,CAN,Canada,21820.0,USD (PPP),World Bank
+1995,CAN,Canada,22680.0,USD (PPP),World Bank
+1996,CAN,Canada,23250.0,USD (PPP),World Bank
+1997,CAN,Canada,24480.0,USD (PPP),World Bank
+1998,CAN,Canada,25430.0,USD (PPP),World Bank
+1999,CAN,Canada,26900.0,USD (PPP),World Bank
+2000,CAN,Canada,28590.0,USD (PPP),World Bank
+2001,CAN,Canada,29380.0,USD (PPP),World Bank
+2002,CAN,Canada,30180.0,USD (PPP),World Bank
+2003,CAN,Canada,31560.0,USD (PPP),World Bank
+2004,CAN,Canada,33200.0,USD (PPP),World Bank
+2005,CAN,Canada,35590.0,USD (PPP),World Bank
+2006,CAN,Canada,37510.0,USD (PPP),World Bank
+2007,CAN,Canada,38990.0,USD (PPP),World Bank
+2008,CAN,Canada,39780.0,USD (PPP),World Bank
+2009,CAN,Canada,38190.0,USD (PPP),World Bank
+2010,CAN,Canada,39310.0,USD (PPP),World Bank
+2011,CAN,Canada,40880.0,USD (PPP),World Bank
+2012,CAN,Canada,41540.0,USD (PPP),World Bank
+2013,CAN,Canada,43630.0,USD (PPP),World Bank
+2014,CAN,Canada,45020.0,USD (PPP),World Bank
+2015,CAN,Canada,43990.0,USD (PPP),World Bank
+2016,CAN,Canada,45900.0,USD (PPP),World Bank
+2017,CAN,Canada,47700.0,USD (PPP),World Bank
+2018,CAN,Canada,49130.0,USD (PPP),World Bank
+2019,CAN,Canada,49900.0,USD (PPP),World Bank
+2020,CAN,Canada,48240.0,USD (PPP),World Bank
+2021,CAN,Canada,56470.0,USD (PPP),World Bank
+2022,CAN,Canada,62680.0,USD (PPP),World Bank
+2023,CAN,Canada,63330.0,USD (PPP),World Bank
+2024,CAN,Canada,64470.0,USD (PPP),World Bank
+1990,CHE,Switzerland,28990.0,USD (PPP),World Bank
+1991,CHE,Switzerland,29350.0,USD (PPP),World Bank
+1992,CHE,Switzerland,29590.0,USD (PPP),World Bank
+1993,CHE,Switzerland,30120.0,USD (PPP),World Bank
+1994,CHE,Switzerland,30650.0,USD (PPP),World Bank
+1995,CHE,Switzerland,31500.0,USD (PPP),World Bank
+1996,CHE,Switzerland,32270.0,USD (PPP),World Bank
+1997,CHE,Switzerland,34090.0,USD (PPP),World Bank
+1998,CHE,Switzerland,35400.0,USD (PPP),World Bank
+1999,CHE,Switzerland,36590.0,USD (PPP),World Bank
+2000,CHE,Switzerland,39020.0,USD (PPP),World Bank
+2001,CHE,Switzerland,39220.0,USD (PPP),World Bank
+2002,CHE,Switzerland,39640.0,USD (PPP),World Bank
+2003,CHE,Switzerland,41170.0,USD (PPP),World Bank
+2004,CHE,Switzerland,42560.0,USD (PPP),World Bank
+2005,CHE,Switzerland,44860.0,USD (PPP),World Bank
+2006,CHE,Switzerland,49560.0,USD (PPP),World Bank
+2007,CHE,Switzerland,51130.0,USD (PPP),World Bank
+2008,CHE,Switzerland,50260.0,USD (PPP),World Bank
+2009,CHE,Switzerland,53740.0,USD (PPP),World Bank
+2010,CHE,Switzerland,57260.0,USD (PPP),World Bank
+2011,CHE,Switzerland,57830.0,USD (PPP),World Bank
+2012,CHE,Switzerland,60440.0,USD (PPP),World Bank
+2013,CHE,Switzerland,62660.0,USD (PPP),World Bank
+2014,CHE,Switzerland,63350.0,USD (PPP),World Bank
+2015,CHE,Switzerland,65940.0,USD (PPP),World Bank
+2016,CHE,Switzerland,66960.0,USD (PPP),World Bank
+2017,CHE,Switzerland,67250.0,USD (PPP),World Bank
+2018,CHE,Switzerland,68130.0,USD (PPP),World Bank
+2019,CHE,Switzerland,71170.0,USD (PPP),World Bank
+2020,CHE,Switzerland,70510.0,USD (PPP),World Bank
+2021,CHE,Switzerland,78090.0,USD (PPP),World Bank
+2022,CHE,Switzerland,88840.0,USD (PPP),World Bank
+2023,CHE,Switzerland,87740.0,USD (PPP),World Bank
+2024,CHE,Switzerland,90820.0,USD (PPP),World Bank
+1990,CHN,China,990.0,USD (PPP),World Bank
+1991,CHN,China,1110.0,USD (PPP),World Bank
+1992,CHN,China,1280.0,USD (PPP),World Bank
+1993,CHN,China,1470.0,USD (PPP),World Bank
+1994,CHN,China,1680.0,USD (PPP),World Bank
+1995,CHN,China,1850.0,USD (PPP),World Bank
+1996,CHN,China,2060.0,USD (PPP),World Bank
+1997,CHN,China,2270.0,USD (PPP),World Bank
+1998,CHN,China,2440.0,USD (PPP),World Bank
+1999,CHN,China,2650.0,USD (PPP),World Bank
+2000,CHN,China,2930.0,USD (PPP),World Bank
+2001,CHN,China,3210.0,USD (PPP),World Bank
+2002,CHN,China,3550.0,USD (PPP),World Bank
+2003,CHN,China,3980.0,USD (PPP),World Bank
+2004,CHN,China,4490.0,USD (PPP),World Bank
+2005,CHN,China,5110.0,USD (PPP),World Bank
+2006,CHN,China,5940.0,USD (PPP),World Bank
+2007,CHN,China,6950.0,USD (PPP),World Bank
+2008,CHN,China,7760.0,USD (PPP),World Bank
+2009,CHN,China,8430.0,USD (PPP),World Bank
+2010,CHN,China,9370.0,USD (PPP),World Bank
+2011,CHN,China,10360.0,USD (PPP),World Bank
+2012,CHN,China,11390.0,USD (PPP),World Bank
+2013,CHN,China,12130.0,USD (PPP),World Bank
+2014,CHN,China,12960.0,USD (PPP),World Bank
+2015,CHN,China,13400.0,USD (PPP),World Bank
+2016,CHN,China,14090.0,USD (PPP),World Bank
+2017,CHN,China,15000.0,USD (PPP),World Bank
+2018,CHN,China,16230.0,USD (PPP),World Bank
+2019,CHN,China,17550.0,USD (PPP),World Bank
+2020,CHN,China,18120.0,USD (PPP),World Bank
+2021,CHN,China,20700.0,USD (PPP),World Bank
+2022,CHN,China,22840.0,USD (PPP),World Bank
+2023,CHN,China,24970.0,USD (PPP),World Bank
+2024,CHN,China,26920.0,USD (PPP),World Bank
+1990,DEU,Germany,19720.0,USD (PPP),World Bank
+1991,DEU,Germany,21120.0,USD (PPP),World Bank
+1992,DEU,Germany,21830.0,USD (PPP),World Bank
+1993,DEU,Germany,21960.0,USD (PPP),World Bank
+1994,DEU,Germany,22840.0,USD (PPP),World Bank
+1995,DEU,Germany,23580.0,USD (PPP),World Bank
+1996,DEU,Germany,24160.0,USD (PPP),World Bank
+1997,DEU,Germany,24600.0,USD (PPP),World Bank
+1998,DEU,Germany,25300.0,USD (PPP),World Bank
+1999,DEU,Germany,26330.0,USD (PPP),World Bank
+2000,DEU,Germany,27300.0,USD (PPP),World Bank
+2001,DEU,Germany,28470.0,USD (PPP),World Bank
+2002,DEU,Germany,29200.0,USD (PPP),World Bank
+2003,DEU,Germany,29990.0,USD (PPP),World Bank
+2004,DEU,Germany,31950.0,USD (PPP),World Bank
+2005,DEU,Germany,32580.0,USD (PPP),World Bank
+2006,DEU,Germany,35330.0,USD (PPP),World Bank
+2007,DEU,Germany,37440.0,USD (PPP),World Bank
+2008,DEU,Germany,38810.0,USD (PPP),World Bank
+2009,DEU,Germany,38390.0,USD (PPP),World Bank
+2010,DEU,Germany,40520.0,USD (PPP),World Bank
+2011,DEU,Germany,44510.0,USD (PPP),World Bank
+2012,DEU,Germany,45290.0,USD (PPP),World Bank
+2013,DEU,Germany,46960.0,USD (PPP),World Bank
+2014,DEU,Germany,48940.0,USD (PPP),World Bank
+2015,DEU,Germany,49510.0,USD (PPP),World Bank
+2016,DEU,Germany,53040.0,USD (PPP),World Bank
+2017,DEU,Germany,55480.0,USD (PPP),World Bank
+2018,DEU,Germany,58480.0,USD (PPP),World Bank
+2019,DEU,Germany,61460.0,USD (PPP),World Bank
+2020,DEU,Germany,60170.0,USD (PPP),World Bank
+2021,DEU,Germany,64640.0,USD (PPP),World Bank
+2022,DEU,Germany,70040.0,USD (PPP),World Bank
+2023,DEU,Germany,71100.0,USD (PPP),World Bank
+2024,DEU,Germany,74880.0,USD (PPP),World Bank
+1990,ESP,Spain,13510.0,USD (PPP),World Bank
+1991,ESP,Spain,14290.0,USD (PPP),World Bank
+1992,ESP,Spain,14660.0,USD (PPP),World Bank
+1993,ESP,Spain,14840.0,USD (PPP),World Bank
+1994,ESP,Spain,15240.0,USD (PPP),World Bank
+1995,ESP,Spain,16130.0,USD (PPP),World Bank
+1996,ESP,Spain,16720.0,USD (PPP),World Bank
+1997,ESP,Spain,17680.0,USD (PPP),World Bank
+1998,ESP,Spain,18840.0,USD (PPP),World Bank
+1999,ESP,Spain,19750.0,USD (PPP),World Bank
+2000,ESP,Spain,21420.0,USD (PPP),World Bank
+2001,ESP,Spain,22640.0,USD (PPP),World Bank
+2002,ESP,Spain,24100.0,USD (PPP),World Bank
+2003,ESP,Spain,24860.0,USD (PPP),World Bank
+2004,ESP,Spain,25920.0,USD (PPP),World Bank
+2005,ESP,Spain,27250.0,USD (PPP),World Bank
+2006,ESP,Spain,30190.0,USD (PPP),World Bank
+2007,ESP,Spain,31740.0,USD (PPP),World Bank
+2008,ESP,Spain,32420.0,USD (PPP),World Bank
+2009,ESP,Spain,31580.0,USD (PPP),World Bank
+2010,ESP,Spain,31340.0,USD (PPP),World Bank
+2011,ESP,Spain,31450.0,USD (PPP),World Bank
+2012,ESP,Spain,31610.0,USD (PPP),World Bank
+2013,ESP,Spain,32400.0,USD (PPP),World Bank
+2014,ESP,Spain,33640.0,USD (PPP),World Bank
+2015,ESP,Spain,35210.0,USD (PPP),World Bank
+2016,ESP,Spain,37670.0,USD (PPP),World Bank
+2017,ESP,Spain,39810.0,USD (PPP),World Bank
+2018,ESP,Spain,41030.0,USD (PPP),World Bank
+2019,ESP,Spain,44090.0,USD (PPP),World Bank
+2020,ESP,Spain,39400.0,USD (PPP),World Bank
+2021,ESP,Spain,44550.0,USD (PPP),World Bank
+2022,ESP,Spain,50690.0,USD (PPP),World Bank
+2023,ESP,Spain,52970.0,USD (PPP),World Bank
+2024,ESP,Spain,56630.0,USD (PPP),World Bank
+1990,FRA,France,17540.0,USD (PPP),World Bank
+1991,FRA,France,18240.0,USD (PPP),World Bank
+1992,FRA,France,18880.0,USD (PPP),World Bank
+1993,FRA,France,19180.0,USD (PPP),World Bank
+1994,FRA,France,19950.0,USD (PPP),World Bank
+1995,FRA,France,20770.0,USD (PPP),World Bank
+1996,FRA,France,21460.0,USD (PPP),World Bank
+1997,FRA,France,22470.0,USD (PPP),World Bank
+1998,FRA,France,23580.0,USD (PPP),World Bank
+1999,FRA,France,24710.0,USD (PPP),World Bank
+2000,FRA,France,26440.0,USD (PPP),World Bank
+2001,FRA,France,27870.0,USD (PPP),World Bank
+2002,FRA,France,28680.0,USD (PPP),World Bank
+2003,FRA,France,28430.0,USD (PPP),World Bank
+2004,FRA,France,29350.0,USD (PPP),World Bank
+2005,FRA,France,30980.0,USD (PPP),World Bank
+2006,FRA,France,33110.0,USD (PPP),World Bank
+2007,FRA,France,34780.0,USD (PPP),World Bank
+2008,FRA,France,35850.0,USD (PPP),World Bank
+2009,FRA,France,35500.0,USD (PPP),World Bank
+2010,FRA,France,36790.0,USD (PPP),World Bank
+2011,FRA,France,38550.0,USD (PPP),World Bank
+2012,FRA,France,38550.0,USD (PPP),World Bank
+2013,FRA,France,40530.0,USD (PPP),World Bank
+2014,FRA,France,41130.0,USD (PPP),World Bank
+2015,FRA,France,41740.0,USD (PPP),World Bank
+2016,FRA,France,43750.0,USD (PPP),World Bank
+2017,FRA,France,45370.0,USD (PPP),World Bank
+2018,FRA,France,47430.0,USD (PPP),World Bank
+2019,FRA,France,52660.0,USD (PPP),World Bank
+2020,FRA,France,50480.0,USD (PPP),World Bank
+2021,FRA,France,54160.0,USD (PPP),World Bank
+2022,FRA,France,57750.0,USD (PPP),World Bank
+2023,FRA,France,59410.0,USD (PPP),World Bank
+2024,FRA,France,62620.0,USD (PPP),World Bank
+1990,GBR,United Kingdom,17430.0,USD (PPP),World Bank
+1991,GBR,United Kingdom,17820.0,USD (PPP),World Bank
+1992,GBR,United Kingdom,18460.0,USD (PPP),World Bank
+1993,GBR,United Kingdom,19310.0,USD (PPP),World Bank
+1994,GBR,United Kingdom,20760.0,USD (PPP),World Bank
+1995,GBR,United Kingdom,20000.0,USD (PPP),World Bank
+1996,GBR,United Kingdom,21260.0,USD (PPP),World Bank
+1997,GBR,United Kingdom,22730.0,USD (PPP),World Bank
+1998,GBR,United Kingdom,23820.0,USD (PPP),World Bank
+1999,GBR,United Kingdom,24410.0,USD (PPP),World Bank
+2000,GBR,United Kingdom,26600.0,USD (PPP),World Bank
+2001,GBR,United Kingdom,28070.0,USD (PPP),World Bank
+2002,GBR,United Kingdom,29430.0,USD (PPP),World Bank
+2003,GBR,United Kingdom,30660.0,USD (PPP),World Bank
+2004,GBR,United Kingdom,32320.0,USD (PPP),World Bank
+2005,GBR,United Kingdom,33070.0,USD (PPP),World Bank
+2006,GBR,United Kingdom,34600.0,USD (PPP),World Bank
+2007,GBR,United Kingdom,35200.0,USD (PPP),World Bank
+2008,GBR,United Kingdom,36260.0,USD (PPP),World Bank
+2009,GBR,United Kingdom,34730.0,USD (PPP),World Bank
+2010,GBR,United Kingdom,36500.0,USD (PPP),World Bank
+2011,GBR,United Kingdom,37380.0,USD (PPP),World Bank
+2012,GBR,United Kingdom,37980.0,USD (PPP),World Bank
+2013,GBR,United Kingdom,39240.0,USD (PPP),World Bank
+2014,GBR,United Kingdom,40530.0,USD (PPP),World Bank
+2015,GBR,United Kingdom,41600.0,USD (PPP),World Bank
+2016,GBR,United Kingdom,43050.0,USD (PPP),World Bank
+2017,GBR,United Kingdom,45620.0,USD (PPP),World Bank
+2018,GBR,United Kingdom,46570.0,USD (PPP),World Bank
+2019,GBR,United Kingdom,50010.0,USD (PPP),World Bank
+2020,GBR,United Kingdom,47200.0,USD (PPP),World Bank
+2021,GBR,United Kingdom,51310.0,USD (PPP),World Bank
+2022,GBR,United Kingdom,58860.0,USD (PPP),World Bank
+2023,GBR,United Kingdom,57650.0,USD (PPP),World Bank
+2024,GBR,United Kingdom,60090.0,USD (PPP),World Bank
+1990,IDN,Indonesia,2890.0,USD (PPP),World Bank
+1991,IDN,Indonesia,3150.0,USD (PPP),World Bank
+1992,IDN,Indonesia,3370.0,USD (PPP),World Bank
+1993,IDN,Indonesia,3650.0,USD (PPP),World Bank
+1994,IDN,Indonesia,3990.0,USD (PPP),World Bank
+1995,IDN,Indonesia,4320.0,USD (PPP),World Bank
+1996,IDN,Indonesia,4680.0,USD (PPP),World Bank
+1997,IDN,Indonesia,4890.0,USD (PPP),World Bank
+1998,IDN,Indonesia,4110.0,USD (PPP),World Bank
+1999,IDN,Indonesia,4050.0,USD (PPP),World Bank
+2000,IDN,Indonesia,4330.0,USD (PPP),World Bank
+2001,IDN,Indonesia,4670.0,USD (PPP),World Bank
+2002,IDN,Indonesia,4920.0,USD (PPP),World Bank
+2003,IDN,Indonesia,5150.0,USD (PPP),World Bank
+2004,IDN,Indonesia,5440.0,USD (PPP),World Bank
+2005,IDN,Indonesia,5840.0,USD (PPP),World Bank
+2006,IDN,Indonesia,6300.0,USD (PPP),World Bank
+2007,IDN,Indonesia,6800.0,USD (PPP),World Bank
+2008,IDN,Indonesia,7300.0,USD (PPP),World Bank
+2009,IDN,Indonesia,7590.0,USD (PPP),World Bank
+2010,IDN,Indonesia,8130.0,USD (PPP),World Bank
+2011,IDN,Indonesia,8690.0,USD (PPP),World Bank
+2012,IDN,Indonesia,9260.0,USD (PPP),World Bank
+2013,IDN,Indonesia,9570.0,USD (PPP),World Bank
+2014,IDN,Indonesia,9730.0,USD (PPP),World Bank
+2015,IDN,Indonesia,9690.0,USD (PPP),World Bank
+2016,IDN,Indonesia,9930.0,USD (PPP),World Bank
+2017,IDN,Indonesia,10350.0,USD (PPP),World Bank
+2018,IDN,Indonesia,11030.0,USD (PPP),World Bank
+2019,IDN,Indonesia,11620.0,USD (PPP),World Bank
+2020,IDN,Indonesia,11410.0,USD (PPP),World Bank
+2021,IDN,Indonesia,12410.0,USD (PPP),World Bank
+2022,IDN,Indonesia,13900.0,USD (PPP),World Bank
+2023,IDN,Indonesia,15010.0,USD (PPP),World Bank
+2024,IDN,Indonesia,16010.0,USD (PPP),World Bank
+1990,IND,India,1200.0,USD (PPP),World Bank
+1991,IND,India,1220.0,USD (PPP),World Bank
+1992,IND,India,1290.0,USD (PPP),World Bank
+1993,IND,India,1360.0,USD (PPP),World Bank
+1994,IND,India,1450.0,USD (PPP),World Bank
+1995,IND,India,1560.0,USD (PPP),World Bank
+1996,IND,India,1680.0,USD (PPP),World Bank
+1997,IND,India,1740.0,USD (PPP),World Bank
+1998,IND,India,1840.0,USD (PPP),World Bank
+1999,IND,India,1990.0,USD (PPP),World Bank
+2000,IND,India,2070.0,USD (PPP),World Bank
+2001,IND,India,2180.0,USD (PPP),World Bank
+2002,IND,India,2260.0,USD (PPP),World Bank
+2003,IND,India,2440.0,USD (PPP),World Bank
+2004,IND,India,2660.0,USD (PPP),World Bank
+2005,IND,India,2920.0,USD (PPP),World Bank
+2006,IND,India,3200.0,USD (PPP),World Bank
+2007,IND,India,3490.0,USD (PPP),World Bank
+2008,IND,India,3610.0,USD (PPP),World Bank
+2009,IND,India,3860.0,USD (PPP),World Bank
+2010,IND,India,4160.0,USD (PPP),World Bank
+2011,IND,India,4420.0,USD (PPP),World Bank
+2012,IND,India,4760.0,USD (PPP),World Bank
+2013,IND,India,4950.0,USD (PPP),World Bank
+2014,IND,India,5130.0,USD (PPP),World Bank
+2015,IND,India,5360.0,USD (PPP),World Bank
+2016,IND,India,5730.0,USD (PPP),World Bank
+2017,IND,India,6080.0,USD (PPP),World Bank
+2018,IND,India,6640.0,USD (PPP),World Bank
+2019,IND,India,7080.0,USD (PPP),World Bank
+2020,IND,India,6870.0,USD (PPP),World Bank
+2021,IND,India,7960.0,USD (PPP),World Bank
+2022,IND,India,9080.0,USD (PPP),World Bank
+2023,IND,India,10180.0,USD (PPP),World Bank
+2024,IND,India,11000.0,USD (PPP),World Bank
+1990,ITA,Italy,18440.0,USD (PPP),World Bank
+1991,ITA,Italy,19300.0,USD (PPP),World Bank
+1992,ITA,Italy,19860.0,USD (PPP),World Bank
+1993,ITA,Italy,20180.0,USD (PPP),World Bank
+1994,ITA,Italy,21020.0,USD (PPP),World Bank
+1995,ITA,Italy,22160.0,USD (PPP),World Bank
+1996,ITA,Italy,22870.0,USD (PPP),World Bank
+1997,ITA,Italy,23820.0,USD (PPP),World Bank
+1998,ITA,Italy,24940.0,USD (PPP),World Bank
+1999,ITA,Italy,25600.0,USD (PPP),World Bank
+2000,ITA,Italy,27040.0,USD (PPP),World Bank
+2001,ITA,Italy,28050.0,USD (PPP),World Bank
+2002,ITA,Italy,28700.0,USD (PPP),World Bank
+2003,ITA,Italy,29110.0,USD (PPP),World Bank
+2004,ITA,Italy,29540.0,USD (PPP),World Bank
+2005,ITA,Italy,30180.0,USD (PPP),World Bank
+2006,ITA,Italy,32590.0,USD (PPP),World Bank
+2007,ITA,Italy,34130.0,USD (PPP),World Bank
+2008,ITA,Italy,35100.0,USD (PPP),World Bank
+2009,ITA,Italy,34460.0,USD (PPP),World Bank
+2010,ITA,Italy,34900.0,USD (PPP),World Bank
+2011,ITA,Italy,36300.0,USD (PPP),World Bank
+2012,ITA,Italy,36240.0,USD (PPP),World Bank
+2013,ITA,Italy,36400.0,USD (PPP),World Bank
+2014,ITA,Italy,36670.0,USD (PPP),World Bank
+2015,ITA,Italy,37140.0,USD (PPP),World Bank
+2016,ITA,Italy,40590.0,USD (PPP),World Bank
+2017,ITA,Italy,42370.0,USD (PPP),World Bank
+2018,ITA,Italy,43850.0,USD (PPP),World Bank
+2019,ITA,Italy,47030.0,USD (PPP),World Bank
+2020,ITA,Italy,45000.0,USD (PPP),World Bank
+2021,ITA,Italy,50380.0,USD (PPP),World Bank
+2022,ITA,Italy,56770.0,USD (PPP),World Bank
+2023,ITA,Italy,57590.0,USD (PPP),World Bank
+2024,ITA,Italy,60460.0,USD (PPP),World Bank
+1990,JPN,Japan,20130.0,USD (PPP),World Bank
+1991,JPN,Japan,21360.0,USD (PPP),World Bank
+1992,JPN,Japan,21960.0,USD (PPP),World Bank
+1993,JPN,Japan,22440.0,USD (PPP),World Bank
+1994,JPN,Japan,23010.0,USD (PPP),World Bank
+1995,JPN,Japan,24060.0,USD (PPP),World Bank
+1996,JPN,Japan,25300.0,USD (PPP),World Bank
+1997,JPN,Japan,25960.0,USD (PPP),World Bank
+1998,JPN,Japan,25820.0,USD (PPP),World Bank
+1999,JPN,Japan,26050.0,USD (PPP),World Bank
+2000,JPN,Japan,27680.0,USD (PPP),World Bank
+2001,JPN,Japan,28380.0,USD (PPP),World Bank
+2002,JPN,Japan,29040.0,USD (PPP),World Bank
+2003,JPN,Japan,29870.0,USD (PPP),World Bank
+2004,JPN,Japan,31430.0,USD (PPP),World Bank
+2005,JPN,Japan,32880.0,USD (PPP),World Bank
+2006,JPN,Japan,34530.0,USD (PPP),World Bank
+2007,JPN,Japan,36090.0,USD (PPP),World Bank
+2008,JPN,Japan,36220.0,USD (PPP),World Bank
+2009,JPN,Japan,34390.0,USD (PPP),World Bank
+2010,JPN,Japan,36280.0,USD (PPP),World Bank
+2011,JPN,Japan,37270.0,USD (PPP),World Bank
+2012,JPN,Japan,38640.0,USD (PPP),World Bank
+2013,JPN,Japan,40760.0,USD (PPP),World Bank
+2014,JPN,Japan,41030.0,USD (PPP),World Bank
+2015,JPN,Japan,42520.0,USD (PPP),World Bank
+2016,JPN,Japan,42010.0,USD (PPP),World Bank
+2017,JPN,Japan,42980.0,USD (PPP),World Bank
+2018,JPN,Japan,43750.0,USD (PPP),World Bank
+2019,JPN,Japan,44350.0,USD (PPP),World Bank
+2020,JPN,Japan,43980.0,USD (PPP),World Bank
+2021,JPN,Japan,46470.0,USD (PPP),World Bank
+2022,JPN,Japan,50320.0,USD (PPP),World Bank
+2023,JPN,Japan,52860.0,USD (PPP),World Bank
+2024,JPN,Japan,55120.0,USD (PPP),World Bank
+1990,KOR,"Korea, Rep.",8350.0,USD (PPP),World Bank
+1991,KOR,"Korea, Rep.",9470.0,USD (PPP),World Bank
+1992,KOR,"Korea, Rep.",10170.0,USD (PPP),World Bank
+1993,KOR,"Korea, Rep.",11020.0,USD (PPP),World Bank
+1994,KOR,"Korea, Rep.",12160.0,USD (PPP),World Bank
+1995,KOR,"Korea, Rep.",13450.0,USD (PPP),World Bank
+1996,KOR,"Korea, Rep.",14640.0,USD (PPP),World Bank
+1997,KOR,"Korea, Rep.",15640.0,USD (PPP),World Bank
+1998,KOR,"Korea, Rep.",14780.0,USD (PPP),World Bank
+1999,KOR,"Korea, Rep.",16620.0,USD (PPP),World Bank
+2000,KOR,"Korea, Rep.",18410.0,USD (PPP),World Bank
+2001,KOR,"Korea, Rep.",19590.0,USD (PPP),World Bank
+2002,KOR,"Korea, Rep.",21320.0,USD (PPP),World Bank
+2003,KOR,"Korea, Rep.",22020.0,USD (PPP),World Bank
+2004,KOR,"Korea, Rep.",23730.0,USD (PPP),World Bank
+2005,KOR,"Korea, Rep.",25010.0,USD (PPP),World Bank
+2006,KOR,"Korea, Rep.",26810.0,USD (PPP),World Bank
+2007,KOR,"Korea, Rep.",28990.0,USD (PPP),World Bank
+2008,KOR,"Korea, Rep.",29950.0,USD (PPP),World Bank
+2009,KOR,"Korea, Rep.",29460.0,USD (PPP),World Bank
+2010,KOR,"Korea, Rep.",31780.0,USD (PPP),World Bank
+2011,KOR,"Korea, Rep.",32750.0,USD (PPP),World Bank
+2012,KOR,"Korea, Rep.",33910.0,USD (PPP),World Bank
+2013,KOR,"Korea, Rep.",34460.0,USD (PPP),World Bank
+2014,KOR,"Korea, Rep.",35500.0,USD (PPP),World Bank
+2015,KOR,"Korea, Rep.",38030.0,USD (PPP),World Bank
+2016,KOR,"Korea, Rep.",39720.0,USD (PPP),World Bank
+2017,KOR,"Korea, Rep.",41120.0,USD (PPP),World Bank
+2018,KOR,"Korea, Rep.",43220.0,USD (PPP),World Bank
+2019,KOR,"Korea, Rep.",44240.0,USD (PPP),World Bank
+2020,KOR,"Korea, Rep.",45540.0,USD (PPP),World Bank
+2021,KOR,"Korea, Rep.",48960.0,USD (PPP),World Bank
+2022,KOR,"Korea, Rep.",51980.0,USD (PPP),World Bank
+2023,KOR,"Korea, Rep.",53180.0,USD (PPP),World Bank
+1990,MEX,Mexico,8360.0,USD (PPP),World Bank
+1991,MEX,Mexico,8890.0,USD (PPP),World Bank
+1992,MEX,Mexico,9280.0,USD (PPP),World Bank
+1993,MEX,Mexico,8840.0,USD (PPP),World Bank
+1994,MEX,Mexico,9250.0,USD (PPP),World Bank
+1995,MEX,Mexico,8620.0,USD (PPP),World Bank
+1996,MEX,Mexico,9190.0,USD (PPP),World Bank
+1997,MEX,Mexico,9930.0,USD (PPP),World Bank
+1998,MEX,Mexico,10500.0,USD (PPP),World Bank
+1999,MEX,Mexico,10800.0,USD (PPP),World Bank
+2000,MEX,Mexico,11470.0,USD (PPP),World Bank
+2001,MEX,Mexico,11530.0,USD (PPP),World Bank
+2002,MEX,Mexico,11620.0,USD (PPP),World Bank
+2003,MEX,Mexico,11930.0,USD (PPP),World Bank
+2004,MEX,Mexico,12540.0,USD (PPP),World Bank
+2005,MEX,Mexico,13070.0,USD (PPP),World Bank
+2006,MEX,Mexico,14320.0,USD (PPP),World Bank
+2007,MEX,Mexico,14790.0,USD (PPP),World Bank
+2008,MEX,Mexico,15470.0,USD (PPP),World Bank
+2009,MEX,Mexico,14960.0,USD (PPP),World Bank
+2010,MEX,Mexico,15730.0,USD (PPP),World Bank
+2011,MEX,Mexico,17010.0,USD (PPP),World Bank
+2012,MEX,Mexico,17630.0,USD (PPP),World Bank
+2013,MEX,Mexico,17640.0,USD (PPP),World Bank
+2014,MEX,Mexico,18370.0,USD (PPP),World Bank
+2015,MEX,Mexico,18600.0,USD (PPP),World Bank
+2016,MEX,Mexico,19580.0,USD (PPP),World Bank
+2017,MEX,Mexico,19970.0,USD (PPP),World Bank
+2018,MEX,Mexico,20380.0,USD (PPP),World Bank
+2019,MEX,Mexico,20370.0,USD (PPP),World Bank
+2020,MEX,Mexico,18730.0,USD (PPP),World Bank
+2021,MEX,Mexico,20250.0,USD (PPP),World Bank
+2022,MEX,Mexico,22840.0,USD (PPP),World Bank
+2023,MEX,Mexico,24240.0,USD (PPP),World Bank
+2024,MEX,Mexico,24920.0,USD (PPP),World Bank
+1990,NLD,Netherlands,18640.0,USD (PPP),World Bank
+1991,NLD,Netherlands,19670.0,USD (PPP),World Bank
+1992,NLD,Netherlands,20220.0,USD (PPP),World Bank
+1993,NLD,Netherlands,20970.0,USD (PPP),World Bank
+1994,NLD,Netherlands,22070.0,USD (PPP),World Bank
+1995,NLD,Netherlands,23300.0,USD (PPP),World Bank
+1996,NLD,Netherlands,24530.0,USD (PPP),World Bank
+1997,NLD,Netherlands,25940.0,USD (PPP),World Bank
+1998,NLD,Netherlands,27220.0,USD (PPP),World Bank
+1999,NLD,Netherlands,29130.0,USD (PPP),World Bank
+2000,NLD,Netherlands,31630.0,USD (PPP),World Bank
+2001,NLD,Netherlands,32420.0,USD (PPP),World Bank
+2002,NLD,Netherlands,33570.0,USD (PPP),World Bank
+2003,NLD,Netherlands,33860.0,USD (PPP),World Bank
+2004,NLD,Netherlands,35450.0,USD (PPP),World Bank
+2005,NLD,Netherlands,37250.0,USD (PPP),World Bank
+2006,NLD,Netherlands,40920.0,USD (PPP),World Bank
+2007,NLD,Netherlands,43640.0,USD (PPP),World Bank
+2008,NLD,Netherlands,44410.0,USD (PPP),World Bank
+2009,NLD,Netherlands,43320.0,USD (PPP),World Bank
+2010,NLD,Netherlands,45070.0,USD (PPP),World Bank
+2011,NLD,Netherlands,46940.0,USD (PPP),World Bank
+2012,NLD,Netherlands,47220.0,USD (PPP),World Bank
+2013,NLD,Netherlands,49340.0,USD (PPP),World Bank
+2014,NLD,Netherlands,49300.0,USD (PPP),World Bank
+2015,NLD,Netherlands,50200.0,USD (PPP),World Bank
+2016,NLD,Netherlands,51590.0,USD (PPP),World Bank
+2017,NLD,Netherlands,55010.0,USD (PPP),World Bank
+2018,NLD,Netherlands,58460.0,USD (PPP),World Bank
+2019,NLD,Netherlands,60990.0,USD (PPP),World Bank
+2020,NLD,Netherlands,60640.0,USD (PPP),World Bank
+2021,NLD,Netherlands,69410.0,USD (PPP),World Bank
+2022,NLD,Netherlands,76020.0,USD (PPP),World Bank
+2023,NLD,Netherlands,77650.0,USD (PPP),World Bank
+2024,NLD,Netherlands,83040.0,USD (PPP),World Bank
+1990,POL,Poland,5860.0,USD (PPP),World Bank
+1991,POL,Poland,5720.0,USD (PPP),World Bank
+1992,POL,Poland,5920.0,USD (PPP),World Bank
+1993,POL,Poland,6320.0,USD (PPP),World Bank
+1994,POL,Poland,6860.0,USD (PPP),World Bank
+1995,POL,Poland,7680.0,USD (PPP),World Bank
+1996,POL,Poland,8290.0,USD (PPP),World Bank
+1997,POL,Poland,8940.0,USD (PPP),World Bank
+1998,POL,Poland,9490.0,USD (PPP),World Bank
+1999,POL,Poland,10030.0,USD (PPP),World Bank
+2000,POL,Poland,10670.0,USD (PPP),World Bank
+2001,POL,Poland,11130.0,USD (PPP),World Bank
+2002,POL,Poland,11750.0,USD (PPP),World Bank
+2003,POL,Poland,12190.0,USD (PPP),World Bank
+2004,POL,Poland,12990.0,USD (PPP),World Bank
+2005,POL,Poland,13660.0,USD (PPP),World Bank
+2006,POL,Poland,14820.0,USD (PPP),World Bank
+2007,POL,Poland,16260.0,USD (PPP),World Bank
+2008,POL,Poland,17990.0,USD (PPP),World Bank
+2009,POL,Poland,18690.0,USD (PPP),World Bank
+2010,POL,Poland,20300.0,USD (PPP),World Bank
+2011,POL,Poland,22000.0,USD (PPP),World Bank
+2012,POL,Poland,22830.0,USD (PPP),World Bank
+2013,POL,Poland,23540.0,USD (PPP),World Bank
+2014,POL,Poland,24480.0,USD (PPP),World Bank
+2015,POL,Poland,25980.0,USD (PPP),World Bank
+2016,POL,Poland,27250.0,USD (PPP),World Bank
+2017,POL,Poland,28890.0,USD (PPP),World Bank
+2018,POL,Poland,30980.0,USD (PPP),World Bank
+2019,POL,Poland,34400.0,USD (PPP),World Bank
+2020,POL,Poland,35720.0,USD (PPP),World Bank
+2021,POL,Poland,39260.0,USD (PPP),World Bank
+2022,POL,Poland,44270.0,USD (PPP),World Bank
+2023,POL,Poland,44980.0,USD (PPP),World Bank
+2024,POL,Poland,48680.0,USD (PPP),World Bank
+1990,SAU,Saudi Arabia,49350.0,USD (PPP),World Bank
+1991,SAU,Saudi Arabia,51820.0,USD (PPP),World Bank
+1992,SAU,Saudi Arabia,52350.0,USD (PPP),World Bank
+1993,SAU,Saudi Arabia,50960.0,USD (PPP),World Bank
+1994,SAU,Saudi Arabia,49440.0,USD (PPP),World Bank
+1995,SAU,Saudi Arabia,48990.0,USD (PPP),World Bank
+1996,SAU,Saudi Arabia,49320.0,USD (PPP),World Bank
+1997,SAU,Saudi Arabia,49610.0,USD (PPP),World Bank
+1998,SAU,Saudi Arabia,49790.0,USD (PPP),World Bank
+1999,SAU,Saudi Arabia,48350.0,USD (PPP),World Bank
+2000,SAU,Saudi Arabia,48770.0,USD (PPP),World Bank
+2001,SAU,Saudi Arabia,47250.0,USD (PPP),World Bank
+2002,SAU,Saudi Arabia,45420.0,USD (PPP),World Bank
+2003,SAU,Saudi Arabia,47790.0,USD (PPP),World Bank
+2004,SAU,Saudi Arabia,51320.0,USD (PPP),World Bank
+2005,SAU,Saudi Arabia,53620.0,USD (PPP),World Bank
+2006,SAU,Saudi Arabia,55190.0,USD (PPP),World Bank
+2007,SAU,Saudi Arabia,55880.0,USD (PPP),World Bank
+2008,SAU,Saudi Arabia,58250.0,USD (PPP),World Bank
+2009,SAU,Saudi Arabia,55890.0,USD (PPP),World Bank
+2010,SAU,Saudi Arabia,60470.0,USD (PPP),World Bank
+2011,SAU,Saudi Arabia,65640.0,USD (PPP),World Bank
+2012,SAU,Saudi Arabia,66750.0,USD (PPP),World Bank
+2013,SAU,Saudi Arabia,63920.0,USD (PPP),World Bank
+2014,SAU,Saudi Arabia,64410.0,USD (PPP),World Bank
+2015,SAU,Saudi Arabia,55590.0,USD (PPP),World Bank
+2016,SAU,Saudi Arabia,51050.0,USD (PPP),World Bank
+2017,SAU,Saudi Arabia,53970.0,USD (PPP),World Bank
+2018,SAU,Saudi Arabia,59930.0,USD (PPP),World Bank
+2019,SAU,Saudi Arabia,60110.0,USD (PPP),World Bank
+2020,SAU,Saudi Arabia,48210.0,USD (PPP),World Bank
+2021,SAU,Saudi Arabia,63440.0,USD (PPP),World Bank
+2022,SAU,Saudi Arabia,72470.0,USD (PPP),World Bank
+2023,SAU,Saudi Arabia,72020.0,USD (PPP),World Bank
+2024,SAU,Saudi Arabia,71600.0,USD (PPP),World Bank
+1990,TUR,Turkey,8110.0,USD (PPP),World Bank
+1991,TUR,Turkey,8310.0,USD (PPP),World Bank
+1992,TUR,Turkey,8860.0,USD (PPP),World Bank
+1993,TUR,Turkey,9640.0,USD (PPP),World Bank
+1994,TUR,Turkey,9090.0,USD (PPP),World Bank
+1995,TUR,Turkey,9820.0,USD (PPP),World Bank
+1996,TUR,Turkey,10550.0,USD (PPP),World Bank
+1997,TUR,Turkey,11360.0,USD (PPP),World Bank
+1998,TUR,Turkey,8660.0,USD (PPP),World Bank
+1999,TUR,Turkey,8340.0,USD (PPP),World Bank
+2000,TUR,Turkey,9170.0,USD (PPP),World Bank
+2001,TUR,Turkey,8770.0,USD (PPP),World Bank
+2002,TUR,Turkey,8960.0,USD (PPP),World Bank
+2003,TUR,Turkey,9280.0,USD (PPP),World Bank
+2004,TUR,Turkey,10580.0,USD (PPP),World Bank
+2005,TUR,Turkey,11630.0,USD (PPP),World Bank
+2006,TUR,Turkey,13350.0,USD (PPP),World Bank
+2007,TUR,Turkey,14730.0,USD (PPP),World Bank
+2008,TUR,Turkey,15880.0,USD (PPP),World Bank
+2009,TUR,Turkey,15260.0,USD (PPP),World Bank
+2010,TUR,Turkey,17200.0,USD (PPP),World Bank
+2011,TUR,Turkey,19420.0,USD (PPP),World Bank
+2012,TUR,Turkey,20470.0,USD (PPP),World Bank
+2013,TUR,Turkey,22170.0,USD (PPP),World Bank
+2014,TUR,Turkey,23890.0,USD (PPP),World Bank
+2015,TUR,Turkey,25570.0,USD (PPP),World Bank
+2016,TUR,Turkey,26410.0,USD (PPP),World Bank
+2017,TUR,Turkey,27840.0,USD (PPP),World Bank
+2018,TUR,Turkey,27900.0,USD (PPP),World Bank
+2019,TUR,Turkey,28020.0,USD (PPP),World Bank
+2020,TUR,Turkey,28340.0,USD (PPP),World Bank
+2021,TUR,Turkey,30930.0,USD (PPP),World Bank
+2022,TUR,Turkey,38720.0,USD (PPP),World Bank
+2023,TUR,Turkey,41890.0,USD (PPP),World Bank
+2024,TUR,Turkey,43410.0,USD (PPP),World Bank
+1990,USA,United States,24030.0,USD (PPP),World Bank
+1991,USA,United States,24470.0,USD (PPP),World Bank
+1992,USA,United States,25540.0,USD (PPP),World Bank
+1993,USA,United States,26510.0,USD (PPP),World Bank
+1994,USA,United States,27780.0,USD (PPP),World Bank
+1995,USA,United States,28800.0,USD (PPP),World Bank
+1996,USA,United States,30080.0,USD (PPP),World Bank
+1997,USA,United States,31540.0,USD (PPP),World Bank
+1998,USA,United States,32920.0,USD (PPP),World Bank
+1999,USA,United States,34630.0,USD (PPP),World Bank
+2000,USA,United States,36470.0,USD (PPP),World Bank
+2001,USA,United States,37310.0,USD (PPP),World Bank
+2002,USA,United States,38160.0,USD (PPP),World Bank
+2003,USA,United States,39690.0,USD (PPP),World Bank
+2004,USA,United States,41990.0,USD (PPP),World Bank
+2005,USA,United States,44380.0,USD (PPP),World Bank
+2006,USA,United States,46460.0,USD (PPP),World Bank
+2007,USA,United States,48370.0,USD (PPP),World Bank
+2008,USA,United States,49050.0,USD (PPP),World Bank
+2009,USA,United States,47680.0,USD (PPP),World Bank
+2010,USA,United States,49310.0,USD (PPP),World Bank
+2011,USA,United States,50790.0,USD (PPP),World Bank
+2012,USA,United States,52450.0,USD (PPP),World Bank
+2013,USA,United States,54020.0,USD (PPP),World Bank
+2014,USA,United States,55890.0,USD (PPP),World Bank
+2015,USA,United States,57530.0,USD (PPP),World Bank
+2016,USA,United States,58690.0,USD (PPP),World Bank
+2017,USA,United States,60940.0,USD (PPP),World Bank
+2018,USA,United States,63760.0,USD (PPP),World Bank
+2019,USA,United States,66080.0,USD (PPP),World Bank
+2020,USA,United States,65040.0,USD (PPP),World Bank
+2021,USA,United States,71770.0,USD (PPP),World Bank
+2022,USA,United States,78310.0,USD (PPP),World Bank
+2023,USA,United States,82600.0,USD (PPP),World Bank
+2024,USA,United States,85980.0,USD (PPP),World Bank

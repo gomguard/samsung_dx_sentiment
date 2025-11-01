@@ -1,0 +1,27 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(awk:*)",
+      "Bash(cat:*)",
+      "Bash(find:*)",
+      "Bash(pip install:*)",
+      "Bash(dir:*)",
+      "WebFetch(domain:developers.google.com)",
+      "WebFetch(domain:developers.tiktok.com)",
+      "WebFetch(domain:rapidapi.com)",
+      "Bash(python:*)",
+      "WebFetch(domain:api.hikerapi.com)",
+      "Bash(gh auth:*)",
+      "Bash(git remote add:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git push:*)",
+      "Bash(git branch:*)",
+      "Bash(test:*)",
+      "Bash(git diff-tree:*)",
+      "Bash(git init:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

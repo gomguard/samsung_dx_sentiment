@@ -1,0 +1,93 @@
+{
+  "comments": [
+    "This Samsung 4K TV is absolutely stunning! The picture quality is amazing.",
+    "Best TV I've ever owned. The colors are so vivid and the blacks are deep.",
+    "Worth every penny. The smart features work flawlessly.",
+    "The 4K upscaling on this Samsung is incredible. Even 1080p content looks great.",
+    "I compared this with LG and Sony. Samsung wins hands down for the price.",
+    "Game mode is fantastic. No lag at all, perfect for PS5 gaming.",
+    "The QLED technology really makes a difference. HDR content is breathtaking.",
+    "Setup was super easy. Remote is intuitive and well-designed.",
+    "Sound quality is surprisingly good for a TV this thin.",
+    "Love the ambient mode feature. Makes the TV look like art when not watching.",
+    "Customer service was excellent when I had a question about settings.",
+    "This TV has completely transformed my movie watching experience.",
+    "The anti-reflection coating works great. Can watch during the day without glare.",
+    "Smart hub is fast and responsive. No lag when switching apps.",
+    "Build quality feels premium. Very solid construction.",
+    "The 120Hz refresh rate is perfect for sports. Everything is so smooth.",
+    "Voice control with Bixby works well. Very convenient.",
+    "Energy efficient too. Lower power consumption than my old TV.",
+    "Viewing angles are excellent. Looks good from anywhere in the room.",
+    "The One Connect box is genius. Keeps all cables organized and hidden.",
+    "Netflix and YouTube apps work perfectly. 4K streaming is flawless.",
+    "I've had this for 6 months and still amazed every time I turn it on.",
+    "Great value for money compared to other premium brands.",
+    "The quantum processor really does make content look better.",
+    "Universal guide feature makes finding content across apps so easy.",
+    "Decent TV for the price. Does what it's supposed to do.",
+    "It's good but not mind-blowing. Expected a bit more for the price.",
+    "Picture quality is nice but the sound could be better. Consider a soundbar.",
+    "Smart features are okay. I mainly use my Apple TV anyway.",
+    "The menu system takes some getting used to. Not the most intuitive.",
+    "It's pretty thin but not the thinnest I've seen.",
+    "Remote could be better. Too many buttons I never use.",
+    "Streaming works fine but the built-in apps aren't as good as Roku.",
+    "Good TV but I wish it came with a better stand. Had to buy a wall mount.",
+    "The default settings weren't great. Had to spend time calibrating.",
+    "It's a solid TV but nothing revolutionary. Standard Samsung quality.",
+    "HDR is nice but you really need 4K content to see the difference.",
+    "Voice control is hit or miss. Sometimes it doesn't understand me.",
+    "The ads on the home screen are annoying. Wish I could disable them.",
+    "It's fine for the living room but maybe overkill for a bedroom.",
+    "Disappointed with the blooming in dark scenes. Not true black like OLED.",
+    "Had issues with screen uniformity. One corner is slightly darker.",
+    "The TV died after just 8 months. Very poor reliability.",
+    "Too expensive for what you get. Should have gone with TCL.",
+    "The smart features are slow and buggy. Constantly freezing.",
+    "Motion blur is noticeable in fast action scenes. 120Hz doesn't help much.",
+    "Build quality feels cheap despite the premium price tag.",
+    "Customer support was terrible when I tried to get help.",
+    "The viewing angle is poor. Colors wash out if you're not dead center.",
+    "Lots of input lag even in game mode. Not recommended for serious gaming."
+  ],
+  "summary": {
+    "summary": "Samsung 4K TV에 대한 댓글은 전반적으로 긍정적이며, 뛰어난 화질과 스마트 기능을 높이 평가하고 있습니다. 그러나 일부 사용자들은 가격 대비 성능에 실망하거나, 소리 품질과 내구성 문제를 언급했습니다. 전반적으로, 이 TV는 가격 대비 좋은 가치를 제공하지만 몇 가지 단점도 존재합니다.",
+    "key_themes": [
+      "화질",
+      "스마트 기능",
+      "가격 대비 가치",
+      "내구성"
+    ],
+    "sentiment_distribution": {
+      "positive": "54%",
+      "neutral": "14%",
+      "negative": "32%"
+    },
+    "positive_points": [
+      "화질이 뛰어나다",
+      "스마트 기능이 원활하게 작동한다",
+      "가격 대비 좋은 가치"
+    ],
+    "negative_points": [
+      "소리 품질이 아쉽다",
+      "내구성 문제 발생"
+    ],
+    "common_topics": [
+      "HDR 및 4K 화질",
+      "스마트 기능 및 앱",
+      "게임 모드 성능"
+    ],
+    "purchase_recommendation": "종합적으로 구매를 추천합니다. 뛰어난 화질과 스마트 기능이 많은 사용자들에게 만족을 주지만, 몇 가지 단점도 고려해야 합니다.",
+    "metadata": {
+      "total_comments": 50,
+      "model_used": "gpt-4o-mini",
+      "analyzed_at": "2025-11-01T15:37:56.881918",
+      "tokens_used": {
+        "prompt": 1121,
+        "completion": 269,
+        "total": 1390
+      }
+    }
+  }
+}
