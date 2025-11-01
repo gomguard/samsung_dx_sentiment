@@ -1,0 +1,7 @@
+samsung dx 부서 (openAI 연계)
+db type : postgres
+host : samsung-dx-crawl.csnixzmkuppn.ap-northeast-2.rds.amazonaws.com
+port : 5432
+id(admin) : postgres
+pwd : admin2025!
+dbname : samsung_dx

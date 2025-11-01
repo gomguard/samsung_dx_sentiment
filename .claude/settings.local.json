@@ -19,7 +19,16 @@
       "Bash(git branch:*)",
       "Bash(test:*)",
       "Bash(git diff-tree:*)",
-      "Bash(git init:*)"
+      "Bash(git init:*)",
+      "Bash(tee:*)",
+      "Bash(if [ -f pipeline_full_run.log ])",
+      "Bash(then tail -100 pipeline_full_run.log)",
+      "Bash(else echo \"Log file not created yet\")",
+      "Bash(fi)",
+      "Bash(for file in test_db.py clear_db.py query_db.py show_stats.py update_db_schema.py verify_schema.py)",
+      "Bash(do echo \"=== $file ===\")",
+      "Bash(head:*)",
+      "Bash(done)"
     ],
     "deny": [],
     "ask": []

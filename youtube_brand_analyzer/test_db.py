@@ -1,6 +1,10 @@
 """
 Test database connection and table creation
 """
+import os
+import sys
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..'))
+
 from config.db_manager import YouTubeDBManager
 
 print("="*80)

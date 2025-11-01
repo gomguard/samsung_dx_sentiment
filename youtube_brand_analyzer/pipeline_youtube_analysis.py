@@ -16,6 +16,10 @@ YouTube 데이터 수집 및 분석 통합 파이프라인
 
 import os
 import sys
+# Add current directory first, then parent directory for config imports
+sys.path.insert(0, os.path.dirname(__file__))
+sys.path.insert(1, os.path.join(os.path.dirname(__file__), '..'))
+
 import pandas as pd
 from datetime import datetime
 import time

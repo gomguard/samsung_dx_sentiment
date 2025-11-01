@@ -2,7 +2,7 @@ import requests
 import time
 import pandas as pd
 from datetime import datetime
-from config import WORLD_BANK_BASE_URL, COUNTRIES, MAX_RETRIES, RETRY_DELAY, START_YEAR
+from config.economic_settings import WORLD_BANK_BASE_URL, COUNTRIES, MAX_RETRIES, RETRY_DELAY, START_YEAR
 
 def make_request_with_retry(url, max_retries=MAX_RETRIES):
     """Make HTTP request with retry logic"""

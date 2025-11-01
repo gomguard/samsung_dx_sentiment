@@ -2,7 +2,7 @@ import requests
 import time
 import pandas as pd
 from datetime import datetime
-from config import COUNTRIES, MAX_RETRIES, RETRY_DELAY, START_YEAR
+from config.economic_settings import COUNTRIES, MAX_RETRIES, RETRY_DELAY, START_YEAR
 
 # OECD API Base URLs (New Data Explorer API)
 OECD_API_URL = "https://sdmx.oecd.org/public/rest/data"
