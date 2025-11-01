@@ -1,4 +1,4 @@
-# API Keys - Import from secrets.py (not tracked by git)
+# API Keys and Database Config - Import from secrets.py (not tracked by git)
 try:
     from .secrets import (
         YOUTUBE_API_KEY,
@@ -6,7 +6,12 @@ try:
         TIKTOK_CLIENT_KEY,
         TIKTOK_CLIENT_SECRET,
         TIKTOK_API23_KEY,
-        TIKTOK_RAPIDAPI_KEY
+        TIKTOK_RAPIDAPI_KEY,
+        POSTGRES_HOST,
+        POSTGRES_PORT,
+        POSTGRES_USER,
+        POSTGRES_PASSWORD,
+        POSTGRES_DB
     )
 except ImportError:
     raise ImportError(

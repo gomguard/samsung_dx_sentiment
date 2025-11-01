@@ -1,0 +1,19 @@
+TV	Sentiment	Raw	YouTube	비디오 고유 ID	-	Mapping	API	video_id
+TV	Sentiment	Raw	YouTube	비디오 제목	-	Purpose	API	title
+TV	Sentiment	Raw	YouTube	비디오 설명	-	Purpose	API	description
+TV	Sentiment	Raw	YouTube	게시 시간 (ISO 8601)	-	Purpose	API	published_at
+TV	Sentiment	Raw	YouTube	채널 국가	-	Mapping	API	channel_country
+TV	Sentiment	Raw	YouTube	채널 고유 ID	-	Mapping	API	channel_custom_url
+TV	Sentiment	Raw	YouTube	채널 구독자 수	-	Purpose	API	channel_subscriber_count
+TV	Sentiment	Raw	YouTube	채널 총 비디오 수	-	Purpose	API	channel_video_count
+TV	Sentiment	Raw	YouTube	조회 수	-	Purpose	API	view_count
+TV	Sentiment	Raw	YouTube	좋아요 수	-	Purpose	API	like_count
+TV	Sentiment	Raw	YouTube	댓글 수	-	Purpose	API	comment_count
+TV	Sentiment	Raw	YouTube	댓글 고유 ID	-	Mapping	API	comment_id
+TV	Sentiment	Raw	YouTube	댓글 타입 (top_level, reply)	-	Mapping	API	comment_type
+TV	Sentiment	Raw	YouTube	부모 댓글 ID (답글인 경우)	-	Mapping	API	parent_comment_id
+TV	Sentiment	Raw	YouTube	댓글 텍스트 (HTML 포함)	댓글 기반 자사/경쟁 제품에 대한 텍스트	Purpose	API	comment_text_display
+TV	Sentiment	Raw	YouTube	댓글 텍스트 요약	[정보 추출] 영상 기반 자사/경쟁 제품에 대한 내용	Purpose	OpenAI	comment_text_summary
+TV	Sentiment	Raw	YouTube	댓글 좋아요 수	-	Purpose	API	like_count
+TV	Sentiment	Raw	YouTube	답글 수	-	Purpose	API	reply_count
+TV	Sentiment	Raw	YouTube	제품 영상 	[정보 추출] 댓글 기반 자사/경쟁 제품에 대한 내용	Purpose	OpenAI	video_content_summary
