@@ -2,7 +2,8 @@ import requests
 import time
 import pandas as pd
 from datetime import datetime
-from config.economic_settings import FRED_BASE_URL, FRED_API_KEY, COUNTRIES, MAX_RETRIES, RETRY_DELAY, START_YEAR
+from config.economic_settings import FRED_BASE_URL, COUNTRIES, MAX_RETRIES, RETRY_DELAY, START_YEAR
+from config.secrets import FRED_API_KEY
 
 # FRED series mapping for countries (limited availability)
 FRED_COUNTRY_SERIES = {

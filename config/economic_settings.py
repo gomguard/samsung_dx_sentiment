@@ -1,6 +1,3 @@
-# API Keys
-FRED_API_KEY = "e2917ff0e92f7658ef699759982fc112"
-
 # Country codes and names mapping
 COUNTRIES = {
     'USA': 'United States',
