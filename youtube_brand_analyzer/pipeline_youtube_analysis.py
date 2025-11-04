@@ -89,7 +89,7 @@ class YouTubePipeline:
         # Step 1: 영상 데이터 수집
         print("[Step 1/5] Collecting video data from YouTube API...")
         video_data, video_ids = self.youtube_api.get_comprehensive_video_data(
-            keyword=keyword,
+            keyword=keyword.lower(),
             region_code=region_code,
             max_results=max_videos
         )

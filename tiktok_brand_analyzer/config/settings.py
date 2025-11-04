@@ -1,6 +1,31 @@
 # TikTok API23 설정 (Lundehund)
-TIKTOK_API23_KEY = "ccd2e7a290mshbec361025b8f954p10d436jsnf0fc04c5d14b"
+# Load from parent config/secrets.py
+import os
+import sys
+
+# Default values
+TIKTOK_API23_KEY = ""
 TIKTOK_API23_BASE_URL = "https://tiktok-api23.p.rapidapi.com"
+OPENAI_API_KEY = ""
+
+# Load TikTok-specific key from parent config
+try:
+    import importlib.util
+    parent_config_dir = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(__file__))), 'config')
+    secrets_path = os.path.join(parent_config_dir, 'secrets.py')
+    if os.path.exists(secrets_path):
+        spec = importlib.util.spec_from_file_location("parent_secrets", secrets_path)
+        parent_secrets = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(parent_secrets)
+        if hasattr(parent_secrets, 'TIKTOK_API23_KEY'):
+            TIKTOK_API23_KEY = parent_secrets.TIKTOK_API23_KEY
+        elif hasattr(parent_secrets, 'TIKTOK_RAPIDAPI_KEY'):
+            TIKTOK_API23_KEY = parent_secrets.TIKTOK_RAPIDAPI_KEY
+        if hasattr(parent_secrets, 'OPENAI_API_KEY'):
+            OPENAI_API_KEY = parent_secrets.OPENAI_API_KEY
+except Exception as e:
+    print(f"Warning: Could not load TikTok API key from parent config: {e}")
+    TIKTOK_API23_KEY = "ccd2e7a290mshbec361025b8f954p10d436jsnf0fc04c5d14b"  # fallback
 
 # TikTok Research API 설정 (공식 API - 백업용)
 TIKTOK_CLIENT_KEY = "aw5dl9ic8szyonmt"

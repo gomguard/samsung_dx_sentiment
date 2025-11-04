@@ -28,7 +28,15 @@
       "Bash(for file in test_db.py clear_db.py query_db.py show_stats.py update_db_schema.py verify_schema.py)",
       "Bash(do echo \"=== $file ===\")",
       "Bash(head:*)",
-      "Bash(done)"
+      "Bash(done)",
+      "Bash(psql:*)",
+      "Bash(timeout 60 python:*)",
+      "WebSearch",
+      "WebFetch(domain:hiker-doc.readthedocs.io)",
+      "Bash(timeout 600 python:*)",
+      "Bash(timeout 120 python:*)",
+      "Bash(timeout 180 python:*)",
+      "Bash(timeout 1200 python:*)"
     ],
     "deny": [],
     "ask": []

@@ -33,10 +33,11 @@ class TikTokAPI:
             "X-RapidAPI-Host": "tiktok-api23.p.rapidapi.com"
         }
         
-        # 검증된 엔드포인트들
+        # 검증된 엔드포인트들 (updated to working endpoints)
         self.endpoints = {
-            'search': f"{self.base_url}/api/search/general",
-            'user_posts': f"{self.base_url}/api/user/posts", 
+            'search_video': f"{self.base_url}/api/search/video",  # NEW: Video search
+            'trending': f"{self.base_url}/api/post/trending",      # NEW: Trending posts
+            'user_posts': f"{self.base_url}/api/user/posts",
             'challenge_info': f"{self.base_url}/api/challenge/info"
         }
         
@@ -51,18 +52,14 @@ class TikTokAPI:
         다중 전략: 일반검색 + 사용자검색 + 해시태그검색
         """
         try:
-            print(f"🎵 TikTok API 검색 시작: {keyword} (지역: {region_code})")
+            print(f"TikTok API search starting: {keyword} (region: {region_code})")
             
             all_videos = []
             all_video_ids = []
-            
-            # 전략 1: 일반 검색으로 관련 콘텐츠 찾기 (메인)
-            videos_from_search = self._search_general(keyword, max_results // 2)
+
+            # 전략 1: 비디오 검색으로 직접 비디오 찾기 (NEW - 메인 전략)
+            videos_from_search = self._search_video(keyword, max_results)
             all_videos.extend(videos_from_search)
-            
-            # 전략 2: 관련 사용자 계정의 비디오 수집
-            videos_from_users = self._search_user_videos(keyword, max_results // 2)
-            all_videos.extend(videos_from_users)
             
             # 중복 제거 및 데이터 변환
             unique_videos = self._remove_duplicates(all_videos)
@@ -79,11 +76,11 @@ class TikTokAPI:
                     print(f"비디오 변환 오류: {e}")
                     continue
             
-            print(f"✅ TikTok API 검색 완료: {keyword} - {len(video_data)}개 비디오")
+            print(f"[OK] TikTok API search complete: {keyword} - {len(video_data)} videos")
             return video_data, video_ids
             
         except Exception as e:
-            print(f"❌ TikTok API 검색 오류: {e}")
+            print(f"[ERROR] TikTok API search failed: {e}")
             return [], []
     
     def search_multiple_keywords(self, keywords: List[str] = None, region_code: str = "US", 
@@ -94,8 +91,8 @@ class TikTokAPI:
         if keywords is None:
             keywords = BRAND_KEYWORDS[:5]  # 기본값: 상위 5개 키워드
         
-        print(f"🎯 다중 키워드 검색 시작: {len(keywords)}개 키워드")
-        print(f"📝 키워드 목록: {keywords}")
+        print(f"Multi-keyword search starting: {len(keywords)} keywords")
+        print(f"Keyword list: {keywords}")
         
         all_videos = []
         all_video_ids = []
@@ -113,56 +110,57 @@ class TikTokAPI:
                 all_videos.extend(videos)
                 all_video_ids.extend(video_ids)
                 
-                print(f"  📊 수집: {len(videos)}개 비디오")
+                print(f"  Collected: {len(videos)} videos")
                 
                 # API 요청 간격
                 if i < len(keywords) - 1:  # 마지막이 아니면
                     time.sleep(self.request_delay)
                     
             except Exception as e:
-                print(f"  ❌ 키워드 '{keyword}' 검색 실패: {e}")
+                print(f"  [ERROR] Keyword '{keyword}' search failed: {e}")
                 continue
         
         # 전체 중복 제거
         unique_videos = self._remove_duplicates(all_videos)
         unique_video_ids = list(set(all_video_ids))
         
-        print(f"\n🎉 다중 키워드 검색 완료!")
-        print(f"📊 총 수집: {len(unique_videos)}개 고유 비디오")
-        print(f"🔄 중복 제거: {len(all_videos) - len(unique_videos)}개 제거됨")
+        print(f"\n[OK] Multi-keyword search complete!")
+        print(f"Total collected: {len(unique_videos)} unique videos")
+        print(f"Duplicates removed: {len(all_videos) - len(unique_videos)}")
         
         return unique_videos, unique_video_ids
     
-    def _search_general(self, keyword: str, max_results: int) -> List[Dict]:
-        """일반 검색 API 사용"""
+    def _search_video(self, keyword: str, max_results: int) -> List[Dict]:
+        """비디오 검색 API 사용 (NEW - /api/search/video)"""
         try:
-            print(f"  🔍 일반 검색: {keyword}")
-            
+            print(f"  [Search] Video search: {keyword}")
+
             params = {
                 'keyword': keyword,
                 'count': str(min(max_results, 20))
             }
-            
+
             response = requests.get(
-                self.endpoints['search'], 
-                headers=self.headers, 
+                self.endpoints['search_video'],
+                headers=self.headers,
                 params=params,
                 timeout=10
             )
             self.request_count += 1
-            
+
             if response.status_code != 200:
-                print(f"    ❌ 일반 검색 실패: {response.status_code}")
+                print(f"    [ERROR] Video search failed: {response.status_code}")
                 return []
-            
+
             data = response.json()
-            videos = self._extract_videos_from_search(data)
-            
-            print(f"    ✅ 일반 검색 성공: {len(videos)}개")
+            # NEW: Use item_list instead of data
+            videos = data.get('item_list', [])
+
+            print(f"    [OK] Video search success: {len(videos)} videos")
             return videos
-            
+
         except Exception as e:
-            print(f"    ❌ 일반 검색 오류: {e}")
+            print(f"    [ERROR] Video search error: {e}")
             return []
     
     def _search_by_hashtag(self, keyword: str, max_results: int) -> List[Dict]:
@@ -171,7 +169,7 @@ class TikTokAPI:
             # 키워드를 해시태그 형태로 변환
             hashtag_name = keyword.replace(' ', '').replace('#', '')
             
-            print(f"  🏷️ 해시태그 검색: #{hashtag_name}")
+            print(f"  [Hashtag] Searching: #{hashtag_name}")
             
             params = {
                 'challengeName': hashtag_name,
@@ -187,50 +185,24 @@ class TikTokAPI:
             self.request_count += 1
             
             if response.status_code != 200:
-                print(f"    ❌ 해시태그 검색 실패: {response.status_code}")
+                print(f"    [ERROR] Hashtag search failed: {response.status_code}")
                 return []
             
             data = response.json()
             # 해시태그 정보에서 메타데이터 생성 (실제 비디오는 없음)
             videos = self._create_hashtag_placeholder(data, hashtag_name)
             
-            print(f"    ✅ 해시태그 정보 수집: {len(videos)}개")
+            print(f"    [OK] Hashtag info collected: {len(videos)}")
             return videos
             
         except Exception as e:
-            print(f"    ❌ 해시태그 검색 오류: {e}")
+            print(f"    [ERROR] Hashtag search error: {e}")
             return []
     
     def _search_user_videos(self, keyword: str, max_results: int) -> List[Dict]:
-        """사용자 비디오 검색 (일반 검색에서 찾은 사용자들의 비디오)"""
-        try:
-            print(f"  👤 사용자 비디오 검색: {keyword}")
-            
-            # 먼저 일반 검색으로 관련 사용자들 찾기
-            search_data = self._search_general(keyword, 10)
-            users = self._extract_users_from_search_data(search_data)
-            
-            if not users:
-                print(f"    ⚠️ 관련 사용자 없음")
-                return []
-            
-            all_user_videos = []
-            
-            # 각 사용자의 비디오 수집 (최대 3명)
-            for user in users[:3]:
-                try:
-                    user_videos = self._get_user_posts(user, max_results // 3)
-                    all_user_videos.extend(user_videos)
-                except Exception as e:
-                    print(f"    ❌ 사용자 {user.get('nickname', 'Unknown')} 비디오 수집 실패: {e}")
-                    continue
-            
-            print(f"    ✅ 사용자 비디오 수집: {len(all_user_videos)}개")
-            return all_user_videos
-            
-        except Exception as e:
-            print(f"    ❌ 사용자 비디오 검색 오류: {e}")
-            return []
+        """사용자 비디오 검색 (DEPRECATED - not used in new strategy)"""
+        # Not used anymore - direct video search is more effective
+        return []
     
     def _get_user_posts(self, user_info: Dict, max_results: int) -> List[Dict]:
         """특정 사용자의 게시물 가져오기"""
@@ -344,27 +316,27 @@ class TikTokAPI:
         return unique_videos
     
     def _convert_to_youtube_format(self, video: Dict, keyword: str, region_code: str) -> Dict[str, Any]:
-        """TikTok 비디오를 YouTube 형식으로 변환"""
+        """TikTok 비디오를 YouTube 형식으로 변환 (Updated for new API response)"""
         try:
-            # 비디오 ID
-            video_id = video.get('id') or video.get('aweme_id') or f"tiktok_{hash(str(video))}"
-            
-            # 기본 정보
+            # 비디오 ID (NEW: using 'id' field from new API)
+            video_id = str(video.get('id', '')) or str(video.get('aweme_id', '')) or f"tiktok_{hash(str(video))}"
+
+            # 기본 정보 (NEW: 'desc' field directly)
             desc = video.get('desc', '') or video.get('description', '') or f"TikTok video about {keyword}"
-            
+
             # 작성자 정보
             author = video.get('author', {})
-            username = author.get('unique_id', '') or author.get('nickname', '') or 'tiktok_user'
-            
-            # 통계 정보
-            stats = video.get('statistics', {}) or video.get('stats', {})
-            view_count = stats.get('play_count', 0) or stats.get('view_count', 0) or 1000
-            like_count = stats.get('digg_count', 0) or stats.get('like_count', 0) or 50
-            comment_count = stats.get('comment_count', 0) or 10
-            share_count = stats.get('share_count', 0) or 5
-            
-            # 시간 정보
-            create_time = video.get('create_time', int(time.time()))
+            username = author.get('uniqueId', '') or author.get('unique_id', '') or author.get('nickname', '') or 'tiktok_user'
+
+            # 통계 정보 (NEW: 'stats' field)
+            stats = video.get('stats', {}) or video.get('statistics', {})
+            view_count = stats.get('playCount', 0) or stats.get('play_count', 0) or stats.get('view_count', 0) or 1000
+            like_count = stats.get('diggCount', 0) or stats.get('digg_count', 0) or stats.get('like_count', 0) or 50
+            comment_count = stats.get('commentCount', 0) or stats.get('comment_count', 0) or 10
+            share_count = stats.get('shareCount', 0) or stats.get('share_count', 0) or 5
+
+            # 시간 정보 (NEW: 'createTime' field)
+            create_time = video.get('createTime', 0) or video.get('create_time', 0) or int(time.time())
             published_at = datetime.fromtimestamp(create_time).isoformat() + 'Z'
             
             # 해시태그 정보인지 확인
@@ -452,17 +424,94 @@ class TikTokAPI:
     
     def get_comprehensive_comments(self, video_ids: List[str], max_comments_per_video: int = 100) -> List[Dict[str, Any]]:
         """
-        TikTok API23은 댓글 API가 없어 고품질 더미 댓글 생성
+        TikTok API로 실제 댓글 수집 (NEW - /api/post/comments)
         """
-        print("TikTok API는 댓글 API를 제공하지 않아 더미 댓글을 생성합니다...")
-        
+        print("Collecting real TikTok comments from API...")
+
         comments_data = []
-        for video_id in video_ids[:5]:
-            dummy_comments = self._create_smart_dummy_comments(video_id, min(max_comments_per_video, 20))
-            comments_data.extend(dummy_comments)
-            print(f"더미 댓글 생성: {video_id} - {len(dummy_comments)}개")
-        
+        for video_id in video_ids[:5]:  # Limit to 5 videos to avoid API quota
+            real_comments = self._get_post_comments(video_id, min(max_comments_per_video, 50))
+            comments_data.extend(real_comments)
+            print(f"Real comments collected: {video_id} - {len(real_comments)} comments")
+            time.sleep(1)  # Rate limiting
+
         return comments_data
+
+    def _get_post_comments(self, video_id: str, max_comments: int) -> List[Dict]:
+        """실제 TikTok 댓글 가져오기 (NEW)"""
+        try:
+            url = f"{self.base_url}/api/post/comments"
+            params = {
+                'videoId': video_id,  # Correct parameter name!
+                'count': str(min(max_comments, 50)),
+                'cursor': '0'
+            }
+
+            response = requests.get(url, headers=self.headers, params=params, timeout=10)
+            self.request_count += 1
+
+            if response.status_code != 200:
+                print(f"    [ERROR] Comments API failed: {response.status_code}")
+                return []
+
+            data = response.json()
+            comments = data.get('comments', [])
+
+            # Convert to YouTube-like format
+            formatted_comments = []
+            for comment in comments:
+                formatted = self._convert_comment_to_youtube_format(comment, video_id)
+                if formatted:
+                    formatted_comments.append(formatted)
+
+            return formatted_comments
+
+        except Exception as e:
+            print(f"    [ERROR] Get comments error: {e}")
+            return []
+
+    def _convert_comment_to_youtube_format(self, comment: Dict, video_id: str) -> Dict:
+        """TikTok 댓글을 YouTube 형식으로 변환"""
+        try:
+            comment_id = str(comment.get('cid', ''))
+            comment_text = comment.get('text', '')
+            create_time = comment.get('create_time', int(time.time()))
+
+            # Author info
+            user = comment.get('user', {})
+            author_name = user.get('nickname', 'TikTok User')
+            author_id = user.get('unique_id', '')
+
+            return {
+                'video_id': video_id,
+                'comment_id': comment_id,
+                'comment_type': 'top_level',
+                'parent_comment_id': '',
+                'collected_at': datetime.now().isoformat(),
+
+                'author_display_name': author_name,
+                'author_profile_image_url': user.get('avatar_thumb', {}).get('url_list', [''])[0] if user.get('avatar_thumb') else '',
+                'author_channel_url': f"https://tiktok.com/@{author_id}",
+                'author_channel_id': author_id,
+
+                'comment_text_display': comment_text,
+                'comment_text_original': comment_text,
+                'comment_text_length': len(comment_text),
+
+                'like_count': comment.get('digg_count', 0),
+                'reply_count': comment.get('reply_comment_total', 0),
+                'moderation_status': '',
+
+                'published_at': datetime.fromtimestamp(create_time).isoformat() + 'Z',
+                'updated_at': datetime.fromtimestamp(create_time).isoformat() + 'Z',
+
+                'viewer_rating': '',
+                'can_rate': True,
+            }
+
+        except Exception as e:
+            print(f"Comment conversion error: {e}")
+            return None
     
     def _create_smart_dummy_comments(self, video_id: str, max_comments: int) -> List[Dict]:
         """키워드 기반 스마트 더미 댓글 생성"""
@@ -545,3 +594,47 @@ class TikTokAPI:
     def get_quota_usage(self) -> int:
         """현재 API 사용량 반환"""
         return self.request_count
+
+    def get_user_info(self, unique_id: str) -> Dict[str, Any]:
+        """
+        사용자 정보 가져오기 (구독자수, 비디오수 등)
+
+        Args:
+            unique_id: 사용자의 uniqueId (예: @username에서 username 부분)
+
+        Returns:
+            Dict with user info including followerCount, videoCount, etc.
+        """
+        try:
+            url = f"{self.base_url}/api/user/info"
+            params = {'uniqueId': unique_id}
+
+            response = requests.get(url, headers=self.headers, params=params, timeout=10)
+            self.request_count += 1
+
+            if response.status_code != 200:
+                print(f"    [WARN] User info failed for {unique_id}: {response.status_code}")
+                return None
+
+            data = response.json()
+            user_info = data.get('userInfo', {})
+            stats = user_info.get('stats', {})
+            user = user_info.get('user', {})
+
+            # 통계 정보 추출
+            return {
+                'follower_count': stats.get('followerCount', 0),
+                'following_count': stats.get('followingCount', 0),
+                'video_count': stats.get('videoCount', 0),
+                'heart_count': stats.get('heartCount', 0),  # 총 좋아요수
+                'digg_count': stats.get('diggCount', 0),
+                'friend_count': stats.get('friendCount', 0),
+                'nickname': user.get('nickname', ''),
+                'signature': user.get('signature', ''),  # bio/description
+                'verified': user.get('verified', False),
+                'private_account': user.get('privateAccount', False),
+            }
+
+        except Exception as e:
+            print(f"    [ERROR] Failed to get user info for {unique_id}: {e}")
+            return None

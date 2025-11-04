@@ -1,9 +1,37 @@
-# Instagram API 설정
+# Import RapidAPI key from parent config
+import os
+import sys
+
+# Load RapidAPI key using importlib to avoid circular import
+INSTAGRAM_RAPIDAPI_KEY = ""
+try:
+    import importlib.util
+    parent_config_dir = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(__file__))), 'config')
+    secrets_path = os.path.join(parent_config_dir, 'secrets.py')
+
+    if os.path.exists(secrets_path):
+        spec = importlib.util.spec_from_file_location("parent_secrets", secrets_path)
+        parent_secrets = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(parent_secrets)
+        # Use Instagram-specific key if available
+        if hasattr(parent_secrets, 'INSTAGRAM_RAPIDAPI_KEY'):
+            INSTAGRAM_RAPIDAPI_KEY = parent_secrets.INSTAGRAM_RAPIDAPI_KEY
+        else:
+            INSTAGRAM_RAPIDAPI_KEY = parent_secrets.TIKTOK_RAPIDAPI_KEY
+except Exception as e:
+    print(f"Warning: Could not load RapidAPI key: {e}")
+    INSTAGRAM_RAPIDAPI_KEY = ""
+
+# Instagram RapidAPI 설정 (Instagram Premium API 2023)
+INSTAGRAM_RAPIDAPI_BASE_URL = "https://instagram-premium-api-2023.p.rapidapi.com"
+INSTAGRAM_RAPIDAPI_HOST = "instagram-premium-api-2023.p.rapidapi.com"
+
+# Instagram API 설정 (Legacy - Not used)
 INSTAGRAM_ACCESS_TOKEN = ""  # Instagram Basic Display API 토큰
 INSTAGRAM_APP_ID = ""        # Instagram 앱 ID
 INSTAGRAM_APP_SECRET = ""    # Instagram 앱 시크릿
 
-# Instagram Graph API 설정 (비즈니스 계정용)
+# Instagram Graph API 설정 (비즈니스 계정용 - Legacy - Not used)
 INSTAGRAM_GRAPH_ACCESS_TOKEN = ""
 
 # 데이터 수집 설정
@@ -29,47 +57,35 @@ REGION_SETTINGS = {
     }
 }
 
-# 브랜드 검색 해시태그 설정
-BRAND_HASHTAGS = [
-    # Samsung 관련
-    "samsungtv",
-    "samsung",
-    "samsungqled",
-    "samsungframe",
-    "theframe",
-    "samsungsmartTV",
-    
-    # 경쟁사
-    "lgtv",
-    "lg",
-    "sonytv", 
-    "sony",
-    "tcltv",
-    "appletv",
-    
-    # 일반 TV 해시태그
-    "smarttv",
-    "4ktv",
-    "oledtv",
-    "qledtv",
-    "television",
-    "tvreview",
-    "newTV"
-]
-
-# Instagram 특화 키워드
+# Instagram 검색 키워드 설정
 INSTAGRAM_KEYWORDS = [
-    "samsung tv",
-    "samsung qled", 
-    "samsung frame tv",
-    "lg tv",
-    "sony tv",
-    "tcl tv",
-    "apple tv",
-    "smart tv",
-    "4k tv",
-    "oled tv",
-    "qled tv"
+    # Samsung 관련
+    "Samsung TV",
+    "Samsung QLED",
+    "Samsung OLED",
+    "Samsung Frame TV",
+    "Samsung 4K TV",
+    "Samsung 8K",
+    "Samsung Smart TV",
+
+    # 경쟁사
+    "LG TV",
+    "LG OLED",
+    "LG QNED",
+    "LG 4K TV",
+    "LG 8K",
+    "Sony TV",
+    "Sony Bravia",
+    "TCL TV",
+    "Apple TV",
+
+    # 일반 TV 키워드
+    "Smart TV",
+    "4K TV",
+    "OLED TV",
+    "QLED TV",
+    "Television Review",
+    "New TV"
 ]
 
 # 분석 설정
@@ -89,6 +105,10 @@ FILE_TEMPLATES = {
 
 # Instagram API 제약사항
 API_RATE_LIMITS = {
+    "rapidapi": {
+        "requests_per_month": 100,  # Free tier limit
+        "delay_between_requests": 2  # seconds
+    },
     "basic_display": {
         "requests_per_hour": 200,
         "requests_per_day": 1000
