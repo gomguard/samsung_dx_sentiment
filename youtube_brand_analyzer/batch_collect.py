@@ -23,14 +23,16 @@ from pipeline_youtube_analysis import YouTubePipeline
 class BatchCollector:
     """Batch collector for all active keywords"""
 
-    def __init__(self, dry_run=False):
+    def __init__(self, dry_run=False, filter_country=None):
         """
         Initialize batch collector
 
         Args:
             dry_run (bool): If True, only show what would be collected
+            filter_country (str): Filter videos by channel country (e.g., 'US', 'JP')
         """
         self.dry_run = dry_run
+        self.filter_country = filter_country
         self.keyword_manager = KeywordManager()
         self.pipeline = YouTubePipeline(output_dir='data', use_database=True)
 
@@ -88,11 +90,27 @@ class BatchCollector:
                     max_videos=max_videos,
                     max_comments_per_video=max_comments,
                     region_code=region,
-                    summarize_videos=True,
                     summarize_comments=True
                 )
 
                 if videos_df is not None and comments_df is not None:
+                    # Filter by channel_country if specified
+                    if self.filter_country:
+                        original_video_count = len(videos_df)
+                        videos_df = videos_df[videos_df['channel_country'] == self.filter_country]
+
+                        if len(videos_df) == 0:
+                            print(f"  [INFO] No videos from country '{self.filter_country}' (filtered out {original_video_count} videos)")
+                            print(f"\n[WARN] '{keyword}' returned no videos after country filtering")
+                            failed_keywords.append((keyword, f"No videos from {self.filter_country}"))
+                            continue
+
+                        # Filter comments to match filtered videos
+                        video_ids_filtered = videos_df['video_id'].tolist()
+                        comments_df = comments_df[comments_df['video_id'].isin(video_ids_filtered)]
+
+                        print(f"  [INFO] Country filter: {original_video_count} → {len(videos_df)} videos ({self.filter_country} only)")
+
                     video_count = len(videos_df)
                     comment_count = len(comments_df)
 
@@ -180,10 +198,20 @@ Notes:
         help='Show what would be collected without actually running'
     )
 
+    parser.add_argument(
+        '--filter-country',
+        type=str,
+        default=None,
+        help='Filter videos by channel country (e.g., US, JP, KR)'
+    )
+
     args = parser.parse_args()
 
     # Run batch collection
-    collector = BatchCollector(dry_run=args.dry_run)
+    collector = BatchCollector(
+        dry_run=args.dry_run,
+        filter_country=args.filter_country
+    )
     collector.run()
 
 

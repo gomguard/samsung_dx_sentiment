@@ -127,6 +127,7 @@ class YouTubeDBManager:
                 'channel_country', 'channel_custom_url',
                 'channel_subscriber_count', 'channel_video_count',
                 'view_count', 'like_count', 'comment_count',
+                'category_id', 'engagement_rate',
                 'video_content_summary', 'comment_text_summary'
             ]
 
@@ -153,7 +154,8 @@ class YouTubeDBManager:
                 view_count = EXCLUDED.view_count,
                 like_count = EXCLUDED.like_count,
                 comment_count = EXCLUDED.comment_count,
-                video_content_summary = EXCLUDED.video_content_summary,
+                category_id = EXCLUDED.category_id,
+                engagement_rate = EXCLUDED.engagement_rate,
                 comment_text_summary = EXCLUDED.comment_text_summary,
                 updated_at = CURRENT_TIMESTAMP
             """
@@ -184,7 +186,8 @@ class YouTubeDBManager:
             # Select only required columns
             required_columns = [
                 'comment_id', 'video_id', 'comment_type', 'parent_comment_id',
-                'comment_text_display', 'like_count', 'reply_count'
+                'comment_text_display', 'like_count', 'reply_count',
+                'published_at', 'sentiment_score'
             ]
 
             # Filter to only existing columns
@@ -208,6 +211,8 @@ class YouTubeDBManager:
                 comment_text_display = EXCLUDED.comment_text_display,
                 like_count = EXCLUDED.like_count,
                 reply_count = EXCLUDED.reply_count,
+                published_at = EXCLUDED.published_at,
+                sentiment_score = EXCLUDED.sentiment_score,
                 updated_at = CURRENT_TIMESTAMP
             """
 

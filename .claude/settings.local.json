@@ -36,7 +36,10 @@
       "Bash(timeout 600 python:*)",
       "Bash(timeout 120 python:*)",
       "Bash(timeout 180 python:*)",
-      "Bash(timeout 1200 python:*)"
+      "Bash(timeout 1200 python:*)",
+      "WebFetch(domain:stackoverflow.com)",
+      "Bash(if [ -f batch_collect_retry.log ])",
+      "Bash(then cat batch_collect_retry.log)"
     ],
     "deny": [],
     "ask": []

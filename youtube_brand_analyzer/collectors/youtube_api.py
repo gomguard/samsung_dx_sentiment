@@ -18,63 +18,91 @@ class YouTubeAnalyzer:
         self.youtube = build(YOUTUBE_API_SERVICE_NAME, YOUTUBE_API_VERSION, developerKey=api_key)
         self.request_count = 0
         
-    def get_comprehensive_video_data(self, keyword, region_code="US", max_results=MAX_RESULTS_PER_SEARCH, 
-                                   published_after=None, order="relevance"):
-        """키워드로 비디오 검색 후 모든 정보를 한번에 수집 (최대 100개까지 페이지네이션 지원)"""
+    def get_comprehensive_video_data(self, keyword, region_code="US", max_results=MAX_RESULTS_PER_SEARCH,
+                                   published_after=None, order="viewCount",
+                                   apply_filters=True, min_subscribers=10000,
+                                   min_channel_views=100000000, min_engagement_rate=2.0):
+        """
+        키워드로 비디오 검색 후 필터링하여 수집
+
+        Args:
+            keyword: 검색 키워드
+            region_code: 지역 코드
+            max_results: 최종 필터링 후 목표 개수
+            published_after: 게시 날짜 필터
+            order: 정렬 기준 (viewCount, relevance, date 등)
+            apply_filters: 필터링 적용 여부
+            min_subscribers: 최소 구독자 수
+            min_channel_views: 최소 채널 조회수
+            min_engagement_rate: 최소 참여율 (%)
+        """
         try:
-            all_video_ids = []
+            filtered_videos = []
             next_page_token = None
-            collected_count = 0
-            
-            # 페이지네이션으로 최대 100개까지 수집
-            while collected_count < max_results:
-                remaining = min(50, max_results - collected_count)  # API 한계: 50개
-                
-                # 1단계: 비디오 검색
-                search_params = {
-                    'part': 'snippet',
-                    'q': keyword,
-                    'type': 'video',
-                    'regionCode': region_code,
-                    'maxResults': remaining,
-                    'order': order,
-                    'relevanceLanguage': 'en' if region_code == 'US' else None
-                }
-                
-                # 게시 날짜 필터 (최근 90일로 확장)
-                if published_after:
-                    search_params['publishedAfter'] = published_after.isoformat() + 'Z'
-                else:
-                    ninety_days_ago = datetime.now() - timedelta(days=90)
-                    search_params['publishedAfter'] = ninety_days_ago.isoformat() + 'Z'
-                
-                # 페이지 토큰 추가
-                if next_page_token:
-                    search_params['pageToken'] = next_page_token
-                
-                search_response = self.youtube.search().list(**search_params).execute()
-                self.request_count += 1
-                
-                # 비디오 ID 수집
-                page_video_ids = [item['id']['videoId'] for item in search_response['items']]
-                all_video_ids.extend(page_video_ids)
-                collected_count += len(page_video_ids)
-                
-                # 다음 페이지 토큰 확인
-                next_page_token = search_response.get('nextPageToken')
-                
-                # 더 이상 결과가 없거나 목표 달성 시 중단
-                if not next_page_token or len(page_video_ids) == 0:
+            total_collected = 0
+            batch_size = 200  # 한 번에 수집할 개수
+
+            print(f"  Filtering criteria:")
+            print(f"    - Category: Science & Technology (28)")
+            print(f"    - Published: Last 90 days")
+            print(f"    - Subscribers > {min_subscribers:,} OR Channel Views > {min_channel_views:,}")
+            print(f"    - Engagement Rate > {min_engagement_rate}%")
+            print()
+
+            # 필터링된 결과가 max_results 이상 될 때까지 반복
+            while len(filtered_videos) < max_results:
+                # 이번 배치에서 수집할 개수 (최대 200개씩)
+                current_batch_size = min(50, batch_size - (total_collected % batch_size))
+                batch_video_ids = []
+
+                # 200개 단위로 수집
+                for _ in range(int(batch_size / 50)):
+                    search_params = {
+                        'part': 'snippet',
+                        'q': keyword,
+                        'type': 'video',
+                        'regionCode': region_code,
+                        'maxResults': 50,
+                        'order': order,
+                        'relevanceLanguage': 'en' if region_code == 'US' else None
+                    }
+
+                    # 게시 날짜 필터 (최근 90일)
+                    if published_after:
+                        search_params['publishedAfter'] = published_after.isoformat() + 'Z'
+                    else:
+                        ninety_days_ago = datetime.now() - timedelta(days=90)
+                        search_params['publishedAfter'] = ninety_days_ago.isoformat() + 'Z'
+
+                    # 페이지 토큰 추가
+                    if next_page_token:
+                        search_params['pageToken'] = next_page_token
+
+                    search_response = self.youtube.search().list(**search_params).execute()
+                    self.request_count += 1
+
+                    # 비디오 ID 수집
+                    page_video_ids = [item['id']['videoId'] for item in search_response['items']]
+                    batch_video_ids.extend(page_video_ids)
+                    total_collected += len(page_video_ids)
+
+                    # 다음 페이지 토큰
+                    next_page_token = search_response.get('nextPageToken')
+
+                    if not next_page_token or len(page_video_ids) == 0:
+                        break
+
+                if not batch_video_ids:
+                    print(f"  No more videos available from API")
                     break
-            
-            if not all_video_ids:
-                return [], []
-            
-            # 2단계: 상세 비디오 정보 수집 (videos API로 모든 정보 한번에)
-            video_data = []
-            channel_ids = []
-            
-            for i in range(0, len(all_video_ids), 50):
+
+                print(f"  Batch collected: {len(batch_video_ids)} videos (total: {total_collected})")
+
+                # 2단계: 배치의 상세 비디오 정보 수집
+                batch_video_data = []
+                batch_channel_ids = []
+
+                for i in range(0, len(batch_video_ids), 50):
                 batch_ids = all_video_ids[i:i+50]
                 ids_string = ','.join(batch_ids)
                 
@@ -99,6 +127,16 @@ class YouTubeAnalyzer:
                     # 채널 ID 수집
                     channel_ids.append(snippet['channelId'])
                     
+                    # 통계 정보 추출
+                    view_count = int(stats.get('viewCount', 0))
+                    like_count = int(stats.get('likeCount', 0))
+                    comment_count = int(stats.get('commentCount', 0))
+
+                    # engagement_rate 계산: (좋아요 + 댓글) / 조회수 * 100
+                    engagement_rate = 0.0
+                    if view_count > 0:
+                        engagement_rate = ((like_count + comment_count) / view_count) * 100
+
                     video_data.append({
                         # 검색 관련 정보
                         'video_id': item['id'],
@@ -106,7 +144,7 @@ class YouTubeAnalyzer:
                         'search_region': region_code,
                         'search_order': order,
                         'collected_at': datetime.now().isoformat(),
-                        
+
                         # 기본 정보 (snippet)
                         'title': snippet.get('title', '').replace('\n', ' ').replace('\r', ' '),
                         'description': snippet.get('description', '').replace('\n', ' ').replace('\r', ' '),
@@ -118,20 +156,21 @@ class YouTubeAnalyzer:
                         'default_audio_language': snippet.get('defaultAudioLanguage', ''),
                         'live_broadcast_content': snippet.get('liveBroadcastContent', ''),
                         'tags': ','.join(snippet.get('tags', [])),
-                        
+
                         # 썸네일 정보
                         'thumbnail_default': snippet.get('thumbnails', {}).get('default', {}).get('url', ''),
                         'thumbnail_medium': snippet.get('thumbnails', {}).get('medium', {}).get('url', ''),
                         'thumbnail_high': snippet.get('thumbnails', {}).get('high', {}).get('url', ''),
                         'thumbnail_standard': snippet.get('thumbnails', {}).get('standard', {}).get('url', ''),
                         'thumbnail_maxres': snippet.get('thumbnails', {}).get('maxres', {}).get('url', ''),
-                        
+
                         # 통계 정보 (statistics)
-                        'view_count': int(stats.get('viewCount', 0)),
-                        'like_count': int(stats.get('likeCount', 0)),
+                        'view_count': view_count,
+                        'like_count': like_count,
                         'dislike_count': int(stats.get('dislikeCount', 0)),
                         'favorite_count': int(stats.get('favoriteCount', 0)),
-                        'comment_count': int(stats.get('commentCount', 0)),
+                        'comment_count': comment_count,
+                        'engagement_rate': round(engagement_rate, 4),
                         
                         # 콘텐츠 상세 정보 (contentDetails)
                         'duration_seconds': duration,

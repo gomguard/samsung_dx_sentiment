@@ -1,0 +1,8 @@
+TV	Sentiment	Raw	Instagram	게시물 고유 식별자 (Primary Key)	-	Mapping	API	Instagram_pk
+TV	Sentiment	Raw	Instagram	사용자명 (아이디)	-	Mapping	API	user.username
+TV	Sentiment	Raw	Instagram	좋아요 수	-	Purpose	API	like_count
+TV	Sentiment	Raw	Instagram	댓글 수	-	Purpose	API	comment_count
+TV	Sentiment	Raw	Instagram	재생 수 (비디오)	-	Purpose	API	play_count
+TV	Sentiment	Raw	Instagram	게시물 본문/캡션 텍스트	-	Purpose	API	caption_text
+TV	Sentiment	Raw	Instagram	제품 영상 	[정보 추출] 영상 기반 자사/경쟁 제품에 대한 내용	Purpose	OpenAI	video_content_summary
+TV	Sentiment	Raw	Instagram	영상 댓글	[정보 추출] 댓글 기반 자사/경쟁 제품에 대한 내용	Purpose	OpenAI	comment_text_summary

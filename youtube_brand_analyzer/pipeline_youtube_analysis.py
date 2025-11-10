@@ -4,10 +4,9 @@ YouTube 데이터 수집 및 분석 통합 파이프라인
 이 스크립트는 다음 작업을 수행합니다:
 1. YouTube API로 영상 정보 수집
 2. YouTube API로 댓글 수집
-3. 영상 자막 추출 및 요약 (video_content_summary)
-4. 댓글 요약 (comment_text_summary)
-5. 최종 테이블 생성
-   - videos_final.csv: 영상 정보 + 요약
+3. 댓글 요약 (comment_text_summary)
+4. 최종 테이블 생성
+   - videos_final.csv: 영상 정보 + 댓글 요약
    - comments_final.csv: 댓글 정보
 
 사용법:
@@ -23,32 +22,41 @@ sys.path.insert(1, os.path.join(os.path.dirname(__file__), '..'))
 import pandas as pd
 from datetime import datetime
 import time
+import json
 
 from collectors.youtube_api import YouTubeAnalyzer
-from analyzers.video_summarizer import VideoSummarizer
 from analyzers.comment_summarizer import CommentSummarizer
+from analyzers.comment_sentiment_analyzer import CommentSentimentAnalyzer
 from config.db_manager import YouTubeDBManager
 
 
 class YouTubePipeline:
     """YouTube 데이터 수집 및 분석 통합 파이프라인"""
 
-    def __init__(self, output_dir='data', use_database=True):
+    def __init__(self, output_dir='data', use_database=True, save_raw_data=True):
         """
         파이프라인 초기화
 
         Args:
             output_dir (str): 출력 디렉토리
             use_database (bool): PostgreSQL 데이터베이스 사용 여부
+            save_raw_data (bool): API 원본 데이터 저장 여부
         """
         self.output_dir = output_dir
         self.use_database = use_database
+        self.save_raw_data = save_raw_data
+
+        # 디렉토리 구조 생성
         os.makedirs(output_dir, exist_ok=True)
+        self.raw_data_dir = os.path.join(output_dir, 'raw_data')
+        self.processed_data_dir = os.path.join(output_dir, 'processed_data')
+        os.makedirs(self.raw_data_dir, exist_ok=True)
+        os.makedirs(self.processed_data_dir, exist_ok=True)
 
         # Analyzer 초기화
         self.youtube_api = YouTubeAnalyzer()
-        self.video_summarizer = VideoSummarizer()
         self.comment_summarizer = CommentSummarizer()
+        self.sentiment_analyzer = CommentSentimentAnalyzer()
 
         # Database 초기화
         if self.use_database:
@@ -57,7 +65,7 @@ class YouTubePipeline:
             self.db_manager = None
 
     def run(self, keyword, max_videos=50, max_comments_per_video=100,
-            region_code="US", summarize_videos=True, summarize_comments=True):
+            region_code="US", summarize_comments=True, analyze_sentiment=False):
         """
         전체 파이프라인 실행
 
@@ -66,8 +74,8 @@ class YouTubePipeline:
             max_videos (int): 최대 영상 수
             max_comments_per_video (int): 영상당 최대 댓글 수
             region_code (str): 지역 코드
-            summarize_videos (bool): 영상 요약 여부
             summarize_comments (bool): 댓글 요약 여부
+            analyze_sentiment (bool): 댓글 감정 분석 여부 (OpenAI 사용, 비용 발생)
 
         Returns:
             tuple: (videos_df, comments_df)
@@ -81,13 +89,13 @@ class YouTubePipeline:
         print(f"Max videos: {max_videos}")
         print(f"Max comments per video: {max_comments_per_video}")
         print(f"Region: {region_code}")
-        print(f"Summarize videos: {summarize_videos}")
         print(f"Summarize comments: {summarize_comments}")
+        print(f"Analyze sentiment: {analyze_sentiment}")
         print("="*80)
         print()
 
         # Step 1: 영상 데이터 수집
-        print("[Step 1/5] Collecting video data from YouTube API...")
+        print("[Step 1/4] Collecting video data from YouTube API...")
         video_data, video_ids = self.youtube_api.get_comprehensive_video_data(
             keyword=keyword.lower(),
             region_code=region_code,
@@ -103,7 +111,7 @@ class YouTubePipeline:
 
         # Step 2: 댓글 데이터 수집
         print()
-        print("[Step 2/5] Collecting comments from YouTube API...")
+        print("[Step 2/4] Collecting comments from YouTube API...")
         comments_data = self.youtube_api.get_comprehensive_comments(
             video_ids=video_ids,
             max_comments_per_video=max_comments_per_video
@@ -112,71 +120,32 @@ class YouTubePipeline:
         comments_df = pd.DataFrame(comments_data)
         print(f"Collected {len(comments_df)} comments")
 
-        # Step 3: 영상 요약 (자막 기반)
-        if summarize_videos:
+        # Step 2.5: 댓글 감정 분석 (선택적)
+        if analyze_sentiment and len(comments_df) > 0:
             print()
-            print("[Step 3/5] Summarizing videos (transcript-based)...")
-            video_summaries = []
+            print("[Step 2.5/4] Analyzing sentiment for comments (OpenAI)...")
+            print(f"  WARNING: This will make {len(comments_df)} OpenAI API calls and may incur costs.")
 
-            for idx, row in videos_df.iterrows():
-                video_id = row['video_id']
-                title = row.get('title', '')
-                description = row.get('description', '')
-
-                print(f"  [{idx+1}/{len(videos_df)}] Summarizing video: {video_id}")
-
-                summary = self.video_summarizer.summarize_video(
-                    video_id=video_id,
-                    title=title,
-                    description=description
-                )
-
-                video_summaries.append(summary)
-
-                # Rate limiting: 자막 API와 OpenAI API 모두 고려
-                time.sleep(2)  # 자막 요청 사이 2초 대기
-
-                # 10개마다 추가 대기 (배치 처리)
-                if (idx + 1) % 10 == 0:
-                    print(f"  >>> Processed {idx+1} videos, waiting 10 seconds to avoid rate limits...")
-                    time.sleep(10)
-
-            # 요약 데이터프레임으로 변환
-            summaries_df = pd.DataFrame(video_summaries)
-
-            # 리스트/딕셔너리를 문자열로 변환
-            for col in ['key_topics', 'key_features_discussed']:
-                if col in summaries_df.columns:
-                    summaries_df[col] = summaries_df[col].apply(
-                        lambda x: '; '.join(x) if isinstance(x, list) else str(x)
-                    )
-
-            if 'product_mentions' in summaries_df.columns:
-                import json
-                summaries_df['product_mentions'] = summaries_df['product_mentions'].apply(
-                    lambda x: json.dumps(x, ensure_ascii=False) if isinstance(x, dict) else str(x)
-                )
-
-            # video_content_summary 컬럼 생성 (data_structure.txt 기준)
-            summaries_df['video_content_summary'] = summaries_df['summary']
-
-            # 영상 데이터와 병합
-            videos_df = videos_df.merge(
-                summaries_df[['video_id', 'video_content_summary', 'has_transcript',
-                             'key_topics', 'sentiment', 'target_audience']],
-                on='video_id',
-                how='left'
+            # 감정 분석 (최적화된 배치 방식 사용)
+            comments_with_sentiment = self.sentiment_analyzer.analyze_comments_batch_optimized(
+                comments=comments_df.to_dict('records'),
+                text_field='comment_text_display',
+                batch_size=10,
+                rate_limit_delay=2.0
             )
 
-            print(f"Summarized {len(video_summaries)} videos")
+            # sentiment_score를 comments_df에 추가
+            comments_df = pd.DataFrame(comments_with_sentiment)
+            print(f"Sentiment analysis completed: {comments_df['sentiment_score'].notna().sum()} comments analyzed")
         else:
-            print()
-            print("[Step 3/5] Skipping video summarization...")
+            if analyze_sentiment:
+                print()
+                print("[Step 2.5/4] Skipping sentiment analysis (no comments)")
 
-        # Step 4: 댓글 요약 (비디오별)
+        # Step 3: 댓글 요약 (비디오별)
         if summarize_comments and len(comments_df) > 0:
             print()
-            print("[Step 4/5] Summarizing comments (per video)...")
+            print("[Step 3/4] Summarizing comments (per video)...")
 
             comment_summaries = []
 
@@ -221,11 +190,37 @@ class YouTubePipeline:
             print(f"Summarized comments for {len(comment_summaries)} videos")
         else:
             print()
-            print("[Step 4/5] Skipping comment summarization...")
+            print("[Step 3/4] Skipping comment summarization...")
 
-        # Step 5: 최종 테이블 생성 및 저장
+        # Step 4: 최종 테이블 생성 및 저장
         print()
-        print("[Step 5/5] Saving data to database...")
+        print("[Step 4/4] Saving data...")
+
+        # 4-1: API 원본 데이터 저장 (raw_data)
+        if self.save_raw_data:
+            raw_data_file = os.path.join(
+                self.raw_data_dir,
+                f'youtube_raw_{keyword.replace(" ", "_")}_{timestamp}.json'
+            )
+
+            raw_data = {
+                'keyword': keyword,
+                'region_code': region_code,
+                'collected_at': timestamp,
+                'videos': video_data,  # API에서 받은 원본 데이터
+                'comments': comments_data,  # API에서 받은 원본 데이터
+                'metadata': {
+                    'total_videos': len(video_data),
+                    'total_comments': len(comments_data),
+                    'max_videos': max_videos,
+                    'max_comments_per_video': max_comments_per_video
+                }
+            }
+
+            with open(raw_data_file, 'w', encoding='utf-8') as f:
+                json.dump(raw_data, f, ensure_ascii=False, indent=2, default=str)
+
+            print(f"  Raw data saved: {raw_data_file}")
 
         # videos_final: data_structure.txt 기준 컬럼 선택
         video_columns = [
@@ -233,7 +228,8 @@ class YouTubePipeline:
             'channel_country', 'channel_custom_url',
             'channel_subscriber_count', 'channel_video_count',
             'view_count', 'like_count', 'comment_count',
-            'video_content_summary', 'comment_text_summary'
+            'category_id', 'engagement_rate',
+            'comment_text_summary'
         ]
 
         # 존재하는 컬럼만 선택
@@ -243,14 +239,31 @@ class YouTubePipeline:
         # comments_final: data_structure.txt 기준 컬럼 선택
         comment_columns = [
             'video_id', 'comment_id', 'comment_type', 'parent_comment_id',
-            'comment_text_display', 'like_count', 'reply_count'
+            'comment_text_display', 'like_count', 'reply_count',
+            'published_at', 'sentiment_score'
         ]
 
         # 존재하는 컬럼만 선택
         available_comment_cols = [col for col in comment_columns if col in comments_df.columns]
         comments_final = comments_df[available_comment_cols].copy()
 
-        # PostgreSQL에 저장
+        # 4-2: 가공된 데이터 저장 (processed_data)
+        videos_csv_file = os.path.join(
+            self.processed_data_dir,
+            f'youtube_videos_{keyword.replace(" ", "_")}_{timestamp}.csv'
+        )
+        comments_csv_file = os.path.join(
+            self.processed_data_dir,
+            f'youtube_comments_{keyword.replace(" ", "_")}_{timestamp}.csv'
+        )
+
+        videos_final.to_csv(videos_csv_file, index=False, encoding='utf-8-sig')
+        comments_final.to_csv(comments_csv_file, index=False, encoding='utf-8-sig')
+
+        print(f"  Processed videos saved: {videos_csv_file}")
+        print(f"  Processed comments saved: {comments_csv_file}")
+
+        # 4-3: PostgreSQL에 저장
         if self.use_database and self.db_manager:
             if self.db_manager.connect():
                 # 테이블 생성
@@ -276,8 +289,6 @@ class YouTubePipeline:
         print("="*80)
         print(f"Total videos processed: {len(videos_final)}")
         print(f"Total comments processed: {len(comments_final)}")
-        if 'video_content_summary' in videos_final.columns:
-            print(f"Videos with content summary: {videos_final['video_content_summary'].notna().sum()}")
         if 'comment_text_summary' in videos_final.columns:
             print(f"Videos with comment summary: {videos_final['comment_text_summary'].notna().sum()}")
 
@@ -331,12 +342,6 @@ def main():
     )
 
     parser.add_argument(
-        '--no-video-summary',
-        action='store_true',
-        help='영상 요약 건너뛰기'
-    )
-
-    parser.add_argument(
         '--no-comment-summary',
         action='store_true',
         help='댓글 요약 건너뛰기'
@@ -355,6 +360,12 @@ def main():
         help='PostgreSQL 데이터베이스에 저장하지 않음'
     )
 
+    parser.add_argument(
+        '--analyze-sentiment',
+        action='store_true',
+        help='댓글 감정 분석 수행 (OpenAI 사용, 비용 발생 주의)'
+    )
+
     args = parser.parse_args()
 
     # 파이프라인 실행
@@ -368,8 +379,8 @@ def main():
         max_videos=args.max_videos,
         max_comments_per_video=args.max_comments,
         region_code=args.region,
-        summarize_videos=not args.no_video_summary,
-        summarize_comments=not args.no_comment_summary
+        summarize_comments=not args.no_comment_summary,
+        analyze_sentiment=args.analyze_sentiment
     )
 
 

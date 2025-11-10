@@ -1,0 +1,287 @@
+Instagram RapidAPI 초기화 완료 (Host: instagram-premium-api-2023.p.rapidapi.com)
+API Key: 827897ee92msh433e060...
+================================================================================
+Instagram Batch Data Collection
+================================================================================
+Started at: 2025-11-03 11:43:23
+Dry run: False
+================================================================================
+
+Found 4 active keywords:
+
+  1. 'samsung tv' - 10 posts, 50 comments/post
+  2. 'samsung oled' - 10 posts, 50 comments/post
+  3. 'lg tv' - 10 posts, 30 comments/post
+  4. 'samsung qled' - 15 posts, 50 comments/post
+
+================================================================================
+
+================================================================================
+Processing keyword 1/4: 'samsung tv'
+================================================================================
+================================================================================
+Instagram Data Collection & Analysis Pipeline
+================================================================================
+Keyword: samsung tv
+Max posts: 10
+Max comments per post: 50
+Analyze sentiment: True
+================================================================================
+
+[Step 1/4] Collecting post data from Instagram RapidAPI...
+Instagram RapidAPI 검색 시작: samsung tv
+  [Search] Hashtag: #samsungtv
+  Request: https://instagram-premium-api-2023.p.rapidapi.com/v1/hashtag/medias/top
+  Params: {'name': 'samsungtv', 'amount': 10}
+  Response status: 200
+  [OK] Got 10 posts (list)
+Instagram RapidAPI 검색 완료: samsung tv - 10개 게시물
+Collected 10 posts
+
+[Step 2/4] Collecting comments from Instagram API...
+Instagram RapidAPI collecting comments...
+  Comments API error 404: {"detail":"Entries not found","exc_type":"NotFoundError"}
+Comments collected: 3756381623995080522 - 0 comments
+  Comments API error 404: {"detail":"Entries not found","exc_type":"NotFoundError"}
+Comments collected: 3755190962398967135 - 0 comments
+Comments collected: 3025807006196730859 - 15 comments
+Comments collected: 3755022117663182287 - 3 comments
+Comments collected: 3756559449558178133 - 15 comments
+Collected 33 comments
+
+[Step 3/4] Analyzing comment sentiment...
+감정 분석 완료: 33개 댓글
+Analyzed sentiment for 33 comments
+
+[Step 4/4] Saving data to database...
+Connected to PostgreSQL database: samsung_dx_sentiment
+Tables created successfully
+Inserted/Updated 10 posts
+Inserted/Updated 33 comments
+Saved to PostgreSQL:
+  - 10 posts
+  - 33 comments
+Disconnected from database
+
+================================================================================
+Pipeline completed successfully!
+================================================================================
+Total posts processed: 10
+Total comments processed: 33
+Comments with sentiment analysis: 33
+Connected to PostgreSQL database: samsung_dx_sentiment
+
+Database Statistics:
+  Total posts in DB: 15
+  Total comments in DB: 89
+Disconnected from database
+  Updated keyword for 10 posts
+
+[OK] 'samsung tv' completed: 10 posts, 33 comments
+
+Waiting 30 seconds before next keyword...
+
+================================================================================
+Processing keyword 2/4: 'samsung oled'
+================================================================================
+================================================================================
+Instagram Data Collection & Analysis Pipeline
+================================================================================
+Keyword: samsung oled
+Max posts: 10
+Max comments per post: 50
+Analyze sentiment: True
+================================================================================
+
+[Step 1/4] Collecting post data from Instagram RapidAPI...
+Instagram RapidAPI 검색 시작: samsung oled
+  [Search] Hashtag: #samsungoled
+  Request: https://instagram-premium-api-2023.p.rapidapi.com/v1/hashtag/medias/top
+  Params: {'name': 'samsungoled', 'amount': 10}
+  Response status: 200
+  [OK] Got 10 posts (list)
+Instagram RapidAPI 검색 완료: samsung oled - 10개 게시물
+Collected 10 posts
+
+[Step 2/4] Collecting comments from Instagram API...
+Instagram RapidAPI collecting comments...
+Comments collected: 3080578815211065879 - 15 comments
+Comments collected: 3513431316087446949 - 2 comments
+  Comments API error 404: {"detail":"Entries not found","exc_type":"NotFoundError"}
+Comments collected: 3748471677424515270 - 0 comments
+Comments collected: 3021489889029677372 - 14 comments
+  Comments API error 404: {"detail":"Entries not found","exc_type":"NotFoundError"}
+Comments collected: 3749895808913358139 - 0 comments
+Collected 31 comments
+
+[Step 3/4] Analyzing comment sentiment...
+감정 분석 완료: 31개 댓글
+Analyzed sentiment for 31 comments
+
+[Step 4/4] Saving data to database...
+Connected to PostgreSQL database: samsung_dx_sentiment
+Tables created successfully
+Inserted/Updated 10 posts
+Inserted/Updated 31 comments
+Saved to PostgreSQL:
+  - 10 posts
+  - 31 comments
+Disconnected from database
+
+================================================================================
+Pipeline completed successfully!
+================================================================================
+Total posts processed: 10
+Total comments processed: 31
+Comments with sentiment analysis: 31
+Connected to PostgreSQL database: samsung_dx_sentiment
+
+Database Statistics:
+  Total posts in DB: 25
+  Total comments in DB: 120
+Disconnected from database
+  Updated keyword for 10 posts
+
+[OK] 'samsung oled' completed: 10 posts, 31 comments
+
+Waiting 30 seconds before next keyword...
+
+================================================================================
+Processing keyword 3/4: 'lg tv'
+================================================================================
+================================================================================
+Instagram Data Collection & Analysis Pipeline
+================================================================================
+Keyword: lg tv
+Max posts: 10
+Max comments per post: 30
+Analyze sentiment: True
+================================================================================
+
+[Step 1/4] Collecting post data from Instagram RapidAPI...
+Instagram RapidAPI 검색 시작: lg tv
+  [Search] Hashtag: #lgtv
+  Request: https://instagram-premium-api-2023.p.rapidapi.com/v1/hashtag/medias/top
+  Params: {'name': 'lgtv', 'amount': 10}
+  Response status: 200
+  [OK] Got 10 posts (list)
+Instagram RapidAPI 검색 완료: lg tv - 10개 게시물
+Collected 10 posts
+
+[Step 2/4] Collecting comments from Instagram API...
+Instagram RapidAPI collecting comments...
+  Comments API error 403: {"detail":"Comments disabled by author","exc_type":"CommentsDisabled"}
+Comments collected: 2388500728368520058 - 0 comments
+Comments collected: 3750183949596672377 - 1 comments
+  Comments API error 404: {"detail":"Entries not found","exc_type":"NotFoundError"}
+Comments collected: 3754471380222851932 - 0 comments
+  Comments API error 404: {"detail":"Entries not found","exc_type":"NotFoundError"}
+Comments collected: 3751999795926854035 - 0 comments
+  Comments API error 404: {"detail":"Entries not found","exc_type":"NotFoundError"}
+Comments collected: 3757390764570782452 - 0 comments
+Collected 1 comments
+
+[Step 3/4] Analyzing comment sentiment...
+감정 분석 완료: 0개 댓글
+
+[Step 4/4] Saving data to database...
+Connected to PostgreSQL database: samsung_dx_sentiment
+Tables created successfully
+Inserted/Updated 10 posts
+Inserted/Updated 1 comments
+Saved to PostgreSQL:
+  - 10 posts
+  - 1 comments
+Disconnected from database
+
+================================================================================
+Pipeline completed successfully!
+================================================================================
+Total posts processed: 10
+Total comments processed: 1
+Connected to PostgreSQL database: samsung_dx_sentiment
+
+Database Statistics:
+  Total posts in DB: 35
+  Total comments in DB: 121
+Disconnected from database
+  Updated keyword for 10 posts
+
+[OK] 'lg tv' completed: 10 posts, 1 comments
+
+Waiting 30 seconds before next keyword...
+
+================================================================================
+Processing keyword 4/4: 'samsung qled'
+================================================================================
+================================================================================
+Instagram Data Collection & Analysis Pipeline
+================================================================================
+Keyword: samsung qled
+Max posts: 15
+Max comments per post: 50
+Analyze sentiment: True
+================================================================================
+
+[Step 1/4] Collecting post data from Instagram RapidAPI...
+Instagram RapidAPI 검색 시작: samsung qled
+  [Search] Hashtag: #samsungqled
+  Request: https://instagram-premium-api-2023.p.rapidapi.com/v1/hashtag/medias/top
+  Params: {'name': 'samsungqled', 'amount': 15}
+  Response status: 200
+  [OK] Got 15 posts (list)
+Instagram RapidAPI 검색 완료: samsung qled - 15개 게시물
+Collected 15 posts
+
+[Step 2/4] Collecting comments from Instagram API...
+Instagram RapidAPI collecting comments...
+  Comments API error 404: {"detail":"Entries not found","exc_type":"NotFoundError"}
+Comments collected: 3756010874692671659 - 0 comments
+  Comments API error 404: {"detail":"Entries not found","exc_type":"NotFoundError"}
+Comments collected: 3754786341189217259 - 0 comments
+Comments collected: 2454102061076656025 - 15 comments
+Comments collected: 2451767902245128983 - 15 comments
+  Comments API error 404: {"detail":"Entries not found","exc_type":"NotFoundError"}
+Comments collected: 3751252126459859331 - 0 comments
+Collected 30 comments
+
+[Step 3/4] Analyzing comment sentiment...
+감정 분석 완료: 30개 댓글
+Analyzed sentiment for 30 comments
+
+[Step 4/4] Saving data to database...
+Connected to PostgreSQL database: samsung_dx_sentiment
+Tables created successfully
+Inserted/Updated 15 posts
+Inserted/Updated 30 comments
+Saved to PostgreSQL:
+  - 15 posts
+  - 30 comments
+Disconnected from database
+
+================================================================================
+Pipeline completed successfully!
+================================================================================
+Total posts processed: 15
+Total comments processed: 30
+Comments with sentiment analysis: 30
+Connected to PostgreSQL database: samsung_dx_sentiment
+
+Database Statistics:
+  Total posts in DB: 50
+  Total comments in DB: 151
+Disconnected from database
+  Updated keyword for 15 posts
+
+[OK] 'samsung qled' completed: 15 posts, 30 comments
+
+================================================================================
+Batch Collection Summary
+================================================================================
+Completed at: 2025-11-03 11:46:46
+
+Keywords processed: 4/4
+Total posts collected: 45
+Total comments collected: 95
+
+================================================================================

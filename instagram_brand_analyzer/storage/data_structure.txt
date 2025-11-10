@@ -1,0 +1,132 @@
+Instagram Data Collection Pipeline - Data Structure
+==================================================
+
+This document describes the data structure for the Instagram data collection pipeline.
+
+DATABASE TABLES
+===============
+
+1. instagram_hashtags
+   - Manages hashtags for data collection
+
+   Columns:
+   - id (SERIAL PRIMARY KEY)
+   - hashtag (VARCHAR(100), UNIQUE)
+   - status (VARCHAR(20), DEFAULT 'active')
+   - max_posts (INTEGER, DEFAULT 30)
+   - max_comments_per_post (INTEGER, DEFAULT 50)
+   - region_code (VARCHAR(10), DEFAULT 'US')
+   - last_collected_at (TIMESTAMP)
+   - total_posts_collected (INTEGER, DEFAULT 0)
+   - total_comments_collected (INTEGER, DEFAULT 0)
+   - created_at (TIMESTAMP, DEFAULT CURRENT_TIMESTAMP)
+   - updated_at (TIMESTAMP, DEFAULT CURRENT_TIMESTAMP)
+
+
+2. instagram_posts
+   - Contains Instagram post data
+
+   Columns:
+   - post_id (VARCHAR(100), PRIMARY KEY)
+   - hashtag (VARCHAR(100))
+   - search_hashtag (VARCHAR(100))
+   - search_region (VARCHAR(10))
+   - collected_at (TIMESTAMP)
+   - caption (TEXT)
+   - media_type (VARCHAR(20))
+   - media_url (TEXT)
+   - permalink (TEXT)
+   - published_at (TIMESTAMP)
+   - author_username (VARCHAR(100))
+   - author_id (VARCHAR(100))
+   - like_count (INTEGER)
+   - comment_count (INTEGER)
+   - share_count (INTEGER)
+   - hashtags (TEXT)
+   - mentions (TEXT)
+   - is_video (BOOLEAN)
+   - platform (VARCHAR(20), DEFAULT 'instagram')
+   - created_at (TIMESTAMP, DEFAULT CURRENT_TIMESTAMP)
+   - updated_at (TIMESTAMP, DEFAULT CURRENT_TIMESTAMP)
+
+
+3. instagram_comments
+   - Contains Instagram comment data with sentiment analysis
+
+   Columns:
+   - comment_id (VARCHAR(100), PRIMARY KEY)
+   - post_id (VARCHAR(100), REFERENCES instagram_posts(post_id))
+   - comment_text (TEXT)
+   - author_username (VARCHAR(100))
+   - like_count (INTEGER)
+   - published_at (TIMESTAMP)
+   - sentiment (VARCHAR(20))
+   - sentiment_score (FLOAT)
+   - sentiment_label (VARCHAR(50))
+   - platform (VARCHAR(20), DEFAULT 'instagram')
+   - created_at (TIMESTAMP, DEFAULT CURRENT_TIMESTAMP)
+   - updated_at (TIMESTAMP, DEFAULT CURRENT_TIMESTAMP)
+
+
+PIPELINE WORKFLOW
+=================
+
+1. Hashtag Management (manage_keywords.py)
+   - Add/remove/activate/deactivate hashtags
+   - Set collection parameters (max_posts, max_comments, region)
+
+2. Data Collection (pipeline_instagram_analysis.py)
+   - Collect post data from Instagram API
+   - Collect comment data from Instagram API
+   - Perform sentiment analysis on comments
+   - Save to PostgreSQL database
+
+3. Batch Collection (batch_collect.py)
+   - Process all active hashtags automatically
+   - Update collection statistics
+
+
+DATA FLOW
+=========
+
+Instagram API → InstagramAPI.get_comprehensive_post_data()
+                → Post Data (DataFrame)
+                → InstagramDBManager.insert_posts()
+                → instagram_posts table
+
+Instagram API → InstagramAPI.get_comprehensive_comments()
+                → Comment Data (DataFrame)
+                → SentimentAnalyzer.analyze_comment_sentiment()
+                → Comment Data with Sentiment (DataFrame)
+                → InstagramDBManager.insert_comments()
+                → instagram_comments table
+
+
+SENTIMENT ANALYSIS
+==================
+
+The sentiment analysis uses TextBlob to analyze comment sentiment:
+- sentiment_score: Polarity score (-1.0 to 1.0)
+- sentiment_label: 'positive', 'negative', or 'neutral'
+- sentiment: Categorization based on threshold
+
+
+API RATE LIMITS
+===============
+
+Instagram API has strict rate limits:
+- Basic Display API: 200 requests/hour, 1000 requests/day
+- Graph API: 200 requests/hour, 4800 requests/day
+
+The pipeline includes built-in rate limiting:
+- 2 seconds delay between requests
+- 30 seconds delay between hashtags in batch collection
+
+
+NOTES
+=====
+
+1. The pipeline is designed to work with both real Instagram API and demo mode
+2. Demo mode is activated when API tokens are not configured
+3. All data is stored in PostgreSQL for persistence and analysis
+4. The pipeline supports incremental updates (ON CONFLICT DO UPDATE)

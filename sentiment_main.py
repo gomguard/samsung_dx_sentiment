@@ -22,24 +22,24 @@ PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
 
 # 각 플랫폼 설정
 PLATFORMS = {
-    'youtube': {
-        'name': 'YouTube',
-        'directory': os.path.join(PROJECT_ROOT, 'youtube_brand_analyzer'),
-        'pipeline': 'pipeline_youtube_analysis.py',
-        'enabled': True
+    "youtube": {
+        "name": "YouTube",
+        "directory": os.path.join(PROJECT_ROOT, "youtube_brand_analyzer"),
+        "pipeline": "pipeline_youtube_analysis.py",
+        "enabled": True,
     },
-    'instagram': {
-        'name': 'Instagram',
-        'directory': os.path.join(PROJECT_ROOT, 'instagram_brand_analyzer'),
-        'pipeline': 'pipeline_instagram_analysis.py',
-        'enabled': True
-    },
-    'tiktok': {
-        'name': 'TikTok',
-        'directory': os.path.join(PROJECT_ROOT, 'tiktok_brand_analyzer'),
-        'pipeline': 'pipeline_tiktok_analysis.py',
-        'enabled': True
-    }
+    # 'instagram': {
+    #     'name': 'Instagram',
+    #     'directory': os.path.join(PROJECT_ROOT, 'instagram_brand_analyzer'),
+    #     'pipeline': 'pipeline_instagram_analysis.py',
+    #     'enabled': True
+    # },
+    # 'tiktok': {
+    #     'name': 'TikTok',
+    #     'directory': os.path.join(PROJECT_ROOT, 'tiktok_brand_analyzer'),
+    #     'pipeline': 'pipeline_tiktok_analysis.py',
+    #     'enabled': True
+    # }
 }
 
 
@@ -74,9 +74,9 @@ def format_duration(seconds):
 def run_platform_pipeline(platform_key, platform_info):
     """플랫폼 파이프라인 실행"""
 
-    platform_name = platform_info['name']
-    directory = platform_info['directory']
-    pipeline_file = platform_info['pipeline']
+    platform_name = platform_info["name"]
+    directory = platform_info["directory"]
+    pipeline_file = platform_info["pipeline"]
     pipeline_path = os.path.join(directory, pipeline_file)
 
     print_header(f"{platform_name} 데이터 수집 및 분석 시작")
@@ -99,7 +99,7 @@ def run_platform_pipeline(platform_key, platform_info):
             cwd=directory,
             capture_output=True,
             text=True,
-            timeout=7200  # 2시간 타임아웃
+            timeout=7200,  # 2시간 타임아웃
         )
 
         end_time = time.time()
@@ -112,10 +112,10 @@ def run_platform_pipeline(platform_key, platform_info):
 
         if result.stdout:
             # stdout을 라인별로 출력 (너무 길면 마지막 50줄만)
-            stdout_lines = result.stdout.split('\n')
+            stdout_lines = result.stdout.split("\n")
             if len(stdout_lines) > 50:
                 print("[출력 일부 생략...]")
-                print('\n'.join(stdout_lines[-50:]))
+                print("\n".join(stdout_lines[-50:]))
             else:
                 print(result.stdout)
 
@@ -130,7 +130,9 @@ def run_platform_pipeline(platform_key, platform_info):
             print(f"     소요 시간: {format_duration(duration)}")
             return True, duration
         else:
-            print(f"[ERROR] {platform_name} 파이프라인 실패 (exit code: {result.returncode})")
+            print(
+                f"[ERROR] {platform_name} 파이프라인 실패 (exit code: {result.returncode})"
+            )
             print(f"     소요 시간: {format_duration(duration)}")
             return False, duration
 
@@ -161,7 +163,7 @@ def main():
     print()
 
     # 활성화된 플랫폼 확인
-    enabled_platforms = [(k, v) for k, v in PLATFORMS.items() if v['enabled']]
+    enabled_platforms = [(k, v) for k, v in PLATFORMS.items() if v["enabled"]]
     print(f"실행할 플랫폼: {', '.join([p[1]['name'] for p in enabled_platforms])}")
     print()
 
@@ -171,9 +173,9 @@ def main():
     for platform_key, platform_info in enabled_platforms:
         success, duration = run_platform_pipeline(platform_key, platform_info)
         results[platform_key] = {
-            'success': success,
-            'duration': duration,
-            'name': platform_info['name']
+            "success": success,
+            "duration": duration,
+            "name": platform_info["name"],
         }
         print()
 
@@ -195,9 +197,9 @@ def main():
 
     success_count = 0
     for platform_key, result in results.items():
-        status = "[OK]" if result['success'] else "[FAIL]"
+        status = "[OK]" if result["success"] else "[FAIL]"
         print(f"{status} {result['name']:<15} - {format_duration(result['duration'])}")
-        if result['success']:
+        if result["success"]:
             success_count += 1
 
     print_separator()
@@ -223,5 +225,6 @@ if __name__ == "__main__":
         print(f"[ERROR] 예상치 못한 오류 발생:")
         print(f"  {str(e)}")
         import traceback
+
         traceback.print_exc()
         sys.exit(1)

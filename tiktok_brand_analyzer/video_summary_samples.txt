@@ -1,0 +1,38 @@
+=== RapidAPI로 수집한 메타데이터 & OpenAI Summary 결과 ===
+
+[비디오 1] 7168065226011692293
+조회수: 14,600,000회
+
+[RapidAPI 메타데이터]
+제목: SAMSUNG’S NEW 75” 🫣 #learnontiktok #qled #75inch #mediawall #samsungqled #samsungtv #tvunboxing #new
+설명: SAMSUNG’S NEW 75” 🫣 #learnontiktok #qled #75inch #mediawall #samsungqled #samsungtv #tvunboxing #newsamsung #4ktv #asmrvideo #essex ...
+
+[OpenAI Generated Summary]
+이 비디오는 삼성의 새로운 75인치 QLED TV를 언박싱하는 과정을 보여줍니다. 시청자는 TV의 디자인, 크기, 그리고 고화질 기능을 살펴보며, 새로운 미디어 월 설정에 대한 정보를 얻을 수 있습니다. ASMR 스타일의 영상으로 시청자에게 시각적과 청각적 즐거움을 제공합니다.
+
+--------------------------------------------------------------------------------
+
+[비디오 2] 7523595149478333718
+조회수: 11,300,000회
+
+[RapidAPI 메타데이터]
+제목: Unboxing LG's first 100 INCH TV 🤯 The new 2025 LG QNED evo QNED86 100 inch MiniLED 4K TV (needed a f
+설명: Unboxing LG's first 100 INCH TV 🤯 The new 2025 LG QNED evo QNED86 100 inch MiniLED 4K TV (needed a few SideSaf's for this one 😎) #asmr #asmrvideo #asmrtiktoks #fyp #loop #perfectloop #unboxing # #supersaf #100inchTV #miniLED #LGQNEDTV #LGQNEDevo #LGQNED86 #LGTV...
+
+[OpenAI Generated Summary]
+비디오에서는 LG의 첫 100인치 TV인 2025 LG QNED evo QNED86 MiniLED 4K TV의 언박싱 과정을 보여줍니다. 영상은 TV의 크기와 디자인, 그리고 필요한 도구들을 사용하며 진행되며, ASMR 요소를 포함해 시청자들에게 시각적 즐거움을 제공합니다. 다양한 해시태그를 통해 관련된 콘텐츠와 연결됩니다.
+
+--------------------------------------------------------------------------------
+
+[비디오 3] 7509290776015179039
+조회수: 7,300,000회
+
+[RapidAPI 메타데이터]
+제목: #techtok #tech #samsung #tv #nostalgia 
+설명: #techtok #tech #samsung #tv #nostalgia ...
+
+[OpenAI Generated Summary]
+이 TikTok 비디오는 삼성 TV의 기술과 함께 과거의 향수를 자극하는 내용을 다루고 있습니다. 사용자는 최신 기술이 어떻게 우리의 기억과 연결되는지를 탐구하며, 삼성 TV가 제공하는 다양한 기능을 소개합니다. 비디오는 기술의 발전에도 불구하고 잊지 못할 추억에 대한 이야기를 담고 있습니다.
+
+--------------------------------------------------------------------------------
+
