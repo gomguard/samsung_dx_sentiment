@@ -34,7 +34,7 @@ class BatchCollector:
         self.dry_run = dry_run
         self.filter_country = filter_country
         self.keyword_manager = KeywordManager()
-        self.pipeline = YouTubePipeline(output_dir='data', use_database=True)
+        self.pipeline = YouTubePipeline(output_dir='data', use_database=True, save_raw_data=False, save_csv=False)
 
     def run(self):
         """Run batch collection for all active keywords"""
@@ -62,8 +62,8 @@ class BatchCollector:
             return
 
         print(f"Found {len(active_keywords)} active keywords:\n")
-        for idx, (keyword, max_videos, max_comments, region) in enumerate(active_keywords, 1):
-            print(f"  {idx}. '{keyword}' - {max_videos} videos, {max_comments} comments/video, region: {region}")
+        for idx, (keyword, max_videos, max_comments, region, category) in enumerate(active_keywords, 1):
+            print(f"  {idx}. '{keyword}' - {max_videos} videos, {max_comments} comments/video, region: {region}, category: {category}")
 
         print("\n" + "="*80)
 
@@ -78,9 +78,9 @@ class BatchCollector:
         successful_keywords = 0
         failed_keywords = []
 
-        for idx, (keyword, max_videos, max_comments, region) in enumerate(active_keywords, 1):
+        for idx, (keyword, max_videos, max_comments, region, category) in enumerate(active_keywords, 1):
             print("\n" + "="*80)
-            print(f"Processing keyword {idx}/{len(active_keywords)}: '{keyword}'")
+            print(f"Processing keyword {idx}/{len(active_keywords)}: '{keyword}' (category: {category})")
             print("="*80)
 
             try:
@@ -90,6 +90,7 @@ class BatchCollector:
                     max_videos=max_videos,
                     max_comments_per_video=max_comments,
                     region_code=region,
+                    category=category,
                     summarize_comments=True
                 )
 

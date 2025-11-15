@@ -1,0 +1,82 @@
+YouTubeAnalyzer 초기화: 6개 API 키 사용 가능
+================================================================================
+YouTube Batch Data Collection
+================================================================================
+Started at: 2025-11-10 18:16:59
+Dry run: False
+================================================================================
+
+Found 1 active keywords:
+
+  1. 'Samsung QLED' - 1000 videos, 20 comments/video, region: US
+
+================================================================================
+
+================================================================================
+Processing keyword 1/1: 'Samsung QLED'
+================================================================================
+================================================================================
+YouTube Data Collection & Analysis Pipeline
+================================================================================
+Keyword: Samsung QLED
+Max videos: 1000
+Max comments per video: 20
+Region: US
+Summarize comments: True
+Analyze sentiment: False
+================================================================================
+
+[Step 1/4] Collecting video data from YouTube API (1000 raw videos without filter)...
+
+================================================================================
+일반 수집 모드 (필터링 없음)
+  - 목표 비디오 수: 1000개
+================================================================================
+
+
+[배치 1] 50개 비디오 수집 중...
+
+[QUOTA EXCEEDED] API 할당량 초과 감지
+
+[KEY ROTATION] API 키 #2로 전환됨 (잔여 키: 4개)
+[RETRY] 새 API 키로 재시도...
+
+[QUOTA EXCEEDED] API 할당량 초과 감지
+
+[KEY ROTATION] API 키 #3로 전환됨 (잔여 키: 3개)
+[RETRY] 새 API 키로 재시도...
+
+[QUOTA EXCEEDED] API 할당량 초과 감지
+
+[KEY ROTATION] API 키 #4로 전환됨 (잔여 키: 2개)
+[RETRY] 새 API 키로 재시도...
+
+[QUOTA EXCEEDED] API 할당량 초과 감지
+
+[KEY ROTATION] API 키 #5로 전환됨 (잔여 키: 1개)
+[RETRY] 새 API 키로 재시도...
+
+[QUOTA EXCEEDED] API 할당량 초과 감지
+
+[KEY ROTATION] API 키 #6로 전환됨 (잔여 키: 0개)
+[RETRY] 새 API 키로 재시도...
+
+[QUOTA EXCEEDED] API 할당량 초과 감지
+
+[ERROR] 모든 API 키의 할당량이 소진되었습니다 (6개 키 모두 사용)
+
+[ERROR] Failed to process 'Samsung QLED': 모든 API 키의 할당량이 소진되었습니다
+
+================================================================================
+Batch Collection Summary
+================================================================================
+Completed at: 2025-11-10 18:17:00
+
+Keywords processed: 0/1
+Total videos collected: 0
+Total comments collected: 0
+
+Failed keywords (1):
+  - 'Samsung QLED': 모든 API 키의 할당량이 소진되었습니다
+
+================================================================================

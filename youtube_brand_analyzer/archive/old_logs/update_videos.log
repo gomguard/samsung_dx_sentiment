@@ -1,0 +1,11 @@
+[INFO] Loaded 431 products from brand_series_info
+Found 78 videos to update
+================================================================================
+
+[1/78] Processing video: 0sJiBaVxtYQ
+Traceback (most recent call last):
+  File "D:\Gomguard\program\samsung_crawl\youtube_brand_analyzer\update_existing_videos_content.py", line 111, in <module>
+    update_existing_videos()
+  File "D:\Gomguard\program\samsung_crawl\youtube_brand_analyzer\update_existing_videos_content.py", line 53, in update_existing_videos
+    print(f'  Title: {title[:60]}...')
+UnicodeEncodeError: 'cp949' codec can't encode character '\xed' in position 28: illegal multibyte sequence

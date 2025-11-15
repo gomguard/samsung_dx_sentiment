@@ -1,0 +1,193 @@
+================================================================================
+YouTube Comment Summary Generation
+================================================================================
+
+Connected to PostgreSQL database: samsung_dx_sentiment
+Found 30 videos without comment_text_summary
+
+[1/30] Processing video_id: 2Af2bGvptL4
+  Title: [Unicode title]
+  Keyword: Samsung TV
+  Found 10 comments
+  [OK] Summary: 이 YouTube 비디오의 댓글들은 주로 호스트의 이름과, Samsung Frame Pro TV에 대한 의견, 그리고 비디오의 콘텐츠 출처에 대...
+
+[2/30] Processing video_id: 2jneTgJlh-s
+  Title: [Unicode title]
+  Keyword: Samsung TV
+  Found 7 comments
+  [OK] Summary: 댓글들을 보면, 일부 사용자들은 Samsung 제품에 대해 부정적인 의견을 가지고 있으며, 특히 Best Buy에서 판매하는 Samsung 제품...
+
+[3/30] Processing video_id: AOg-iVmy1j4
+  Title: [Unicode title]
+  Keyword: Samsung TV
+  Found 7 comments
+  [OK] Summary: 이 YouTube 비디오의 댓글들은 대부분 게임과 TV에 대한 의견을 나타냅니다. 일부 사용자들은 게임에 관심이 없고 단순히 TV를 원한다는 의...
+
+[4/30] Processing video_id: DahDC_Gr2vE
+  Title: Top 5 Smart TVs to Buy in 2025 (And 2 to AVOID!)...
+  Keyword: Samsung TV
+  Found 9 comments
+  [OK] Summary: 댓글을 통해 볼 때, 대부분의 시청자들은 TV 제조사들이 더 높은 TV 스탠드를 만들어 기존의 사운드 바를 사용할 수 있게 해주길 원하고 있습니...
+
+[5/30] Processing video_id: Dq3gUqDA-Xw
+  Title: [Unicode title]
+  Keyword: Samsung TV
+  Found 64 comments
+  [OK] Summary: 대부분의 댓글은 30,000달러의 TV 가격에 대한 놀라움과 비판을 나타냅니다. 일부는 기술 발전에 따라 가격이 점차 내려갈 것이라는 의견을 제...
+
+[6/30] Processing video_id: DX3l_oaPoPA
+  Title: TCL QM9K Declares War on Sony, Samsung, and LG | Review...
+  Keyword: Samsung TV
+  Found 18 comments
+  [OK] Summary: 이 YouTube 비디오의 댓글들은 대부분 HDR 기능에 대한 긍정적인 반응을 보이고 있습니다. 많은 사람들이 HDR로 제공되는 영상이 인상적이...
+
+[7/30] Processing video_id: ernTUIHFqlQ
+  Title: How To Change Inputs On A Samsung TV...
+  Keyword: Samsung TV
+  Found 7 comments
+  [OK] Summary: 이 YouTube 비디오의 댓글들은 대부분 삼성 TV의 연결 문제에 대한 것입니다. 몇몇 사용자들은 케이블 박스나 안테나를 TV에 연결하는데 어...
+
+[8/30] Processing video_id: _g8b74Vdp2Q
+  Title: The FIRST MicroLED TV You can Buy: Samsung Micro RGB TV 115”...
+  Keyword: Samsung TV
+  Found 25 comments
+  [OK] Summary: 이 YouTube 비디오의 댓글들은 주로 새로운 기술인 MicroLED와 관련된 의견들로 이루어져 있습니다. 일부 댓글러들은 이 기술의 한계와 ...
+
+[9/30] Processing video_id: Hb2SDbCv3ds
+  Title: 77” Samsung S90F OLED 4K Vision AI Smart TV (2025) at Costco...
+  Keyword: Samsung TV
+  Found 3 comments
+  [OK] Summary: 댓글들은 비디오에 대한 특별한 의견을 제시하지 않고 있습니다. 한 사용자가 비디오의 내용과 관련하여 어디에 있는지 묻는 질문을 하였고, 다른 사...
+
+[10/30] Processing video_id: hG9hzAEHUCE
+  Title: Samsung Frame TV Wireless one connect box?  Yep, it’s a thin...
+  Keyword: Samsung TV
+  Found 3 comments
+  [OK] Summary: 대부분의 댓글들은 삼성의 새로운 제품에 대해 부정적인 의견을 나타내고 있습니다. 일부 사용자들은 제품이 제대로 작동하지 않는다고 지적하며, 이는...
+
+[11/30] Processing video_id: -J26aQSSgRs
+  Title: How To Install Apps On Samsung Smart TV - Step By Step...
+  Keyword: Samsung TV
+  Found 0 comments
+  [SKIP] No comments to summarize
+[12/30] Processing video_id: Je3R27Y096E
+  Title: Samsung TV Deals in Fall 2025...
+  Keyword: Samsung TV
+  Found 17 comments
+  [OK] Summary: 댓글들을 보면, 대부분의 시청자들이 TV 크기에 대해 많은 관심을 가지고 있으며, 특히 50인치 이상의 큰 TV를 선호하는 경향이 있습니다. 또...
+
+[13/30] Processing video_id: Jfgi3X5jBY0
+  Title: 9 Samsung TV Settings Tips And Tricks For The Ultimate Exper...
+  Keyword: Samsung TV
+  Found 6 comments
+  [OK] Summary: 이 YouTube 비디오는 'Steve'가 삼성 TV에 대해 설명하는 내용으로 보입니다. 댓글들을 통해 볼 때, 시청자들은 Steve의 설명을 ...
+
+[14/30] Processing video_id: l4tMaBFn84w
+  Title: The Real Difference Between OLED and QLED TVs for Gaming...
+  Keyword: Samsung TV
+  Found 1 comments
+  [OK] Summary: 이 댓글은 특정 제품에 대한 의견이나 평가를 나타내지 않고, 다양한 TV 모델에 대한 링크를 제공하고 있습니다. Hisense, Vizio, S...
+
+[15/30] Processing video_id: LBURlc3e4Wo
+  Title: Did I Find the PERFECT Living Room TV? Samsung S95F OLED Rev...
+  Keyword: Samsung OLED
+  Found 96 comments
+  [OK] Summary: 대부분의 댓글들은 삼성의 S95F 모델에 대해 긍정적인 평가를 내리고 있습니다. 특히, 매트 스크린의 반사 방지 기능과 One Connect 박...
+
+[16/30] Processing video_id: -LcA-oc_VFs
+  Title: [Unicode title]
+  Keyword: Samsung TV
+  Found 16 comments
+  [OK] Summary: 댓글들을 통해 보면, YouTube 사용자들은 Caleb라는 사람이 돌아왔음을 환영하고 있습니다. Caleb는 이전에 Digital Trends...
+
+[17/30] Processing video_id: lL78TL3NaDU
+  Title: Samsung Z Fold 7 - My New Favorite TV!!!!...
+  Keyword: Samsung TV
+  Found 46 comments
+  [OK] Summary: 대부분의 댓글들은 Z Fold 7과 S25 Ultra에 대한 사용자들의 경험과 선호도를 나타냅니다. 많은 사람들이 Z Fold 7을 좋아하며, ...
+
+[18/30] Processing video_id: nImBWUvxU1I
+  Title: Samsung U7900F: Everything You Need to Know...
+  Keyword: Samsung TV
+  Found 15 comments
+  [OK] Summary: 대부분의 댓글들은 TV 구매와 관련된 경험을 공유하고 있습니다. 일부 사용자들은 TV의 성능과 내구성에 대해 긍정적인 평가를 내리며, 특히 게임...
+
+[19/30] Processing video_id: oCK1quecQyA
+  Title: I tested the Samsung 49” Ultrawide to see if it’s worth it...
+  Keyword: Samsung OLED
+  Found 124 comments
+  [OK] Summary: 대부분의 댓글은 삼성의 49인치 울트라 와이드 모니터에 대한 긍정적인 평가를 내리고 있습니다. 사용자들은 이 모니터의 큰 화면이 작업 효율성을 ...
+
+[20/30] Processing video_id: ovSa5WhVp4M
+  Title: Use Your Samsung Galaxy Watch to Control Your Samsung TV...
+  Keyword: Samsung TV
+  Found 14 comments
+  [OK] Summary: 이 YouTube 비디오의 댓글들을 보면, 대부분의 사용자들이 삼성의 새로운 기능에 대해 긍정적인 반응을 보이고 있습니다. 그러나 일부 사용자들...
+
+[21/30] Processing video_id: O_z6_BiLUW8
+  Title: The new king for 2025! QLED vs Mini-LED TVs...
+  Keyword: Samsung TV
+  Found 14 comments
+  [OK] Summary: 대부분의 댓글들은 QD-Mini Led와 같은 새로운 TV 기술에 대한 호평과 그들의 선호도를 보여주고 있습니다. 특히, 게임을 즐기는 사람들 ...
+
+[22/30] Processing video_id: qNn1SLTjA2g
+  Title: You bought the wrong TV!...
+  Keyword: Samsung TV
+  Found 8 comments
+  [OK] Summary: 대부분의 댓글들은 Samsung TV와 LG TV, 그리고 TCL TV에 대한 개인적인 경험과 의견을 공유하고 있습니다. 많은 사람들이 Sams...
+
+[23/30] Processing video_id: Qvp4hYSbLMg
+  Title: Best Samsung TVs 2025 | Top 5 Samsung TV Review!...
+  Keyword: Samsung TV
+  Found 1 comments
+  [OK] Summary: 이 댓글은 삼성 TV 모델들에 대한 정보를 제공하고 있습니다. 댓글에는 삼성 S95D QD-OLED TV, SAMSUNG 65-Inch QLED...
+
+[24/30] Processing video_id: ThqWYzsBW50
+  Title: SONY's New OLED TV! My Sony Bravia 8 II Review...
+  Keyword: Samsung OLED
+  Found 77 comments
+  [OK] Summary: 댓글들을 보면, 대부분의 시청자들이 Sony Bravia 8 II에 대한 리뷰를 좋아하며, 그 중 일부는 Panasonic Z95B와 LG G5...
+
+[25/30] Processing video_id: ToVGr0_f6JI
+  Title: Samsung Smart TV App Store Missing? How to Fix & Install App...
+  Keyword: Samsung TV
+  Found 2 comments
+  [OK] Summary: 두 사용자 모두 Fanduel Sports 앱을 찾는데 어려움을 겪고 있습니다. 특히 두 번째 사용자는 이 문제로 인해 삼성에 대한 불만을 표현...
+
+[26/30] Processing video_id: uovydpa-3OE
+  Title: 8K is HERE to Stay! Samsung QN990F Review...
+  Keyword: Samsung TV
+  Found 10 comments
+  [OK] Summary: 대부분의 댓글들은 YouTube 비디오에 대한 긍정적인 평가와 함께, 특정 TV 모델에 대한 의견을 공유하고 있습니다. 일부 사용자들은 TV의 ...
+
+[27/30] Processing video_id: wRuexPRu3Sg
+  Title: You Just Unboxed Your Samsung TV... Now What?...
+  Keyword: Samsung TV
+  Found 4 comments
+  [OK] Summary: 댓글들을 보면, 대부분의 사람들이 삼성 OLED S90d와 Neo QLED QN90D 모델에 대한 기능과 문제에 대해 논의하고 있습니다. 특히,...
+
+[28/30] Processing video_id: wWuxYEPovv0
+  Title: How To Connect Phone To Samsung TV - Step By Step...
+  Keyword: Samsung TV
+  Found 1 comments
+  [OK] Summary: 댓글은 사용자가 비디오에서 제시된 내용을 시도했지만, 그 결과로 핸드폰이 꺼졌다는 내용을 담고 있습니다. 이를 통해 해당 비디오의 내용이 일부 ...
+
+[29/30] Processing video_id: xFk_SefU6D8
+  Title: Samsung has finally launched a TV featuring the company’s ne...
+  Keyword: Samsung TV
+  Found 26 comments
+  [OK] Summary: 댓글들을 통해 보면, 이 YouTube 비디오는 $30k 가격의 새로운 TV 기술에 대한 것으로 보입니다. 댓글들은 대체로 이 TV의 가격에 대...
+
+[30/30] Processing video_id: zkC0dpz3AWw
+  Title: Samsung’s new $30k Micro RGB TV is insane (Please… I’ll do A...
+  Keyword: Samsung TV
+  Found 27 comments
+  [OK] Summary: 댓글들은 주로 유튜버가 고가의 TV를 구매하는 것에 대한 의견을 나타냅니다. 일부 댓글러들은 유튜버가 이를 구매할 만큼의 돈을 가지고 있다고 생...
+
+================================================================================
+Summary Generation Complete
+================================================================================
+Success: 29/30
+Failed: 1/30
+================================================================================
+Disconnected from database

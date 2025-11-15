@@ -1,0 +1,19 @@
+[INFO] Loaded 431 products from brand_series_info
+Found 78 videos to update
+================================================================================
+
+[1/78] Processing video: 0sJiBaVxtYQ
+  Title: [Unicode Error - cannot display]
+Traceback (most recent call last):
+  File "D:\Gomguard\program\samsung_crawl\youtube_brand_analyzer\update_existing_videos_content.py", line 89, in update_existing_videos
+    print(f'  \u2713 Updated: brand={brand_info["reviewed_brand"]}, series={brand_info["reviewed_series"]}, sentiment={sentiment_score:.2f}')
+UnicodeEncodeError: 'cp949' codec can't encode character '\u2713' in position 2: illegal multibyte sequence
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Gomguard\program\samsung_crawl\youtube_brand_analyzer\update_existing_videos_content.py", line 114, in <module>
+    update_existing_videos()
+  File "D:\Gomguard\program\samsung_crawl\youtube_brand_analyzer\update_existing_videos_content.py", line 100, in update_existing_videos
+    print(f'  \u2717 Error: {e}')
+UnicodeEncodeError: 'cp949' codec can't encode character '\u2717' in position 2: illegal multibyte sequence

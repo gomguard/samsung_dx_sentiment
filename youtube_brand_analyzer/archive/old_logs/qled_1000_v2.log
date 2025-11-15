@@ -1,0 +1,1225 @@
+YouTubeAnalyzer 초기화: 6개 API 키 사용 가능
+================================================================================
+YouTube Batch Data Collection
+================================================================================
+Started at: 2025-11-10 18:07:00
+Dry run: False
+================================================================================
+
+Found 1 active keywords:
+
+  1. 'Samsung QLED' - 1000 videos, 20 comments/video, region: US
+
+================================================================================
+
+================================================================================
+Processing keyword 1/1: 'Samsung QLED'
+================================================================================
+================================================================================
+YouTube Data Collection & Analysis Pipeline
+================================================================================
+Keyword: Samsung QLED
+Max videos: 1000
+Max comments per video: 20
+Region: US
+Summarize comments: True
+Analyze sentiment: False
+================================================================================
+
+[Step 1/4] Collecting video data from YouTube API (1000 raw videos without filter)...
+
+================================================================================
+일반 수집 모드 (필터링 없음)
+  - 목표 비디오 수: 1000개
+================================================================================
+
+
+[배치 1] 50개 비디오 수집 중...
+
+[QUOTA EXCEEDED] API 할당량 초과 감지
+
+[KEY ROTATION] API 키 #2로 전환됨 (잔여 키: 4개)
+[RETRY] 새 API 키로 재시도...
+
+[QUOTA EXCEEDED] API 할당량 초과 감지
+
+[KEY ROTATION] API 키 #3로 전환됨 (잔여 키: 3개)
+[RETRY] 새 API 키로 재시도...
+
+[QUOTA EXCEEDED] API 할당량 초과 감지
+
+[KEY ROTATION] API 키 #4로 전환됨 (잔여 키: 2개)
+[RETRY] 새 API 키로 재시도...
+
+[QUOTA EXCEEDED] API 할당량 초과 감지
+
+[KEY ROTATION] API 키 #5로 전환됨 (잔여 키: 1개)
+[RETRY] 새 API 키로 재시도...
+
+[QUOTA EXCEEDED] API 할당량 초과 감지
+
+[KEY ROTATION] API 키 #6로 전환됨 (잔여 키: 0개)
+[RETRY] 새 API 키로 재시도...
+  비디오 ID 50개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 38개 채널
+  비디오 상세 정보 완료: 50개
+  누적 수집된 비디오: 50개 / 목표: 1000개
+
+[배치 2] 50개 비디오 수집 중...
+  비디오 ID 50개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 37개 채널
+  비디오 상세 정보 완료: 50개
+  누적 수집된 비디오: 100개 / 목표: 1000개
+
+[배치 3] 50개 비디오 수집 중...
+  비디오 ID 50개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 39개 채널
+  비디오 상세 정보 완료: 50개
+  누적 수집된 비디오: 150개 / 목표: 1000개
+
+[배치 4] 50개 비디오 수집 중...
+  비디오 ID 50개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 43개 채널
+  비디오 상세 정보 완료: 50개
+  누적 수집된 비디오: 200개 / 목표: 1000개
+
+[배치 5] 50개 비디오 수집 중...
+  비디오 ID 50개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 37개 채널
+  비디오 상세 정보 완료: 50개
+  누적 수집된 비디오: 250개 / 목표: 1000개
+
+[배치 6] 50개 비디오 수집 중...
+  비디오 ID 50개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 37개 채널
+  비디오 상세 정보 완료: 50개
+  누적 수집된 비디오: 300개 / 목표: 1000개
+
+[배치 7] 50개 비디오 수집 중...
+  비디오 ID 50개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 44개 채널
+  비디오 상세 정보 완료: 50개
+  누적 수집된 비디오: 350개 / 목표: 1000개
+
+[배치 8] 50개 비디오 수집 중...
+  비디오 ID 50개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 37개 채널
+  비디오 상세 정보 완료: 50개
+  누적 수집된 비디오: 388개 / 목표: 1000개
+
+[배치 9] 50개 비디오 수집 중...
+  비디오 ID 50개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 40개 채널
+  비디오 상세 정보 완료: 50개
+  누적 수집된 비디오: 438개 / 목표: 1000개
+
+[배치 10] 50개 비디오 수집 중...
+  비디오 ID 50개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 42개 채널
+  비디오 상세 정보 완료: 50개
+  누적 수집된 비디오: 488개 / 목표: 1000개
+
+[배치 11] 50개 비디오 수집 중...
+  비디오 ID 50개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 42개 채널
+  비디오 상세 정보 완료: 50개
+  누적 수집된 비디오: 530개 / 목표: 1000개
+
+[배치 12] 50개 비디오 수집 중...
+  더 이상 수집할 비디오가 없습니다 (총 47개 수집)
+  비디오 ID 47개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 40개 채널
+  비디오 상세 정보 완료: 47개
+  누적 수집된 비디오: 577개 / 목표: 1000개
+
+[배치 13] 50개 비디오 수집 중...
+  비디오 ID 50개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 38개 채널
+  비디오 상세 정보 완료: 50개
+  누적 수집된 비디오: 577개 / 목표: 1000개
+  [경고] 연속 1번째 빈 배치 (새 비디오 없음)
+
+[배치 14] 50개 비디오 수집 중...
+  비디오 ID 50개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 37개 채널
+  비디오 상세 정보 완료: 50개
+  누적 수집된 비디오: 577개 / 목표: 1000개
+  [경고] 연속 2번째 빈 배치 (새 비디오 없음)
+
+[배치 15] 50개 비디오 수집 중...
+  비디오 ID 50개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 39개 채널
+  비디오 상세 정보 완료: 50개
+  누적 수집된 비디오: 577개 / 목표: 1000개
+  [경고] 연속 3번째 빈 배치 (새 비디오 없음)
+
+[조기 종료] 3번 연속 새 비디오 없음 - 더 이상 수집 가능한 비디오 없음
+수집된 비디오: 577개 (목표: 1000개)
+
+================================================================================
+수집 완료: samsung qled in US
+  - 총 수집 비디오 수: 747개
+  - 최종 반환: 577개
+  - 총 API 호출 수: 45
+================================================================================
+
+Collected 577 filtered videos
+Raw data: 747 total videos
+
+[Step 2/4] Collecting comments from YouTube API...
+댓글 수집: McarPQqkNe8 - 20개 스레드
+댓글 수집: VvI0TtwsqX0 - 20개 스레드
+댓글 수집: TC9gerLc9UM - 20개 스레드
+댓글 수집: uSkKZVZ8YjE - 20개 스레드
+댓글 수집: xK__rWplpxA - 20개 스레드
+댓글 수집: 4inN41SS0qU - 20개 스레드
+댓글 수집: PTwisd6lius - 20개 스레드
+댓글 수집: XL0jo_AcpnA - 20개 스레드
+댓글 수집: 7l2o2fPdeeY - 20개 스레드
+댓글 수집: YTcl2ImdSfw - 20개 스레드
+댓글 수집: qNn1SLTjA2g - 20개 스레드
+댓글 수집: -PqjQE_js-k - 20개 스레드
+댓글 수집: ifDa-Mp6dXo - 20개 스레드
+댓글 수집: DahDC_Gr2vE - 20개 스레드
+댓글 수집: sfdC6ohszvw - 20개 스레드
+댓글 수집: 1g8mu-dO-0U - 20개 스레드
+댓글 수집: BEAOVJvkUWI - 20개 스레드
+댓글 수집: v4SgsYWwdsI - 20개 스레드
+댓글 수집: sHORqUiMnfU - 20개 스레드
+댓글 수집: B3yYLjIGnV0 - 20개 스레드
+댓글 수집: dBqCbIzwaA8 - 13개 스레드
+댓글 수집: uzexB8FJ5rU - 20개 스레드
+댓글 수집: pGcDg44JgdY - 20개 스레드
+댓글 수집: WIOXRNyDKII - 20개 스레드
+댓글 수집: nd-2fXZFq3k - 20개 스레드
+댓글 수집: 9X-3uLoRYp8 - 20개 스레드
+댓글 수집: m_LCI2rFDUY - 20개 스레드
+댓글 수집: ZrB743KzwE4 - 20개 스레드
+댓글 수집: dkB8QLsR_Kw - 20개 스레드
+댓글 수집: d_lW9kCWnak - 20개 스레드
+댓글 수집: RA726k1libI - 20개 스레드
+댓글 수집: gdriFKO8Ye8 - 20개 스레드
+댓글 수집: S6Tmt7XqYgs - 1개 스레드
+댓글 수집: yTkCXDdheOc - 20개 스레드
+댓글 수집: vzM1nZ1mhOA - 20개 스레드
+댓글 수집: eoE_efA4zPs - 18개 스레드
+댓글 수집: SMTinDXEJ0c - 20개 스레드
+댓글 수집: X2qrcr7aUYk - 6개 스레드
+댓글 수집: O_z6_BiLUW8 - 20개 스레드
+댓글 수집: DqaMdM5hCTw - 20개 스레드
+댓글 수집: F0asj2iNy0c - 20개 스레드
+댓글 수집: GSqMf0nDCZA - 20개 스레드
+댓글 수집: GtuX6xZISKA - 20개 스레드
+댓글 수집: 4TAjRimzwMk - 20개 스레드
+댓글 수집: EJ_Y4kZLZKM - 20개 스레드
+댓글 수집: uWK59xOJuMM - 5개 스레드
+댓글 수집: iaXaSomzm7I - 20개 스레드
+댓글 수집: gh2_6BbMHu0 - 8개 스레드
+댓글 수집: zj8X4lp7mTI - 15개 스레드
+댓글 수집: 4sxbphQBP4I - 20개 스레드
+댓글 수집: kGgO-teMGJE - 20개 스레드
+댓글 수집: Mr399PiKUpw - 20개 스레드
+댓글 수집: 3lI-Unv6y0I - 17개 스레드
+댓글 수집: Tm7R193ba70 - 20개 스레드
+댓글 수집: 4J-gIc5FAHE - 20개 스레드
+댓글 수집: hzur8Y3vTw0 - 20개 스레드
+댓글 수집: 6WH-H3w2ExM - 9개 스레드
+댓글 수집: m9X0S8fAlB8 - 20개 스레드
+댓글 수집: tKMdEw21Srk - 20개 스레드
+댓글 수집: Lj8Y7IgsmaA - 20개 스레드
+댓글 수집: 9-F7SbMcoxY - 20개 스레드
+댓글 수집: CMsgD1XCEFY - 20개 스레드
+댓글 수집: ELWr9HksRvk - 20개 스레드
+댓글 수집: rAyXusIy8RY - 20개 스레드
+댓글 수집: 53NtWlK74Lk - 20개 스레드
+댓글 수집: Muv1qmhjiKY - 7개 스레드
+댓글 수집: XVNojUqI9rY - 20개 스레드
+댓글 수집: 2x4bZazkIvk - 20개 스레드
+댓글 수집: 1S_6f87bOWw - 15개 스레드
+댓글 수집: cPaCeqqudmg - 20개 스레드
+댓글 수집: sAO9IpxhNK8 - 20개 스레드
+댓글 수집: d8GqHIa6gjU - 20개 스레드
+댓글 수집: 9I8Az1hPhdM - 20개 스레드
+댓글 수집: 0eJ2W_jgC-w - 20개 스레드
+댓글 수집: zWIsnYhH-Lc - 20개 스레드
+댓글 수집: SOWSafcLSOw - 17개 스레드
+댓글 수집: GFUJaqzNHDA - 20개 스레드
+댓글 수집: P77-9xo2ogQ - 12개 스레드
+댓글 수집: 5Z1Ylf3UNiQ - 20개 스레드
+댓글 수집: xyk3VQ3LtnA - 1개 스레드
+댓글 수집: lPwXsdpnbZI - 20개 스레드
+댓글 수집: HmoieK7pAiY - 6개 스레드
+댓글 수집: kSDKmYFks7k - 15개 스레드
+댓글 수집: bpnWEZrkxbg - 12개 스레드
+댓글 수집: J6tKFSpOLKw - 20개 스레드
+댓글 수집: trHR_ENGlXg - 17개 스레드
+댓글 수집: SYh3Mw0L4EY - 12개 스레드
+댓글 수집: Rgc2Iu5UgD0 - 20개 스레드
+댓글 수집: 3WnahoDKkyc - 20개 스레드
+댓글 수집: HGzvWjQ6hAs - 11개 스레드
+댓글 수집: tTRPxBfpprY - 20개 스레드
+댓글 수집: PGOQze6E9ag - 20개 스레드
+댓글 수집: cPt60Ox9d2o - 12개 스레드
+댓글 수집: Vz8H26KtHpE - 7개 스레드
+댓글 수집: L60zs804qaI - 20개 스레드
+댓글 수집: wb8KmjzgREE - 20개 스레드
+댓글 수집: 6t5UV1CrhzQ - 20개 스레드
+댓글 수집: oWKUBnmFxoc - 14개 스레드
+댓글 수집: ubyA0-ged74 - 20개 스레드
+댓글 수집: iDMzl5qBDyY - 7개 스레드
+댓글 수집: KL8vnZ3lrQg - 20개 스레드
+댓글 수집: VUqb5O_yV4M - 13개 스레드
+댓글 수집: 93Khs-rwqSQ - 16개 스레드
+댓글 수집: tJ6HcpxDzyc - 4개 스레드
+댓글 수집: z7bwUiDmgJk - 18개 스레드
+댓글 수집: _bmcb5utybI - 4개 스레드
+댓글 수집: oAsSsVkQHKg - 0개 스레드
+댓글 수집: K8aKOBgwsJk - 19개 스레드
+댓글 수집: OpEEzjf-MyA - 20개 스레드
+댓글 수집: 2H9MIFED8dA - 14개 스레드
+댓글 수집: wcsk5fRUqzc - 5개 스레드
+댓글 수집: Xyyt5dewdQs - 11개 스레드
+댓글 수집: loHDQL3KJIY - 20개 스레드
+댓글 수집: 0cnIWOpkv5E - 20개 스레드
+댓글 수집: Fee_VqxpsgQ - 8개 스레드
+댓글 수집: DuAdCmxYGLQ - 20개 스레드
+댓글 수집: MyuHxmbaLJc - 11개 스레드
+댓글 수집: P8G4WZbISKE - 20개 스레드
+댓글 수집: 4MF8SkJBecA - 10개 스레드
+댓글 수집: eIfB6RnZbhM - 0개 스레드
+댓글 수집: padLk80894k - 20개 스레드
+댓글 수집: WUMC726j1Fg - 20개 스레드
+댓글 수집: mCkSzjUCJTQ - 20개 스레드
+댓글 수집: ea8a6SkDWUs - 20개 스레드
+댓글 수집: 1T4AXuXWj4M - 20개 스레드
+댓글 수집: Oq2kZafz8PM - 14개 스레드
+댓글 수집: tizwC4yA9Yc - 18개 스레드
+댓글 수집: W1jJMXDCPlg - 20개 스레드
+댓글 수집: gN68jidBE1I - 20개 스레드
+댓글 수집: t1HFz6sB0bk - 5개 스레드
+댓글 수집: IJZRiBHzcOA - 16개 스레드
+댓글 수집: enDkR_qN-8E - 7개 스레드
+댓글 수집: Gez9vLKiDLA - 2개 스레드
+댓글 수집: 8gVj0sEGemc - 20개 스레드
+댓글 수집: 0_c1C40zHBM - 14개 스레드
+댓글 수집: D5Ass1Qikw8 - 0개 스레드
+댓글 수집: VKskc_moONg - 13개 스레드
+댓글 수집: hlU0xsL300Y - 8개 스레드
+댓글 수집: V8UELS4di2g - 20개 스레드
+댓글 수집: YbuJ1XW_LSg - 6개 스레드
+댓글 수집: Wielg45aejI - 20개 스레드
+댓글 수집: Ivyc--yt2Ek - 12개 스레드
+댓글 수집: G_JtyMN8_lM - 6개 스레드
+댓글 수집: jNKSz9Hq9rs - 20개 스레드
+댓글 수집: 0pmvZK6PFq8 - 13개 스레드
+댓글 수집: F6FbIybVXiU - 2개 스레드
+댓글 수집: opMoQmvE8qk - 10개 스레드
+댓글 수집: wynIHEZGQys - 11개 스레드
+댓글 수집: zycVug3YP50 - 2개 스레드
+댓글 수집: fd-FA_uGuUc - 18개 스레드
+댓글 수집: bMcYMDHicXY - 14개 스레드
+댓글 수집: y8KiYgAKAlI - 12개 스레드
+댓글 수집: FZHBhNeySzk - 1개 스레드
+댓글 수집: 4URSz919dwA - 4개 스레드
+댓글 수집: JkkaGJoPKTA - 13개 스레드
+댓글 수집: iytdkin3b_c - 6개 스레드
+댓글 수집: a_Zq7VmerlI - 9개 스레드
+댓글 수집: 1LpMS1Oqcvg - 2개 스레드
+댓글 수집: -V0x4lFVDuo - 20개 스레드
+댓글 수집: FK3Mc28N-fk - 8개 스레드
+댓글 수집: 6iiV5UFMFTM - 0개 스레드
+댓글 수집: zzT0xrwAW1s - 2개 스레드
+댓글 수집: -KszoNjp3DU - 10개 스레드
+댓글 수집: bZ4U5F4L7HM - 20개 스레드
+댓글 수집: oqCSnDkXrdU - 1개 스레드
+댓글 수집: kodIfBBa-fY - 0개 스레드
+댓글 수집: NcbXH9COeeg - 9개 스레드
+댓글 수집: CsDufmUiKvM - 20개 스레드
+댓글 수집: vk6KcGGzrXk - 0개 스레드
+댓글 수집: y94aYVSJ6os - 1개 스레드
+댓글 수집: A1e1QkPg4cQ - 9개 스레드
+댓글 수집: pNO6r1mqzJs - 0개 스레드
+댓글 수집: 9bfYrJbmZK8 - 2개 스레드
+댓글 수집: cASCEs2gCHw - 6개 스레드
+댓글 수집: zmIw2UnIqw8 - 13개 스레드
+댓글 수집: Npa2fCNdlrw - 0개 스레드
+댓글 수집: rmsvl9bcx8U - 2개 스레드
+댓글 수집: AnyQFpJkaOg - 8개 스레드
+댓글 수집: CKr4ZZV_lVQ - 6개 스레드
+댓글 수집: UkBS6gzxiRI - 20개 스레드
+댓글 수집: VPYHc59UtsA - 4개 스레드
+댓글 수집: RIc8J5rx98U - 13개 스레드
+댓글 수집: Ti2rdeO0fDI - 2개 스레드
+댓글 수집: gRWizskRFGo - 10개 스레드
+댓글 수집: H-5IRpe1QuI - 0개 스레드
+댓글 수집: I5YqPUzMIug - 8개 스레드
+댓글 수집: OuO9R4Lc4i8 - 1개 스레드
+댓글 수집: arOPs1UihMs - 1개 스레드
+댓글 수집: 06btKxphjK8 - 20개 스레드
+댓글 수집: 2lwllCjoLGk - 2개 스레드
+댓글 수집: xHG7ZIIiD2Y - 2개 스레드
+댓글 수집: UntcNeePX8o - 1개 스레드
+댓글 수집: nzav2VFe6aU - 0개 스레드
+댓글 수집: Qij5_HHt-kk - 2개 스레드
+댓글 수집: UcLsi3PI5ng - 0개 스레드
+댓글 수집: 2nOfDGw97jE - 3개 스레드
+댓글 수집: 6WQaXKH9X4A - 1개 스레드
+댓글 수집: V24UQtCI5VM - 7개 스레드
+댓글 수집: llkqUbN06-A - 3개 스레드
+댓글 수집: R3VHi2-7GmQ - 3개 스레드
+댓글 수집: s2SSvo7W2Pg - 1개 스레드
+댓글 수집: srZMLNJT9_Y - 0개 스레드
+댓글 수집: pUUk05AdOxI - 1개 스레드
+댓글 수집: rKng2adY6JQ - 0개 스레드
+댓글 수집: nDXeSo7bXJI - 0개 스레드
+댓글 수집: dnyxgH9jYb0 - 7개 스레드
+댓글 수집: __93I5rb2LI - 0개 스레드
+댓글 수집: 3vxwcoe78eA - 0개 스레드
+댓글 수집: Ldsd-xXJHUk - 2개 스레드
+댓글 수집: tuw4hSJiByY - 1개 스레드
+댓글 수집: eP-w4SIhGj0 - 0개 스레드
+댓글 수집: bvemGwCpkck - 0개 스레드
+댓글 수집: 8B7xGfTdvyc - 13개 스레드
+댓글 수집: 3iH5ybLSNaY - 0개 스레드
+댓글 수집: kOjfEt9Cp2k - 1개 스레드
+댓글 수집: I03wyT650kQ - 1개 스레드
+댓글 수집: 3TPVmmsuLzg - 3개 스레드
+댓글 수집: AqGjohgPppU - 0개 스레드
+댓글 수집: GmGYmBkw0Mo - 3개 스레드
+댓글 수집: UJEYyll_grw - 1개 스레드
+댓글 수집: wYua_Hk3JhQ - 8개 스레드
+댓글 수집: Qqv3fidWYx4 - 0개 스레드
+댓글 수집: uiT86hH8-7Q - 3개 스레드
+댓글 수집: 7I1elOBp--k - 2개 스레드
+댓글 수집: 9JkcHH4m31M - 9개 스레드
+
+[API ERROR] 에러 발생, 재시도 중... (1/3)
+
+[API ERROR] 에러 발생, 재시도 중... (2/3)
+댓글 비활성화: uVhxbxvSTUs
+댓글 수집: LZduWCTsnK4 - 2개 스레드
+댓글 수집: fa12BfNeClc - 3개 스레드
+댓글 수집: hBsm4q5BUis - 4개 스레드
+댓글 수집: ctqdx3NQ2kw - 2개 스레드
+댓글 수집: qx1LCw8PQSY - 5개 스레드
+댓글 수집: msF5f-ShTzY - 0개 스레드
+댓글 수집: 742rkVqA4m4 - 3개 스레드
+댓글 수집: CnNahMLKtDY - 5개 스레드
+댓글 수집: EksAnaoS7wE - 3개 스레드
+댓글 수집: vcm-Qp7rghI - 0개 스레드
+댓글 수집: Z64JjM53Xt0 - 0개 스레드
+댓글 수집: L0n4Ww9o8Pw - 12개 스레드
+댓글 수집: ZMbLrIsQ-aQ - 2개 스레드
+댓글 수집: 3e7x6BZYGTI - 2개 스레드
+댓글 수집: f4lk6IuIDR8 - 0개 스레드
+댓글 수집: CcKz2r4KFwA - 0개 스레드
+댓글 수집: DpOpp60X0T0 - 2개 스레드
+댓글 수집: c6AjQgzHdFU - 4개 스레드
+댓글 수집: hledRD72Ijg - 8개 스레드
+댓글 수집: wl_9fJVYo4g - 1개 스레드
+댓글 수집: jjuaibx25k8 - 0개 스레드
+댓글 수집: NncJnz-el4s - 0개 스레드
+댓글 수집: YFpJTgIkfpU - 0개 스레드
+댓글 수집: _oyshiNMDSo - 0개 스레드
+댓글 수집: uk7XNybuWjI - 3개 스레드
+댓글 수집: q6sOPbC32kY - 1개 스레드
+댓글 수집: Qvp4hYSbLMg - 1개 스레드
+댓글 수집: piV9v9m0vts - 0개 스레드
+댓글 수집: qOGBeVX8B74 - 1개 스레드
+댓글 수집: aN82zE6v8cI - 0개 스레드
+댓글 수집: LzEGlVkcsFY - 1개 스레드
+댓글 수집: EsSli2zv2Qs - 1개 스레드
+댓글 수집: Rpw8TjSNKlQ - 3개 스레드
+댓글 수집: 4KWKiM2KxY4 - 0개 스레드
+댓글 수집: lABGc1ief2g - 3개 스레드
+댓글 수집: 5vW2DreSNA4 - 0개 스레드
+댓글 수집: c3jouaaw6eA - 0개 스레드
+댓글 수집: -S8Q4DiqqsY - 0개 스레드
+댓글 수집: ujjzWUJHkU0 - 1개 스레드
+댓글 수집: C4ECatOrwSI - 0개 스레드
+댓글 수집: nJ7evNEiUJg - 0개 스레드
+댓글 수집: rUllYbarn94 - 1개 스레드
+댓글 수집: SkkpzOuDkN4 - 1개 스레드
+댓글 수집: lBqSnu_ztGw - 7개 스레드
+댓글 수집: ZIhIoDsN01g - 1개 스레드
+댓글 수집: oWPYkKQSe98 - 1개 스레드
+댓글 수집: 0SkrCQyZB1k - 3개 스레드
+댓글 수집: C20XPGNHGtA - 1개 스레드
+댓글 수집: a84P8ddEybY - 8개 스레드
+댓글 수집: 1NwUNHQmkmM - 0개 스레드
+댓글 수집: KowAjIdF_SA - 0개 스레드
+댓글 수집: mc80n4VW9bU - 2개 스레드
+댓글 수집: ojBRVS-L8aM - 1개 스레드
+댓글 수집: nKWj5yNKA-k - 0개 스레드
+댓글 수집: 18c_1BZQI4w - 3개 스레드
+댓글 수집: ky-bapHZaK4 - 1개 스레드
+댓글 수집: wGG5pKCKc4c - 0개 스레드
+댓글 수집: Izpx0Fs3F9s - 0개 스레드
+댓글 수집: PiQD00rEFfQ - 0개 스레드
+댓글 수집: Z9wPW_89Ro0 - 3개 스레드
+댓글 수집: Om6IAxcqAbY - 3개 스레드
+댓글 수집: jRGSQximC4c - 3개 스레드
+댓글 수집: tp29O6xt-nk - 6개 스레드
+댓글 수집: WiQWUhnqASc - 0개 스레드
+댓글 수집: uILfnbPhVJY - 4개 스레드
+댓글 수집: k5Cz6p3e5SI - 0개 스레드
+댓글 수집: orhClOpahH4 - 0개 스레드
+댓글 수집: F62t9G-BKCA - 1개 스레드
+댓글 수집: 7WfhbXNYGTU - 0개 스레드
+댓글 수집: y1WULjwivBA - 0개 스레드
+댓글 수집: QBJ7u0K17bE - 1개 스레드
+댓글 수집: jV10qLNTxLA - 2개 스레드
+댓글 수집: RprLSconeKE - 2개 스레드
+댓글 수집: P00ZC9rse8o - 2개 스레드
+댓글 수집: 2eqbaiWWRbM - 0개 스레드
+댓글 수집: 43xVBM88-J0 - 2개 스레드
+댓글 수집: 446-Nx5wuTM - 1개 스레드
+댓글 수집: WeWLn9qjAng - 0개 스레드
+댓글 수집: ufiing-YVtE - 1개 스레드
+댓글 수집: effPzksUxZA - 0개 스레드
+댓글 수집: Foz4DVnFlHs - 1개 스레드
+댓글 수집: 5ihfJsqpKcU - 3개 스레드
+댓글 수집: TI54ILUjAI8 - 0개 스레드
+
+[API ERROR] 에러 발생, 재시도 중... (1/3)
+
+[API ERROR] 에러 발생, 재시도 중... (2/3)
+댓글 비활성화: wQt9K5UBPjg
+댓글 수집: rFZgPl7Z8uc - 0개 스레드
+댓글 수집: kWOp5tAr9ao - 0개 스레드
+댓글 수집: fskK40sXZNY - 3개 스레드
+댓글 수집: 9-_Utp-WJKs - 1개 스레드
+댓글 수집: uNijbBfUcZY - 0개 스레드
+댓글 수집: uVmT-mcFidk - 0개 스레드
+댓글 수집: VG35-zarS0k - 1개 스레드
+댓글 수집: mBB8RJSNneA - 0개 스레드
+댓글 수집: y-AdKJ9IcLs - 0개 스레드
+댓글 수집: vPPNylWQQFs - 0개 스레드
+댓글 수집: GbtdeNk3g74 - 3개 스레드
+댓글 수집: MADIDOFE4Ik - 1개 스레드
+댓글 수집: _QMV5Gs66ek - 0개 스레드
+댓글 수집: YqxqkBGrZLs - 0개 스레드
+댓글 수집: 2vMUgYGBcGQ - 1개 스레드
+댓글 수집: 9M1kcgZGRCY - 0개 스레드
+댓글 수집: EnpSvHagiBw - 0개 스레드
+댓글 수집: hvkx5yP-JwA - 1개 스레드
+댓글 수집: fwhDABivZtg - 0개 스레드
+댓글 수집: NE2Q76eFMzI - 1개 스레드
+댓글 수집: cUU9Nw2YfBE - 1개 스레드
+댓글 수집: l2mwoPbH-wA - 0개 스레드
+댓글 수집: rmgl4pGgA1Q - 0개 스레드
+댓글 수집: J8XmOOujt4E - 1개 스레드
+댓글 수집: DiEyJ2u6NYs - 1개 스레드
+댓글 수집: 0h-6v9xzHEU - 1개 스레드
+댓글 수집: OV3F2yJ-ZBY - 0개 스레드
+댓글 수집: vsFFk28MHRI - 1개 스레드
+댓글 수집: eCnnZNTuIe4 - 3개 스레드
+댓글 수집: rFiiMNXowFw - 0개 스레드
+댓글 수집: KWSF3bcAxPs - 2개 스레드
+댓글 수집: s08iFrTeShc - 2개 스레드
+댓글 수집: b4TFq3OgDRo - 1개 스레드
+댓글 수집: QYl2aOzmNU8 - 0개 스레드
+댓글 수집: orjBI-xk1QA - 1개 스레드
+댓글 수집: OzzFCe0E26g - 2개 스레드
+댓글 수집: dCDW48X4f6w - 0개 스레드
+댓글 수집: BydMrJd-zQI - 0개 스레드
+댓글 수집: aL2TX7C1Dj8 - 1개 스레드
+댓글 수집: B2ZAnw_OXrM - 1개 스레드
+댓글 수집: lJ-oJ1EmL9Y - 0개 스레드
+댓글 수집: uUOjR1v0j1M - 1개 스레드
+댓글 수집: 7gt7pqc3y-8 - 2개 스레드
+댓글 수집: Mi7E98PBYVc - 0개 스레드
+댓글 수집: wzpOCa4gOz0 - 1개 스레드
+댓글 수집: _mGT6X8BucY - 0개 스레드
+댓글 수집: 4FHB5H1Ikt0 - 0개 스레드
+댓글 수집: Pk-uAsXJqBM - 1개 스레드
+댓글 수집: oFZajMQHpcU - 0개 스레드
+댓글 수집: fJ0M2iWwIak - 0개 스레드
+댓글 수집: czrRtqi91ok - 0개 스레드
+댓글 수집: A91GaNF4WH0 - 0개 스레드
+댓글 수집: hZ2ZmEARRKo - 0개 스레드
+댓글 수집: FeY4JqFLUGY - 0개 스레드
+댓글 수집: Gb5BFuICA44 - 0개 스레드
+댓글 수집: m8RB6MLRuYk - 2개 스레드
+댓글 수집: 04wm_4YFmZY - 0개 스레드
+댓글 수집: 5ha8hQKkvmY - 0개 스레드
+댓글 수집: CHGcCwj6e6M - 0개 스레드
+댓글 수집: g8NK6lJdRnY - 0개 스레드
+댓글 수집: u3GdD2-coyA - 0개 스레드
+댓글 수집: 9JE006P2OhE - 0개 스레드
+댓글 수집: sy8yTsxadXU - 0개 스레드
+댓글 수집: bE5BZ6k32SY - 0개 스레드
+댓글 수집: S3YCThqvj1k - 5개 스레드
+댓글 수집: H3WO24r46hM - 0개 스레드
+댓글 수집: nGnrzfSjG6A - 1개 스레드
+댓글 수집: tEygZUPII7Q - 0개 스레드
+댓글 수집: kgOF9fdfGBI - 1개 스레드
+댓글 수집: 2rXYls5pmK4 - 0개 스레드
+댓글 수집: crQDQmJqBJw - 0개 스레드
+댓글 수집: hkRogdg1l6c - 0개 스레드
+댓글 수집: 4LHFjtUADFg - 0개 스레드
+댓글 수집: se9GBDu-WdA - 0개 스레드
+댓글 수집: 7Cqq0WysYrU - 0개 스레드
+댓글 수집: ffDoMj9owuE - 0개 스레드
+댓글 수집: n9HCh_VSt5M - 0개 스레드
+댓글 수집: diwfiQldHI4 - 1개 스레드
+댓글 수집: YHevF1_acHA - 1개 스레드
+댓글 수집: 4B7NppZYlj8 - 0개 스레드
+댓글 수집: 8rIT6klU4c0 - 0개 스레드
+댓글 수집: EiTs5dpGGqM - 0개 스레드
+댓글 수집: 4-xTtFYxWyg - 0개 스레드
+댓글 수집: eSHkuayBels - 0개 스레드
+댓글 수집: yckA-bpNMoU - 6개 스레드
+댓글 수집: SZxJW9QLdQg - 0개 스레드
+댓글 수집: B6xI4B4JuwM - 2개 스레드
+댓글 수집: 04tpsWGDdWg - 1개 스레드
+댓글 수집: LTUjXk01KaQ - 2개 스레드
+댓글 수집: 2PJVZjuGKYU - 0개 스레드
+댓글 수집: 4khXDE3xKOc - 0개 스레드
+댓글 수집: RzX6iqjh0NQ - 5개 스레드
+댓글 수집: FiEx7nDFH-U - 1개 스레드
+댓글 수집: HwMEdFJaPLc - 8개 스레드
+댓글 수집: FfvEkNXq_1M - 1개 스레드
+댓글 수집: UUQ2csrTlYA - 0개 스레드
+댓글 수집: fR18ZAgcGso - 2개 스레드
+댓글 수집: hH997VOedok - 0개 스레드
+댓글 수집: bmqu9XDPvPM - 1개 스레드
+댓글 수집: RYVvB1u81sw - 0개 스레드
+댓글 수집: WRo9PCWMW4o - 0개 스레드
+댓글 수집: -PYdjccNcrY - 1개 스레드
+댓글 수집: l4tMaBFn84w - 1개 스레드
+댓글 수집: fAxoGS2PJ9I - 1개 스레드
+댓글 수집: 4dRlkr-zL2A - 1개 스레드
+댓글 수집: XsrtQw2ZByE - 1개 스레드
+댓글 수집: xcNzr28ZhYU - 0개 스레드
+댓글 수집: h2jdmrDzYYE - 0개 스레드
+댓글 수집: 21PSRC8RU9k - 1개 스레드
+댓글 수집: Z8rSCaBlI8Y - 5개 스레드
+댓글 수집: -NoWUdplVGE - 0개 스레드
+댓글 수집: NKZA0H1kwAM - 0개 스레드
+댓글 수집: rorkoXYYzZk - 1개 스레드
+댓글 수집: FM2S9wvv02Y - 0개 스레드
+댓글 수집: YCr5i2dDH4w - 0개 스레드
+댓글 수집: Du78IrTO38o - 0개 스레드
+댓글 수집: 4477JG2opKY - 5개 스레드
+댓글 수집: SENAZJkW94A - 0개 스레드
+댓글 수집: B2w8BAcPyh0 - 2개 스레드
+댓글 수집: ZSuUny7wjZ8 - 0개 스레드
+댓글 수집: EKNw7r-eGLw - 2개 스레드
+댓글 수집: NaAJkIa6qxw - 5개 스레드
+댓글 수집: 2uzatIqjabU - 3개 스레드
+댓글 수집: gNOp947XzL8 - 0개 스레드
+댓글 수집: Svior5ZP_is - 1개 스레드
+댓글 수집: tytBZhJDovA - 0개 스레드
+댓글 수집: n9wIAeztoxk - 0개 스레드
+댓글 수집: NwP0FhCO4C0 - 0개 스레드
+댓글 수집: kkvdxTc-pVE - 0개 스레드
+댓글 수집: NJWcaxmzX0g - 0개 스레드
+댓글 수집: txl21fri_UI - 0개 스레드
+댓글 수집: UEnZAo7AHBI - 0개 스레드
+댓글 수집: slqV8sntbfo - 0개 스레드
+댓글 수집: KlJpd7AzShM - 0개 스레드
+댓글 수집: tnThryPPmgg - 0개 스레드
+댓글 수집: 4Jijwu0YMNA - 0개 스레드
+댓글 수집: 8aTAON2p4SM - 0개 스레드
+댓글 수집: VSv7JeC5nUs - 0개 스레드
+댓글 수집: Dc4otn9u7zM - 0개 스레드
+댓글 수집: UMJzPKx2e9U - 0개 스레드
+댓글 수집: nL3YvS-wDEE - 0개 스레드
+댓글 수집: EO8K6zp-n1s - 1개 스레드
+댓글 수집: QlGxbu1myto - 0개 스레드
+댓글 수집: 8JHxgyDuFr8 - 0개 스레드
+댓글 수집: 9LOvKU6359A - 0개 스레드
+댓글 수집: 4fJT-R5W4KE - 0개 스레드
+댓글 수집: Do6mow4UxW8 - 0개 스레드
+댓글 수집: VKYu2T7YeiA - 0개 스레드
+댓글 수집: KK87kr0jSZA - 0개 스레드
+
+[API ERROR] 에러 발생, 재시도 중... (1/3)
+
+[API ERROR] 에러 발생, 재시도 중... (2/3)
+댓글 비활성화: 9V3noyIauuo
+댓글 수집: c2_L-BuHQv8 - 0개 스레드
+댓글 수집: atLBz5sdf7w - 0개 스레드
+댓글 수집: 3N3PeFa_qrg - 0개 스레드
+댓글 수집: hpEk9zlWH5U - 0개 스레드
+댓글 수집: DcOuAwwRFns - 0개 스레드
+댓글 수집: QgugYCemDc0 - 1개 스레드
+댓글 수집: F4dhXmbLY7Y - 0개 스레드
+댓글 수집: 2Xtok2U11go - 0개 스레드
+댓글 수집: j4m7IT3e1IA - 1개 스레드
+댓글 수집: sq570VkIjEw - 0개 스레드
+댓글 수집: ZmVWAzEDOyA - 0개 스레드
+댓글 수집: _R5o-Z41KoY - 0개 스레드
+댓글 수집: eNZDDAjS97g - 1개 스레드
+댓글 수집: SiU0MKlScHM - 0개 스레드
+댓글 수집: avmiq8MQ8zQ - 0개 스레드
+
+[API ERROR] 에러 발생, 재시도 중... (1/3)
+
+[API ERROR] 에러 발생, 재시도 중... (2/3)
+댓글 비활성화: U-QrJxJ9gak
+댓글 수집: LGlt5SN0oeA - 11개 스레드
+댓글 수집: rQLd7IFpv2s - 0개 스레드
+댓글 수집: sSS_y508cds - 0개 스레드
+댓글 수집: sG4G99ROKdU - 0개 스레드
+댓글 수집: JlOEpE0cKwc - 1개 스레드
+댓글 수집: vRd5cG52vV4 - 1개 스레드
+
+[API ERROR] 에러 발생, 재시도 중... (1/3)
+
+[API ERROR] 에러 발생, 재시도 중... (2/3)
+댓글 비활성화: R1Xjzsi1EDI
+댓글 수집: d4OafZYVAFQ - 0개 스레드
+댓글 수집: Wmj7yQgzGqc - 0개 스레드
+댓글 수집: o40Bx93mP00 - 0개 스레드
+댓글 수집: fLPBlCZ0O8k - 0개 스레드
+댓글 수집: dL2AVkqKoSQ - 1개 스레드
+댓글 수집: epl23p6nEiI - 0개 스레드
+댓글 수집: YYNKJUI_iWo - 0개 스레드
+댓글 수집: qiNgJ7tiORk - 0개 스레드
+댓글 수집: md57uVPV6yg - 0개 스레드
+댓글 수집: RpwNx90jagg - 0개 스레드
+댓글 수집: aA88UTljX2Y - 5개 스레드
+댓글 수집: kjYATuqldUA - 0개 스레드
+댓글 수집: lLx_A8IWHcI - 0개 스레드
+댓글 수집: Ku3jkTWu0mY - 0개 스레드
+댓글 수집: khTaB1_Wr7w - 0개 스레드
+댓글 수집: R3F3lPk9gaQ - 1개 스레드
+댓글 수집: meO_IM5Y3xo - 0개 스레드
+댓글 수집: pSUOcRocY7M - 0개 스레드
+댓글 수집: x1Uvpl12G7Y - 0개 스레드
+댓글 수집: GNbdhT005SU - 0개 스레드
+댓글 수집: c3IN7ikA5s4 - 0개 스레드
+댓글 수집: 1PQ3i6Ze_Xo - 0개 스레드
+댓글 수집: 5jYEQnxtsZw - 0개 스레드
+댓글 수집: atD8pM-XOgE - 0개 스레드
+댓글 수집: GlaDVFiug9Y - 0개 스레드
+댓글 수집: pjgh6FDP8u0 - 0개 스레드
+댓글 수집: H5rShuojvEM - 0개 스레드
+댓글 수집: CEwURduxH_A - 1개 스레드
+댓글 수집: T4Kh1t5PFu4 - 0개 스레드
+댓글 수집: x3pzvllk3fs - 0개 스레드
+댓글 수집: VE65ONNPf0s - 0개 스레드
+댓글 수집: lOtWc-s68t8 - 0개 스레드
+댓글 수집: DIL9df7srhk - 0개 스레드
+댓글 수집: SScCXVl9zvM - 0개 스레드
+댓글 수집: 1fnLvZbW8rs - 0개 스레드
+댓글 수집: U1In_DC-Phw - 0개 스레드
+댓글 수집: Bw256XmWWqA - 0개 스레드
+
+[API ERROR] 에러 발생, 재시도 중... (1/3)
+
+[API ERROR] 에러 발생, 재시도 중... (2/3)
+댓글 비활성화: CCWj9bcSGLs
+댓글 수집: bmLL6nLW9qU - 0개 스레드
+댓글 수집: XjK5tUukfnU - 1개 스레드
+
+[API ERROR] 에러 발생, 재시도 중... (1/3)
+
+[API ERROR] 에러 발생, 재시도 중... (2/3)
+댓글 비활성화: e8A6NagoLdw
+댓글 수집: hiu9BbLPhQg - 0개 스레드
+댓글 수집: ZUS9aCWIfgQ - 0개 스레드
+댓글 수집: WOMZ5DiKph0 - 0개 스레드
+댓글 수집: be6lnaFinxg - 0개 스레드
+댓글 수집: rcKlmJStyPc - 0개 스레드
+댓글 수집: olM-88pGiMA - 0개 스레드
+댓글 수집: O8TMTb9TN78 - 0개 스레드
+댓글 수집: a6e80RmnCb4 - 1개 스레드
+댓글 수집: lvXHNE-jl7g - 3개 스레드
+댓글 수집: eyvsScqlovM - 0개 스레드
+댓글 수집: gSleicwObjQ - 0개 스레드
+댓글 수집: cowuBtlMvZQ - 0개 스레드
+댓글 수집: DxdWjzHdK70 - 0개 스레드
+댓글 수집: L7lkQYE2Vf8 - 0개 스레드
+댓글 수집: iJUdVY00iIk - 1개 스레드
+댓글 수집: E4dUAiZpO6E - 0개 스레드
+댓글 수집: a8fQH5Vef9c - 0개 스레드
+댓글 수집: WimF3SdYumA - 0개 스레드
+댓글 수집: dgoddkrKjEg - 0개 스레드
+댓글 수집: urLwkkXXBUc - 1개 스레드
+댓글 수집: jI2Uxj5Le3s - 0개 스레드
+댓글 수집: W4nDLmChwzM - 0개 스레드
+댓글 수집: pzCnM39AjOQ - 0개 스레드
+댓글 수집: esRD0pF0FXM - 1개 스레드
+댓글 수집: k2bht7sX6lQ - 0개 스레드
+댓글 수집: l6FWTm2cSGU - 0개 스레드
+댓글 수집: asNI0h277Cw - 0개 스레드
+댓글 수집: 1hH1o4Mbi_o - 0개 스레드
+댓글 수집: 4K0lZxpWMnQ - 0개 스레드
+댓글 수집: e0KKJOYiQiY - 1개 스레드
+댓글 수집: IC4EIBLBDrg - 1개 스레드
+댓글 수집: Vp_x_3iH9_o - 0개 스레드
+댓글 수집: mhSB7wNt6bQ - 1개 스레드
+댓글 수집: -xDgLAkGfe4 - 1개 스레드
+댓글 수집: wwml3sCMeXY - 1개 스레드
+댓글 수집: BTMyr7zaxBE - 0개 스레드
+댓글 수집: iXUvU7MkbjU - 0개 스레드
+댓글 수집: aPxkG5NHVX8 - 0개 스레드
+댓글 수집: 7WFHflFnVaw - 0개 스레드
+댓글 수집: sg6jFn_6iuo - 1개 스레드
+댓글 수집: mUEtziU0dNk - 1개 스레드
+댓글 수집: _lOD1kFmzzs - 0개 스레드
+댓글 수집: afohLbfB9As - 0개 스레드
+댓글 수집: wWmoS83Ti0M - 0개 스레드
+댓글 수집: 0dhERrAyUng - 0개 스레드
+댓글 수집: Gn4sua9fdGg - 0개 스레드
+댓글 수집: aab8Gt4cxfE - 0개 스레드
+댓글 수집: U2Vwky0oOOw - 1개 스레드
+
+[API ERROR] 에러 발생, 재시도 중... (1/3)
+
+[API ERROR] 에러 발생, 재시도 중... (2/3)
+댓글 비활성화: vDRoqff_0k4
+댓글 수집: NUTlTTB2MbY - 0개 스레드
+댓글 수집: G-42GKmgz9g - 1개 스레드
+댓글 수집: yse8WpY6Mhw - 1개 스레드
+댓글 수집: 9GFkvSO0emc - 1개 스레드
+전체 댓글 수집 완료: 5623개
+Collected 5623 comments
+
+[Step 3/4] Summarizing comments (per video)...
+  Summarizing comments for video: McarPQqkNe8 (32 comments)
+  Summarizing comments for video: VvI0TtwsqX0 (101 comments)
+  Summarizing comments for video: TC9gerLc9UM (44 comments)
+  Summarizing comments for video: uSkKZVZ8YjE (61 comments)
+  Summarizing comments for video: xK__rWplpxA (34 comments)
+  Summarizing comments for video: 4inN41SS0qU (36 comments)
+  Summarizing comments for video: PTwisd6lius (27 comments)
+  Summarizing comments for video: XL0jo_AcpnA (70 comments)
+  Summarizing comments for video: 7l2o2fPdeeY (41 comments)
+  Summarizing comments for video: YTcl2ImdSfw (42 comments)
+  >>> Processed 10 videos, waiting 10 seconds...
+  Summarizing comments for video: qNn1SLTjA2g (30 comments)
+  Summarizing comments for video: -PqjQE_js-k (44 comments)
+  Summarizing comments for video: ifDa-Mp6dXo (34 comments)
+  Summarizing comments for video: DahDC_Gr2vE (34 comments)
+  Summarizing comments for video: sfdC6ohszvw (39 comments)
+  Summarizing comments for video: 1g8mu-dO-0U (50 comments)
+  Summarizing comments for video: BEAOVJvkUWI (41 comments)
+  Summarizing comments for video: v4SgsYWwdsI (62 comments)
+  Summarizing comments for video: sHORqUiMnfU (32 comments)
+  Summarizing comments for video: B3yYLjIGnV0 (28 comments)
+  >>> Processed 20 videos, waiting 10 seconds...
+  Summarizing comments for video: dBqCbIzwaA8 (32 comments)
+  Summarizing comments for video: uzexB8FJ5rU (32 comments)
+  Summarizing comments for video: pGcDg44JgdY (32 comments)
+  Summarizing comments for video: WIOXRNyDKII (26 comments)
+  Summarizing comments for video: nd-2fXZFq3k (26 comments)
+  Summarizing comments for video: 9X-3uLoRYp8 (45 comments)
+  Summarizing comments for video: m_LCI2rFDUY (76 comments)
+  Summarizing comments for video: ZrB743KzwE4 (40 comments)
+  Summarizing comments for video: dkB8QLsR_Kw (38 comments)
+  Summarizing comments for video: d_lW9kCWnak (52 comments)
+  >>> Processed 30 videos, waiting 10 seconds...
+  Summarizing comments for video: RA726k1libI (26 comments)
+  Summarizing comments for video: gdriFKO8Ye8 (56 comments)
+  Summarizing comments for video: S6Tmt7XqYgs (2 comments)
+  Summarizing comments for video: yTkCXDdheOc (33 comments)
+  Summarizing comments for video: vzM1nZ1mhOA (28 comments)
+  Summarizing comments for video: eoE_efA4zPs (35 comments)
+  Summarizing comments for video: SMTinDXEJ0c (31 comments)
+  Summarizing comments for video: X2qrcr7aUYk (10 comments)
+  Summarizing comments for video: O_z6_BiLUW8 (50 comments)
+  Summarizing comments for video: DqaMdM5hCTw (42 comments)
+  >>> Processed 40 videos, waiting 10 seconds...
+  Summarizing comments for video: F0asj2iNy0c (51 comments)
+  Summarizing comments for video: GSqMf0nDCZA (43 comments)
+  Summarizing comments for video: GtuX6xZISKA (48 comments)
+  Summarizing comments for video: 4TAjRimzwMk (33 comments)
+  Summarizing comments for video: EJ_Y4kZLZKM (28 comments)
+  Summarizing comments for video: uWK59xOJuMM (7 comments)
+  Summarizing comments for video: iaXaSomzm7I (36 comments)
+  Summarizing comments for video: gh2_6BbMHu0 (13 comments)
+  Summarizing comments for video: zj8X4lp7mTI (29 comments)
+  Summarizing comments for video: 4sxbphQBP4I (32 comments)
+  >>> Processed 50 videos, waiting 10 seconds...
+  Summarizing comments for video: kGgO-teMGJE (27 comments)
+  Summarizing comments for video: Mr399PiKUpw (30 comments)
+  Summarizing comments for video: 3lI-Unv6y0I (23 comments)
+  Summarizing comments for video: Tm7R193ba70 (29 comments)
+  Summarizing comments for video: 4J-gIc5FAHE (22 comments)
+  Summarizing comments for video: hzur8Y3vTw0 (32 comments)
+  Summarizing comments for video: 6WH-H3w2ExM (20 comments)
+  Summarizing comments for video: m9X0S8fAlB8 (21 comments)
+  Summarizing comments for video: tKMdEw21Srk (28 comments)
+  Summarizing comments for video: Lj8Y7IgsmaA (39 comments)
+  >>> Processed 60 videos, waiting 10 seconds...
+  Summarizing comments for video: 9-F7SbMcoxY (29 comments)
+  Summarizing comments for video: CMsgD1XCEFY (48 comments)
+  Summarizing comments for video: ELWr9HksRvk (31 comments)
+  Summarizing comments for video: rAyXusIy8RY (36 comments)
+  Summarizing comments for video: 53NtWlK74Lk (33 comments)
+  Summarizing comments for video: Muv1qmhjiKY (11 comments)
+  Summarizing comments for video: XVNojUqI9rY (35 comments)
+  Summarizing comments for video: 2x4bZazkIvk (32 comments)
+  Summarizing comments for video: 1S_6f87bOWw (24 comments)
+  Summarizing comments for video: cPaCeqqudmg (33 comments)
+  >>> Processed 70 videos, waiting 10 seconds...
+  Summarizing comments for video: sAO9IpxhNK8 (39 comments)
+  Summarizing comments for video: d8GqHIa6gjU (45 comments)
+  Summarizing comments for video: 9I8Az1hPhdM (28 comments)
+  Summarizing comments for video: 0eJ2W_jgC-w (28 comments)
+  Summarizing comments for video: zWIsnYhH-Lc (44 comments)
+  Summarizing comments for video: SOWSafcLSOw (23 comments)
+  Summarizing comments for video: GFUJaqzNHDA (44 comments)
+  Summarizing comments for video: P77-9xo2ogQ (19 comments)
+  Summarizing comments for video: 5Z1Ylf3UNiQ (50 comments)
+  Summarizing comments for video: xyk3VQ3LtnA (3 comments)
+  >>> Processed 80 videos, waiting 10 seconds...
+  Summarizing comments for video: lPwXsdpnbZI (31 comments)
+  Summarizing comments for video: HmoieK7pAiY (14 comments)
+  Summarizing comments for video: kSDKmYFks7k (19 comments)
+  Summarizing comments for video: bpnWEZrkxbg (26 comments)
+  Summarizing comments for video: J6tKFSpOLKw (21 comments)
+  Summarizing comments for video: trHR_ENGlXg (28 comments)
+  Summarizing comments for video: SYh3Mw0L4EY (16 comments)
+  Summarizing comments for video: Rgc2Iu5UgD0 (40 comments)
+  Summarizing comments for video: 3WnahoDKkyc (25 comments)
+  Summarizing comments for video: HGzvWjQ6hAs (22 comments)
+  >>> Processed 90 videos, waiting 10 seconds...
+  Summarizing comments for video: tTRPxBfpprY (29 comments)
+  Summarizing comments for video: PGOQze6E9ag (36 comments)
+  Summarizing comments for video: cPt60Ox9d2o (33 comments)
+  Summarizing comments for video: Vz8H26KtHpE (8 comments)
+  Summarizing comments for video: L60zs804qaI (34 comments)
+  Summarizing comments for video: wb8KmjzgREE (28 comments)
+  Summarizing comments for video: 6t5UV1CrhzQ (27 comments)
+  Summarizing comments for video: oWKUBnmFxoc (39 comments)
+  Summarizing comments for video: ubyA0-ged74 (50 comments)
+  Summarizing comments for video: iDMzl5qBDyY (7 comments)
+  >>> Processed 100 videos, waiting 10 seconds...
+  Summarizing comments for video: KL8vnZ3lrQg (55 comments)
+  Summarizing comments for video: VUqb5O_yV4M (29 comments)
+  Summarizing comments for video: 93Khs-rwqSQ (31 comments)
+  Summarizing comments for video: tJ6HcpxDzyc (8 comments)
+  Summarizing comments for video: z7bwUiDmgJk (36 comments)
+  Summarizing comments for video: _bmcb5utybI (5 comments)
+  Summarizing comments for video: K8aKOBgwsJk (30 comments)
+  Summarizing comments for video: OpEEzjf-MyA (41 comments)
+  Summarizing comments for video: 2H9MIFED8dA (34 comments)
+  Summarizing comments for video: wcsk5fRUqzc (17 comments)
+  >>> Processed 110 videos, waiting 10 seconds...
+  Summarizing comments for video: Xyyt5dewdQs (27 comments)
+  Summarizing comments for video: loHDQL3KJIY (59 comments)
+  Summarizing comments for video: 0cnIWOpkv5E (38 comments)
+  Summarizing comments for video: Fee_VqxpsgQ (13 comments)
+  Summarizing comments for video: DuAdCmxYGLQ (25 comments)
+  Summarizing comments for video: MyuHxmbaLJc (21 comments)
+  Summarizing comments for video: P8G4WZbISKE (27 comments)
+  Summarizing comments for video: 4MF8SkJBecA (16 comments)
+  Summarizing comments for video: padLk80894k (45 comments)
+  Summarizing comments for video: WUMC726j1Fg (34 comments)
+  >>> Processed 120 videos, waiting 10 seconds...
+  Summarizing comments for video: mCkSzjUCJTQ (27 comments)
+  Summarizing comments for video: ea8a6SkDWUs (31 comments)
+  Summarizing comments for video: 1T4AXuXWj4M (40 comments)
+  Summarizing comments for video: Oq2kZafz8PM (28 comments)
+  Summarizing comments for video: tizwC4yA9Yc (30 comments)
+  Summarizing comments for video: W1jJMXDCPlg (43 comments)
+  Summarizing comments for video: gN68jidBE1I (44 comments)
+  Summarizing comments for video: t1HFz6sB0bk (12 comments)
+  Summarizing comments for video: IJZRiBHzcOA (27 comments)
+  Summarizing comments for video: enDkR_qN-8E (11 comments)
+  >>> Processed 130 videos, waiting 10 seconds...
+  Summarizing comments for video: Gez9vLKiDLA (5 comments)
+  Summarizing comments for video: 8gVj0sEGemc (46 comments)
+  Summarizing comments for video: 0_c1C40zHBM (28 comments)
+  Summarizing comments for video: VKskc_moONg (21 comments)
+  Summarizing comments for video: hlU0xsL300Y (10 comments)
+  Summarizing comments for video: V8UELS4di2g (45 comments)
+  Summarizing comments for video: YbuJ1XW_LSg (10 comments)
+  Summarizing comments for video: Wielg45aejI (29 comments)
+  Summarizing comments for video: Ivyc--yt2Ek (20 comments)
+  Summarizing comments for video: G_JtyMN8_lM (6 comments)
+  >>> Processed 140 videos, waiting 10 seconds...
+  Summarizing comments for video: jNKSz9Hq9rs (26 comments)
+  Summarizing comments for video: 0pmvZK6PFq8 (22 comments)
+  Summarizing comments for video: F6FbIybVXiU (2 comments)
+  Summarizing comments for video: opMoQmvE8qk (20 comments)
+  Summarizing comments for video: wynIHEZGQys (24 comments)
+  Summarizing comments for video: zycVug3YP50 (2 comments)
+  Summarizing comments for video: fd-FA_uGuUc (28 comments)
+  Summarizing comments for video: bMcYMDHicXY (32 comments)
+  Summarizing comments for video: y8KiYgAKAlI (12 comments)
+  Summarizing comments for video: FZHBhNeySzk (3 comments)
+  >>> Processed 150 videos, waiting 10 seconds...
+  Summarizing comments for video: 4URSz919dwA (5 comments)
+  Summarizing comments for video: JkkaGJoPKTA (20 comments)
+  Summarizing comments for video: iytdkin3b_c (11 comments)
+  Summarizing comments for video: a_Zq7VmerlI (19 comments)
+  Summarizing comments for video: 1LpMS1Oqcvg (8 comments)
+  Summarizing comments for video: -V0x4lFVDuo (33 comments)
+  Summarizing comments for video: FK3Mc28N-fk (20 comments)
+  Summarizing comments for video: zzT0xrwAW1s (2 comments)
+  Summarizing comments for video: -KszoNjp3DU (14 comments)
+  Summarizing comments for video: bZ4U5F4L7HM (37 comments)
+  >>> Processed 160 videos, waiting 10 seconds...
+  Summarizing comments for video: oqCSnDkXrdU (1 comments)
+  Summarizing comments for video: NcbXH9COeeg (13 comments)
+  Summarizing comments for video: CsDufmUiKvM (27 comments)
+  Summarizing comments for video: y94aYVSJ6os (1 comments)
+  Summarizing comments for video: A1e1QkPg4cQ (10 comments)
+  Summarizing comments for video: 9bfYrJbmZK8 (3 comments)
+  Summarizing comments for video: cASCEs2gCHw (8 comments)
+  Summarizing comments for video: zmIw2UnIqw8 (32 comments)
+  Summarizing comments for video: rmsvl9bcx8U (4 comments)
+  Summarizing comments for video: AnyQFpJkaOg (13 comments)
+  >>> Processed 170 videos, waiting 10 seconds...
+  Summarizing comments for video: CKr4ZZV_lVQ (9 comments)
+  Summarizing comments for video: UkBS6gzxiRI (36 comments)
+  Summarizing comments for video: VPYHc59UtsA (8 comments)
+  Summarizing comments for video: RIc8J5rx98U (20 comments)
+  Summarizing comments for video: Ti2rdeO0fDI (2 comments)
+  Summarizing comments for video: gRWizskRFGo (14 comments)
+  Summarizing comments for video: I5YqPUzMIug (17 comments)
+  Summarizing comments for video: OuO9R4Lc4i8 (1 comments)
+  Summarizing comments for video: arOPs1UihMs (1 comments)
+  Summarizing comments for video: 06btKxphjK8 (31 comments)
+  >>> Processed 180 videos, waiting 10 seconds...
+  Summarizing comments for video: 2lwllCjoLGk (2 comments)
+  Summarizing comments for video: xHG7ZIIiD2Y (2 comments)
+  Summarizing comments for video: UntcNeePX8o (1 comments)
+  Summarizing comments for video: Qij5_HHt-kk (7 comments)
+  Summarizing comments for video: 2nOfDGw97jE (5 comments)
+  Summarizing comments for video: 6WQaXKH9X4A (2 comments)
+  Summarizing comments for video: V24UQtCI5VM (14 comments)
+  Summarizing comments for video: llkqUbN06-A (3 comments)
+  Summarizing comments for video: R3VHi2-7GmQ (11 comments)
+  Summarizing comments for video: s2SSvo7W2Pg (1 comments)
+  >>> Processed 190 videos, waiting 10 seconds...
+  Summarizing comments for video: pUUk05AdOxI (3 comments)
+  Summarizing comments for video: dnyxgH9jYb0 (11 comments)
+  Summarizing comments for video: Ldsd-xXJHUk (2 comments)
+  Summarizing comments for video: tuw4hSJiByY (1 comments)
+  Summarizing comments for video: 8B7xGfTdvyc (25 comments)
+  Summarizing comments for video: kOjfEt9Cp2k (1 comments)
+  Summarizing comments for video: I03wyT650kQ (1 comments)
+  Summarizing comments for video: 3TPVmmsuLzg (5 comments)
+  Summarizing comments for video: GmGYmBkw0Mo (6 comments)
+  Summarizing comments for video: UJEYyll_grw (1 comments)
+  >>> Processed 200 videos, waiting 10 seconds...
+  Summarizing comments for video: wYua_Hk3JhQ (16 comments)
+  Summarizing comments for video: uiT86hH8-7Q (3 comments)
+  Summarizing comments for video: 7I1elOBp--k (2 comments)
+  Summarizing comments for video: 9JkcHH4m31M (11 comments)
+  Summarizing comments for video: LZduWCTsnK4 (2 comments)
+  Summarizing comments for video: fa12BfNeClc (4 comments)
+  Summarizing comments for video: hBsm4q5BUis (8 comments)
+  Summarizing comments for video: ctqdx3NQ2kw (3 comments)
+  Summarizing comments for video: qx1LCw8PQSY (5 comments)
+  Summarizing comments for video: 742rkVqA4m4 (11 comments)
+  >>> Processed 210 videos, waiting 10 seconds...
+  Summarizing comments for video: CnNahMLKtDY (9 comments)
+  Summarizing comments for video: EksAnaoS7wE (6 comments)
+  Summarizing comments for video: L0n4Ww9o8Pw (20 comments)
+  Summarizing comments for video: ZMbLrIsQ-aQ (2 comments)
+  Summarizing comments for video: 3e7x6BZYGTI (3 comments)
+  Summarizing comments for video: DpOpp60X0T0 (6 comments)
+  Summarizing comments for video: c6AjQgzHdFU (9 comments)
+  Summarizing comments for video: hledRD72Ijg (16 comments)
+  Summarizing comments for video: wl_9fJVYo4g (1 comments)
+  Summarizing comments for video: uk7XNybuWjI (8 comments)
+  >>> Processed 220 videos, waiting 10 seconds...
+  Summarizing comments for video: q6sOPbC32kY (1 comments)
+  Summarizing comments for video: Qvp4hYSbLMg (1 comments)
+  Summarizing comments for video: qOGBeVX8B74 (1 comments)
+  Summarizing comments for video: LzEGlVkcsFY (1 comments)
+  Summarizing comments for video: EsSli2zv2Qs (1 comments)
+  Summarizing comments for video: Rpw8TjSNKlQ (9 comments)
+  Summarizing comments for video: lABGc1ief2g (3 comments)
+  Summarizing comments for video: ujjzWUJHkU0 (1 comments)
+  Summarizing comments for video: rUllYbarn94 (1 comments)
+  Summarizing comments for video: SkkpzOuDkN4 (2 comments)
+  >>> Processed 230 videos, waiting 10 seconds...
+  Summarizing comments for video: lBqSnu_ztGw (10 comments)
+  Summarizing comments for video: ZIhIoDsN01g (1 comments)
+  Summarizing comments for video: oWPYkKQSe98 (1 comments)
+  Summarizing comments for video: 0SkrCQyZB1k (4 comments)
+  Summarizing comments for video: C20XPGNHGtA (1 comments)
+  Summarizing comments for video: a84P8ddEybY (14 comments)
+  Summarizing comments for video: mc80n4VW9bU (2 comments)
+  Summarizing comments for video: ojBRVS-L8aM (1 comments)
+  Summarizing comments for video: 18c_1BZQI4w (3 comments)
+  Summarizing comments for video: ky-bapHZaK4 (1 comments)
+  >>> Processed 240 videos, waiting 10 seconds...
+  Summarizing comments for video: Z9wPW_89Ro0 (3 comments)
+  Summarizing comments for video: Om6IAxcqAbY (3 comments)
+  Summarizing comments for video: jRGSQximC4c (3 comments)
+  Summarizing comments for video: tp29O6xt-nk (7 comments)
+  Summarizing comments for video: uILfnbPhVJY (4 comments)
+  Summarizing comments for video: F62t9G-BKCA (1 comments)
+  Summarizing comments for video: QBJ7u0K17bE (1 comments)
+  Summarizing comments for video: jV10qLNTxLA (5 comments)
+  Summarizing comments for video: RprLSconeKE (2 comments)
+  Summarizing comments for video: P00ZC9rse8o (4 comments)
+  >>> Processed 250 videos, waiting 10 seconds...
+  Summarizing comments for video: 43xVBM88-J0 (2 comments)
+  Summarizing comments for video: 446-Nx5wuTM (6 comments)
+  Summarizing comments for video: ufiing-YVtE (1 comments)
+  Summarizing comments for video: Foz4DVnFlHs (2 comments)
+  Summarizing comments for video: 5ihfJsqpKcU (7 comments)
+  Summarizing comments for video: fskK40sXZNY (5 comments)
+  Summarizing comments for video: 9-_Utp-WJKs (1 comments)
+  Summarizing comments for video: VG35-zarS0k (1 comments)
+  Summarizing comments for video: GbtdeNk3g74 (7 comments)
+  Summarizing comments for video: MADIDOFE4Ik (1 comments)
+  >>> Processed 260 videos, waiting 10 seconds...
+  Summarizing comments for video: 2vMUgYGBcGQ (2 comments)
+  Summarizing comments for video: hvkx5yP-JwA (2 comments)
+  Summarizing comments for video: NE2Q76eFMzI (1 comments)
+  Summarizing comments for video: cUU9Nw2YfBE (3 comments)
+  Summarizing comments for video: J8XmOOujt4E (1 comments)
+  Summarizing comments for video: DiEyJ2u6NYs (1 comments)
+  Summarizing comments for video: 0h-6v9xzHEU (1 comments)
+  Summarizing comments for video: vsFFk28MHRI (2 comments)
+  Summarizing comments for video: eCnnZNTuIe4 (9 comments)
+  Summarizing comments for video: KWSF3bcAxPs (4 comments)
+  >>> Processed 270 videos, waiting 10 seconds...
+  Summarizing comments for video: s08iFrTeShc (2 comments)
+  Summarizing comments for video: b4TFq3OgDRo (1 comments)
+  Summarizing comments for video: orjBI-xk1QA (3 comments)
+  Summarizing comments for video: OzzFCe0E26g (2 comments)
+  Summarizing comments for video: aL2TX7C1Dj8 (1 comments)
+  Summarizing comments for video: B2ZAnw_OXrM (1 comments)
+  Summarizing comments for video: uUOjR1v0j1M (1 comments)
+  Summarizing comments for video: 7gt7pqc3y-8 (2 comments)
+  Summarizing comments for video: wzpOCa4gOz0 (1 comments)
+  Summarizing comments for video: Pk-uAsXJqBM (2 comments)
+  >>> Processed 280 videos, waiting 10 seconds...
+  Summarizing comments for video: m8RB6MLRuYk (3 comments)
+  Summarizing comments for video: S3YCThqvj1k (6 comments)
+  Summarizing comments for video: nGnrzfSjG6A (2 comments)
+  Summarizing comments for video: kgOF9fdfGBI (2 comments)
+  Summarizing comments for video: diwfiQldHI4 (1 comments)
+  Summarizing comments for video: YHevF1_acHA (2 comments)
+  Summarizing comments for video: yckA-bpNMoU (11 comments)
+  Summarizing comments for video: B6xI4B4JuwM (2 comments)
+  Summarizing comments for video: 04tpsWGDdWg (1 comments)
+  Summarizing comments for video: LTUjXk01KaQ (2 comments)
+  >>> Processed 290 videos, waiting 10 seconds...
+  Summarizing comments for video: RzX6iqjh0NQ (5 comments)
+  Summarizing comments for video: FiEx7nDFH-U (1 comments)
+  Summarizing comments for video: HwMEdFJaPLc (16 comments)
+  Summarizing comments for video: FfvEkNXq_1M (3 comments)
+  Summarizing comments for video: fR18ZAgcGso (4 comments)
+  Summarizing comments for video: bmqu9XDPvPM (1 comments)
+  Summarizing comments for video: -PYdjccNcrY (2 comments)
+  Summarizing comments for video: l4tMaBFn84w (1 comments)
+  Summarizing comments for video: fAxoGS2PJ9I (1 comments)
+  Summarizing comments for video: 4dRlkr-zL2A (3 comments)
+  >>> Processed 300 videos, waiting 10 seconds...
+  Summarizing comments for video: XsrtQw2ZByE (2 comments)
+  Summarizing comments for video: 21PSRC8RU9k (2 comments)
+  Summarizing comments for video: Z8rSCaBlI8Y (5 comments)
+  Summarizing comments for video: rorkoXYYzZk (1 comments)
+  Summarizing comments for video: 4477JG2opKY (9 comments)
+  Summarizing comments for video: B2w8BAcPyh0 (5 comments)
+  Summarizing comments for video: EKNw7r-eGLw (2 comments)
+  Summarizing comments for video: NaAJkIa6qxw (7 comments)
+  Summarizing comments for video: 2uzatIqjabU (5 comments)
+  Summarizing comments for video: Svior5ZP_is (1 comments)
+  >>> Processed 310 videos, waiting 10 seconds...
+  Summarizing comments for video: EO8K6zp-n1s (1 comments)
+  Summarizing comments for video: QgugYCemDc0 (1 comments)
+  Summarizing comments for video: j4m7IT3e1IA (1 comments)
+  Summarizing comments for video: eNZDDAjS97g (1 comments)
+  Summarizing comments for video: LGlt5SN0oeA (11 comments)
+  Summarizing comments for video: JlOEpE0cKwc (1 comments)
+  Summarizing comments for video: vRd5cG52vV4 (1 comments)
+  Summarizing comments for video: dL2AVkqKoSQ (2 comments)
+  Summarizing comments for video: aA88UTljX2Y (7 comments)
+  Summarizing comments for video: R3F3lPk9gaQ (2 comments)
+  >>> Processed 320 videos, waiting 10 seconds...
+  Summarizing comments for video: CEwURduxH_A (2 comments)
+  Summarizing comments for video: XjK5tUukfnU (1 comments)
+  Summarizing comments for video: a6e80RmnCb4 (1 comments)
+  Summarizing comments for video: lvXHNE-jl7g (5 comments)
+  Summarizing comments for video: iJUdVY00iIk (1 comments)
+  Summarizing comments for video: urLwkkXXBUc (1 comments)
+  Summarizing comments for video: esRD0pF0FXM (1 comments)
+  Summarizing comments for video: e0KKJOYiQiY (1 comments)
+  Summarizing comments for video: IC4EIBLBDrg (1 comments)
+  Summarizing comments for video: mhSB7wNt6bQ (1 comments)
+  >>> Processed 330 videos, waiting 10 seconds...
+  Summarizing comments for video: -xDgLAkGfe4 (1 comments)
+  Summarizing comments for video: wwml3sCMeXY (1 comments)
+  Summarizing comments for video: sg6jFn_6iuo (1 comments)
+  Summarizing comments for video: mUEtziU0dNk (1 comments)
+  Summarizing comments for video: U2Vwky0oOOw (1 comments)
+  Summarizing comments for video: G-42GKmgz9g (1 comments)
+  Summarizing comments for video: yse8WpY6Mhw (1 comments)
+  Summarizing comments for video: 9GFkvSO0emc (1 comments)
+Summarized comments for 338 videos
+
+[Step 4/4] Saving data...
+  CSV saving disabled (save_csv=False)
+Connected to PostgreSQL database: samsung_dx_sentiment
+Tables created successfully (including youtube_videos_raw)
+Inserted/Updated 747 raw videos
+Inserted/Updated 577 videos
+Inserted/Updated 5623 comments
+Saved to PostgreSQL:
+  - 747 raw videos (all collected)
+  - 577 filtered videos
+  - 5623 comments
+Disconnected from database
+
+================================================================================
+Pipeline completed successfully!
+================================================================================
+Total videos processed: 577
+Total comments processed: 5623
+Videos with comment summary: 338
+Connected to PostgreSQL database: samsung_dx_sentiment
+
+Database Statistics:
+  Total videos in DB: 577
+  Total comments in DB: 5623
+Disconnected from database
+  [INFO] Country filter: 577 → 61 videos (US only)
+  Updated keyword for 61 videos
+
+[OK] 'Samsung QLED' completed: 61 videos, 578 comments
+
+================================================================================
+Batch Collection Summary
+================================================================================
+Completed at: 2025-11-10 18:51:59
+
+Keywords processed: 1/1
+Total videos collected: 61
+Total comments collected: 578
+
+================================================================================

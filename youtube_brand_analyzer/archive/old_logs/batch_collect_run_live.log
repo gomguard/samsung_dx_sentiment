@@ -1,0 +1,252 @@
+YouTubeAnalyzer 초기화: 8개 API 키 사용 가능
+================================================================================
+YouTube Batch Data Collection
+================================================================================
+Started at: 2025-11-12 19:46:42
+Dry run: False
+================================================================================
+
+Found 44 active keywords:
+
+  1. 'Samsung QLED TV Launch' - 500 videos, 100 comments/video, region: US
+  2. 'Samsung OLED TV Launch' - 500 videos, 100 comments/video, region: US
+  3. 'Samsung Galaxy Z Flip Launch Color' - 500 videos, 100 comments/video, region: US
+  4. 'Samsung Galaxy Z Fold Launch Color' - 500 videos, 100 comments/video, region: US
+  5. 'Lenovo Launch Color' - 500 videos, 100 comments/video, region: US
+  6. 'moto Launch Color' - 500 videos, 100 comments/video, region: US
+  7. 'Google Launch Color' - 500 videos, 100 comments/video, region: US
+  8. 'Samsung Galaxy Launch Storage' - 500 videos, 100 comments/video, region: US
+  9. 'Samsung Flip Launch Storage' - 500 videos, 100 comments/video, region: US
+  10. 'Samsung Fold Launch Storage' - 500 videos, 100 comments/video, region: US
+  11. 'Samsung Galaxy S Launch Storage' - 500 videos, 100 comments/video, region: US
+  12. 'Samsung Galaxy Note Launch Storage' - 500 videos, 100 comments/video, region: US
+  13. 'Samsung Galaxy Z Flip Launch Storage' - 500 videos, 100 comments/video, region: US
+  14. 'Samsung Galaxy Z Fold Launch Storage' - 500 videos, 100 comments/video, region: US
+  15. 'Samsung Galaxy A Launch Storage' - 500 videos, 100 comments/video, region: US
+  16. 'Lenovo Launch Storage' - 500 videos, 100 comments/video, region: US
+  17. 'moto Launch Storage' - 500 videos, 100 comments/video, region: US
+  18. 'Google Launch Storage' - 500 videos, 100 comments/video, region: US
+  19. 'Pixel Launch Storage' - 500 videos, 100 comments/video, region: US
+  20. 'Samsung Neo QLED 8K TV Launch' - 500 videos, 100 comments/video, region: US
+  21. 'Samsung FHD TV Launch' - 500 videos, 100 comments/video, region: US
+  22. 'QNED TV Launch' - 500 videos, 100 comments/video, region: US
+  23. 'Evo TV Launch' - 500 videos, 100 comments/video, region: US
+  24. 'Samsung Flip Launch Color' - 500 videos, 100 comments/video, region: US
+  25. 'Samsung Fold Launch Color' - 500 videos, 100 comments/video, region: US
+  26. 'Samsung Galaxy Note Launch Color' - 500 videos, 100 comments/video, region: US
+  27. 'Samsung 4K TV Launch' - 500 videos, 100 comments/video, region: US
+  28. 'Samsung 8K TV Launch' - 500 videos, 100 comments/video, region: US
+  29. 'Samsung Smart TV Launch' - 500 videos, 100 comments/video, region: US
+  30. 'Samsung UHD TV Launch' - 500 videos, 100 comments/video, region: US
+  31. 'iPhone Launch Storage' - 500 videos, 100 comments/video, region: US
+  32. 'Samsung Neo QLED TV Launch' - 500 videos, 100 comments/video, region: US
+  33. 'Samsung HD TV Launch' - 500 videos, 100 comments/video, region: US
+  34. 'LG TV Launch' - 500 videos, 100 comments/video, region: US
+  35. 'TCL TV Launch' - 500 videos, 100 comments/video, region: US
+  36. 'LED TV Launch' - 500 videos, 100 comments/video, region: US
+  37. 'Mini LED TV Launch' - 500 videos, 100 comments/video, region: US
+  38. 'Samsung Galaxy Launch Color' - 500 videos, 100 comments/video, region: US
+  39. 'Samsung Galaxy S Launch Color' - 500 videos, 100 comments/video, region: US
+  40. 'Samsung Galaxy A Launch Color' - 500 videos, 100 comments/video, region: US
+  41. 'Apple Launch Color' - 500 videos, 100 comments/video, region: US
+  42. 'iPhone Launch Color' - 500 videos, 100 comments/video, region: US
+  43. 'Pixel Launch Color' - 500 videos, 100 comments/video, region: US
+  44. 'Apple Launch Storage' - 500 videos, 100 comments/video, region: US
+
+================================================================================
+
+================================================================================
+Processing keyword 1/44: 'Samsung QLED TV Launch'
+================================================================================
+================================================================================
+YouTube Data Collection & Analysis Pipeline
+================================================================================
+Keyword: Samsung QLED TV Launch
+Max videos: 500
+Max comments per video: 100
+Region: US
+Summarize comments: True
+Analyze sentiment: False
+================================================================================
+
+[Step 1/4] Collecting video data from YouTube API (500 videos with quality filter)...
+
+================================================================================
+품질 필터링 모드 활성화:
+  - 채널 국가: US (US 채널만)
+  - 카테고리: 28 (Science & Technology)
+  - 최소 구독자: 10,000 OR 채널 총 조회수: 100,000,000
+  - 최소 참여율: 2.0%
+  - 목표 비디오 수: 500개
+  - 배치 크기: 50개씩 수집
+================================================================================
+
+
+[배치 1] 50개 비디오 수집 중...
+
+[QUOTA EXCEEDED] API 할당량 초과 감지
+
+[KEY ROTATION] API 키 #2로 전환됨 (잔여 키: 6개)
+[RETRY] 새 API 키로 재시도...
+
+[QUOTA EXCEEDED] API 할당량 초과 감지
+
+[KEY ROTATION] API 키 #3로 전환됨 (잔여 키: 5개)
+[RETRY] 새 API 키로 재시도...
+
+[QUOTA EXCEEDED] API 할당량 초과 감지
+
+[KEY ROTATION] API 키 #4로 전환됨 (잔여 키: 4개)
+[RETRY] 새 API 키로 재시도...
+  비디오 ID 50개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 29개 채널
+  비디오 상세 정보 완료: 50개
+  품질 필터 적용 중...
+  필터 결과: 0개 통과 / 50개
+    - 채널 국가 불일치: 50개
+    - 카테고리 불일치: 7개
+    - 채널 규모 미달: 3개
+    - 참여율 미달: 29개
+  누적 필터링된 비디오: 0개 / 목표: 500개
+  [경고] 연속 1번째 빈 배치 (새 비디오 없음)
+
+[배치 2] 50개 비디오 수집 중...
+  비디오 ID 50개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 33개 채널
+  비디오 상세 정보 완료: 50개
+  품질 필터 적용 중...
+  필터 결과: 0개 통과 / 50개
+    - 채널 국가 불일치: 49개
+    - 카테고리 불일치: 12개
+    - 채널 규모 미달: 2개
+    - 참여율 미달: 40개
+  누적 필터링된 비디오: 0개 / 목표: 500개
+  [경고] 연속 2번째 빈 배치 (새 비디오 없음)
+
+[배치 3] 50개 비디오 수집 중...
+  비디오 ID 50개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 35개 채널
+  비디오 상세 정보 완료: 50개
+  품질 필터 적용 중...
+  필터 결과: 0개 통과 / 50개
+    - 채널 국가 불일치: 50개
+    - 카테고리 불일치: 10개
+    - 채널 규모 미달: 4개
+    - 참여율 미달: 37개
+  누적 필터링된 비디오: 0개 / 목표: 500개
+  [경고] 연속 3번째 빈 배치 (새 비디오 없음)
+
+[조기 종료] 3번 연속 새 비디오 없음 - 더 이상 수집 가능한 비디오 없음
+수집된 비디오: 0개 (목표: 500개)
+
+================================================================================
+수집 완료: samsung qled tv launch in US
+  - 총 수집 비디오 수: 150개
+  - 필터링 후: 0개
+  - Raw 데이터: 150개
+  - 최종 반환: 0개
+  - 총 API 호출 수: 9
+================================================================================
+
+No videos found!
+
+[WARN] 'Samsung QLED TV Launch' returned no data
+
+Waiting 30 seconds before next keyword...
+
+================================================================================
+Processing keyword 2/44: 'Samsung OLED TV Launch'
+================================================================================
+================================================================================
+YouTube Data Collection & Analysis Pipeline
+================================================================================
+Keyword: Samsung OLED TV Launch
+Max videos: 500
+Max comments per video: 100
+Region: US
+Summarize comments: True
+Analyze sentiment: False
+================================================================================
+
+[Step 1/4] Collecting video data from YouTube API (500 videos with quality filter)...
+
+================================================================================
+품질 필터링 모드 활성화:
+  - 채널 국가: US (US 채널만)
+  - 카테고리: 28 (Science & Technology)
+  - 최소 구독자: 10,000 OR 채널 총 조회수: 100,000,000
+  - 최소 참여율: 2.0%
+  - 목표 비디오 수: 500개
+  - 배치 크기: 50개씩 수집
+================================================================================
+
+
+[배치 1] 50개 비디오 수집 중...
+  비디오 ID 50개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 31개 채널
+  비디오 상세 정보 완료: 50개
+  품질 필터 적용 중...
+  필터 결과: 0개 통과 / 50개
+    - 채널 국가 불일치: 49개
+    - 카테고리 불일치: 12개
+    - 채널 규모 미달: 3개
+    - 참여율 미달: 34개
+  누적 필터링된 비디오: 0개 / 목표: 500개
+  [경고] 연속 1번째 빈 배치 (새 비디오 없음)
+
+[배치 2] 50개 비디오 수집 중...
+  비디오 ID 50개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 34개 채널
+  비디오 상세 정보 완료: 50개
+  품질 필터 적용 중...
+  필터 결과: 0개 통과 / 50개
+    - 채널 국가 불일치: 48개
+    - 카테고리 불일치: 10개
+    - 채널 규모 미달: 2개
+    - 참여율 미달: 39개
+  누적 필터링된 비디오: 0개 / 목표: 500개
+  [경고] 연속 2번째 빈 배치 (새 비디오 없음)
+
+[배치 3] 50개 비디오 수집 중...
+  더 이상 수집할 비디오가 없습니다 (총 12개 수집)
+  비디오 ID 12개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 12개 채널
+  비디오 상세 정보 완료: 12개
+  품질 필터 적용 중...
+  필터 결과: 0개 통과 / 12개
+    - 채널 국가 불일치: 10개
+    - 카테고리 불일치: 6개
+    - 채널 규모 미달: 8개
+    - 참여율 미달: 10개
+  누적 필터링된 비디오: 0개 / 목표: 500개
+  [경고] 연속 3번째 빈 배치 (새 비디오 없음)
+
+[조기 종료] 3번 연속 새 비디오 없음 - 더 이상 수집 가능한 비디오 없음
+수집된 비디오: 0개 (목표: 500개)
+
+================================================================================
+수집 완료: samsung oled tv launch in US
+  - 총 수집 비디오 수: 112개
+  - 필터링 후: 0개
+  - Raw 데이터: 112개
+  - 최종 반환: 0개
+  - 총 API 호출 수: 9
+================================================================================
+
+No videos found!
+
+[WARN] 'Samsung OLED TV Launch' returned no data
+
+Waiting 30 seconds before next keyword...

@@ -1,0 +1,616 @@
+================================================================================
+YouTube Videos Å×ÀÌºí Àç±¸¼º
+================================================================================
+½ÃÀÛ ½Ã°£: 2025-11-10 18:39:33
+
+Connected to PostgreSQL database: samsung_dx_sentiment
+[Step 1/5] youtube_videos_raw Å×ÀÌºí Åë°è
+  ÃÑ ºñµð¿À: 548
+  °íÀ¯ Ã¤³Î: 345
+  US Ã¤³Î ºñµð¿À: 52
+  Science & Tech Ä«Å×°í¸®: 255
+
+[Step 2/5] ÇÊÅÍ¸µ ±âÁØ Àû¿ë (US + category 28 + engagement >= 2% + subscribers >= 10k)
+  ÇÊÅÍ¸µ Åë°ú: 5°³ ºñµð¿À
+  ºñµð¿À ID: ['UkBS6gzxiRI', 'm_LCI2rFDUY', 'VvI0TtwsqX0', 'V8UELS4di2g', 'YbuJ1XW_LSg']... (Ã³À½ 5°³)
+
+[Step 3/5] 5°³ ºñµð¿ÀÀÇ ´ñ±Û ¼öÁý Áß...
+YouTubeAnalyzer ÃÊ±âÈ­: 7°³ API Å° »ç¿ë °¡´É
+´ñ±Û ¼öÁý: UkBS6gzxiRI - 20°³ ½º·¹µå
+
+[QUOTA EXCEEDED] API ÇÒ´ç·® ÃÊ°ú °¨Áö
+
+[KEY ROTATION] API Å° #2·Î ÀüÈ¯µÊ (ÀÜ¿© Å°: 5°³)
+[RETRY] »õ API Å°·Î Àç½Ãµµ...
+´ñ±Û ¼öÁý: m_LCI2rFDUY - 20°³ ½º·¹µå
+´ñ±Û ¼öÁý: VvI0TtwsqX0 - 20°³ ½º·¹µå
+
+[QUOTA EXCEEDED] API ÇÒ´ç·® ÃÊ°ú °¨Áö
+
+[KEY ROTATION] API Å° #3·Î ÀüÈ¯µÊ (ÀÜ¿© Å°: 4°³)
+[RETRY] »õ API Å°·Î Àç½Ãµµ...
+
+[QUOTA EXCEEDED] API ÇÒ´ç·® ÃÊ°ú °¨Áö
+
+[KEY ROTATION] API Å° #4·Î ÀüÈ¯µÊ (ÀÜ¿© Å°: 3°³)
+[RETRY] »õ API Å°·Î Àç½Ãµµ...
+
+[QUOTA EXCEEDED] API ÇÒ´ç·® ÃÊ°ú °¨Áö
+
+[KEY ROTATION] API Å° #5·Î ÀüÈ¯µÊ (ÀÜ¿© Å°: 2°³)
+[RETRY] »õ API Å°·Î Àç½Ãµµ...
+
+[QUOTA EXCEEDED] API ÇÒ´ç·® ÃÊ°ú °¨Áö
+
+[KEY ROTATION] API Å° #6·Î ÀüÈ¯µÊ (ÀÜ¿© Å°: 1°³)
+[RETRY] »õ API Å°·Î Àç½Ãµµ...
+
+[QUOTA EXCEEDED] API ÇÒ´ç·® ÃÊ°ú °¨Áö
+
+[KEY ROTATION] API Å° #7·Î ÀüÈ¯µÊ (ÀÜ¿© Å°: 0°³)
+[RETRY] »õ API Å°·Î Àç½Ãµµ...
+´ñ±Û ¼öÁý: V8UELS4di2g - 20°³ ½º·¹µå
+´ñ±Û ¼öÁý: YbuJ1XW_LSg - 6°³ ½º·¹µå
+ÀüÃ¼ ´ñ±Û ¼öÁý ¿Ï·á: 268°³
+  ¼öÁýµÈ ´ñ±Û: 268°³
+
+[Step 4/5] ´ñ±Û ¿ä¾à »ý¼º Áß...
+  Summarizing: UkBS6gzxiRI (36 comments)
+  Summarizing: m_LCI2rFDUY (76 comments)
+  Summarizing: VvI0TtwsqX0 (101 comments)
+  Summarizing: V8UELS4di2g (45 comments)
+  Summarizing: YbuJ1XW_LSg (10 comments)
+  »ý¼ºµÈ ¿ä¾à: 5°³
+
+[Step 5/5] youtube_videos Å×ÀÌºí¿¡ µ¥ÀÌÅÍ »ðÀÔ...
+  ±âÁ¸ youtube_videos Å×ÀÌºí µ¥ÀÌÅÍ »èÁ¦ ¿Ï·á
+  »ðÀÔ ¿Ï·á: 5°³ ºñµð¿À
+  ´ñ±Û µ¥ÀÌÅÍ »ðÀÔ Áß...
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: column "author_display_name" of relation "youtube_comments" does not exist
+LINE 4:                     author_display_name, author_channel_id,
+                            ^
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  [WARNING] ´ñ±Û »ðÀÔ ½ÇÆÐ: current transaction is aborted, commands ignored until end of transaction block
+
+  ´ñ±Û »ðÀÔ ¿Ï·á: 0°³
+
+================================================================================
+¿Ï·á ¿ä¾à
+================================================================================
+youtube_videos Å×ÀÌºí: 5°³ ºñµð¿À
+youtube_comments Å×ÀÌºí: 0°³ ´ñ±Û
+¿Ï·á ½Ã°£: 2025-11-10 18:40:13
+================================================================================
+Disconnected from database

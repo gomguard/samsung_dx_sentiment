@@ -51,7 +51,8 @@ class CommentSummarizer:
         # 댓글 텍스트 추출
         comment_texts = []
         for comment in top_comments:
-            text = comment.get('comment_text_original', '')
+            # comment_text_display 또는 comment_text_original 둘 다 시도
+            text = comment.get('comment_text_display', '') or comment.get('comment_text_original', '')
             if text and len(text) > 0:
                 comment_texts.append(text)
 
@@ -93,29 +94,29 @@ class CommentSummarizer:
         # 댓글을 하나의 텍스트로 결합 (너무 길면 잘라냄)
         combined_text = "\n".join([f"- {text[:200]}" for text in comment_texts[:50]])
 
-        # 프롬프트 구성
-        prompt = f"""다음은 YouTube 비디오에 달린 댓글들입니다. 이 댓글들을 분석하여 다음 정보를 JSON 형식으로 제공해주세요:
+        # 프롬프트 구성 (영어로 요약)
+        prompt = f"""Analyze the following YouTube video comments and provide a summary in JSON format (in English):
 
-댓글 내용:
+Comments:
 {combined_text}
 
-다음 형식으로 응답해주세요:
+Please respond in the following JSON format:
 {{
-    "summary": "댓글의 전반적인 내용을 2-3문장으로 요약",
-    "key_themes": ["주요 주제1", "주요 주제2", "주요 주제3"],
-    "sentiment_summary": "전반적인 감성 (긍정적, 부정적, 중립적, 혼합)",
-    "positive_points": ["긍정적인 의견1", "긍정적인 의견2"],
-    "negative_points": ["부정적인 의견1", "부정적인 의견2"],
-    "common_questions": ["자주 묻는 질문1", "자주 묻는 질문2"]
+    "summary": "Overall summary of comments in 2-3 sentences (in English)",
+    "key_themes": ["Main theme 1", "Main theme 2", "Main theme 3"],
+    "sentiment_summary": "Overall sentiment (positive, negative, neutral, mixed)",
+    "positive_points": ["Positive point 1", "Positive point 2"],
+    "negative_points": ["Negative point 1", "Negative point 2"],
+    "common_questions": ["Common question 1", "Common question 2"]
 }}
 
-응답은 반드시 유효한 JSON 형식이어야 합니다."""
+IMPORTANT: All text in the JSON response must be in English. The response must be valid JSON format."""
 
         try:
             response = self.client.chat.completions.create(
                 model=self.model,
                 messages=[
-                    {"role": "system", "content": "당신은 YouTube 댓글을 분석하는 전문가입니다. 댓글의 주요 내용, 감성, 테마를 파악하고 구조화된 JSON 형식으로 요약합니다."},
+                    {"role": "system", "content": "You are an expert at analyzing YouTube comments. You analyze the main content, sentiment, and themes of comments and summarize them in structured JSON format. Always respond in English."},
                     {"role": "user", "content": prompt}
                 ],
                 temperature=0.3,

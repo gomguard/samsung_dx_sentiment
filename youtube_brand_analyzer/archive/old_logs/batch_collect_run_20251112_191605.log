@@ -1,0 +1,5739 @@
+YouTubeAnalyzer 초기화: 8개 API 키 사용 가능
+================================================================================
+YouTube Batch Data Collection
+================================================================================
+Started at: 2025-11-12 19:16:09
+Dry run: False
+================================================================================
+
+Found 44 active keywords:
+
+  1. 'Samsung 4K TV Launch' - 500 videos, 100 comments/video, region: US
+  2. 'Samsung 8K TV Launch' - 500 videos, 100 comments/video, region: US
+  3. 'Samsung Smart TV Launch' - 500 videos, 100 comments/video, region: US
+  4. 'Samsung UHD TV Launch' - 500 videos, 100 comments/video, region: US
+  5. 'Samsung Neo QLED 8K TV Launch' - 500 videos, 100 comments/video, region: US
+  6. 'Samsung Neo QLED TV Launch' - 500 videos, 100 comments/video, region: US
+  7. 'Samsung FHD TV Launch' - 500 videos, 100 comments/video, region: US
+  8. 'Samsung HD TV Launch' - 500 videos, 100 comments/video, region: US
+  9. 'LG TV Launch' - 500 videos, 100 comments/video, region: US
+  10. 'TCL TV Launch' - 500 videos, 100 comments/video, region: US
+  11. 'QNED TV Launch' - 500 videos, 100 comments/video, region: US
+  12. 'LED TV Launch' - 500 videos, 100 comments/video, region: US
+  13. 'Evo TV Launch' - 500 videos, 100 comments/video, region: US
+  14. 'Mini LED TV Launch' - 500 videos, 100 comments/video, region: US
+  15. 'Samsung Galaxy Launch Color' - 500 videos, 100 comments/video, region: US
+  16. 'Samsung Flip Launch Color' - 500 videos, 100 comments/video, region: US
+  17. 'Samsung Fold Launch Color' - 500 videos, 100 comments/video, region: US
+  18. 'Samsung Galaxy S Launch Color' - 500 videos, 100 comments/video, region: US
+  19. 'Samsung Galaxy Note Launch Color' - 500 videos, 100 comments/video, region: US
+  20. 'Samsung OLED TV Launch' - 500 videos, 100 comments/video, region: US
+  21. 'Samsung QLED TV Launch' - 500 videos, 100 comments/video, region: US
+  22. 'Samsung Galaxy Z Flip Launch Color' - 500 videos, 100 comments/video, region: US
+  23. 'Samsung Galaxy Z Fold Launch Color' - 500 videos, 100 comments/video, region: US
+  24. 'Samsung Galaxy A Launch Color' - 500 videos, 100 comments/video, region: US
+  25. 'Apple Launch Color' - 500 videos, 100 comments/video, region: US
+  26. 'iPhone Launch Color' - 500 videos, 100 comments/video, region: US
+  27. 'Lenovo Launch Color' - 500 videos, 100 comments/video, region: US
+  28. 'moto Launch Color' - 500 videos, 100 comments/video, region: US
+  29. 'Google Launch Color' - 500 videos, 100 comments/video, region: US
+  30. 'Pixel Launch Color' - 500 videos, 100 comments/video, region: US
+  31. 'Samsung Galaxy Launch Storage' - 500 videos, 100 comments/video, region: US
+  32. 'Samsung Flip Launch Storage' - 500 videos, 100 comments/video, region: US
+  33. 'Samsung Fold Launch Storage' - 500 videos, 100 comments/video, region: US
+  34. 'Samsung Galaxy S Launch Storage' - 500 videos, 100 comments/video, region: US
+  35. 'Samsung Galaxy Note Launch Storage' - 500 videos, 100 comments/video, region: US
+  36. 'Samsung Galaxy Z Flip Launch Storage' - 500 videos, 100 comments/video, region: US
+  37. 'Samsung Galaxy Z Fold Launch Storage' - 500 videos, 100 comments/video, region: US
+  38. 'Samsung Galaxy A Launch Storage' - 500 videos, 100 comments/video, region: US
+  39. 'Apple Launch Storage' - 500 videos, 100 comments/video, region: US
+  40. 'iPhone Launch Storage' - 500 videos, 100 comments/video, region: US
+  41. 'Lenovo Launch Storage' - 500 videos, 100 comments/video, region: US
+  42. 'moto Launch Storage' - 500 videos, 100 comments/video, region: US
+  43. 'Google Launch Storage' - 500 videos, 100 comments/video, region: US
+  44. 'Pixel Launch Storage' - 500 videos, 100 comments/video, region: US
+
+================================================================================
+
+================================================================================
+Processing keyword 1/44: 'Samsung 4K TV Launch'
+================================================================================
+================================================================================
+YouTube Data Collection & Analysis Pipeline
+================================================================================
+Keyword: Samsung 4K TV Launch
+Max videos: 500
+Max comments per video: 100
+Region: US
+Summarize comments: True
+Analyze sentiment: False
+================================================================================
+
+[Step 1/4] Collecting video data from YouTube API (500 videos with quality filter)...
+
+================================================================================
+품질 필터링 모드 활성화:
+  - 채널 국가: US (US 채널만)
+  - 카테고리: 28 (Science & Technology)
+  - 최소 구독자: 10,000 OR 채널 총 조회수: 100,000,000
+  - 최소 참여율: 2.0%
+  - 목표 비디오 수: 500개
+  - 배치 크기: 50개씩 수집
+================================================================================
+
+
+[배치 1] 50개 비디오 수집 중...
+  비디오 ID 50개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 37개 채널
+  비디오 상세 정보 완료: 50개
+  품질 필터 적용 중...
+  필터 결과: 1개 통과 / 50개
+    - 채널 국가 불일치: 47개
+    - 카테고리 불일치: 9개
+    - 채널 규모 미달: 3개
+    - 참여율 미달: 29개
+  누적 필터링된 비디오: 1개 / 목표: 500개
+
+[배치 2] 50개 비디오 수집 중...
+  비디오 ID 50개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 34개 채널
+  비디오 상세 정보 완료: 50개
+  품질 필터 적용 중...
+  필터 결과: 2개 통과 / 50개
+    - 채널 국가 불일치: 47개
+    - 카테고리 불일치: 12개
+    - 채널 규모 미달: 3개
+    - 참여율 미달: 35개
+  누적 필터링된 비디오: 3개 / 목표: 500개
+
+[배치 3] 50개 비디오 수집 중...
+  비디오 ID 50개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 41개 채널
+  비디오 상세 정보 완료: 50개
+  품질 필터 적용 중...
+  필터 결과: 1개 통과 / 50개
+    - 채널 국가 불일치: 48개
+    - 카테고리 불일치: 11개
+    - 채널 규모 미달: 5개
+    - 참여율 미달: 41개
+  누적 필터링된 비디오: 4개 / 목표: 500개
+
+[배치 4] 50개 비디오 수집 중...
+  비디오 ID 50개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 37개 채널
+  비디오 상세 정보 완료: 50개
+  품질 필터 적용 중...
+  필터 결과: 0개 통과 / 50개
+    - 채널 국가 불일치: 48개
+    - 카테고리 불일치: 18개
+    - 채널 규모 미달: 13개
+    - 참여율 미달: 38개
+  누적 필터링된 비디오: 4개 / 목표: 500개
+  [경고] 연속 1번째 빈 배치 (새 비디오 없음)
+
+[배치 5] 50개 비디오 수집 중...
+  더 이상 수집할 비디오가 없습니다 (총 6개 수집)
+  비디오 ID 6개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 6개 채널
+  비디오 상세 정보 완료: 6개
+  품질 필터 적용 중...
+  필터 결과: 0개 통과 / 6개
+    - 채널 국가 불일치: 6개
+    - 카테고리 불일치: 4개
+    - 채널 규모 미달: 6개
+    - 참여율 미달: 4개
+  누적 필터링된 비디오: 4개 / 목표: 500개
+  [경고] 연속 2번째 빈 배치 (새 비디오 없음)
+
+[배치 6] 50개 비디오 수집 중...
+  비디오 ID 50개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 37개 채널
+  비디오 상세 정보 완료: 50개
+  품질 필터 적용 중...
+  필터 결과: 0개 통과 / 50개
+    - 채널 국가 불일치: 47개
+    - 카테고리 불일치: 9개
+    - 채널 규모 미달: 3개
+    - 참여율 미달: 29개
+  누적 필터링된 비디오: 4개 / 목표: 500개
+  [경고] 연속 3번째 빈 배치 (새 비디오 없음)
+
+[조기 종료] 3번 연속 새 비디오 없음 - 더 이상 수집 가능한 비디오 없음
+수집된 비디오: 4개 (목표: 500개)
+
+================================================================================
+수집 완료: samsung 4k tv launch in US
+  - 총 수집 비디오 수: 256개
+  - 필터링 후: 4개
+  - Raw 데이터: 256개
+  - 최종 반환: 4개
+  - 총 API 호출 수: 18
+================================================================================
+
+Collected 4 filtered videos
+Raw data: 256 total videos
+
+[Step 1.5/5] Saving raw and filtered videos to database...
+Connected to PostgreSQL database: samsung_dx_sentiment
+Tables created successfully (including youtube_videos_raw)
+Inserted/Updated 256 raw videos
+Error inserting videos: column "updated_at" of relation "youtube_videos" does not exist
+LINE 6:                 updated_at = CURRENT_TIMESTAMP
+                        ^
+
+  [OK] Saved to PostgreSQL:
+    - 256 raw videos (all collected)
+    - 0 filtered videos
+  => Videos are now safely stored in database!
+Disconnected from database
+
+[Step 2/5] Collecting comments from YouTube API...
+댓글 수집: r6A7tZa3ZR8 - 100개 스레드
+댓글 수집: 5caOA3tZQYQ - 72개 스레드
+댓글 수집: Dq3gUqDA-Xw - 43개 스레드
+댓글 수집: xFk_SefU6D8 - 15개 스레드
+전체 댓글 수집 완료: 350개
+Collected 350 comments
+
+[Step 3/5] Summarizing comments (per video)...
+  Summarizing comments for video: r6A7tZa3ZR8 (162 comments)
+  Summarizing comments for video: 5caOA3tZQYQ (98 comments)
+  Summarizing comments for video: Dq3gUqDA-Xw (64 comments)
+  Summarizing comments for video: xFk_SefU6D8 (26 comments)
+Summarized comments for 4 videos
+
+[Step 4/5] Saving comments and updating videos with summaries...
+  CSV saving disabled (save_csv=False)
+Connected to PostgreSQL database: samsung_dx_sentiment
+Error inserting comments: column "updated_at" of relation "youtube_comments" does not exist
+LINE 6:                 updated_at = CURRENT_TIMESTAMP
+                        ^
+
+Error inserting videos: column "updated_at" of relation "youtube_videos" does not exist
+LINE 6:                 updated_at = CURRENT_TIMESTAMP
+                        ^
+
+  [OK] Updated PostgreSQL:
+    - 0 videos updated (with comment summaries)
+    - 0 comments inserted
+Disconnected from database
+
+================================================================================
+Pipeline completed successfully!
+================================================================================
+Total videos processed: 4
+Total comments processed: 350
+Videos with comment summary: 4
+Connected to PostgreSQL database: samsung_dx_sentiment
+
+Database Statistics:
+  Total videos in DB: 7
+  Total comments in DB: 296
+Disconnected from database
+  Updated keyword for 4 videos
+
+[OK] 'Samsung 4K TV Launch' completed: 4 videos, 350 comments
+
+Waiting 30 seconds before next keyword...
+
+================================================================================
+Processing keyword 2/44: 'Samsung 8K TV Launch'
+================================================================================
+================================================================================
+YouTube Data Collection & Analysis Pipeline
+================================================================================
+Keyword: Samsung 8K TV Launch
+Max videos: 500
+Max comments per video: 100
+Region: US
+Summarize comments: True
+Analyze sentiment: False
+================================================================================
+
+[Step 1/4] Collecting video data from YouTube API (500 videos with quality filter)...
+
+================================================================================
+품질 필터링 모드 활성화:
+  - 채널 국가: US (US 채널만)
+  - 카테고리: 28 (Science & Technology)
+  - 최소 구독자: 10,000 OR 채널 총 조회수: 100,000,000
+  - 최소 참여율: 2.0%
+  - 목표 비디오 수: 500개
+  - 배치 크기: 50개씩 수집
+================================================================================
+
+
+[배치 1] 50개 비디오 수집 중...
+  더 이상 수집할 비디오가 없습니다 (총 18개 수집)
+  비디오 ID 18개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 18개 채널
+  비디오 상세 정보 완료: 18개
+  품질 필터 적용 중...
+  필터 결과: 1개 통과 / 18개
+    - 채널 국가 불일치: 16개
+    - 카테고리 불일치: 3개
+    - 채널 규모 미달: 4개
+    - 참여율 미달: 11개
+  누적 필터링된 비디오: 1개 / 목표: 500개
+
+[배치 2] 50개 비디오 수집 중...
+  더 이상 수집할 비디오가 없습니다 (총 18개 수집)
+  비디오 ID 18개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 18개 채널
+  비디오 상세 정보 완료: 18개
+  품질 필터 적용 중...
+  필터 결과: 0개 통과 / 18개
+    - 채널 국가 불일치: 16개
+    - 카테고리 불일치: 3개
+    - 채널 규모 미달: 4개
+    - 참여율 미달: 11개
+  누적 필터링된 비디오: 1개 / 목표: 500개
+  [경고] 연속 1번째 빈 배치 (새 비디오 없음)
+
+[배치 3] 50개 비디오 수집 중...
+  더 이상 수집할 비디오가 없습니다 (총 18개 수집)
+  비디오 ID 18개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 18개 채널
+  비디오 상세 정보 완료: 18개
+  품질 필터 적용 중...
+  필터 결과: 0개 통과 / 18개
+    - 채널 국가 불일치: 16개
+    - 카테고리 불일치: 3개
+    - 채널 규모 미달: 4개
+    - 참여율 미달: 11개
+  누적 필터링된 비디오: 1개 / 목표: 500개
+  [경고] 연속 2번째 빈 배치 (새 비디오 없음)
+
+[배치 4] 50개 비디오 수집 중...
+  더 이상 수집할 비디오가 없습니다 (총 18개 수집)
+  비디오 ID 18개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 18개 채널
+  비디오 상세 정보 완료: 18개
+  품질 필터 적용 중...
+  필터 결과: 0개 통과 / 18개
+    - 채널 국가 불일치: 16개
+    - 카테고리 불일치: 3개
+    - 채널 규모 미달: 4개
+    - 참여율 미달: 11개
+  누적 필터링된 비디오: 1개 / 목표: 500개
+  [경고] 연속 3번째 빈 배치 (새 비디오 없음)
+
+[조기 종료] 3번 연속 새 비디오 없음 - 더 이상 수집 가능한 비디오 없음
+수집된 비디오: 1개 (목표: 500개)
+
+================================================================================
+수집 완료: samsung 8k tv launch in US
+  - 총 수집 비디오 수: 72개
+  - 필터링 후: 1개
+  - Raw 데이터: 72개
+  - 최종 반환: 1개
+  - 총 API 호출 수: 12
+================================================================================
+
+Collected 1 filtered videos
+Raw data: 72 total videos
+
+[Step 1.5/5] Saving raw and filtered videos to database...
+Connected to PostgreSQL database: samsung_dx_sentiment
+Tables created successfully (including youtube_videos_raw)
+Inserted/Updated 72 raw videos
+Error inserting videos: column "updated_at" of relation "youtube_videos" does not exist
+LINE 6:                 updated_at = CURRENT_TIMESTAMP
+                        ^
+
+  [OK] Saved to PostgreSQL:
+    - 72 raw videos (all collected)
+    - 0 filtered videos
+  => Videos are now safely stored in database!
+Disconnected from database
+
+[Step 2/5] Collecting comments from YouTube API...
+댓글 수집: r6A7tZa3ZR8 - 100개 스레드
+전체 댓글 수집 완료: 162개
+Collected 162 comments
+
+[Step 3/5] Summarizing comments (per video)...
+  Summarizing comments for video: r6A7tZa3ZR8 (162 comments)
+Summarized comments for 1 videos
+
+[Step 4/5] Saving comments and updating videos with summaries...
+  CSV saving disabled (save_csv=False)
+Connected to PostgreSQL database: samsung_dx_sentiment
+Error inserting comments: column "updated_at" of relation "youtube_comments" does not exist
+LINE 6:                 updated_at = CURRENT_TIMESTAMP
+                        ^
+
+Error inserting videos: column "updated_at" of relation "youtube_videos" does not exist
+LINE 6:                 updated_at = CURRENT_TIMESTAMP
+                        ^
+
+  [OK] Updated PostgreSQL:
+    - 0 videos updated (with comment summaries)
+    - 0 comments inserted
+Disconnected from database
+
+================================================================================
+Pipeline completed successfully!
+================================================================================
+Total videos processed: 1
+Total comments processed: 162
+Videos with comment summary: 1
+Connected to PostgreSQL database: samsung_dx_sentiment
+
+Database Statistics:
+  Total videos in DB: 7
+  Total comments in DB: 296
+Disconnected from database
+  Updated keyword for 1 videos
+
+[OK] 'Samsung 8K TV Launch' completed: 1 videos, 162 comments
+
+Waiting 30 seconds before next keyword...
+
+================================================================================
+Processing keyword 3/44: 'Samsung Smart TV Launch'
+================================================================================
+================================================================================
+YouTube Data Collection & Analysis Pipeline
+================================================================================
+Keyword: Samsung Smart TV Launch
+Max videos: 500
+Max comments per video: 100
+Region: US
+Summarize comments: True
+Analyze sentiment: False
+================================================================================
+
+[Step 1/4] Collecting video data from YouTube API (500 videos with quality filter)...
+
+================================================================================
+품질 필터링 모드 활성화:
+  - 채널 국가: US (US 채널만)
+  - 카테고리: 28 (Science & Technology)
+  - 최소 구독자: 10,000 OR 채널 총 조회수: 100,000,000
+  - 최소 참여율: 2.0%
+  - 목표 비디오 수: 500개
+  - 배치 크기: 50개씩 수집
+================================================================================
+
+
+[배치 1] 50개 비디오 수집 중...
+  비디오 ID 50개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 28개 채널
+  비디오 상세 정보 완료: 50개
+  품질 필터 적용 중...
+  필터 결과: 0개 통과 / 50개
+    - 채널 국가 불일치: 49개
+    - 카테고리 불일치: 7개
+    - 채널 규모 미달: 2개
+    - 참여율 미달: 29개
+  누적 필터링된 비디오: 0개 / 목표: 500개
+  [경고] 연속 1번째 빈 배치 (새 비디오 없음)
+
+[배치 2] 50개 비디오 수집 중...
+  비디오 ID 50개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 39개 채널
+  비디오 상세 정보 완료: 50개
+  품질 필터 적용 중...
+  필터 결과: 1개 통과 / 50개
+    - 채널 국가 불일치: 48개
+    - 카테고리 불일치: 12개
+    - 채널 규모 미달: 4개
+    - 참여율 미달: 37개
+  누적 필터링된 비디오: 1개 / 목표: 500개
+
+[배치 3] 50개 비디오 수집 중...
+  비디오 ID 50개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 32개 채널
+  비디오 상세 정보 완료: 50개
+  품질 필터 적용 중...
+  필터 결과: 0개 통과 / 50개
+    - 채널 국가 불일치: 50개
+    - 카테고리 불일치: 8개
+    - 채널 규모 미달: 3개
+    - 참여율 미달: 37개
+  누적 필터링된 비디오: 1개 / 목표: 500개
+  [경고] 연속 1번째 빈 배치 (새 비디오 없음)
+
+[배치 4] 50개 비디오 수집 중...
+  비디오 ID 50개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 36개 채널
+  비디오 상세 정보 완료: 50개
+  품질 필터 적용 중...
+  필터 결과: 1개 통과 / 50개
+    - 채널 국가 불일치: 47개
+    - 카테고리 불일치: 12개
+    - 채널 규모 미달: 4개
+    - 참여율 미달: 41개
+  누적 필터링된 비디오: 2개 / 목표: 500개
+
+[배치 5] 50개 비디오 수집 중...
+  비디오 ID 50개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 36개 채널
+  비디오 상세 정보 완료: 50개
+  품질 필터 적용 중...
+  필터 결과: 0개 통과 / 50개
+    - 채널 국가 불일치: 49개
+    - 카테고리 불일치: 14개
+    - 채널 규모 미달: 12개
+    - 참여율 미달: 41개
+  누적 필터링된 비디오: 2개 / 목표: 500개
+  [경고] 연속 1번째 빈 배치 (새 비디오 없음)
+
+[배치 6] 50개 비디오 수집 중...
+  비디오 ID 50개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 46개 채널
+  비디오 상세 정보 완료: 50개
+  품질 필터 적용 중...
+  필터 결과: 0개 통과 / 50개
+    - 채널 국가 불일치: 46개
+    - 카테고리 불일치: 29개
+    - 채널 규모 미달: 27개
+    - 참여율 미달: 36개
+  누적 필터링된 비디오: 2개 / 목표: 500개
+  [경고] 연속 2번째 빈 배치 (새 비디오 없음)
+
+[배치 7] 50개 비디오 수집 중...
+  더 이상 수집할 비디오가 없습니다 (총 3개 수집)
+  비디오 ID 3개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 3개 채널
+  비디오 상세 정보 완료: 3개
+  품질 필터 적용 중...
+  필터 결과: 0개 통과 / 3개
+    - 채널 국가 불일치: 3개
+    - 카테고리 불일치: 2개
+    - 채널 규모 미달: 3개
+    - 참여율 미달: 3개
+  누적 필터링된 비디오: 2개 / 목표: 500개
+  [경고] 연속 3번째 빈 배치 (새 비디오 없음)
+
+[조기 종료] 3번 연속 새 비디오 없음 - 더 이상 수집 가능한 비디오 없음
+수집된 비디오: 2개 (목표: 500개)
+
+================================================================================
+수집 완료: samsung smart tv launch in US
+  - 총 수집 비디오 수: 303개
+  - 필터링 후: 2개
+  - Raw 데이터: 303개
+  - 최종 반환: 2개
+  - 총 API 호출 수: 21
+================================================================================
+
+Collected 2 filtered videos
+Raw data: 303 total videos
+
+[Step 1.5/5] Saving raw and filtered videos to database...
+Connected to PostgreSQL database: samsung_dx_sentiment
+Tables created successfully (including youtube_videos_raw)
+Inserted/Updated 303 raw videos
+Error inserting videos: column "updated_at" of relation "youtube_videos" does not exist
+LINE 6:                 updated_at = CURRENT_TIMESTAMP
+                        ^
+
+  [OK] Saved to PostgreSQL:
+    - 303 raw videos (all collected)
+    - 0 filtered videos
+  => Videos are now safely stored in database!
+Disconnected from database
+
+[Step 2/5] Collecting comments from YouTube API...
+댓글 수집: 5caOA3tZQYQ - 72개 스레드
+댓글 수집: xFk_SefU6D8 - 15개 스레드
+전체 댓글 수집 완료: 124개
+Collected 124 comments
+
+[Step 3/5] Summarizing comments (per video)...
+  Summarizing comments for video: 5caOA3tZQYQ (98 comments)
+  Summarizing comments for video: xFk_SefU6D8 (26 comments)
+Summarized comments for 2 videos
+
+[Step 4/5] Saving comments and updating videos with summaries...
+  CSV saving disabled (save_csv=False)
+Connected to PostgreSQL database: samsung_dx_sentiment
+Error inserting comments: column "updated_at" of relation "youtube_comments" does not exist
+LINE 6:                 updated_at = CURRENT_TIMESTAMP
+                        ^
+
+Error inserting videos: column "updated_at" of relation "youtube_videos" does not exist
+LINE 6:                 updated_at = CURRENT_TIMESTAMP
+                        ^
+
+  [OK] Updated PostgreSQL:
+    - 0 videos updated (with comment summaries)
+    - 0 comments inserted
+Disconnected from database
+
+================================================================================
+Pipeline completed successfully!
+================================================================================
+Total videos processed: 2
+Total comments processed: 124
+Videos with comment summary: 2
+Connected to PostgreSQL database: samsung_dx_sentiment
+
+Database Statistics:
+  Total videos in DB: 7
+  Total comments in DB: 296
+Disconnected from database
+  Updated keyword for 2 videos
+
+[OK] 'Samsung Smart TV Launch' completed: 2 videos, 124 comments
+
+Waiting 30 seconds before next keyword...
+
+================================================================================
+Processing keyword 4/44: 'Samsung UHD TV Launch'
+================================================================================
+================================================================================
+YouTube Data Collection & Analysis Pipeline
+================================================================================
+Keyword: Samsung UHD TV Launch
+Max videos: 500
+Max comments per video: 100
+Region: US
+Summarize comments: True
+Analyze sentiment: False
+================================================================================
+
+[Step 1/4] Collecting video data from YouTube API (500 videos with quality filter)...
+
+================================================================================
+품질 필터링 모드 활성화:
+  - 채널 국가: US (US 채널만)
+  - 카테고리: 28 (Science & Technology)
+  - 최소 구독자: 10,000 OR 채널 총 조회수: 100,000,000
+  - 최소 참여율: 2.0%
+  - 목표 비디오 수: 500개
+  - 배치 크기: 50개씩 수집
+================================================================================
+
+
+[배치 1] 50개 비디오 수집 중...
+  비디오 ID 50개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 38개 채널
+  비디오 상세 정보 완료: 50개
+  품질 필터 적용 중...
+  필터 결과: 1개 통과 / 50개
+    - 채널 국가 불일치: 48개
+    - 카테고리 불일치: 11개
+    - 채널 규모 미달: 3개
+    - 참여율 미달: 30개
+  누적 필터링된 비디오: 1개 / 목표: 500개
+
+[배치 2] 50개 비디오 수집 중...
+  비디오 ID 50개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 33개 채널
+  비디오 상세 정보 완료: 50개
+  품질 필터 적용 중...
+  필터 결과: 1개 통과 / 50개
+    - 채널 국가 불일치: 48개
+    - 카테고리 불일치: 11개
+    - 채널 규모 미달: 5개
+    - 참여율 미달: 37개
+  누적 필터링된 비디오: 2개 / 목표: 500개
+
+[배치 3] 50개 비디오 수집 중...
+  비디오 ID 50개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 40개 채널
+  비디오 상세 정보 완료: 50개
+  품질 필터 적용 중...
+  필터 결과: 0개 통과 / 50개
+    - 채널 국가 불일치: 49개
+    - 카테고리 불일치: 10개
+    - 채널 규모 미달: 7개
+    - 참여율 미달: 41개
+  누적 필터링된 비디오: 2개 / 목표: 500개
+  [경고] 연속 1번째 빈 배치 (새 비디오 없음)
+
+[배치 4] 50개 비디오 수집 중...
+  더 이상 수집할 비디오가 없습니다 (총 22개 수집)
+  비디오 ID 22개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 21개 채널
+  비디오 상세 정보 완료: 22개
+  품질 필터 적용 중...
+  필터 결과: 0개 통과 / 22개
+    - 채널 국가 불일치: 22개
+    - 카테고리 불일치: 12개
+    - 채널 규모 미달: 12개
+    - 참여율 미달: 16개
+  누적 필터링된 비디오: 2개 / 목표: 500개
+  [경고] 연속 2번째 빈 배치 (새 비디오 없음)
+
+[배치 5] 50개 비디오 수집 중...
+  비디오 ID 50개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 38개 채널
+  비디오 상세 정보 완료: 50개
+  품질 필터 적용 중...
+  필터 결과: 0개 통과 / 50개
+    - 채널 국가 불일치: 48개
+    - 카테고리 불일치: 11개
+    - 채널 규모 미달: 3개
+    - 참여율 미달: 30개
+  누적 필터링된 비디오: 2개 / 목표: 500개
+  [경고] 연속 3번째 빈 배치 (새 비디오 없음)
+
+[조기 종료] 3번 연속 새 비디오 없음 - 더 이상 수집 가능한 비디오 없음
+수집된 비디오: 2개 (목표: 500개)
+
+================================================================================
+수집 완료: samsung uhd tv launch in US
+  - 총 수집 비디오 수: 222개
+  - 필터링 후: 2개
+  - Raw 데이터: 222개
+  - 최종 반환: 2개
+  - 총 API 호출 수: 15
+================================================================================
+
+Collected 2 filtered videos
+Raw data: 222 total videos
+
+[Step 1.5/5] Saving raw and filtered videos to database...
+Connected to PostgreSQL database: samsung_dx_sentiment
+Tables created successfully (including youtube_videos_raw)
+Inserted/Updated 222 raw videos
+Error inserting videos: column "updated_at" of relation "youtube_videos" does not exist
+LINE 6:                 updated_at = CURRENT_TIMESTAMP
+                        ^
+
+  [OK] Saved to PostgreSQL:
+    - 222 raw videos (all collected)
+    - 0 filtered videos
+  => Videos are now safely stored in database!
+Disconnected from database
+
+[Step 2/5] Collecting comments from YouTube API...
+댓글 수집: r6A7tZa3ZR8 - 100개 스레드
+댓글 수집: xFk_SefU6D8 - 15개 스레드
+전체 댓글 수집 완료: 188개
+Collected 188 comments
+
+[Step 3/5] Summarizing comments (per video)...
+  Summarizing comments for video: r6A7tZa3ZR8 (162 comments)
+  Summarizing comments for video: xFk_SefU6D8 (26 comments)
+Summarized comments for 2 videos
+
+[Step 4/5] Saving comments and updating videos with summaries...
+  CSV saving disabled (save_csv=False)
+Connected to PostgreSQL database: samsung_dx_sentiment
+Error inserting comments: column "updated_at" of relation "youtube_comments" does not exist
+LINE 6:                 updated_at = CURRENT_TIMESTAMP
+                        ^
+
+Error inserting videos: column "updated_at" of relation "youtube_videos" does not exist
+LINE 6:                 updated_at = CURRENT_TIMESTAMP
+                        ^
+
+  [OK] Updated PostgreSQL:
+    - 0 videos updated (with comment summaries)
+    - 0 comments inserted
+Disconnected from database
+
+================================================================================
+Pipeline completed successfully!
+================================================================================
+Total videos processed: 2
+Total comments processed: 188
+Videos with comment summary: 2
+Connected to PostgreSQL database: samsung_dx_sentiment
+
+Database Statistics:
+  Total videos in DB: 7
+  Total comments in DB: 296
+Disconnected from database
+  Updated keyword for 2 videos
+
+[OK] 'Samsung UHD TV Launch' completed: 2 videos, 188 comments
+
+Waiting 30 seconds before next keyword...
+
+================================================================================
+Processing keyword 5/44: 'Samsung Neo QLED 8K TV Launch'
+================================================================================
+================================================================================
+YouTube Data Collection & Analysis Pipeline
+================================================================================
+Keyword: Samsung Neo QLED 8K TV Launch
+Max videos: 500
+Max comments per video: 100
+Region: US
+Summarize comments: True
+Analyze sentiment: False
+================================================================================
+
+[Step 1/4] Collecting video data from YouTube API (500 videos with quality filter)...
+
+================================================================================
+품질 필터링 모드 활성화:
+  - 채널 국가: US (US 채널만)
+  - 카테고리: 28 (Science & Technology)
+  - 최소 구독자: 10,000 OR 채널 총 조회수: 100,000,000
+  - 최소 참여율: 2.0%
+  - 목표 비디오 수: 500개
+  - 배치 크기: 50개씩 수집
+================================================================================
+
+
+[배치 1] 50개 비디오 수집 중...
+  더 이상 수집할 비디오가 없습니다 (총 31개 수집)
+  비디오 ID 31개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 28개 채널
+  비디오 상세 정보 완료: 31개
+  품질 필터 적용 중...
+  필터 결과: 0개 통과 / 31개
+    - 채널 국가 불일치: 28개
+    - 카테고리 불일치: 6개
+    - 채널 규모 미달: 11개
+    - 참여율 미달: 15개
+  누적 필터링된 비디오: 0개 / 목표: 500개
+  [경고] 연속 1번째 빈 배치 (새 비디오 없음)
+
+[배치 2] 50개 비디오 수집 중...
+  더 이상 수집할 비디오가 없습니다 (총 31개 수집)
+  비디오 ID 31개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 28개 채널
+  비디오 상세 정보 완료: 31개
+  품질 필터 적용 중...
+  필터 결과: 0개 통과 / 31개
+    - 채널 국가 불일치: 28개
+    - 카테고리 불일치: 6개
+    - 채널 규모 미달: 11개
+    - 참여율 미달: 15개
+  누적 필터링된 비디오: 0개 / 목표: 500개
+  [경고] 연속 2번째 빈 배치 (새 비디오 없음)
+
+[배치 3] 50개 비디오 수집 중...
+  더 이상 수집할 비디오가 없습니다 (총 31개 수집)
+  비디오 ID 31개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 28개 채널
+  비디오 상세 정보 완료: 31개
+  품질 필터 적용 중...
+  필터 결과: 0개 통과 / 31개
+    - 채널 국가 불일치: 28개
+    - 카테고리 불일치: 6개
+    - 채널 규모 미달: 11개
+    - 참여율 미달: 15개
+  누적 필터링된 비디오: 0개 / 목표: 500개
+  [경고] 연속 3번째 빈 배치 (새 비디오 없음)
+
+[조기 종료] 3번 연속 새 비디오 없음 - 더 이상 수집 가능한 비디오 없음
+수집된 비디오: 0개 (목표: 500개)
+
+================================================================================
+수집 완료: samsung neo qled 8k tv launch in US
+  - 총 수집 비디오 수: 93개
+  - 필터링 후: 0개
+  - Raw 데이터: 93개
+  - 최종 반환: 0개
+  - 총 API 호출 수: 9
+================================================================================
+
+No videos found!
+
+[WARN] 'Samsung Neo QLED 8K TV Launch' returned no data
+
+Waiting 30 seconds before next keyword...
+
+================================================================================
+Processing keyword 6/44: 'Samsung Neo QLED TV Launch'
+================================================================================
+================================================================================
+YouTube Data Collection & Analysis Pipeline
+================================================================================
+Keyword: Samsung Neo QLED TV Launch
+Max videos: 500
+Max comments per video: 100
+Region: US
+Summarize comments: True
+Analyze sentiment: False
+================================================================================
+
+[Step 1/4] Collecting video data from YouTube API (500 videos with quality filter)...
+
+================================================================================
+품질 필터링 모드 활성화:
+  - 채널 국가: US (US 채널만)
+  - 카테고리: 28 (Science & Technology)
+  - 최소 구독자: 10,000 OR 채널 총 조회수: 100,000,000
+  - 최소 참여율: 2.0%
+  - 목표 비디오 수: 500개
+  - 배치 크기: 50개씩 수집
+================================================================================
+
+
+[배치 1] 50개 비디오 수집 중...
+  비디오 ID 50개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 35개 채널
+  비디오 상세 정보 완료: 50개
+  품질 필터 적용 중...
+  필터 결과: 1개 통과 / 50개
+    - 채널 국가 불일치: 48개
+    - 카테고리 불일치: 11개
+    - 채널 규모 미달: 5개
+    - 참여율 미달: 32개
+  누적 필터링된 비디오: 1개 / 목표: 500개
+
+[배치 2] 50개 비디오 수집 중...
+  더 이상 수집할 비디오가 없습니다 (총 19개 수집)
+  비디오 ID 19개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 16개 채널
+  비디오 상세 정보 완료: 19개
+  품질 필터 적용 중...
+  필터 결과: 0개 통과 / 19개
+    - 채널 국가 불일치: 16개
+    - 카테고리 불일치: 12개
+    - 채널 규모 미달: 11개
+    - 참여율 미달: 16개
+  누적 필터링된 비디오: 1개 / 목표: 500개
+  [경고] 연속 1번째 빈 배치 (새 비디오 없음)
+
+[배치 3] 50개 비디오 수집 중...
+  비디오 ID 50개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 35개 채널
+  비디오 상세 정보 완료: 50개
+  품질 필터 적용 중...
+  필터 결과: 0개 통과 / 50개
+    - 채널 국가 불일치: 48개
+    - 카테고리 불일치: 11개
+    - 채널 규모 미달: 5개
+    - 참여율 미달: 32개
+  누적 필터링된 비디오: 1개 / 목표: 500개
+  [경고] 연속 2번째 빈 배치 (새 비디오 없음)
+
+[배치 4] 50개 비디오 수집 중...
+  더 이상 수집할 비디오가 없습니다 (총 19개 수집)
+  비디오 ID 19개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 16개 채널
+  비디오 상세 정보 완료: 19개
+  품질 필터 적용 중...
+  필터 결과: 0개 통과 / 19개
+    - 채널 국가 불일치: 16개
+    - 카테고리 불일치: 12개
+    - 채널 규모 미달: 11개
+    - 참여율 미달: 16개
+  누적 필터링된 비디오: 1개 / 목표: 500개
+  [경고] 연속 3번째 빈 배치 (새 비디오 없음)
+
+[조기 종료] 3번 연속 새 비디오 없음 - 더 이상 수집 가능한 비디오 없음
+수집된 비디오: 1개 (목표: 500개)
+
+================================================================================
+수집 완료: samsung neo qled tv launch in US
+  - 총 수집 비디오 수: 138개
+  - 필터링 후: 1개
+  - Raw 데이터: 138개
+  - 최종 반환: 1개
+  - 총 API 호출 수: 12
+================================================================================
+
+Collected 1 filtered videos
+Raw data: 138 total videos
+
+[Step 1.5/5] Saving raw and filtered videos to database...
+Connected to PostgreSQL database: samsung_dx_sentiment
+Tables created successfully (including youtube_videos_raw)
+Inserted/Updated 138 raw videos
+Error inserting videos: column "updated_at" of relation "youtube_videos" does not exist
+LINE 6:                 updated_at = CURRENT_TIMESTAMP
+                        ^
+
+  [OK] Saved to PostgreSQL:
+    - 138 raw videos (all collected)
+    - 0 filtered videos
+  => Videos are now safely stored in database!
+Disconnected from database
+
+[Step 2/5] Collecting comments from YouTube API...
+댓글 수집: r6A7tZa3ZR8 - 100개 스레드
+전체 댓글 수집 완료: 162개
+Collected 162 comments
+
+[Step 3/5] Summarizing comments (per video)...
+  Summarizing comments for video: r6A7tZa3ZR8 (162 comments)
+Summarized comments for 1 videos
+
+[Step 4/5] Saving comments and updating videos with summaries...
+  CSV saving disabled (save_csv=False)
+Connected to PostgreSQL database: samsung_dx_sentiment
+Error inserting comments: column "updated_at" of relation "youtube_comments" does not exist
+LINE 6:                 updated_at = CURRENT_TIMESTAMP
+                        ^
+
+Error inserting videos: column "updated_at" of relation "youtube_videos" does not exist
+LINE 6:                 updated_at = CURRENT_TIMESTAMP
+                        ^
+
+  [OK] Updated PostgreSQL:
+    - 0 videos updated (with comment summaries)
+    - 0 comments inserted
+Disconnected from database
+
+================================================================================
+Pipeline completed successfully!
+================================================================================
+Total videos processed: 1
+Total comments processed: 162
+Videos with comment summary: 1
+Connected to PostgreSQL database: samsung_dx_sentiment
+
+Database Statistics:
+  Total videos in DB: 7
+  Total comments in DB: 296
+Disconnected from database
+  Updated keyword for 1 videos
+
+[OK] 'Samsung Neo QLED TV Launch' completed: 1 videos, 162 comments
+
+Waiting 30 seconds before next keyword...
+
+================================================================================
+Processing keyword 7/44: 'Samsung FHD TV Launch'
+================================================================================
+================================================================================
+YouTube Data Collection & Analysis Pipeline
+================================================================================
+Keyword: Samsung FHD TV Launch
+Max videos: 500
+Max comments per video: 100
+Region: US
+Summarize comments: True
+Analyze sentiment: False
+================================================================================
+
+[Step 1/4] Collecting video data from YouTube API (500 videos with quality filter)...
+
+================================================================================
+품질 필터링 모드 활성화:
+  - 채널 국가: US (US 채널만)
+  - 카테고리: 28 (Science & Technology)
+  - 최소 구독자: 10,000 OR 채널 총 조회수: 100,000,000
+  - 최소 참여율: 2.0%
+  - 목표 비디오 수: 500개
+  - 배치 크기: 50개씩 수집
+================================================================================
+
+
+[배치 1] 50개 비디오 수집 중...
+  비디오 ID 50개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 35개 채널
+  비디오 상세 정보 완료: 50개
+  품질 필터 적용 중...
+  필터 결과: 0개 통과 / 50개
+    - 채널 국가 불일치: 50개
+    - 카테고리 불일치: 7개
+    - 채널 규모 미달: 8개
+    - 참여율 미달: 42개
+  누적 필터링된 비디오: 0개 / 목표: 500개
+  [경고] 연속 1번째 빈 배치 (새 비디오 없음)
+
+[배치 2] 50개 비디오 수집 중...
+  더 이상 수집할 비디오가 없습니다 (총 11개 수집)
+  비디오 ID 11개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 10개 채널
+  비디오 상세 정보 완료: 11개
+  품질 필터 적용 중...
+  필터 결과: 0개 통과 / 11개
+    - 채널 국가 불일치: 10개
+    - 카테고리 불일치: 3개
+    - 채널 규모 미달: 4개
+    - 참여율 미달: 10개
+  누적 필터링된 비디오: 0개 / 목표: 500개
+  [경고] 연속 2번째 빈 배치 (새 비디오 없음)
+
+[배치 3] 50개 비디오 수집 중...
+  비디오 ID 50개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 33개 채널
+  비디오 상세 정보 완료: 50개
+  품질 필터 적용 중...
+  필터 결과: 0개 통과 / 50개
+    - 채널 국가 불일치: 50개
+    - 카테고리 불일치: 5개
+    - 채널 규모 미달: 6개
+    - 참여율 미달: 43개
+  누적 필터링된 비디오: 0개 / 목표: 500개
+  [경고] 연속 3번째 빈 배치 (새 비디오 없음)
+
+[조기 종료] 3번 연속 새 비디오 없음 - 더 이상 수집 가능한 비디오 없음
+수집된 비디오: 0개 (목표: 500개)
+
+================================================================================
+수집 완료: samsung fhd tv launch in US
+  - 총 수집 비디오 수: 111개
+  - 필터링 후: 0개
+  - Raw 데이터: 111개
+  - 최종 반환: 0개
+  - 총 API 호출 수: 9
+================================================================================
+
+No videos found!
+
+[WARN] 'Samsung FHD TV Launch' returned no data
+
+Waiting 30 seconds before next keyword...
+
+================================================================================
+Processing keyword 8/44: 'Samsung HD TV Launch'
+================================================================================
+================================================================================
+YouTube Data Collection & Analysis Pipeline
+================================================================================
+Keyword: Samsung HD TV Launch
+Max videos: 500
+Max comments per video: 100
+Region: US
+Summarize comments: True
+Analyze sentiment: False
+================================================================================
+
+[Step 1/4] Collecting video data from YouTube API (500 videos with quality filter)...
+
+================================================================================
+품질 필터링 모드 활성화:
+  - 채널 국가: US (US 채널만)
+  - 카테고리: 28 (Science & Technology)
+  - 최소 구독자: 10,000 OR 채널 총 조회수: 100,000,000
+  - 최소 참여율: 2.0%
+  - 목표 비디오 수: 500개
+  - 배치 크기: 50개씩 수집
+================================================================================
+
+
+[배치 1] 50개 비디오 수집 중...
+  비디오 ID 50개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 35개 채널
+  비디오 상세 정보 완료: 50개
+  품질 필터 적용 중...
+  필터 결과: 2개 통과 / 50개
+    - 채널 국가 불일치: 47개
+    - 카테고리 불일치: 5개
+    - 채널 규모 미달: 3개
+    - 참여율 미달: 33개
+  누적 필터링된 비디오: 2개 / 목표: 500개
+
+[배치 2] 50개 비디오 수집 중...
+  비디오 ID 50개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 41개 채널
+  비디오 상세 정보 완료: 50개
+  품질 필터 적용 중...
+  필터 결과: 1개 통과 / 50개
+    - 채널 국가 불일치: 48개
+    - 카테고리 불일치: 9개
+    - 채널 규모 미달: 11개
+    - 참여율 미달: 40개
+  누적 필터링된 비디오: 3개 / 목표: 500개
+
+[배치 3] 50개 비디오 수집 중...
+  더 이상 수집할 비디오가 없습니다 (총 29개 수집)
+  비디오 ID 29개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 26개 채널
+  비디오 상세 정보 완료: 29개
+  품질 필터 적용 중...
+  필터 결과: 0개 통과 / 29개
+    - 채널 국가 불일치: 29개
+    - 카테고리 불일치: 15개
+    - 채널 규모 미달: 20개
+    - 참여율 미달: 19개
+  누적 필터링된 비디오: 3개 / 목표: 500개
+  [경고] 연속 1번째 빈 배치 (새 비디오 없음)
+
+[배치 4] 50개 비디오 수집 중...
+  비디오 ID 50개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 35개 채널
+  비디오 상세 정보 완료: 50개
+  품질 필터 적용 중...
+  필터 결과: 0개 통과 / 50개
+    - 채널 국가 불일치: 47개
+    - 카테고리 불일치: 5개
+    - 채널 규모 미달: 3개
+    - 참여율 미달: 33개
+  누적 필터링된 비디오: 3개 / 목표: 500개
+  [경고] 연속 2번째 빈 배치 (새 비디오 없음)
+
+[배치 5] 50개 비디오 수집 중...
+  더 이상 수집할 비디오가 없습니다 (총 0개 수집)
+  이 배치에서 수집된 비디오가 없습니다.
+
+================================================================================
+수집 완료: samsung hd tv launch in US
+  - 총 수집 비디오 수: 179개
+  - 필터링 후: 3개
+  - Raw 데이터: 179개
+  - 최종 반환: 3개
+  - 총 API 호출 수: 13
+================================================================================
+
+Collected 3 filtered videos
+Raw data: 179 total videos
+
+[Step 1.5/5] Saving raw and filtered videos to database...
+Connected to PostgreSQL database: samsung_dx_sentiment
+Tables created successfully (including youtube_videos_raw)
+Inserted/Updated 179 raw videos
+Error inserting videos: column "updated_at" of relation "youtube_videos" does not exist
+LINE 6:                 updated_at = CURRENT_TIMESTAMP
+                        ^
+
+  [OK] Saved to PostgreSQL:
+    - 179 raw videos (all collected)
+    - 0 filtered videos
+  => Videos are now safely stored in database!
+Disconnected from database
+
+[Step 2/5] Collecting comments from YouTube API...
+댓글 수집: r6A7tZa3ZR8 - 100개 스레드
+댓글 수집: Dq3gUqDA-Xw - 43개 스레드
+댓글 수집: xFk_SefU6D8 - 15개 스레드
+전체 댓글 수집 완료: 252개
+Collected 252 comments
+
+[Step 3/5] Summarizing comments (per video)...
+  Summarizing comments for video: r6A7tZa3ZR8 (162 comments)
+  Summarizing comments for video: Dq3gUqDA-Xw (64 comments)
+  Summarizing comments for video: xFk_SefU6D8 (26 comments)
+Summarized comments for 3 videos
+
+[Step 4/5] Saving comments and updating videos with summaries...
+  CSV saving disabled (save_csv=False)
+Connected to PostgreSQL database: samsung_dx_sentiment
+Error inserting comments: column "updated_at" of relation "youtube_comments" does not exist
+LINE 6:                 updated_at = CURRENT_TIMESTAMP
+                        ^
+
+Error inserting videos: column "updated_at" of relation "youtube_videos" does not exist
+LINE 6:                 updated_at = CURRENT_TIMESTAMP
+                        ^
+
+  [OK] Updated PostgreSQL:
+    - 0 videos updated (with comment summaries)
+    - 0 comments inserted
+Disconnected from database
+
+================================================================================
+Pipeline completed successfully!
+================================================================================
+Total videos processed: 3
+Total comments processed: 252
+Videos with comment summary: 3
+Connected to PostgreSQL database: samsung_dx_sentiment
+
+Database Statistics:
+  Total videos in DB: 7
+  Total comments in DB: 296
+Disconnected from database
+  Updated keyword for 3 videos
+
+[OK] 'Samsung HD TV Launch' completed: 3 videos, 252 comments
+
+Waiting 30 seconds before next keyword...
+
+================================================================================
+Processing keyword 9/44: 'LG TV Launch'
+================================================================================
+================================================================================
+YouTube Data Collection & Analysis Pipeline
+================================================================================
+Keyword: LG TV Launch
+Max videos: 500
+Max comments per video: 100
+Region: US
+Summarize comments: True
+Analyze sentiment: False
+================================================================================
+
+[Step 1/4] Collecting video data from YouTube API (500 videos with quality filter)...
+
+================================================================================
+품질 필터링 모드 활성화:
+  - 채널 국가: US (US 채널만)
+  - 카테고리: 28 (Science & Technology)
+  - 최소 구독자: 10,000 OR 채널 총 조회수: 100,000,000
+  - 최소 참여율: 2.0%
+  - 목표 비디오 수: 500개
+  - 배치 크기: 50개씩 수집
+================================================================================
+
+
+[배치 1] 50개 비디오 수집 중...
+  더 이상 수집할 비디오가 없습니다 (총 4개 수집)
+  비디오 ID 4개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 4개 채널
+  비디오 상세 정보 완료: 4개
+  품질 필터 적용 중...
+  필터 결과: 0개 통과 / 4개
+    - 채널 국가 불일치: 3개
+    - 카테고리 불일치: 2개
+    - 채널 규모 미달: 1개
+    - 참여율 미달: 2개
+  누적 필터링된 비디오: 0개 / 목표: 500개
+  [경고] 연속 1번째 빈 배치 (새 비디오 없음)
+
+[배치 2] 50개 비디오 수집 중...
+  비디오 ID 50개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 34개 채널
+  비디오 상세 정보 완료: 50개
+  품질 필터 적용 중...
+  필터 결과: 1개 통과 / 50개
+    - 채널 국가 불일치: 49개
+    - 카테고리 불일치: 11개
+    - 채널 규모 미달: 3개
+    - 참여율 미달: 36개
+  누적 필터링된 비디오: 1개 / 목표: 500개
+
+[배치 3] 50개 비디오 수집 중...
+  비디오 ID 50개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 36개 채널
+  비디오 상세 정보 완료: 50개
+  품질 필터 적용 중...
+  필터 결과: 1개 통과 / 50개
+    - 채널 국가 불일치: 46개
+    - 카테고리 불일치: 11개
+    - 채널 규모 미달: 6개
+    - 참여율 미달: 37개
+  누적 필터링된 비디오: 2개 / 목표: 500개
+
+[배치 4] 50개 비디오 수집 중...
+  비디오 ID 50개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 40개 채널
+  비디오 상세 정보 완료: 50개
+  품질 필터 적용 중...
+  필터 결과: 0개 통과 / 50개
+    - 채널 국가 불일치: 50개
+    - 카테고리 불일치: 21개
+    - 채널 규모 미달: 16개
+    - 참여율 미달: 39개
+  누적 필터링된 비디오: 2개 / 목표: 500개
+  [경고] 연속 1번째 빈 배치 (새 비디오 없음)
+
+[배치 5] 50개 비디오 수집 중...
+  더 이상 수집할 비디오가 없습니다 (총 45개 수집)
+  비디오 ID 45개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 41개 채널
+  비디오 상세 정보 완료: 45개
+  품질 필터 적용 중...
+  필터 결과: 0개 통과 / 45개
+    - 채널 국가 불일치: 38개
+    - 카테고리 불일치: 28개
+    - 채널 규모 미달: 27개
+    - 참여율 미달: 37개
+  누적 필터링된 비디오: 2개 / 목표: 500개
+  [경고] 연속 2번째 빈 배치 (새 비디오 없음)
+
+[배치 6] 50개 비디오 수집 중...
+  비디오 ID 50개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 34개 채널
+  비디오 상세 정보 완료: 50개
+  품질 필터 적용 중...
+  필터 결과: 0개 통과 / 50개
+    - 채널 국가 불일치: 49개
+    - 카테고리 불일치: 13개
+    - 채널 규모 미달: 3개
+    - 참여율 미달: 38개
+  누적 필터링된 비디오: 2개 / 목표: 500개
+  [경고] 연속 3번째 빈 배치 (새 비디오 없음)
+
+[조기 종료] 3번 연속 새 비디오 없음 - 더 이상 수집 가능한 비디오 없음
+수집된 비디오: 2개 (목표: 500개)
+
+================================================================================
+수집 완료: lg tv launch in US
+  - 총 수집 비디오 수: 249개
+  - 필터링 후: 2개
+  - Raw 데이터: 249개
+  - 최종 반환: 2개
+  - 총 API 호출 수: 18
+================================================================================
+
+Collected 2 filtered videos
+Raw data: 249 total videos
+
+[Step 1.5/5] Saving raw and filtered videos to database...
+Connected to PostgreSQL database: samsung_dx_sentiment
+Tables created successfully (including youtube_videos_raw)
+Inserted/Updated 249 raw videos
+Error inserting videos: column "updated_at" of relation "youtube_videos" does not exist
+LINE 6:                 updated_at = CURRENT_TIMESTAMP
+                        ^
+
+  [OK] Saved to PostgreSQL:
+    - 249 raw videos (all collected)
+    - 0 filtered videos
+  => Videos are now safely stored in database!
+Disconnected from database
+
+[Step 2/5] Collecting comments from YouTube API...
+댓글 수집: 4hIIG0gZNBc - 29개 스레드
+댓글 수집: Ubn2STAJhWM - 81개 스레드
+전체 댓글 수집 완료: 178개
+Collected 178 comments
+
+[Step 3/5] Summarizing comments (per video)...
+  Summarizing comments for video: 4hIIG0gZNBc (46 comments)
+  Summarizing comments for video: Ubn2STAJhWM (132 comments)
+Summarized comments for 2 videos
+
+[Step 4/5] Saving comments and updating videos with summaries...
+  CSV saving disabled (save_csv=False)
+Connected to PostgreSQL database: samsung_dx_sentiment
+Error inserting comments: column "updated_at" of relation "youtube_comments" does not exist
+LINE 6:                 updated_at = CURRENT_TIMESTAMP
+                        ^
+
+Error inserting videos: column "updated_at" of relation "youtube_videos" does not exist
+LINE 6:                 updated_at = CURRENT_TIMESTAMP
+                        ^
+
+  [OK] Updated PostgreSQL:
+    - 0 videos updated (with comment summaries)
+    - 0 comments inserted
+Disconnected from database
+
+================================================================================
+Pipeline completed successfully!
+================================================================================
+Total videos processed: 2
+Total comments processed: 178
+Videos with comment summary: 2
+Connected to PostgreSQL database: samsung_dx_sentiment
+
+Database Statistics:
+  Total videos in DB: 7
+  Total comments in DB: 296
+Disconnected from database
+  Updated keyword for 2 videos
+
+[OK] 'LG TV Launch' completed: 2 videos, 178 comments
+
+Waiting 30 seconds before next keyword...
+
+================================================================================
+Processing keyword 10/44: 'TCL TV Launch'
+================================================================================
+================================================================================
+YouTube Data Collection & Analysis Pipeline
+================================================================================
+Keyword: TCL TV Launch
+Max videos: 500
+Max comments per video: 100
+Region: US
+Summarize comments: True
+Analyze sentiment: False
+================================================================================
+
+[Step 1/4] Collecting video data from YouTube API (500 videos with quality filter)...
+
+================================================================================
+품질 필터링 모드 활성화:
+  - 채널 국가: US (US 채널만)
+  - 카테고리: 28 (Science & Technology)
+  - 최소 구독자: 10,000 OR 채널 총 조회수: 100,000,000
+  - 최소 참여율: 2.0%
+  - 목표 비디오 수: 500개
+  - 배치 크기: 50개씩 수집
+================================================================================
+
+
+[배치 1] 50개 비디오 수집 중...
+  비디오 ID 50개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 28개 채널
+  비디오 상세 정보 완료: 50개
+  품질 필터 적용 중...
+  필터 결과: 0개 통과 / 50개
+    - 채널 국가 불일치: 50개
+    - 카테고리 불일치: 8개
+    - 채널 규모 미달: 1개
+    - 참여율 미달: 35개
+  누적 필터링된 비디오: 0개 / 목표: 500개
+  [경고] 연속 1번째 빈 배치 (새 비디오 없음)
+
+[배치 2] 50개 비디오 수집 중...
+  비디오 ID 50개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 36개 채널
+  비디오 상세 정보 완료: 50개
+  품질 필터 적용 중...
+  필터 결과: 1개 통과 / 50개
+    - 채널 국가 불일치: 48개
+    - 카테고리 불일치: 17개
+    - 채널 규모 미달: 11개
+    - 참여율 미달: 39개
+  누적 필터링된 비디오: 1개 / 목표: 500개
+
+[배치 3] 50개 비디오 수집 중...
+  더 이상 수집할 비디오가 없습니다 (총 39개 수집)
+  비디오 ID 39개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 32개 채널
+  비디오 상세 정보 완료: 39개
+  품질 필터 적용 중...
+  필터 결과: 0개 통과 / 39개
+    - 채널 국가 불일치: 35개
+    - 카테고리 불일치: 17개
+    - 채널 규모 미달: 15개
+    - 참여율 미달: 31개
+  누적 필터링된 비디오: 1개 / 목표: 500개
+  [경고] 연속 1번째 빈 배치 (새 비디오 없음)
+
+[배치 4] 50개 비디오 수집 중...
+  비디오 ID 50개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 28개 채널
+  비디오 상세 정보 완료: 50개
+  품질 필터 적용 중...
+  필터 결과: 0개 통과 / 50개
+    - 채널 국가 불일치: 50개
+    - 카테고리 불일치: 8개
+    - 채널 규모 미달: 1개
+    - 참여율 미달: 35개
+  누적 필터링된 비디오: 1개 / 목표: 500개
+  [경고] 연속 2번째 빈 배치 (새 비디오 없음)
+
+[배치 5] 50개 비디오 수집 중...
+  비디오 ID 50개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 36개 채널
+  비디오 상세 정보 완료: 50개
+  품질 필터 적용 중...
+  필터 결과: 0개 통과 / 50개
+    - 채널 국가 불일치: 48개
+    - 카테고리 불일치: 17개
+    - 채널 규모 미달: 11개
+    - 참여율 미달: 39개
+  누적 필터링된 비디오: 1개 / 목표: 500개
+  [경고] 연속 3번째 빈 배치 (새 비디오 없음)
+
+[조기 종료] 3번 연속 새 비디오 없음 - 더 이상 수집 가능한 비디오 없음
+수집된 비디오: 1개 (목표: 500개)
+
+================================================================================
+수집 완료: tcl tv launch in US
+  - 총 수집 비디오 수: 239개
+  - 필터링 후: 1개
+  - Raw 데이터: 239개
+  - 최종 반환: 1개
+  - 총 API 호출 수: 15
+================================================================================
+
+Collected 1 filtered videos
+Raw data: 239 total videos
+
+[Step 1.5/5] Saving raw and filtered videos to database...
+Connected to PostgreSQL database: samsung_dx_sentiment
+Tables created successfully (including youtube_videos_raw)
+Inserted/Updated 239 raw videos
+Error inserting videos: column "updated_at" of relation "youtube_videos" does not exist
+LINE 6:                 updated_at = CURRENT_TIMESTAMP
+                        ^
+
+  [OK] Saved to PostgreSQL:
+    - 239 raw videos (all collected)
+    - 0 filtered videos
+  => Videos are now safely stored in database!
+Disconnected from database
+
+[Step 2/5] Collecting comments from YouTube API...
+댓글 수집: qpg7_Vw_HsE - 12개 스레드
+전체 댓글 수집 완료: 36개
+Collected 36 comments
+
+[Step 3/5] Summarizing comments (per video)...
+  Summarizing comments for video: qpg7_Vw_HsE (36 comments)
+Summarized comments for 1 videos
+
+[Step 4/5] Saving comments and updating videos with summaries...
+  CSV saving disabled (save_csv=False)
+Connected to PostgreSQL database: samsung_dx_sentiment
+Error inserting comments: column "updated_at" of relation "youtube_comments" does not exist
+LINE 6:                 updated_at = CURRENT_TIMESTAMP
+                        ^
+
+Error inserting videos: column "updated_at" of relation "youtube_videos" does not exist
+LINE 6:                 updated_at = CURRENT_TIMESTAMP
+                        ^
+
+  [OK] Updated PostgreSQL:
+    - 0 videos updated (with comment summaries)
+    - 0 comments inserted
+Disconnected from database
+
+================================================================================
+Pipeline completed successfully!
+================================================================================
+Total videos processed: 1
+Total comments processed: 36
+Videos with comment summary: 1
+Connected to PostgreSQL database: samsung_dx_sentiment
+
+Database Statistics:
+  Total videos in DB: 7
+  Total comments in DB: 296
+Disconnected from database
+  Updated keyword for 1 videos
+
+[OK] 'TCL TV Launch' completed: 1 videos, 36 comments
+
+Waiting 30 seconds before next keyword...
+
+================================================================================
+Processing keyword 11/44: 'QNED TV Launch'
+================================================================================
+================================================================================
+YouTube Data Collection & Analysis Pipeline
+================================================================================
+Keyword: QNED TV Launch
+Max videos: 500
+Max comments per video: 100
+Region: US
+Summarize comments: True
+Analyze sentiment: False
+================================================================================
+
+[Step 1/4] Collecting video data from YouTube API (500 videos with quality filter)...
+
+================================================================================
+품질 필터링 모드 활성화:
+  - 채널 국가: US (US 채널만)
+  - 카테고리: 28 (Science & Technology)
+  - 최소 구독자: 10,000 OR 채널 총 조회수: 100,000,000
+  - 최소 참여율: 2.0%
+  - 목표 비디오 수: 500개
+  - 배치 크기: 50개씩 수집
+================================================================================
+
+
+[배치 1] 50개 비디오 수집 중...
+  더 이상 수집할 비디오가 없습니다 (총 45개 수집)
+  비디오 ID 45개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 26개 채널
+  비디오 상세 정보 완료: 45개
+  품질 필터 적용 중...
+  필터 결과: 0개 통과 / 45개
+    - 채널 국가 불일치: 45개
+    - 카테고리 불일치: 8개
+    - 채널 규모 미달: 6개
+    - 참여율 미달: 34개
+  누적 필터링된 비디오: 0개 / 목표: 500개
+  [경고] 연속 1번째 빈 배치 (새 비디오 없음)
+
+[배치 2] 50개 비디오 수집 중...
+  더 이상 수집할 비디오가 없습니다 (총 48개 수집)
+  비디오 ID 48개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 28개 채널
+  비디오 상세 정보 완료: 48개
+  품질 필터 적용 중...
+  필터 결과: 0개 통과 / 48개
+    - 채널 국가 불일치: 48개
+    - 카테고리 불일치: 11개
+    - 채널 규모 미달: 8개
+    - 참여율 미달: 37개
+  누적 필터링된 비디오: 0개 / 목표: 500개
+  [경고] 연속 2번째 빈 배치 (새 비디오 없음)
+
+[배치 3] 50개 비디오 수집 중...
+  더 이상 수집할 비디오가 없습니다 (총 45개 수집)
+  비디오 ID 45개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 26개 채널
+  비디오 상세 정보 완료: 45개
+  품질 필터 적용 중...
+  필터 결과: 0개 통과 / 45개
+    - 채널 국가 불일치: 45개
+    - 카테고리 불일치: 8개
+    - 채널 규모 미달: 6개
+    - 참여율 미달: 34개
+  누적 필터링된 비디오: 0개 / 목표: 500개
+  [경고] 연속 3번째 빈 배치 (새 비디오 없음)
+
+[조기 종료] 3번 연속 새 비디오 없음 - 더 이상 수집 가능한 비디오 없음
+수집된 비디오: 0개 (목표: 500개)
+
+================================================================================
+수집 완료: qned tv launch in US
+  - 총 수집 비디오 수: 138개
+  - 필터링 후: 0개
+  - Raw 데이터: 138개
+  - 최종 반환: 0개
+  - 총 API 호출 수: 9
+================================================================================
+
+No videos found!
+
+[WARN] 'QNED TV Launch' returned no data
+
+Waiting 30 seconds before next keyword...
+
+================================================================================
+Processing keyword 12/44: 'LED TV Launch'
+================================================================================
+================================================================================
+YouTube Data Collection & Analysis Pipeline
+================================================================================
+Keyword: LED TV Launch
+Max videos: 500
+Max comments per video: 100
+Region: US
+Summarize comments: True
+Analyze sentiment: False
+================================================================================
+
+[Step 1/4] Collecting video data from YouTube API (500 videos with quality filter)...
+
+================================================================================
+품질 필터링 모드 활성화:
+  - 채널 국가: US (US 채널만)
+  - 카테고리: 28 (Science & Technology)
+  - 최소 구독자: 10,000 OR 채널 총 조회수: 100,000,000
+  - 최소 참여율: 2.0%
+  - 목표 비디오 수: 500개
+  - 배치 크기: 50개씩 수집
+================================================================================
+
+
+[배치 1] 50개 비디오 수집 중...
+  비디오 ID 50개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 32개 채널
+  비디오 상세 정보 완료: 50개
+  품질 필터 적용 중...
+  필터 결과: 0개 통과 / 50개
+    - 채널 국가 불일치: 49개
+    - 카테고리 불일치: 16개
+    - 채널 규모 미달: 2개
+    - 참여율 미달: 29개
+  누적 필터링된 비디오: 0개 / 목표: 500개
+  [경고] 연속 1번째 빈 배치 (새 비디오 없음)
+
+[배치 2] 50개 비디오 수집 중...
+  비디오 ID 50개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 39개 채널
+  비디오 상세 정보 완료: 50개
+  품질 필터 적용 중...
+  필터 결과: 1개 통과 / 50개
+    - 채널 국가 불일치: 49개
+    - 카테고리 불일치: 13개
+    - 채널 규모 미달: 1개
+    - 참여율 미달: 41개
+  누적 필터링된 비디오: 1개 / 목표: 500개
+
+[배치 3] 50개 비디오 수집 중...
+  비디오 ID 50개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 37개 채널
+  비디오 상세 정보 완료: 50개
+  품질 필터 적용 중...
+  필터 결과: 1개 통과 / 50개
+    - 채널 국가 불일치: 49개
+    - 카테고리 불일치: 20개
+    - 채널 규모 미달: 3개
+    - 참여율 미달: 39개
+  누적 필터링된 비디오: 2개 / 목표: 500개
+
+[배치 4] 50개 비디오 수집 중...
+  비디오 ID 50개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 40개 채널
+  비디오 상세 정보 완료: 50개
+  품질 필터 적용 중...
+  필터 결과: 0개 통과 / 50개
+    - 채널 국가 불일치: 49개
+    - 카테고리 불일치: 16개
+    - 채널 규모 미달: 7개
+    - 참여율 미달: 38개
+  누적 필터링된 비디오: 2개 / 목표: 500개
+  [경고] 연속 1번째 빈 배치 (새 비디오 없음)
+
+[배치 5] 50개 비디오 수집 중...
+  비디오 ID 50개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 45개 채널
+  비디오 상세 정보 완료: 50개
+  품질 필터 적용 중...
+  필터 결과: 0개 통과 / 50개
+    - 채널 국가 불일치: 49개
+    - 카테고리 불일치: 29개
+    - 채널 규모 미달: 27개
+    - 참여율 미달: 33개
+  누적 필터링된 비디오: 2개 / 목표: 500개
+  [경고] 연속 2번째 빈 배치 (새 비디오 없음)
+
+[배치 6] 50개 비디오 수집 중...
+  비디오 ID 50개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 37개 채널
+  비디오 상세 정보 완료: 50개
+  품질 필터 적용 중...
+  필터 결과: 0개 통과 / 50개
+    - 채널 국가 불일치: 49개
+    - 카테고리 불일치: 19개
+    - 채널 규모 미달: 12개
+    - 참여율 미달: 39개
+  누적 필터링된 비디오: 2개 / 목표: 500개
+  [경고] 연속 3번째 빈 배치 (새 비디오 없음)
+
+[조기 종료] 3번 연속 새 비디오 없음 - 더 이상 수집 가능한 비디오 없음
+수집된 비디오: 2개 (목표: 500개)
+
+================================================================================
+수집 완료: led tv launch in US
+  - 총 수집 비디오 수: 300개
+  - 필터링 후: 2개
+  - Raw 데이터: 300개
+  - 최종 반환: 2개
+  - 총 API 호출 수: 18
+================================================================================
+
+Collected 2 filtered videos
+Raw data: 300 total videos
+
+[Step 1.5/5] Saving raw and filtered videos to database...
+Connected to PostgreSQL database: samsung_dx_sentiment
+Tables created successfully (including youtube_videos_raw)
+Inserted/Updated 300 raw videos
+Error inserting videos: column "updated_at" of relation "youtube_videos" does not exist
+LINE 6:                 updated_at = CURRENT_TIMESTAMP
+                        ^
+
+  [OK] Saved to PostgreSQL:
+    - 300 raw videos (all collected)
+    - 0 filtered videos
+  => Videos are now safely stored in database!
+Disconnected from database
+
+[Step 2/5] Collecting comments from YouTube API...
+댓글 수집: 5caOA3tZQYQ - 72개 스레드
+댓글 수집: nryxoMrvxns - 63개 스레드
+전체 댓글 수집 완료: 208개
+Collected 208 comments
+
+[Step 3/5] Summarizing comments (per video)...
+  Summarizing comments for video: 5caOA3tZQYQ (98 comments)
+  Summarizing comments for video: nryxoMrvxns (110 comments)
+Summarized comments for 2 videos
+
+[Step 4/5] Saving comments and updating videos with summaries...
+  CSV saving disabled (save_csv=False)
+Connected to PostgreSQL database: samsung_dx_sentiment
+Error inserting comments: column "updated_at" of relation "youtube_comments" does not exist
+LINE 6:                 updated_at = CURRENT_TIMESTAMP
+                        ^
+
+Error inserting videos: column "updated_at" of relation "youtube_videos" does not exist
+LINE 6:                 updated_at = CURRENT_TIMESTAMP
+                        ^
+
+  [OK] Updated PostgreSQL:
+    - 0 videos updated (with comment summaries)
+    - 0 comments inserted
+Disconnected from database
+
+================================================================================
+Pipeline completed successfully!
+================================================================================
+Total videos processed: 2
+Total comments processed: 208
+Videos with comment summary: 2
+Connected to PostgreSQL database: samsung_dx_sentiment
+
+Database Statistics:
+  Total videos in DB: 7
+  Total comments in DB: 296
+Disconnected from database
+  Updated keyword for 2 videos
+
+[OK] 'LED TV Launch' completed: 2 videos, 208 comments
+
+Waiting 30 seconds before next keyword...
+
+================================================================================
+Processing keyword 13/44: 'Evo TV Launch'
+================================================================================
+================================================================================
+YouTube Data Collection & Analysis Pipeline
+================================================================================
+Keyword: Evo TV Launch
+Max videos: 500
+Max comments per video: 100
+Region: US
+Summarize comments: True
+Analyze sentiment: False
+================================================================================
+
+[Step 1/4] Collecting video data from YouTube API (500 videos with quality filter)...
+
+================================================================================
+품질 필터링 모드 활성화:
+  - 채널 국가: US (US 채널만)
+  - 카테고리: 28 (Science & Technology)
+  - 최소 구독자: 10,000 OR 채널 총 조회수: 100,000,000
+  - 최소 참여율: 2.0%
+  - 목표 비디오 수: 500개
+  - 배치 크기: 50개씩 수집
+================================================================================
+
+
+[배치 1] 50개 비디오 수집 중...
+
+[QUOTA EXCEEDED] API 할당량 초과 감지
+
+[KEY ROTATION] API 키 #2로 전환됨 (잔여 키: 6개)
+[RETRY] 새 API 키로 재시도...
+  더 이상 수집할 비디오가 없습니다 (총 4개 수집)
+  비디오 ID 4개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 4개 채널
+  비디오 상세 정보 완료: 4개
+  품질 필터 적용 중...
+  필터 결과: 0개 통과 / 4개
+    - 채널 국가 불일치: 4개
+    - 카테고리 불일치: 4개
+    - 채널 규모 미달: 0개
+    - 참여율 미달: 3개
+  누적 필터링된 비디오: 0개 / 목표: 500개
+  [경고] 연속 1번째 빈 배치 (새 비디오 없음)
+
+[배치 2] 50개 비디오 수집 중...
+  더 이상 수집할 비디오가 없습니다 (총 4개 수집)
+  비디오 ID 4개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 4개 채널
+  비디오 상세 정보 완료: 4개
+  품질 필터 적용 중...
+  필터 결과: 0개 통과 / 4개
+    - 채널 국가 불일치: 4개
+    - 카테고리 불일치: 4개
+    - 채널 규모 미달: 0개
+    - 참여율 미달: 3개
+  누적 필터링된 비디오: 0개 / 목표: 500개
+  [경고] 연속 2번째 빈 배치 (새 비디오 없음)
+
+[배치 3] 50개 비디오 수집 중...
+  더 이상 수집할 비디오가 없습니다 (총 4개 수집)
+  비디오 ID 4개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 4개 채널
+  비디오 상세 정보 완료: 4개
+  품질 필터 적용 중...
+  필터 결과: 0개 통과 / 4개
+    - 채널 국가 불일치: 4개
+    - 카테고리 불일치: 4개
+    - 채널 규모 미달: 0개
+    - 참여율 미달: 3개
+  누적 필터링된 비디오: 0개 / 목표: 500개
+  [경고] 연속 3번째 빈 배치 (새 비디오 없음)
+
+[조기 종료] 3번 연속 새 비디오 없음 - 더 이상 수집 가능한 비디오 없음
+수집된 비디오: 0개 (목표: 500개)
+
+================================================================================
+수집 완료: evo tv launch in US
+  - 총 수집 비디오 수: 12개
+  - 필터링 후: 0개
+  - Raw 데이터: 12개
+  - 최종 반환: 0개
+  - 총 API 호출 수: 9
+================================================================================
+
+No videos found!
+
+[WARN] 'Evo TV Launch' returned no data
+
+Waiting 30 seconds before next keyword...
+
+================================================================================
+Processing keyword 14/44: 'Mini LED TV Launch'
+================================================================================
+================================================================================
+YouTube Data Collection & Analysis Pipeline
+================================================================================
+Keyword: Mini LED TV Launch
+Max videos: 500
+Max comments per video: 100
+Region: US
+Summarize comments: True
+Analyze sentiment: False
+================================================================================
+
+[Step 1/4] Collecting video data from YouTube API (500 videos with quality filter)...
+
+================================================================================
+품질 필터링 모드 활성화:
+  - 채널 국가: US (US 채널만)
+  - 카테고리: 28 (Science & Technology)
+  - 최소 구독자: 10,000 OR 채널 총 조회수: 100,000,000
+  - 최소 참여율: 2.0%
+  - 목표 비디오 수: 500개
+  - 배치 크기: 50개씩 수집
+================================================================================
+
+
+[배치 1] 50개 비디오 수집 중...
+  비디오 ID 50개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 34개 채널
+  비디오 상세 정보 완료: 50개
+  품질 필터 적용 중...
+  필터 결과: 2개 통과 / 50개
+    - 채널 국가 불일치: 48개
+    - 카테고리 불일치: 9개
+    - 채널 규모 미달: 0개
+    - 참여율 미달: 32개
+  누적 필터링된 비디오: 2개 / 목표: 500개
+
+[배치 2] 50개 비디오 수집 중...
+  비디오 ID 50개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 36개 채널
+  비디오 상세 정보 완료: 50개
+  품질 필터 적용 중...
+  필터 결과: 1개 통과 / 50개
+    - 채널 국가 불일치: 48개
+    - 카테고리 불일치: 7개
+    - 채널 규모 미달: 8개
+    - 참여율 미달: 36개
+  누적 필터링된 비디오: 3개 / 목표: 500개
+
+[배치 3] 50개 비디오 수집 중...
+  더 이상 수집할 비디오가 없습니다 (총 45개 수집)
+  비디오 ID 45개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 38개 채널
+  비디오 상세 정보 완료: 45개
+  품질 필터 적용 중...
+  필터 결과: 0개 통과 / 45개
+    - 채널 국가 불일치: 41개
+    - 카테고리 불일치: 15개
+    - 채널 규모 미달: 26개
+    - 참여율 미달: 37개
+  누적 필터링된 비디오: 3개 / 목표: 500개
+  [경고] 연속 1번째 빈 배치 (새 비디오 없음)
+
+[배치 4] 50개 비디오 수집 중...
+  비디오 ID 50개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 34개 채널
+  비디오 상세 정보 완료: 50개
+  품질 필터 적용 중...
+  필터 결과: 0개 통과 / 50개
+    - 채널 국가 불일치: 48개
+    - 카테고리 불일치: 9개
+    - 채널 규모 미달: 0개
+    - 참여율 미달: 32개
+  누적 필터링된 비디오: 3개 / 목표: 500개
+  [경고] 연속 2번째 빈 배치 (새 비디오 없음)
+
+[배치 5] 50개 비디오 수집 중...
+  비디오 ID 50개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 35개 채널
+  비디오 상세 정보 완료: 50개
+  품질 필터 적용 중...
+  필터 결과: 0개 통과 / 50개
+    - 채널 국가 불일치: 48개
+    - 카테고리 불일치: 7개
+    - 채널 규모 미달: 8개
+    - 참여율 미달: 36개
+  누적 필터링된 비디오: 3개 / 목표: 500개
+  [경고] 연속 3번째 빈 배치 (새 비디오 없음)
+
+[조기 종료] 3번 연속 새 비디오 없음 - 더 이상 수집 가능한 비디오 없음
+수집된 비디오: 3개 (목표: 500개)
+
+================================================================================
+수집 완료: mini led tv launch in US
+  - 총 수집 비디오 수: 245개
+  - 필터링 후: 3개
+  - Raw 데이터: 245개
+  - 최종 반환: 3개
+  - 총 API 호출 수: 15
+================================================================================
+
+Collected 3 filtered videos
+Raw data: 245 total videos
+
+[Step 1.5/5] Saving raw and filtered videos to database...
+Connected to PostgreSQL database: samsung_dx_sentiment
+Tables created successfully (including youtube_videos_raw)
+Inserted/Updated 245 raw videos
+Error inserting videos: column "updated_at" of relation "youtube_videos" does not exist
+LINE 6:                 updated_at = CURRENT_TIMESTAMP
+                        ^
+
+  [OK] Saved to PostgreSQL:
+    - 245 raw videos (all collected)
+    - 0 filtered videos
+  => Videos are now safely stored in database!
+Disconnected from database
+
+[Step 2/5] Collecting comments from YouTube API...
+댓글 수집: r6A7tZa3ZR8 - 100개 스레드
+댓글 수집: 5caOA3tZQYQ - 72개 스레드
+댓글 수집: nryxoMrvxns - 63개 스레드
+전체 댓글 수집 완료: 370개
+Collected 370 comments
+
+[Step 3/5] Summarizing comments (per video)...
+  Summarizing comments for video: r6A7tZa3ZR8 (162 comments)
+  Summarizing comments for video: 5caOA3tZQYQ (98 comments)
+  Summarizing comments for video: nryxoMrvxns (110 comments)
+Summarized comments for 3 videos
+
+[Step 4/5] Saving comments and updating videos with summaries...
+  CSV saving disabled (save_csv=False)
+Connected to PostgreSQL database: samsung_dx_sentiment
+Error inserting comments: column "updated_at" of relation "youtube_comments" does not exist
+LINE 6:                 updated_at = CURRENT_TIMESTAMP
+                        ^
+
+Error inserting videos: column "updated_at" of relation "youtube_videos" does not exist
+LINE 6:                 updated_at = CURRENT_TIMESTAMP
+                        ^
+
+  [OK] Updated PostgreSQL:
+    - 0 videos updated (with comment summaries)
+    - 0 comments inserted
+Disconnected from database
+
+================================================================================
+Pipeline completed successfully!
+================================================================================
+Total videos processed: 3
+Total comments processed: 370
+Videos with comment summary: 3
+Connected to PostgreSQL database: samsung_dx_sentiment
+
+Database Statistics:
+  Total videos in DB: 7
+  Total comments in DB: 296
+Disconnected from database
+  Updated keyword for 3 videos
+
+[OK] 'Mini LED TV Launch' completed: 3 videos, 370 comments
+
+Waiting 30 seconds before next keyword...
+
+================================================================================
+Processing keyword 15/44: 'Samsung Galaxy Launch Color'
+================================================================================
+================================================================================
+YouTube Data Collection & Analysis Pipeline
+================================================================================
+Keyword: Samsung Galaxy Launch Color
+Max videos: 500
+Max comments per video: 100
+Region: US
+Summarize comments: True
+Analyze sentiment: False
+================================================================================
+
+[Step 1/4] Collecting video data from YouTube API (500 videos with quality filter)...
+
+================================================================================
+품질 필터링 모드 활성화:
+  - 채널 국가: US (US 채널만)
+  - 카테고리: 28 (Science & Technology)
+  - 최소 구독자: 10,000 OR 채널 총 조회수: 100,000,000
+  - 최소 참여율: 2.0%
+  - 목표 비디오 수: 500개
+  - 배치 크기: 50개씩 수집
+================================================================================
+
+
+[배치 1] 50개 비디오 수집 중...
+  비디오 ID 50개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 40개 채널
+  비디오 상세 정보 완료: 50개
+  품질 필터 적용 중...
+  필터 결과: 0개 통과 / 50개
+    - 채널 국가 불일치: 44개
+    - 카테고리 불일치: 5개
+    - 채널 규모 미달: 2개
+    - 참여율 미달: 21개
+  누적 필터링된 비디오: 0개 / 목표: 500개
+  [경고] 연속 1번째 빈 배치 (새 비디오 없음)
+
+[배치 2] 50개 비디오 수집 중...
+  비디오 ID 50개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 46개 채널
+  비디오 상세 정보 완료: 50개
+  품질 필터 적용 중...
+  필터 결과: 0개 통과 / 50개
+    - 채널 국가 불일치: 43개
+    - 카테고리 불일치: 5개
+    - 채널 규모 미달: 7개
+    - 참여율 미달: 34개
+  누적 필터링된 비디오: 0개 / 목표: 500개
+  [경고] 연속 2번째 빈 배치 (새 비디오 없음)
+
+[배치 3] 50개 비디오 수집 중...
+  더 이상 수집할 비디오가 없습니다 (총 0개 수집)
+  이 배치에서 수집된 비디오가 없습니다.
+
+================================================================================
+수집 완료: samsung galaxy launch color in US
+  - 총 수집 비디오 수: 100개
+  - 필터링 후: 0개
+  - Raw 데이터: 100개
+  - 최종 반환: 0개
+  - 총 API 호출 수: 7
+================================================================================
+
+No videos found!
+
+[WARN] 'Samsung Galaxy Launch Color' returned no data
+
+Waiting 30 seconds before next keyword...
+
+================================================================================
+Processing keyword 16/44: 'Samsung Flip Launch Color'
+================================================================================
+================================================================================
+YouTube Data Collection & Analysis Pipeline
+================================================================================
+Keyword: Samsung Flip Launch Color
+Max videos: 500
+Max comments per video: 100
+Region: US
+Summarize comments: True
+Analyze sentiment: False
+================================================================================
+
+[Step 1/4] Collecting video data from YouTube API (500 videos with quality filter)...
+
+================================================================================
+품질 필터링 모드 활성화:
+  - 채널 국가: US (US 채널만)
+  - 카테고리: 28 (Science & Technology)
+  - 최소 구독자: 10,000 OR 채널 총 조회수: 100,000,000
+  - 최소 참여율: 2.0%
+  - 목표 비디오 수: 500개
+  - 배치 크기: 50개씩 수집
+================================================================================
+
+
+[배치 1] 50개 비디오 수집 중...
+  더 이상 수집할 비디오가 없습니다 (총 1개 수집)
+  비디오 ID 1개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 1개 채널
+  비디오 상세 정보 완료: 1개
+  품질 필터 적용 중...
+  필터 결과: 0개 통과 / 1개
+    - 채널 국가 불일치: 0개
+    - 카테고리 불일치: 1개
+    - 채널 규모 미달: 0개
+    - 참여율 미달: 1개
+  누적 필터링된 비디오: 0개 / 목표: 500개
+  [경고] 연속 1번째 빈 배치 (새 비디오 없음)
+
+[배치 2] 50개 비디오 수집 중...
+  더 이상 수집할 비디오가 없습니다 (총 1개 수집)
+  비디오 ID 1개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 1개 채널
+  비디오 상세 정보 완료: 1개
+  품질 필터 적용 중...
+  필터 결과: 0개 통과 / 1개
+    - 채널 국가 불일치: 0개
+    - 카테고리 불일치: 1개
+    - 채널 규모 미달: 0개
+    - 참여율 미달: 1개
+  누적 필터링된 비디오: 0개 / 목표: 500개
+  [경고] 연속 2번째 빈 배치 (새 비디오 없음)
+
+[배치 3] 50개 비디오 수집 중...
+  더 이상 수집할 비디오가 없습니다 (총 1개 수집)
+  비디오 ID 1개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 1개 채널
+  비디오 상세 정보 완료: 1개
+  품질 필터 적용 중...
+  필터 결과: 0개 통과 / 1개
+    - 채널 국가 불일치: 0개
+    - 카테고리 불일치: 1개
+    - 채널 규모 미달: 0개
+    - 참여율 미달: 1개
+  누적 필터링된 비디오: 0개 / 목표: 500개
+  [경고] 연속 3번째 빈 배치 (새 비디오 없음)
+
+[조기 종료] 3번 연속 새 비디오 없음 - 더 이상 수집 가능한 비디오 없음
+수집된 비디오: 0개 (목표: 500개)
+
+================================================================================
+수집 완료: samsung flip launch color in US
+  - 총 수집 비디오 수: 3개
+  - 필터링 후: 0개
+  - Raw 데이터: 3개
+  - 최종 반환: 0개
+  - 총 API 호출 수: 9
+================================================================================
+
+No videos found!
+
+[WARN] 'Samsung Flip Launch Color' returned no data
+
+Waiting 30 seconds before next keyword...
+
+================================================================================
+Processing keyword 17/44: 'Samsung Fold Launch Color'
+================================================================================
+================================================================================
+YouTube Data Collection & Analysis Pipeline
+================================================================================
+Keyword: Samsung Fold Launch Color
+Max videos: 500
+Max comments per video: 100
+Region: US
+Summarize comments: True
+Analyze sentiment: False
+================================================================================
+
+[Step 1/4] Collecting video data from YouTube API (500 videos with quality filter)...
+
+================================================================================
+품질 필터링 모드 활성화:
+  - 채널 국가: US (US 채널만)
+  - 카테고리: 28 (Science & Technology)
+  - 최소 구독자: 10,000 OR 채널 총 조회수: 100,000,000
+  - 최소 참여율: 2.0%
+  - 목표 비디오 수: 500개
+  - 배치 크기: 50개씩 수집
+================================================================================
+
+
+[배치 1] 50개 비디오 수집 중...
+  더 이상 수집할 비디오가 없습니다 (총 14개 수집)
+  비디오 ID 14개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 13개 채널
+  비디오 상세 정보 완료: 14개
+  품질 필터 적용 중...
+  필터 결과: 0개 통과 / 14개
+    - 채널 국가 불일치: 11개
+    - 카테고리 불일치: 5개
+    - 채널 규모 미달: 2개
+    - 참여율 미달: 9개
+  누적 필터링된 비디오: 0개 / 목표: 500개
+  [경고] 연속 1번째 빈 배치 (새 비디오 없음)
+
+[배치 2] 50개 비디오 수집 중...
+  더 이상 수집할 비디오가 없습니다 (총 13개 수집)
+  비디오 ID 13개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 12개 채널
+  비디오 상세 정보 완료: 13개
+  품질 필터 적용 중...
+  필터 결과: 0개 통과 / 13개
+    - 채널 국가 불일치: 10개
+    - 카테고리 불일치: 5개
+    - 채널 규모 미달: 2개
+    - 참여율 미달: 9개
+  누적 필터링된 비디오: 0개 / 목표: 500개
+  [경고] 연속 2번째 빈 배치 (새 비디오 없음)
+
+[배치 3] 50개 비디오 수집 중...
+  더 이상 수집할 비디오가 없습니다 (총 21개 수집)
+  비디오 ID 21개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 19개 채널
+  비디오 상세 정보 완료: 21개
+  품질 필터 적용 중...
+  필터 결과: 0개 통과 / 21개
+    - 채널 국가 불일치: 18개
+    - 카테고리 불일치: 8개
+    - 채널 규모 미달: 3개
+    - 참여율 미달: 13개
+  누적 필터링된 비디오: 0개 / 목표: 500개
+  [경고] 연속 3번째 빈 배치 (새 비디오 없음)
+
+[조기 종료] 3번 연속 새 비디오 없음 - 더 이상 수집 가능한 비디오 없음
+수집된 비디오: 0개 (목표: 500개)
+
+================================================================================
+수집 완료: samsung fold launch color in US
+  - 총 수집 비디오 수: 48개
+  - 필터링 후: 0개
+  - Raw 데이터: 48개
+  - 최종 반환: 0개
+  - 총 API 호출 수: 9
+================================================================================
+
+No videos found!
+
+[WARN] 'Samsung Fold Launch Color' returned no data
+
+Waiting 30 seconds before next keyword...
+
+================================================================================
+Processing keyword 18/44: 'Samsung Galaxy S Launch Color'
+================================================================================
+================================================================================
+YouTube Data Collection & Analysis Pipeline
+================================================================================
+Keyword: Samsung Galaxy S Launch Color
+Max videos: 500
+Max comments per video: 100
+Region: US
+Summarize comments: True
+Analyze sentiment: False
+================================================================================
+
+[Step 1/4] Collecting video data from YouTube API (500 videos with quality filter)...
+
+================================================================================
+품질 필터링 모드 활성화:
+  - 채널 국가: US (US 채널만)
+  - 카테고리: 28 (Science & Technology)
+  - 최소 구독자: 10,000 OR 채널 총 조회수: 100,000,000
+  - 최소 참여율: 2.0%
+  - 목표 비디오 수: 500개
+  - 배치 크기: 50개씩 수집
+================================================================================
+
+
+[배치 1] 50개 비디오 수집 중...
+  비디오 ID 50개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 40개 채널
+  비디오 상세 정보 완료: 50개
+  품질 필터 적용 중...
+  필터 결과: 1개 통과 / 50개
+    - 채널 국가 불일치: 43개
+    - 카테고리 불일치: 4개
+    - 채널 규모 미달: 0개
+    - 참여율 미달: 22개
+  누적 필터링된 비디오: 1개 / 목표: 500개
+
+[배치 2] 50개 비디오 수집 중...
+  더 이상 수집할 비디오가 없습니다 (총 12개 수집)
+  비디오 ID 12개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 10개 채널
+  비디오 상세 정보 완료: 12개
+  품질 필터 적용 중...
+  필터 결과: 0개 통과 / 12개
+    - 채널 국가 불일치: 7개
+    - 카테고리 불일치: 4개
+    - 채널 규모 미달: 3개
+    - 참여율 미달: 9개
+  누적 필터링된 비디오: 1개 / 목표: 500개
+  [경고] 연속 1번째 빈 배치 (새 비디오 없음)
+
+[배치 3] 50개 비디오 수집 중...
+  비디오 ID 50개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 40개 채널
+  비디오 상세 정보 완료: 50개
+  품질 필터 적용 중...
+  필터 결과: 0개 통과 / 50개
+    - 채널 국가 불일치: 43개
+    - 카테고리 불일치: 4개
+    - 채널 규모 미달: 0개
+    - 참여율 미달: 22개
+  누적 필터링된 비디오: 1개 / 목표: 500개
+  [경고] 연속 2번째 빈 배치 (새 비디오 없음)
+
+[배치 4] 50개 비디오 수집 중...
+  더 이상 수집할 비디오가 없습니다 (총 41개 수집)
+  비디오 ID 41개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 38개 채널
+  비디오 상세 정보 완료: 41개
+  품질 필터 적용 중...
+  필터 결과: 2개 통과 / 41개
+    - 채널 국가 불일치: 33개
+    - 카테고리 불일치: 10개
+    - 채널 규모 미달: 9개
+    - 참여율 미달: 23개
+  누적 필터링된 비디오: 3개 / 목표: 500개
+
+[배치 5] 50개 비디오 수집 중...
+  비디오 ID 50개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 44개 채널
+  비디오 상세 정보 완료: 50개
+  품질 필터 적용 중...
+  필터 결과: 1개 통과 / 50개
+    - 채널 국가 불일치: 43개
+    - 카테고리 불일치: 5개
+    - 채널 규모 미달: 0개
+    - 참여율 미달: 22개
+  누적 필터링된 비디오: 4개 / 목표: 500개
+
+[배치 6] 50개 비디오 수집 중...
+  더 이상 수집할 비디오가 없습니다 (총 41개 수집)
+  비디오 ID 41개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 38개 채널
+  비디오 상세 정보 완료: 41개
+  품질 필터 적용 중...
+  필터 결과: 0개 통과 / 41개
+    - 채널 국가 불일치: 33개
+    - 카테고리 불일치: 10개
+    - 채널 규모 미달: 9개
+    - 참여율 미달: 23개
+  누적 필터링된 비디오: 4개 / 목표: 500개
+  [경고] 연속 1번째 빈 배치 (새 비디오 없음)
+
+[배치 7] 50개 비디오 수집 중...
+  비디오 ID 50개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 40개 채널
+  비디오 상세 정보 완료: 50개
+  품질 필터 적용 중...
+  필터 결과: 0개 통과 / 50개
+    - 채널 국가 불일치: 43개
+    - 카테고리 불일치: 4개
+    - 채널 규모 미달: 0개
+    - 참여율 미달: 22개
+  누적 필터링된 비디오: 4개 / 목표: 500개
+  [경고] 연속 2번째 빈 배치 (새 비디오 없음)
+
+[배치 8] 50개 비디오 수집 중...
+  더 이상 수집할 비디오가 없습니다 (총 41개 수집)
+  비디오 ID 41개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 38개 채널
+  비디오 상세 정보 완료: 41개
+  품질 필터 적용 중...
+  필터 결과: 0개 통과 / 41개
+    - 채널 국가 불일치: 33개
+    - 카테고리 불일치: 10개
+    - 채널 규모 미달: 9개
+    - 참여율 미달: 23개
+  누적 필터링된 비디오: 4개 / 목표: 500개
+  [경고] 연속 3번째 빈 배치 (새 비디오 없음)
+
+[조기 종료] 3번 연속 새 비디오 없음 - 더 이상 수집 가능한 비디오 없음
+수집된 비디오: 4개 (목표: 500개)
+
+================================================================================
+수집 완료: samsung galaxy s launch color in US
+  - 총 수집 비디오 수: 335개
+  - 필터링 후: 4개
+  - Raw 데이터: 335개
+  - 최종 반환: 4개
+  - 총 API 호출 수: 24
+================================================================================
+
+Collected 4 filtered videos
+Raw data: 335 total videos
+
+[Step 1.5/5] Saving raw and filtered videos to database...
+Connected to PostgreSQL database: samsung_dx_sentiment
+Tables created successfully (including youtube_videos_raw)
+Inserted/Updated 335 raw videos
+Error inserting videos: column "updated_at" of relation "youtube_videos" does not exist
+LINE 6:                 updated_at = CURRENT_TIMESTAMP
+                        ^
+
+  [OK] Saved to PostgreSQL:
+    - 335 raw videos (all collected)
+    - 0 filtered videos
+  => Videos are now safely stored in database!
+Disconnected from database
+
+[Step 2/5] Collecting comments from YouTube API...
+댓글 수집: 5EdsU1-Gsrg - 100개 스레드
+댓글 수집: W3kRvWdoBho - 30개 스레드
+댓글 수집: XRHClFClEAY - 4개 스레드
+댓글 수집: JmIFGh1bnxo - 100개 스레드
+전체 댓글 수집 완료: 409개
+Collected 409 comments
+
+[Step 3/5] Summarizing comments (per video)...
+  Summarizing comments for video: 5EdsU1-Gsrg (189 comments)
+  Summarizing comments for video: W3kRvWdoBho (57 comments)
+  Summarizing comments for video: XRHClFClEAY (7 comments)
+  Summarizing comments for video: JmIFGh1bnxo (156 comments)
+Summarized comments for 4 videos
+
+[Step 4/5] Saving comments and updating videos with summaries...
+  CSV saving disabled (save_csv=False)
+Connected to PostgreSQL database: samsung_dx_sentiment
+Error inserting comments: column "updated_at" of relation "youtube_comments" does not exist
+LINE 6:                 updated_at = CURRENT_TIMESTAMP
+                        ^
+
+Error inserting videos: column "updated_at" of relation "youtube_videos" does not exist
+LINE 6:                 updated_at = CURRENT_TIMESTAMP
+                        ^
+
+  [OK] Updated PostgreSQL:
+    - 0 videos updated (with comment summaries)
+    - 0 comments inserted
+Disconnected from database
+
+================================================================================
+Pipeline completed successfully!
+================================================================================
+Total videos processed: 4
+Total comments processed: 409
+Videos with comment summary: 4
+Connected to PostgreSQL database: samsung_dx_sentiment
+
+Database Statistics:
+  Total videos in DB: 7
+  Total comments in DB: 296
+Disconnected from database
+  Updated keyword for 4 videos
+
+[OK] 'Samsung Galaxy S Launch Color' completed: 4 videos, 409 comments
+
+Waiting 30 seconds before next keyword...
+
+================================================================================
+Processing keyword 19/44: 'Samsung Galaxy Note Launch Color'
+================================================================================
+================================================================================
+YouTube Data Collection & Analysis Pipeline
+================================================================================
+Keyword: Samsung Galaxy Note Launch Color
+Max videos: 500
+Max comments per video: 100
+Region: US
+Summarize comments: True
+Analyze sentiment: False
+================================================================================
+
+[Step 1/4] Collecting video data from YouTube API (500 videos with quality filter)...
+
+================================================================================
+품질 필터링 모드 활성화:
+  - 채널 국가: US (US 채널만)
+  - 카테고리: 28 (Science & Technology)
+  - 최소 구독자: 10,000 OR 채널 총 조회수: 100,000,000
+  - 최소 참여율: 2.0%
+  - 목표 비디오 수: 500개
+  - 배치 크기: 50개씩 수집
+================================================================================
+
+
+[배치 1] 50개 비디오 수집 중...
+  더 이상 수집할 비디오가 없습니다 (총 11개 수집)
+  비디오 ID 11개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 10개 채널
+  비디오 상세 정보 완료: 11개
+  품질 필터 적용 중...
+  필터 결과: 0개 통과 / 11개
+    - 채널 국가 불일치: 8개
+    - 카테고리 불일치: 0개
+    - 채널 규모 미달: 0개
+    - 참여율 미달: 9개
+  누적 필터링된 비디오: 0개 / 목표: 500개
+  [경고] 연속 1번째 빈 배치 (새 비디오 없음)
+
+[배치 2] 50개 비디오 수집 중...
+  더 이상 수집할 비디오가 없습니다 (총 11개 수집)
+  비디오 ID 11개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 10개 채널
+  비디오 상세 정보 완료: 11개
+  품질 필터 적용 중...
+  필터 결과: 0개 통과 / 11개
+    - 채널 국가 불일치: 8개
+    - 카테고리 불일치: 0개
+    - 채널 규모 미달: 0개
+    - 참여율 미달: 9개
+  누적 필터링된 비디오: 0개 / 목표: 500개
+  [경고] 연속 2번째 빈 배치 (새 비디오 없음)
+
+[배치 3] 50개 비디오 수집 중...
+  더 이상 수집할 비디오가 없습니다 (총 11개 수집)
+  비디오 ID 11개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 10개 채널
+  비디오 상세 정보 완료: 11개
+  품질 필터 적용 중...
+  필터 결과: 0개 통과 / 11개
+    - 채널 국가 불일치: 8개
+    - 카테고리 불일치: 0개
+    - 채널 규모 미달: 0개
+    - 참여율 미달: 9개
+  누적 필터링된 비디오: 0개 / 목표: 500개
+  [경고] 연속 3번째 빈 배치 (새 비디오 없음)
+
+[조기 종료] 3번 연속 새 비디오 없음 - 더 이상 수집 가능한 비디오 없음
+수집된 비디오: 0개 (목표: 500개)
+
+================================================================================
+수집 완료: samsung galaxy note launch color in US
+  - 총 수집 비디오 수: 33개
+  - 필터링 후: 0개
+  - Raw 데이터: 33개
+  - 최종 반환: 0개
+  - 총 API 호출 수: 9
+================================================================================
+
+No videos found!
+
+[WARN] 'Samsung Galaxy Note Launch Color' returned no data
+
+Waiting 30 seconds before next keyword...
+
+================================================================================
+Processing keyword 20/44: 'Samsung OLED TV Launch'
+================================================================================
+================================================================================
+YouTube Data Collection & Analysis Pipeline
+================================================================================
+Keyword: Samsung OLED TV Launch
+Max videos: 500
+Max comments per video: 100
+Region: US
+Summarize comments: True
+Analyze sentiment: False
+================================================================================
+
+[Step 1/4] Collecting video data from YouTube API (500 videos with quality filter)...
+
+================================================================================
+품질 필터링 모드 활성화:
+  - 채널 국가: US (US 채널만)
+  - 카테고리: 28 (Science & Technology)
+  - 최소 구독자: 10,000 OR 채널 총 조회수: 100,000,000
+  - 최소 참여율: 2.0%
+  - 목표 비디오 수: 500개
+  - 배치 크기: 50개씩 수집
+================================================================================
+
+
+[배치 1] 50개 비디오 수집 중...
+  비디오 ID 50개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 32개 채널
+  비디오 상세 정보 완료: 50개
+  품질 필터 적용 중...
+  필터 결과: 0개 통과 / 50개
+    - 채널 국가 불일치: 49개
+    - 카테고리 불일치: 13개
+    - 채널 규모 미달: 3개
+    - 참여율 미달: 34개
+  누적 필터링된 비디오: 0개 / 목표: 500개
+  [경고] 연속 1번째 빈 배치 (새 비디오 없음)
+
+[배치 2] 50개 비디오 수집 중...
+  비디오 ID 50개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 34개 채널
+  비디오 상세 정보 완료: 50개
+  품질 필터 적용 중...
+  필터 결과: 0개 통과 / 50개
+    - 채널 국가 불일치: 48개
+    - 카테고리 불일치: 10개
+    - 채널 규모 미달: 2개
+    - 참여율 미달: 39개
+  누적 필터링된 비디오: 0개 / 목표: 500개
+  [경고] 연속 2번째 빈 배치 (새 비디오 없음)
+
+[배치 3] 50개 비디오 수집 중...
+  더 이상 수집할 비디오가 없습니다 (총 12개 수집)
+  비디오 ID 12개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 12개 채널
+  비디오 상세 정보 완료: 12개
+  품질 필터 적용 중...
+  필터 결과: 0개 통과 / 12개
+    - 채널 국가 불일치: 10개
+    - 카테고리 불일치: 6개
+    - 채널 규모 미달: 8개
+    - 참여율 미달: 10개
+  누적 필터링된 비디오: 0개 / 목표: 500개
+  [경고] 연속 3번째 빈 배치 (새 비디오 없음)
+
+[조기 종료] 3번 연속 새 비디오 없음 - 더 이상 수집 가능한 비디오 없음
+수집된 비디오: 0개 (목표: 500개)
+
+================================================================================
+수집 완료: samsung oled tv launch in US
+  - 총 수집 비디오 수: 112개
+  - 필터링 후: 0개
+  - Raw 데이터: 112개
+  - 최종 반환: 0개
+  - 총 API 호출 수: 9
+================================================================================
+
+No videos found!
+
+[WARN] 'Samsung OLED TV Launch' returned no data
+
+Waiting 30 seconds before next keyword...
+
+================================================================================
+Processing keyword 21/44: 'Samsung QLED TV Launch'
+================================================================================
+================================================================================
+YouTube Data Collection & Analysis Pipeline
+================================================================================
+Keyword: Samsung QLED TV Launch
+Max videos: 500
+Max comments per video: 100
+Region: US
+Summarize comments: True
+Analyze sentiment: False
+================================================================================
+
+[Step 1/4] Collecting video data from YouTube API (500 videos with quality filter)...
+
+================================================================================
+품질 필터링 모드 활성화:
+  - 채널 국가: US (US 채널만)
+  - 카테고리: 28 (Science & Technology)
+  - 최소 구독자: 10,000 OR 채널 총 조회수: 100,000,000
+  - 최소 참여율: 2.0%
+  - 목표 비디오 수: 500개
+  - 배치 크기: 50개씩 수집
+================================================================================
+
+
+[배치 1] 50개 비디오 수집 중...
+  비디오 ID 50개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 29개 채널
+  비디오 상세 정보 완료: 50개
+  품질 필터 적용 중...
+  필터 결과: 0개 통과 / 50개
+    - 채널 국가 불일치: 50개
+    - 카테고리 불일치: 7개
+    - 채널 규모 미달: 3개
+    - 참여율 미달: 29개
+  누적 필터링된 비디오: 0개 / 목표: 500개
+  [경고] 연속 1번째 빈 배치 (새 비디오 없음)
+
+[배치 2] 50개 비디오 수집 중...
+  비디오 ID 50개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 33개 채널
+  비디오 상세 정보 완료: 50개
+  품질 필터 적용 중...
+  필터 결과: 0개 통과 / 50개
+    - 채널 국가 불일치: 49개
+    - 카테고리 불일치: 12개
+    - 채널 규모 미달: 2개
+    - 참여율 미달: 40개
+  누적 필터링된 비디오: 0개 / 목표: 500개
+  [경고] 연속 2번째 빈 배치 (새 비디오 없음)
+
+[배치 3] 50개 비디오 수집 중...
+  비디오 ID 50개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 35개 채널
+  비디오 상세 정보 완료: 50개
+  품질 필터 적용 중...
+  필터 결과: 0개 통과 / 50개
+    - 채널 국가 불일치: 50개
+    - 카테고리 불일치: 10개
+    - 채널 규모 미달: 4개
+    - 참여율 미달: 37개
+  누적 필터링된 비디오: 0개 / 목표: 500개
+  [경고] 연속 3번째 빈 배치 (새 비디오 없음)
+
+[조기 종료] 3번 연속 새 비디오 없음 - 더 이상 수집 가능한 비디오 없음
+수집된 비디오: 0개 (목표: 500개)
+
+================================================================================
+수집 완료: samsung qled tv launch in US
+  - 총 수집 비디오 수: 150개
+  - 필터링 후: 0개
+  - Raw 데이터: 150개
+  - 최종 반환: 0개
+  - 총 API 호출 수: 9
+================================================================================
+
+No videos found!
+
+[WARN] 'Samsung QLED TV Launch' returned no data
+
+Waiting 30 seconds before next keyword...
+
+================================================================================
+Processing keyword 22/44: 'Samsung Galaxy Z Flip Launch Color'
+================================================================================
+================================================================================
+YouTube Data Collection & Analysis Pipeline
+================================================================================
+Keyword: Samsung Galaxy Z Flip Launch Color
+Max videos: 500
+Max comments per video: 100
+Region: US
+Summarize comments: True
+Analyze sentiment: False
+================================================================================
+
+[Step 1/4] Collecting video data from YouTube API (500 videos with quality filter)...
+
+================================================================================
+품질 필터링 모드 활성화:
+  - 채널 국가: US (US 채널만)
+  - 카테고리: 28 (Science & Technology)
+  - 최소 구독자: 10,000 OR 채널 총 조회수: 100,000,000
+  - 최소 참여율: 2.0%
+  - 목표 비디오 수: 500개
+  - 배치 크기: 50개씩 수집
+================================================================================
+
+
+[배치 1] 50개 비디오 수집 중...
+  더 이상 수집할 비디오가 없습니다 (총 11개 수집)
+  비디오 ID 11개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 10개 채널
+  비디오 상세 정보 완료: 11개
+  품질 필터 적용 중...
+  필터 결과: 0개 통과 / 11개
+    - 채널 국가 불일치: 8개
+    - 카테고리 불일치: 3개
+    - 채널 규모 미달: 5개
+    - 참여율 미달: 9개
+  누적 필터링된 비디오: 0개 / 목표: 500개
+  [경고] 연속 1번째 빈 배치 (새 비디오 없음)
+
+[배치 2] 50개 비디오 수집 중...
+  더 이상 수집할 비디오가 없습니다 (총 11개 수집)
+  비디오 ID 11개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 10개 채널
+  비디오 상세 정보 완료: 11개
+  품질 필터 적용 중...
+  필터 결과: 0개 통과 / 11개
+    - 채널 국가 불일치: 8개
+    - 카테고리 불일치: 3개
+    - 채널 규모 미달: 5개
+    - 참여율 미달: 9개
+  누적 필터링된 비디오: 0개 / 목표: 500개
+  [경고] 연속 2번째 빈 배치 (새 비디오 없음)
+
+[배치 3] 50개 비디오 수집 중...
+  더 이상 수집할 비디오가 없습니다 (총 11개 수집)
+  비디오 ID 11개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 10개 채널
+  비디오 상세 정보 완료: 11개
+  품질 필터 적용 중...
+  필터 결과: 0개 통과 / 11개
+    - 채널 국가 불일치: 8개
+    - 카테고리 불일치: 3개
+    - 채널 규모 미달: 5개
+    - 참여율 미달: 9개
+  누적 필터링된 비디오: 0개 / 목표: 500개
+  [경고] 연속 3번째 빈 배치 (새 비디오 없음)
+
+[조기 종료] 3번 연속 새 비디오 없음 - 더 이상 수집 가능한 비디오 없음
+수집된 비디오: 0개 (목표: 500개)
+
+================================================================================
+수집 완료: samsung galaxy z flip launch color in US
+  - 총 수집 비디오 수: 33개
+  - 필터링 후: 0개
+  - Raw 데이터: 33개
+  - 최종 반환: 0개
+  - 총 API 호출 수: 9
+================================================================================
+
+No videos found!
+
+[WARN] 'Samsung Galaxy Z Flip Launch Color' returned no data
+
+Waiting 30 seconds before next keyword...
+
+================================================================================
+Processing keyword 23/44: 'Samsung Galaxy Z Fold Launch Color'
+================================================================================
+================================================================================
+YouTube Data Collection & Analysis Pipeline
+================================================================================
+Keyword: Samsung Galaxy Z Fold Launch Color
+Max videos: 500
+Max comments per video: 100
+Region: US
+Summarize comments: True
+Analyze sentiment: False
+================================================================================
+
+[Step 1/4] Collecting video data from YouTube API (500 videos with quality filter)...
+
+================================================================================
+품질 필터링 모드 활성화:
+  - 채널 국가: US (US 채널만)
+  - 카테고리: 28 (Science & Technology)
+  - 최소 구독자: 10,000 OR 채널 총 조회수: 100,000,000
+  - 최소 참여율: 2.0%
+  - 목표 비디오 수: 500개
+  - 배치 크기: 50개씩 수집
+================================================================================
+
+
+[배치 1] 50개 비디오 수집 중...
+  더 이상 수집할 비디오가 없습니다 (총 28개 수집)
+  비디오 ID 28개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 23개 채널
+  비디오 상세 정보 완료: 28개
+  품질 필터 적용 중...
+  필터 결과: 0개 통과 / 28개
+    - 채널 국가 불일치: 22개
+    - 카테고리 불일치: 8개
+    - 채널 규모 미달: 3개
+    - 참여율 미달: 20개
+  누적 필터링된 비디오: 0개 / 목표: 500개
+  [경고] 연속 1번째 빈 배치 (새 비디오 없음)
+
+[배치 2] 50개 비디오 수집 중...
+  더 이상 수집할 비디오가 없습니다 (총 10개 수집)
+  비디오 ID 10개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 10개 채널
+  비디오 상세 정보 완료: 10개
+  품질 필터 적용 중...
+  필터 결과: 0개 통과 / 10개
+    - 채널 국가 불일치: 8개
+    - 카테고리 불일치: 0개
+    - 채널 규모 미달: 0개
+    - 참여율 미달: 7개
+  누적 필터링된 비디오: 0개 / 목표: 500개
+  [경고] 연속 2번째 빈 배치 (새 비디오 없음)
+
+[배치 3] 50개 비디오 수집 중...
+  더 이상 수집할 비디오가 없습니다 (총 44개 수집)
+  비디오 ID 44개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 24개 채널
+  비디오 상세 정보 완료: 44개
+  품질 필터 적용 중...
+  필터 결과: 0개 통과 / 44개
+    - 채널 국가 불일치: 21개
+    - 카테고리 불일치: 8개
+    - 채널 규모 미달: 22개
+    - 참여율 미달: 34개
+  누적 필터링된 비디오: 0개 / 목표: 500개
+  [경고] 연속 3번째 빈 배치 (새 비디오 없음)
+
+[조기 종료] 3번 연속 새 비디오 없음 - 더 이상 수집 가능한 비디오 없음
+수집된 비디오: 0개 (목표: 500개)
+
+================================================================================
+수집 완료: samsung galaxy z fold launch color in US
+  - 총 수집 비디오 수: 82개
+  - 필터링 후: 0개
+  - Raw 데이터: 82개
+  - 최종 반환: 0개
+  - 총 API 호출 수: 9
+================================================================================
+
+No videos found!
+
+[WARN] 'Samsung Galaxy Z Fold Launch Color' returned no data
+
+Waiting 30 seconds before next keyword...
+
+================================================================================
+Processing keyword 24/44: 'Samsung Galaxy A Launch Color'
+================================================================================
+================================================================================
+YouTube Data Collection & Analysis Pipeline
+================================================================================
+Keyword: Samsung Galaxy A Launch Color
+Max videos: 500
+Max comments per video: 100
+Region: US
+Summarize comments: True
+Analyze sentiment: False
+================================================================================
+
+[Step 1/4] Collecting video data from YouTube API (500 videos with quality filter)...
+
+================================================================================
+품질 필터링 모드 활성화:
+  - 채널 국가: US (US 채널만)
+  - 카테고리: 28 (Science & Technology)
+  - 최소 구독자: 10,000 OR 채널 총 조회수: 100,000,000
+  - 최소 참여율: 2.0%
+  - 목표 비디오 수: 500개
+  - 배치 크기: 50개씩 수집
+================================================================================
+
+
+[배치 1] 50개 비디오 수집 중...
+  비디오 ID 50개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 36개 채널
+  비디오 상세 정보 완료: 50개
+  품질 필터 적용 중...
+  필터 결과: 1개 통과 / 50개
+    - 채널 국가 불일치: 45개
+    - 카테고리 불일치: 2개
+    - 채널 규모 미달: 1개
+    - 참여율 미달: 25개
+  누적 필터링된 비디오: 1개 / 목표: 500개
+
+[배치 2] 50개 비디오 수집 중...
+  비디오 ID 50개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 44개 채널
+  비디오 상세 정보 완료: 50개
+  품질 필터 적용 중...
+  필터 결과: 0개 통과 / 50개
+    - 채널 국가 불일치: 44개
+    - 카테고리 불일치: 3개
+    - 채널 규모 미달: 5개
+    - 참여율 미달: 28개
+  누적 필터링된 비디오: 1개 / 목표: 500개
+  [경고] 연속 1번째 빈 배치 (새 비디오 없음)
+
+[배치 3] 50개 비디오 수집 중...
+  비디오 ID 50개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 47개 채널
+  비디오 상세 정보 완료: 50개
+  품질 필터 적용 중...
+  필터 결과: 1개 통과 / 50개
+    - 채널 국가 불일치: 42개
+    - 카테고리 불일치: 24개
+    - 채널 규모 미달: 23개
+    - 참여율 미달: 42개
+  누적 필터링된 비디오: 2개 / 목표: 500개
+
+[배치 4] 50개 비디오 수집 중...
+  더 이상 수집할 비디오가 없습니다 (총 1개 수집)
+  비디오 ID 1개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 1개 채널
+  비디오 상세 정보 완료: 1개
+  품질 필터 적용 중...
+  필터 결과: 0개 통과 / 1개
+    - 채널 국가 불일치: 1개
+    - 카테고리 불일치: 1개
+    - 채널 규모 미달: 1개
+    - 참여율 미달: 1개
+  누적 필터링된 비디오: 2개 / 목표: 500개
+  [경고] 연속 1번째 빈 배치 (새 비디오 없음)
+
+[배치 5] 50개 비디오 수집 중...
+  비디오 ID 50개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 36개 채널
+  비디오 상세 정보 완료: 50개
+  품질 필터 적용 중...
+  필터 결과: 0개 통과 / 50개
+    - 채널 국가 불일치: 45개
+    - 카테고리 불일치: 2개
+    - 채널 규모 미달: 1개
+    - 참여율 미달: 25개
+  누적 필터링된 비디오: 2개 / 목표: 500개
+  [경고] 연속 2번째 빈 배치 (새 비디오 없음)
+
+[배치 6] 50개 비디오 수집 중...
+  비디오 ID 50개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 44개 채널
+  비디오 상세 정보 완료: 50개
+  품질 필터 적용 중...
+  필터 결과: 0개 통과 / 50개
+    - 채널 국가 불일치: 44개
+    - 카테고리 불일치: 3개
+    - 채널 규모 미달: 5개
+    - 참여율 미달: 28개
+  누적 필터링된 비디오: 2개 / 목표: 500개
+  [경고] 연속 3번째 빈 배치 (새 비디오 없음)
+
+[조기 종료] 3번 연속 새 비디오 없음 - 더 이상 수집 가능한 비디오 없음
+수집된 비디오: 2개 (목표: 500개)
+
+================================================================================
+수집 완료: samsung galaxy a launch color in US
+  - 총 수집 비디오 수: 251개
+  - 필터링 후: 2개
+  - Raw 데이터: 251개
+  - 최종 반환: 2개
+  - 총 API 호출 수: 18
+================================================================================
+
+Collected 2 filtered videos
+Raw data: 251 total videos
+
+[Step 1.5/5] Saving raw and filtered videos to database...
+Connected to PostgreSQL database: samsung_dx_sentiment
+Tables created successfully (including youtube_videos_raw)
+Inserted/Updated 251 raw videos
+Error inserting videos: column "updated_at" of relation "youtube_videos" does not exist
+LINE 6:                 updated_at = CURRENT_TIMESTAMP
+                        ^
+
+  [OK] Saved to PostgreSQL:
+    - 251 raw videos (all collected)
+    - 0 filtered videos
+  => Videos are now safely stored in database!
+Disconnected from database
+
+[Step 2/5] Collecting comments from YouTube API...
+댓글 수집: 5EdsU1-Gsrg - 100개 스레드
+댓글 수집: _hEF7iqmhws - 10개 스레드
+전체 댓글 수집 완료: 207개
+Collected 207 comments
+
+[Step 3/5] Summarizing comments (per video)...
+  Summarizing comments for video: 5EdsU1-Gsrg (189 comments)
+  Summarizing comments for video: _hEF7iqmhws (18 comments)
+Summarized comments for 2 videos
+
+[Step 4/5] Saving comments and updating videos with summaries...
+  CSV saving disabled (save_csv=False)
+Connected to PostgreSQL database: samsung_dx_sentiment
+Error inserting comments: column "updated_at" of relation "youtube_comments" does not exist
+LINE 6:                 updated_at = CURRENT_TIMESTAMP
+                        ^
+
+Error inserting videos: column "updated_at" of relation "youtube_videos" does not exist
+LINE 6:                 updated_at = CURRENT_TIMESTAMP
+                        ^
+
+  [OK] Updated PostgreSQL:
+    - 0 videos updated (with comment summaries)
+    - 0 comments inserted
+Disconnected from database
+
+================================================================================
+Pipeline completed successfully!
+================================================================================
+Total videos processed: 2
+Total comments processed: 207
+Videos with comment summary: 2
+Connected to PostgreSQL database: samsung_dx_sentiment
+
+Database Statistics:
+  Total videos in DB: 7
+  Total comments in DB: 296
+Disconnected from database
+  Updated keyword for 2 videos
+
+[OK] 'Samsung Galaxy A Launch Color' completed: 2 videos, 207 comments
+
+Waiting 30 seconds before next keyword...
+
+================================================================================
+Processing keyword 25/44: 'Apple Launch Color'
+================================================================================
+================================================================================
+YouTube Data Collection & Analysis Pipeline
+================================================================================
+Keyword: Apple Launch Color
+Max videos: 500
+Max comments per video: 100
+Region: US
+Summarize comments: True
+Analyze sentiment: False
+================================================================================
+
+[Step 1/4] Collecting video data from YouTube API (500 videos with quality filter)...
+
+================================================================================
+품질 필터링 모드 활성화:
+  - 채널 국가: US (US 채널만)
+  - 카테고리: 28 (Science & Technology)
+  - 최소 구독자: 10,000 OR 채널 총 조회수: 100,000,000
+  - 최소 참여율: 2.0%
+  - 목표 비디오 수: 500개
+  - 배치 크기: 50개씩 수집
+================================================================================
+
+
+[배치 1] 50개 비디오 수집 중...
+  비디오 ID 50개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 35개 채널
+  비디오 상세 정보 완료: 50개
+  품질 필터 적용 중...
+  필터 결과: 5개 통과 / 50개
+    - 채널 국가 불일치: 26개
+    - 카테고리 불일치: 9개
+    - 채널 규모 미달: 1개
+    - 참여율 미달: 20개
+  누적 필터링된 비디오: 5개 / 목표: 500개
+
+[배치 2] 50개 비디오 수집 중...
+  비디오 ID 50개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 42개 채널
+  비디오 상세 정보 완료: 50개
+  품질 필터 적용 중...
+  필터 결과: 5개 통과 / 50개
+    - 채널 국가 불일치: 24개
+    - 카테고리 불일치: 14개
+    - 채널 규모 미달: 1개
+    - 참여율 미달: 32개
+  누적 필터링된 비디오: 10개 / 목표: 500개
+
+[배치 3] 50개 비디오 수집 중...
+  비디오 ID 50개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 44개 채널
+  비디오 상세 정보 완료: 50개
+  품질 필터 적용 중...
+  필터 결과: 0개 통과 / 50개
+    - 채널 국가 불일치: 47개
+    - 카테고리 불일치: 27개
+    - 채널 규모 미달: 22개
+    - 참여율 미달: 39개
+  누적 필터링된 비디오: 10개 / 목표: 500개
+  [경고] 연속 1번째 빈 배치 (새 비디오 없음)
+
+[배치 4] 50개 비디오 수집 중...
+  더 이상 수집할 비디오가 없습니다 (총 12개 수집)
+  비디오 ID 12개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 11개 채널
+  비디오 상세 정보 완료: 12개
+  품질 필터 적용 중...
+  필터 결과: 0개 통과 / 12개
+    - 채널 국가 불일치: 10개
+    - 카테고리 불일치: 11개
+    - 채널 규모 미달: 12개
+    - 참여율 미달: 10개
+  누적 필터링된 비디오: 10개 / 목표: 500개
+  [경고] 연속 2번째 빈 배치 (새 비디오 없음)
+
+[배치 5] 50개 비디오 수집 중...
+  비디오 ID 50개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 36개 채널
+  비디오 상세 정보 완료: 50개
+  품질 필터 적용 중...
+  필터 결과: 3개 통과 / 50개
+    - 채널 국가 불일치: 26개
+    - 카테고리 불일치: 8개
+    - 채널 규모 미달: 2개
+    - 참여율 미달: 18개
+  누적 필터링된 비디오: 13개 / 목표: 500개
+
+[배치 6] 50개 비디오 수집 중...
+  비디오 ID 50개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 43개 채널
+  비디오 상세 정보 완료: 50개
+  품질 필터 적용 중...
+  필터 결과: 0개 통과 / 50개
+    - 채널 국가 불일치: 28개
+    - 카테고리 불일치: 15개
+    - 채널 규모 미달: 3개
+    - 참여율 미달: 32개
+  누적 필터링된 비디오: 13개 / 목표: 500개
+  [경고] 연속 1번째 빈 배치 (새 비디오 없음)
+
+[배치 7] 50개 비디오 수집 중...
+  비디오 ID 50개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 44개 채널
+  비디오 상세 정보 완료: 50개
+  품질 필터 적용 중...
+  필터 결과: 0개 통과 / 50개
+    - 채널 국가 불일치: 47개
+    - 카테고리 불일치: 27개
+    - 채널 규모 미달: 22개
+    - 참여율 미달: 39개
+  누적 필터링된 비디오: 13개 / 목표: 500개
+  [경고] 연속 2번째 빈 배치 (새 비디오 없음)
+
+[배치 8] 50개 비디오 수집 중...
+  더 이상 수집할 비디오가 없습니다 (총 12개 수집)
+  비디오 ID 12개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 11개 채널
+  비디오 상세 정보 완료: 12개
+  품질 필터 적용 중...
+  필터 결과: 0개 통과 / 12개
+    - 채널 국가 불일치: 10개
+    - 카테고리 불일치: 11개
+    - 채널 규모 미달: 12개
+    - 참여율 미달: 10개
+  누적 필터링된 비디오: 13개 / 목표: 500개
+  [경고] 연속 3번째 빈 배치 (새 비디오 없음)
+
+[조기 종료] 3번 연속 새 비디오 없음 - 더 이상 수집 가능한 비디오 없음
+수집된 비디오: 13개 (목표: 500개)
+
+================================================================================
+수집 완료: apple launch color in US
+  - 총 수집 비디오 수: 324개
+  - 필터링 후: 13개
+  - Raw 데이터: 324개
+  - 최종 반환: 13개
+  - 총 API 호출 수: 24
+================================================================================
+
+Collected 13 filtered videos
+Raw data: 324 total videos
+
+[Step 1.5/5] Saving raw and filtered videos to database...
+Connected to PostgreSQL database: samsung_dx_sentiment
+Tables created successfully (including youtube_videos_raw)
+Inserted/Updated 324 raw videos
+Error inserting videos: column "updated_at" of relation "youtube_videos" does not exist
+LINE 6:                 updated_at = CURRENT_TIMESTAMP
+                        ^
+
+  [OK] Saved to PostgreSQL:
+    - 324 raw videos (all collected)
+    - 0 filtered videos
+  => Videos are now safely stored in database!
+Disconnected from database
+
+[Step 2/5] Collecting comments from YouTube API...
+댓글 수집: _yOTYsFlRQY - 100개 스레드
+댓글 수집: ltY2KVRn8JA - 100개 스레드
+댓글 수집: cfPJNehU2wU - 100개 스레드
+
+[QUOTA EXCEEDED] API 할당량 초과 감지
+
+[KEY ROTATION] API 키 #3로 전환됨 (잔여 키: 5개)
+[RETRY] 새 API 키로 재시도...
+댓글 수집: ASyxZCh9GJI - 100개 스레드
+댓글 수집: 7ItvUDAmHrk - 100개 스레드
+댓글 수집: P4dHELTfwso - 100개 스레드
+댓글 수집: KOpFZ-HFOFs - 100개 스레드
+댓글 수집: kUVpnB42j_s - 75개 스레드
+댓글 수집: NnOe70u65nM - 100개 스레드
+댓글 수집: U4ulQpNPM48 - 100개 스레드
+댓글 수집: idEAABFzpfg - 100개 스레드
+댓글 수집: W5Vqu5SO-lE - 100개 스레드
+댓글 수집: tcEMiPJFXhQ - 100개 스레드
+전체 댓글 수집 완료: 2666개
+Collected 2666 comments
+
+[Step 3/5] Summarizing comments (per video)...
+  Summarizing comments for video: _yOTYsFlRQY (336 comments)
+  Summarizing comments for video: ltY2KVRn8JA (199 comments)
+  Summarizing comments for video: cfPJNehU2wU (190 comments)
+  Summarizing comments for video: ASyxZCh9GJI (208 comments)
+  Summarizing comments for video: 7ItvUDAmHrk (181 comments)
+  Summarizing comments for video: P4dHELTfwso (171 comments)
+  Summarizing comments for video: KOpFZ-HFOFs (148 comments)
+  Summarizing comments for video: kUVpnB42j_s (120 comments)
+  Summarizing comments for video: NnOe70u65nM (205 comments)
+  Summarizing comments for video: U4ulQpNPM48 (157 comments)
+  >>> Processed 10 videos, waiting 10 seconds...
+  Summarizing comments for video: idEAABFzpfg (448 comments)
+  Summarizing comments for video: W5Vqu5SO-lE (134 comments)
+  Summarizing comments for video: tcEMiPJFXhQ (169 comments)
+Summarized comments for 13 videos
+
+[Step 4/5] Saving comments and updating videos with summaries...
+  CSV saving disabled (save_csv=False)
+Connected to PostgreSQL database: samsung_dx_sentiment
+Error inserting comments: column "updated_at" of relation "youtube_comments" does not exist
+LINE 6:                 updated_at = CURRENT_TIMESTAMP
+                        ^
+
+Error inserting videos: column "updated_at" of relation "youtube_videos" does not exist
+LINE 6:                 updated_at = CURRENT_TIMESTAMP
+                        ^
+
+  [OK] Updated PostgreSQL:
+    - 0 videos updated (with comment summaries)
+    - 0 comments inserted
+Disconnected from database
+
+================================================================================
+Pipeline completed successfully!
+================================================================================
+Total videos processed: 13
+Total comments processed: 2666
+Videos with comment summary: 13
+Connected to PostgreSQL database: samsung_dx_sentiment
+
+Database Statistics:
+  Total videos in DB: 7
+  Total comments in DB: 296
+Disconnected from database
+  Updated keyword for 13 videos
+
+[OK] 'Apple Launch Color' completed: 13 videos, 2666 comments
+
+Waiting 30 seconds before next keyword...
+
+================================================================================
+Processing keyword 26/44: 'iPhone Launch Color'
+================================================================================
+================================================================================
+YouTube Data Collection & Analysis Pipeline
+================================================================================
+Keyword: iPhone Launch Color
+Max videos: 500
+Max comments per video: 100
+Region: US
+Summarize comments: True
+Analyze sentiment: False
+================================================================================
+
+[Step 1/4] Collecting video data from YouTube API (500 videos with quality filter)...
+
+================================================================================
+품질 필터링 모드 활성화:
+  - 채널 국가: US (US 채널만)
+  - 카테고리: 28 (Science & Technology)
+  - 최소 구독자: 10,000 OR 채널 총 조회수: 100,000,000
+  - 최소 참여율: 2.0%
+  - 목표 비디오 수: 500개
+  - 배치 크기: 50개씩 수집
+================================================================================
+
+
+[배치 1] 50개 비디오 수집 중...
+  비디오 ID 50개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 40개 채널
+  비디오 상세 정보 완료: 50개
+  품질 필터 적용 중...
+  필터 결과: 6개 통과 / 50개
+    - 채널 국가 불일치: 33개
+    - 카테고리 불일치: 16개
+    - 채널 규모 미달: 4개
+    - 참여율 미달: 19개
+  누적 필터링된 비디오: 6개 / 목표: 500개
+
+[배치 2] 50개 비디오 수집 중...
+  비디오 ID 50개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 42개 채널
+  비디오 상세 정보 완료: 50개
+  품질 필터 적용 중...
+  필터 결과: 4개 통과 / 50개
+    - 채널 국가 불일치: 29개
+    - 카테고리 불일치: 11개
+    - 채널 규모 미달: 3개
+    - 참여율 미달: 26개
+  누적 필터링된 비디오: 10개 / 목표: 500개
+
+[배치 3] 50개 비디오 수집 중...
+  비디오 ID 50개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 43개 채널
+  비디오 상세 정보 완료: 50개
+  품질 필터 적용 중...
+  필터 결과: 0개 통과 / 50개
+    - 채널 국가 불일치: 32개
+    - 카테고리 불일치: 15개
+    - 채널 규모 미달: 4개
+    - 참여율 미달: 37개
+  누적 필터링된 비디오: 10개 / 목표: 500개
+  [경고] 연속 1번째 빈 배치 (새 비디오 없음)
+
+[배치 4] 50개 비디오 수집 중...
+  비디오 ID 50개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 45개 채널
+  비디오 상세 정보 완료: 50개
+  품질 필터 적용 중...
+  필터 결과: 0개 통과 / 50개
+    - 채널 국가 불일치: 45개
+    - 카테고리 불일치: 25개
+    - 채널 규모 미달: 19개
+    - 참여율 미달: 31개
+  누적 필터링된 비디오: 10개 / 목표: 500개
+  [경고] 연속 2번째 빈 배치 (새 비디오 없음)
+
+[배치 5] 50개 비디오 수집 중...
+  더 이상 수집할 비디오가 없습니다 (총 44개 수집)
+  비디오 ID 44개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 42개 채널
+  비디오 상세 정보 완료: 44개
+  품질 필터 적용 중...
+  필터 결과: 0개 통과 / 44개
+    - 채널 국가 불일치: 40개
+    - 카테고리 불일치: 27개
+    - 채널 규모 미달: 32개
+    - 참여율 미달: 27개
+  누적 필터링된 비디오: 10개 / 목표: 500개
+  [경고] 연속 3번째 빈 배치 (새 비디오 없음)
+
+[조기 종료] 3번 연속 새 비디오 없음 - 더 이상 수집 가능한 비디오 없음
+수집된 비디오: 10개 (목표: 500개)
+
+================================================================================
+수집 완료: iphone launch color in US
+  - 총 수집 비디오 수: 244개
+  - 필터링 후: 10개
+  - Raw 데이터: 244개
+  - 최종 반환: 10개
+  - 총 API 호출 수: 15
+================================================================================
+
+Collected 10 filtered videos
+Raw data: 244 total videos
+
+[Step 1.5/5] Saving raw and filtered videos to database...
+Connected to PostgreSQL database: samsung_dx_sentiment
+Tables created successfully (including youtube_videos_raw)
+Inserted/Updated 244 raw videos
+Error inserting videos: column "updated_at" of relation "youtube_videos" does not exist
+LINE 6:                 updated_at = CURRENT_TIMESTAMP
+                        ^
+
+  [OK] Saved to PostgreSQL:
+    - 244 raw videos (all collected)
+    - 0 filtered videos
+  => Videos are now safely stored in database!
+Disconnected from database
+
+[Step 2/5] Collecting comments from YouTube API...
+댓글 수집: idEAABFzpfg - 100개 스레드
+댓글 수집: _yOTYsFlRQY - 100개 스레드
+댓글 수집: s0EbxhQYeCA - 100개 스레드
+댓글 수집: ltY2KVRn8JA - 100개 스레드
+댓글 수집: cfPJNehU2wU - 100개 스레드
+댓글 수집: TlSIwGeTjYs - 100개 스레드
+댓글 수집: 7ItvUDAmHrk - 100개 스레드
+댓글 수집: W5Vqu5SO-lE - 100개 스레드
+댓글 수집: tcEMiPJFXhQ - 100개 스레드
+댓글 수집: P4dHELTfwso - 100개 스레드
+전체 댓글 수집 완료: 2334개
+Collected 2334 comments
+
+[Step 3/5] Summarizing comments (per video)...
+  Summarizing comments for video: idEAABFzpfg (448 comments)
+  Summarizing comments for video: _yOTYsFlRQY (336 comments)
+  Summarizing comments for video: s0EbxhQYeCA (364 comments)
+  Summarizing comments for video: ltY2KVRn8JA (199 comments)
+  Summarizing comments for video: cfPJNehU2wU (190 comments)
+  Summarizing comments for video: TlSIwGeTjYs (142 comments)
+  Summarizing comments for video: 7ItvUDAmHrk (181 comments)
+  Summarizing comments for video: W5Vqu5SO-lE (134 comments)
+  Summarizing comments for video: tcEMiPJFXhQ (169 comments)
+  Summarizing comments for video: P4dHELTfwso (171 comments)
+  >>> Processed 10 videos, waiting 10 seconds...
+Summarized comments for 10 videos
+
+[Step 4/5] Saving comments and updating videos with summaries...
+  CSV saving disabled (save_csv=False)
+Connected to PostgreSQL database: samsung_dx_sentiment
+Error inserting comments: column "updated_at" of relation "youtube_comments" does not exist
+LINE 6:                 updated_at = CURRENT_TIMESTAMP
+                        ^
+
+Error inserting videos: column "updated_at" of relation "youtube_videos" does not exist
+LINE 6:                 updated_at = CURRENT_TIMESTAMP
+                        ^
+
+  [OK] Updated PostgreSQL:
+    - 0 videos updated (with comment summaries)
+    - 0 comments inserted
+Disconnected from database
+
+================================================================================
+Pipeline completed successfully!
+================================================================================
+Total videos processed: 10
+Total comments processed: 2334
+Videos with comment summary: 10
+Connected to PostgreSQL database: samsung_dx_sentiment
+
+Database Statistics:
+  Total videos in DB: 7
+  Total comments in DB: 296
+Disconnected from database
+  Updated keyword for 10 videos
+
+[OK] 'iPhone Launch Color' completed: 10 videos, 2334 comments
+
+Waiting 30 seconds before next keyword...
+
+================================================================================
+Processing keyword 27/44: 'Lenovo Launch Color'
+================================================================================
+================================================================================
+YouTube Data Collection & Analysis Pipeline
+================================================================================
+Keyword: Lenovo Launch Color
+Max videos: 500
+Max comments per video: 100
+Region: US
+Summarize comments: True
+Analyze sentiment: False
+================================================================================
+
+[Step 1/4] Collecting video data from YouTube API (500 videos with quality filter)...
+
+================================================================================
+품질 필터링 모드 활성화:
+  - 채널 국가: US (US 채널만)
+  - 카테고리: 28 (Science & Technology)
+  - 최소 구독자: 10,000 OR 채널 총 조회수: 100,000,000
+  - 최소 참여율: 2.0%
+  - 목표 비디오 수: 500개
+  - 배치 크기: 50개씩 수집
+================================================================================
+
+
+[배치 1] 50개 비디오 수집 중...
+  더 이상 수집할 비디오가 없습니다 (총 2개 수집)
+  비디오 ID 2개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 1개 채널
+  비디오 상세 정보 완료: 2개
+  품질 필터 적용 중...
+  필터 결과: 0개 통과 / 2개
+    - 채널 국가 불일치: 2개
+    - 카테고리 불일치: 0개
+    - 채널 규모 미달: 0개
+    - 참여율 미달: 0개
+  누적 필터링된 비디오: 0개 / 목표: 500개
+  [경고] 연속 1번째 빈 배치 (새 비디오 없음)
+
+[배치 2] 50개 비디오 수집 중...
+  더 이상 수집할 비디오가 없습니다 (총 2개 수집)
+  비디오 ID 2개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 1개 채널
+  비디오 상세 정보 완료: 2개
+  품질 필터 적용 중...
+  필터 결과: 0개 통과 / 2개
+    - 채널 국가 불일치: 2개
+    - 카테고리 불일치: 0개
+    - 채널 규모 미달: 0개
+    - 참여율 미달: 0개
+  누적 필터링된 비디오: 0개 / 목표: 500개
+  [경고] 연속 2번째 빈 배치 (새 비디오 없음)
+
+[배치 3] 50개 비디오 수집 중...
+  더 이상 수집할 비디오가 없습니다 (총 2개 수집)
+  비디오 ID 2개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 1개 채널
+  비디오 상세 정보 완료: 2개
+  품질 필터 적용 중...
+  필터 결과: 0개 통과 / 2개
+    - 채널 국가 불일치: 2개
+    - 카테고리 불일치: 0개
+    - 채널 규모 미달: 0개
+    - 참여율 미달: 0개
+  누적 필터링된 비디오: 0개 / 목표: 500개
+  [경고] 연속 3번째 빈 배치 (새 비디오 없음)
+
+[조기 종료] 3번 연속 새 비디오 없음 - 더 이상 수집 가능한 비디오 없음
+수집된 비디오: 0개 (목표: 500개)
+
+================================================================================
+수집 완료: lenovo launch color in US
+  - 총 수집 비디오 수: 6개
+  - 필터링 후: 0개
+  - Raw 데이터: 6개
+  - 최종 반환: 0개
+  - 총 API 호출 수: 9
+================================================================================
+
+No videos found!
+
+[WARN] 'Lenovo Launch Color' returned no data
+
+Waiting 30 seconds before next keyword...
+
+================================================================================
+Processing keyword 28/44: 'moto Launch Color'
+================================================================================
+================================================================================
+YouTube Data Collection & Analysis Pipeline
+================================================================================
+Keyword: moto Launch Color
+Max videos: 500
+Max comments per video: 100
+Region: US
+Summarize comments: True
+Analyze sentiment: False
+================================================================================
+
+[Step 1/4] Collecting video data from YouTube API (500 videos with quality filter)...
+
+================================================================================
+품질 필터링 모드 활성화:
+  - 채널 국가: US (US 채널만)
+  - 카테고리: 28 (Science & Technology)
+  - 최소 구독자: 10,000 OR 채널 총 조회수: 100,000,000
+  - 최소 참여율: 2.0%
+  - 목표 비디오 수: 500개
+  - 배치 크기: 50개씩 수집
+================================================================================
+
+
+[배치 1] 50개 비디오 수집 중...
+  더 이상 수집할 비디오가 없습니다 (총 48개 수집)
+  비디오 ID 48개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 43개 채널
+  비디오 상세 정보 완료: 48개
+  품질 필터 적용 중...
+  필터 결과: 0개 통과 / 48개
+    - 채널 국가 불일치: 47개
+    - 카테고리 불일치: 21개
+    - 채널 규모 미달: 17개
+    - 참여율 미달: 33개
+  누적 필터링된 비디오: 0개 / 목표: 500개
+  [경고] 연속 1번째 빈 배치 (새 비디오 없음)
+
+[배치 2] 50개 비디오 수집 중...
+  더 이상 수집할 비디오가 없습니다 (총 48개 수집)
+  비디오 ID 48개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 43개 채널
+  비디오 상세 정보 완료: 48개
+  품질 필터 적용 중...
+  필터 결과: 0개 통과 / 48개
+    - 채널 국가 불일치: 47개
+    - 카테고리 불일치: 21개
+    - 채널 규모 미달: 17개
+    - 참여율 미달: 33개
+  누적 필터링된 비디오: 0개 / 목표: 500개
+  [경고] 연속 2번째 빈 배치 (새 비디오 없음)
+
+[배치 3] 50개 비디오 수집 중...
+  더 이상 수집할 비디오가 없습니다 (총 48개 수집)
+  비디오 ID 48개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 43개 채널
+  비디오 상세 정보 완료: 48개
+  품질 필터 적용 중...
+  필터 결과: 0개 통과 / 48개
+    - 채널 국가 불일치: 47개
+    - 카테고리 불일치: 21개
+    - 채널 규모 미달: 17개
+    - 참여율 미달: 33개
+  누적 필터링된 비디오: 0개 / 목표: 500개
+  [경고] 연속 3번째 빈 배치 (새 비디오 없음)
+
+[조기 종료] 3번 연속 새 비디오 없음 - 더 이상 수집 가능한 비디오 없음
+수집된 비디오: 0개 (목표: 500개)
+
+================================================================================
+수집 완료: moto launch color in US
+  - 총 수집 비디오 수: 144개
+  - 필터링 후: 0개
+  - Raw 데이터: 144개
+  - 최종 반환: 0개
+  - 총 API 호출 수: 9
+================================================================================
+
+No videos found!
+
+[WARN] 'moto Launch Color' returned no data
+
+Waiting 30 seconds before next keyword...
+
+================================================================================
+Processing keyword 29/44: 'Google Launch Color'
+================================================================================
+================================================================================
+YouTube Data Collection & Analysis Pipeline
+================================================================================
+Keyword: Google Launch Color
+Max videos: 500
+Max comments per video: 100
+Region: US
+Summarize comments: True
+Analyze sentiment: False
+================================================================================
+
+[Step 1/4] Collecting video data from YouTube API (500 videos with quality filter)...
+
+================================================================================
+품질 필터링 모드 활성화:
+  - 채널 국가: US (US 채널만)
+  - 카테고리: 28 (Science & Technology)
+  - 최소 구독자: 10,000 OR 채널 총 조회수: 100,000,000
+  - 최소 참여율: 2.0%
+  - 목표 비디오 수: 500개
+  - 배치 크기: 50개씩 수집
+================================================================================
+
+
+[배치 1] 50개 비디오 수집 중...
+  더 이상 수집할 비디오가 없습니다 (총 16개 수집)
+  비디오 ID 16개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 14개 채널
+  비디오 상세 정보 완료: 16개
+  품질 필터 적용 중...
+  필터 결과: 0개 통과 / 16개
+    - 채널 국가 불일치: 13개
+    - 카테고리 불일치: 4개
+    - 채널 규모 미달: 5개
+    - 참여율 미달: 9개
+  누적 필터링된 비디오: 0개 / 목표: 500개
+  [경고] 연속 1번째 빈 배치 (새 비디오 없음)
+
+[배치 2] 50개 비디오 수집 중...
+  더 이상 수집할 비디오가 없습니다 (총 16개 수집)
+  비디오 ID 16개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 14개 채널
+  비디오 상세 정보 완료: 16개
+  품질 필터 적용 중...
+  필터 결과: 0개 통과 / 16개
+    - 채널 국가 불일치: 13개
+    - 카테고리 불일치: 4개
+    - 채널 규모 미달: 5개
+    - 참여율 미달: 9개
+  누적 필터링된 비디오: 0개 / 목표: 500개
+  [경고] 연속 2번째 빈 배치 (새 비디오 없음)
+
+[배치 3] 50개 비디오 수집 중...
+  더 이상 수집할 비디오가 없습니다 (총 16개 수집)
+  비디오 ID 16개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 14개 채널
+  비디오 상세 정보 완료: 16개
+  품질 필터 적용 중...
+  필터 결과: 0개 통과 / 16개
+    - 채널 국가 불일치: 13개
+    - 카테고리 불일치: 4개
+    - 채널 규모 미달: 5개
+    - 참여율 미달: 9개
+  누적 필터링된 비디오: 0개 / 목표: 500개
+  [경고] 연속 3번째 빈 배치 (새 비디오 없음)
+
+[조기 종료] 3번 연속 새 비디오 없음 - 더 이상 수집 가능한 비디오 없음
+수집된 비디오: 0개 (목표: 500개)
+
+================================================================================
+수집 완료: google launch color in US
+  - 총 수집 비디오 수: 48개
+  - 필터링 후: 0개
+  - Raw 데이터: 48개
+  - 최종 반환: 0개
+  - 총 API 호출 수: 9
+================================================================================
+
+No videos found!
+
+[WARN] 'Google Launch Color' returned no data
+
+Waiting 30 seconds before next keyword...
+
+================================================================================
+Processing keyword 30/44: 'Pixel Launch Color'
+================================================================================
+================================================================================
+YouTube Data Collection & Analysis Pipeline
+================================================================================
+Keyword: Pixel Launch Color
+Max videos: 500
+Max comments per video: 100
+Region: US
+Summarize comments: True
+Analyze sentiment: False
+================================================================================
+
+[Step 1/4] Collecting video data from YouTube API (500 videos with quality filter)...
+
+================================================================================
+품질 필터링 모드 활성화:
+  - 채널 국가: US (US 채널만)
+  - 카테고리: 28 (Science & Technology)
+  - 최소 구독자: 10,000 OR 채널 총 조회수: 100,000,000
+  - 최소 참여율: 2.0%
+  - 목표 비디오 수: 500개
+  - 배치 크기: 50개씩 수집
+================================================================================
+
+
+[배치 1] 50개 비디오 수집 중...
+  비디오 ID 50개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 43개 채널
+  비디오 상세 정보 완료: 50개
+  품질 필터 적용 중...
+  필터 결과: 7개 통과 / 50개
+    - 채널 국가 불일치: 28개
+    - 카테고리 불일치: 9개
+    - 채널 규모 미달: 13개
+    - 참여율 미달: 26개
+  누적 필터링된 비디오: 7개 / 목표: 500개
+
+[배치 2] 50개 비디오 수집 중...
+  더 이상 수집할 비디오가 없습니다 (총 2개 수집)
+  비디오 ID 2개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 2개 채널
+  비디오 상세 정보 완료: 2개
+  품질 필터 적용 중...
+  필터 결과: 0개 통과 / 2개
+    - 채널 국가 불일치: 2개
+    - 카테고리 불일치: 2개
+    - 채널 규모 미달: 2개
+    - 참여율 미달: 1개
+  누적 필터링된 비디오: 7개 / 목표: 500개
+  [경고] 연속 1번째 빈 배치 (새 비디오 없음)
+
+[배치 3] 50개 비디오 수집 중...
+  비디오 ID 50개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 43개 채널
+  비디오 상세 정보 완료: 50개
+  품질 필터 적용 중...
+  필터 결과: 0개 통과 / 50개
+    - 채널 국가 불일치: 28개
+    - 카테고리 불일치: 9개
+    - 채널 규모 미달: 13개
+    - 참여율 미달: 26개
+  누적 필터링된 비디오: 7개 / 목표: 500개
+  [경고] 연속 2번째 빈 배치 (새 비디오 없음)
+
+[배치 4] 50개 비디오 수집 중...
+  더 이상 수집할 비디오가 없습니다 (총 2개 수집)
+  비디오 ID 2개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 2개 채널
+  비디오 상세 정보 완료: 2개
+  품질 필터 적용 중...
+  필터 결과: 0개 통과 / 2개
+    - 채널 국가 불일치: 2개
+    - 카테고리 불일치: 2개
+    - 채널 규모 미달: 2개
+    - 참여율 미달: 1개
+  누적 필터링된 비디오: 7개 / 목표: 500개
+  [경고] 연속 3번째 빈 배치 (새 비디오 없음)
+
+[조기 종료] 3번 연속 새 비디오 없음 - 더 이상 수집 가능한 비디오 없음
+수집된 비디오: 7개 (목표: 500개)
+
+================================================================================
+수집 완료: pixel launch color in US
+  - 총 수집 비디오 수: 104개
+  - 필터링 후: 7개
+  - Raw 데이터: 104개
+  - 최종 반환: 7개
+  - 총 API 호출 수: 12
+================================================================================
+
+Collected 7 filtered videos
+Raw data: 104 total videos
+
+[Step 1.5/5] Saving raw and filtered videos to database...
+Connected to PostgreSQL database: samsung_dx_sentiment
+Tables created successfully (including youtube_videos_raw)
+Inserted/Updated 104 raw videos
+Error inserting videos: column "updated_at" of relation "youtube_videos" does not exist
+LINE 6:                 updated_at = CURRENT_TIMESTAMP
+                        ^
+
+  [OK] Saved to PostgreSQL:
+    - 104 raw videos (all collected)
+    - 0 filtered videos
+  => Videos are now safely stored in database!
+Disconnected from database
+
+[Step 2/5] Collecting comments from YouTube API...
+댓글 수집: 269OsrzG3Ew - 100개 스레드
+댓글 수집: i63u-iAnhuk - 100개 스레드
+댓글 수집: rYARL2M21EU - 100개 스레드
+댓글 수집: m0UCJEViqFE - 100개 스레드
+댓글 수집: Cq9QsPNQuWY - 18개 스레드
+댓글 수집: sfh6Dz3UW4c - 18개 스레드
+댓글 수집: Sa5kNj-my-k - 23개 스레드
+전체 댓글 수집 완료: 1074개
+Collected 1074 comments
+
+[Step 3/5] Summarizing comments (per video)...
+  Summarizing comments for video: 269OsrzG3Ew (309 comments)
+  Summarizing comments for video: i63u-iAnhuk (342 comments)
+  Summarizing comments for video: rYARL2M21EU (194 comments)
+  Summarizing comments for video: m0UCJEViqFE (149 comments)
+  Summarizing comments for video: Cq9QsPNQuWY (32 comments)
+  Summarizing comments for video: sfh6Dz3UW4c (18 comments)
+  Summarizing comments for video: Sa5kNj-my-k (30 comments)
+Summarized comments for 7 videos
+
+[Step 4/5] Saving comments and updating videos with summaries...
+  CSV saving disabled (save_csv=False)
+Connected to PostgreSQL database: samsung_dx_sentiment
+Error inserting comments: column "updated_at" of relation "youtube_comments" does not exist
+LINE 6:                 updated_at = CURRENT_TIMESTAMP
+                        ^
+
+Error inserting videos: column "updated_at" of relation "youtube_videos" does not exist
+LINE 6:                 updated_at = CURRENT_TIMESTAMP
+                        ^
+
+  [OK] Updated PostgreSQL:
+    - 0 videos updated (with comment summaries)
+    - 0 comments inserted
+Disconnected from database
+
+================================================================================
+Pipeline completed successfully!
+================================================================================
+Total videos processed: 7
+Total comments processed: 1074
+Videos with comment summary: 7
+Connected to PostgreSQL database: samsung_dx_sentiment
+
+Database Statistics:
+  Total videos in DB: 7
+  Total comments in DB: 296
+Disconnected from database
+  Updated keyword for 7 videos
+
+[OK] 'Pixel Launch Color' completed: 7 videos, 1074 comments
+
+Waiting 30 seconds before next keyword...
+
+================================================================================
+Processing keyword 31/44: 'Samsung Galaxy Launch Storage'
+================================================================================
+================================================================================
+YouTube Data Collection & Analysis Pipeline
+================================================================================
+Keyword: Samsung Galaxy Launch Storage
+Max videos: 500
+Max comments per video: 100
+Region: US
+Summarize comments: True
+Analyze sentiment: False
+================================================================================
+
+[Step 1/4] Collecting video data from YouTube API (500 videos with quality filter)...
+
+================================================================================
+품질 필터링 모드 활성화:
+  - 채널 국가: US (US 채널만)
+  - 카테고리: 28 (Science & Technology)
+  - 최소 구독자: 10,000 OR 채널 총 조회수: 100,000,000
+  - 최소 참여율: 2.0%
+  - 목표 비디오 수: 500개
+  - 배치 크기: 50개씩 수집
+================================================================================
+
+
+[배치 1] 50개 비디오 수집 중...
+  비디오 ID 50개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 35개 채널
+  비디오 상세 정보 완료: 50개
+  품질 필터 적용 중...
+  필터 결과: 0개 통과 / 50개
+    - 채널 국가 불일치: 48개
+    - 카테고리 불일치: 7개
+    - 채널 규모 미달: 2개
+    - 참여율 미달: 13개
+  누적 필터링된 비디오: 0개 / 목표: 500개
+  [경고] 연속 1번째 빈 배치 (새 비디오 없음)
+
+[배치 2] 50개 비디오 수집 중...
+  비디오 ID 50개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 44개 채널
+  비디오 상세 정보 완료: 50개
+  품질 필터 적용 중...
+  필터 결과: 0개 통과 / 50개
+    - 채널 국가 불일치: 49개
+    - 카테고리 불일치: 3개
+    - 채널 규모 미달: 4개
+    - 참여율 미달: 26개
+  누적 필터링된 비디오: 0개 / 목표: 500개
+  [경고] 연속 2번째 빈 배치 (새 비디오 없음)
+
+[배치 3] 50개 비디오 수집 중...
+  더 이상 수집할 비디오가 없습니다 (총 9개 수집)
+  비디오 ID 9개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 9개 채널
+  비디오 상세 정보 완료: 9개
+  품질 필터 적용 중...
+  필터 결과: 0개 통과 / 9개
+    - 채널 국가 불일치: 8개
+    - 카테고리 불일치: 6개
+    - 채널 규모 미달: 8개
+    - 참여율 미달: 6개
+  누적 필터링된 비디오: 0개 / 목표: 500개
+  [경고] 연속 3번째 빈 배치 (새 비디오 없음)
+
+[조기 종료] 3번 연속 새 비디오 없음 - 더 이상 수집 가능한 비디오 없음
+수집된 비디오: 0개 (목표: 500개)
+
+================================================================================
+수집 완료: samsung galaxy launch storage in US
+  - 총 수집 비디오 수: 109개
+  - 필터링 후: 0개
+  - Raw 데이터: 109개
+  - 최종 반환: 0개
+  - 총 API 호출 수: 9
+================================================================================
+
+No videos found!
+
+[WARN] 'Samsung Galaxy Launch Storage' returned no data
+
+Waiting 30 seconds before next keyword...
+
+================================================================================
+Processing keyword 32/44: 'Samsung Flip Launch Storage'
+================================================================================
+================================================================================
+YouTube Data Collection & Analysis Pipeline
+================================================================================
+Keyword: Samsung Flip Launch Storage
+Max videos: 500
+Max comments per video: 100
+Region: US
+Summarize comments: True
+Analyze sentiment: False
+================================================================================
+
+[Step 1/4] Collecting video data from YouTube API (500 videos with quality filter)...
+
+================================================================================
+품질 필터링 모드 활성화:
+  - 채널 국가: US (US 채널만)
+  - 카테고리: 28 (Science & Technology)
+  - 최소 구독자: 10,000 OR 채널 총 조회수: 100,000,000
+  - 최소 참여율: 2.0%
+  - 목표 비디오 수: 500개
+  - 배치 크기: 50개씩 수집
+================================================================================
+
+
+[배치 1] 50개 비디오 수집 중...
+  더 이상 수집할 비디오가 없습니다 (총 4개 수집)
+  비디오 ID 4개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 4개 채널
+  비디오 상세 정보 완료: 4개
+  품질 필터 적용 중...
+  필터 결과: 0개 통과 / 4개
+    - 채널 국가 불일치: 4개
+    - 카테고리 불일치: 4개
+    - 채널 규모 미달: 0개
+    - 참여율 미달: 2개
+  누적 필터링된 비디오: 0개 / 목표: 500개
+  [경고] 연속 1번째 빈 배치 (새 비디오 없음)
+
+[배치 2] 50개 비디오 수집 중...
+  더 이상 수집할 비디오가 없습니다 (총 4개 수집)
+  비디오 ID 4개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 4개 채널
+  비디오 상세 정보 완료: 4개
+  품질 필터 적용 중...
+  필터 결과: 0개 통과 / 4개
+    - 채널 국가 불일치: 4개
+    - 카테고리 불일치: 4개
+    - 채널 규모 미달: 0개
+    - 참여율 미달: 2개
+  누적 필터링된 비디오: 0개 / 목표: 500개
+  [경고] 연속 2번째 빈 배치 (새 비디오 없음)
+
+[배치 3] 50개 비디오 수집 중...
+  더 이상 수집할 비디오가 없습니다 (총 4개 수집)
+  비디오 ID 4개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 4개 채널
+  비디오 상세 정보 완료: 4개
+  품질 필터 적용 중...
+  필터 결과: 0개 통과 / 4개
+    - 채널 국가 불일치: 4개
+    - 카테고리 불일치: 4개
+    - 채널 규모 미달: 0개
+    - 참여율 미달: 2개
+  누적 필터링된 비디오: 0개 / 목표: 500개
+  [경고] 연속 3번째 빈 배치 (새 비디오 없음)
+
+[조기 종료] 3번 연속 새 비디오 없음 - 더 이상 수집 가능한 비디오 없음
+수집된 비디오: 0개 (목표: 500개)
+
+================================================================================
+수집 완료: samsung flip launch storage in US
+  - 총 수집 비디오 수: 12개
+  - 필터링 후: 0개
+  - Raw 데이터: 12개
+  - 최종 반환: 0개
+  - 총 API 호출 수: 9
+================================================================================
+
+No videos found!
+
+[WARN] 'Samsung Flip Launch Storage' returned no data
+
+Waiting 30 seconds before next keyword...
+
+================================================================================
+Processing keyword 33/44: 'Samsung Fold Launch Storage'
+================================================================================
+================================================================================
+YouTube Data Collection & Analysis Pipeline
+================================================================================
+Keyword: Samsung Fold Launch Storage
+Max videos: 500
+Max comments per video: 100
+Region: US
+Summarize comments: True
+Analyze sentiment: False
+================================================================================
+
+[Step 1/4] Collecting video data from YouTube API (500 videos with quality filter)...
+
+================================================================================
+품질 필터링 모드 활성화:
+  - 채널 국가: US (US 채널만)
+  - 카테고리: 28 (Science & Technology)
+  - 최소 구독자: 10,000 OR 채널 총 조회수: 100,000,000
+  - 최소 참여율: 2.0%
+  - 목표 비디오 수: 500개
+  - 배치 크기: 50개씩 수집
+================================================================================
+
+
+[배치 1] 50개 비디오 수집 중...
+  더 이상 수집할 비디오가 없습니다 (총 19개 수집)
+  비디오 ID 19개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 17개 채널
+  비디오 상세 정보 완료: 19개
+  품질 필터 적용 중...
+  필터 결과: 0개 통과 / 19개
+    - 채널 국가 불일치: 19개
+    - 카테고리 불일치: 10개
+    - 채널 규모 미달: 6개
+    - 참여율 미달: 11개
+  누적 필터링된 비디오: 0개 / 목표: 500개
+  [경고] 연속 1번째 빈 배치 (새 비디오 없음)
+
+[배치 2] 50개 비디오 수집 중...
+  더 이상 수집할 비디오가 없습니다 (총 19개 수집)
+  비디오 ID 19개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 17개 채널
+  비디오 상세 정보 완료: 19개
+  품질 필터 적용 중...
+  필터 결과: 0개 통과 / 19개
+    - 채널 국가 불일치: 19개
+    - 카테고리 불일치: 10개
+    - 채널 규모 미달: 6개
+    - 참여율 미달: 11개
+  누적 필터링된 비디오: 0개 / 목표: 500개
+  [경고] 연속 2번째 빈 배치 (새 비디오 없음)
+
+[배치 3] 50개 비디오 수집 중...
+  더 이상 수집할 비디오가 없습니다 (총 20개 수집)
+  비디오 ID 20개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 17개 채널
+  비디오 상세 정보 완료: 20개
+  품질 필터 적용 중...
+  필터 결과: 0개 통과 / 20개
+    - 채널 국가 불일치: 20개
+    - 카테고리 불일치: 10개
+    - 채널 규모 미달: 7개
+    - 참여율 미달: 12개
+  누적 필터링된 비디오: 0개 / 목표: 500개
+  [경고] 연속 3번째 빈 배치 (새 비디오 없음)
+
+[조기 종료] 3번 연속 새 비디오 없음 - 더 이상 수집 가능한 비디오 없음
+수집된 비디오: 0개 (목표: 500개)
+
+================================================================================
+수집 완료: samsung fold launch storage in US
+  - 총 수집 비디오 수: 58개
+  - 필터링 후: 0개
+  - Raw 데이터: 58개
+  - 최종 반환: 0개
+  - 총 API 호출 수: 9
+================================================================================
+
+No videos found!
+
+[WARN] 'Samsung Fold Launch Storage' returned no data
+
+Waiting 30 seconds before next keyword...
+
+================================================================================
+Processing keyword 34/44: 'Samsung Galaxy S Launch Storage'
+================================================================================
+================================================================================
+YouTube Data Collection & Analysis Pipeline
+================================================================================
+Keyword: Samsung Galaxy S Launch Storage
+Max videos: 500
+Max comments per video: 100
+Region: US
+Summarize comments: True
+Analyze sentiment: False
+================================================================================
+
+[Step 1/4] Collecting video data from YouTube API (500 videos with quality filter)...
+
+================================================================================
+품질 필터링 모드 활성화:
+  - 채널 국가: US (US 채널만)
+  - 카테고리: 28 (Science & Technology)
+  - 최소 구독자: 10,000 OR 채널 총 조회수: 100,000,000
+  - 최소 참여율: 2.0%
+  - 목표 비디오 수: 500개
+  - 배치 크기: 50개씩 수집
+================================================================================
+
+
+[배치 1] 50개 비디오 수집 중...
+  비디오 ID 50개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 38개 채널
+  비디오 상세 정보 완료: 50개
+  품질 필터 적용 중...
+  필터 결과: 0개 통과 / 50개
+    - 채널 국가 불일치: 48개
+    - 카테고리 불일치: 8개
+    - 채널 규모 미달: 2개
+    - 참여율 미달: 16개
+  누적 필터링된 비디오: 0개 / 목표: 500개
+  [경고] 연속 1번째 빈 배치 (새 비디오 없음)
+
+[배치 2] 50개 비디오 수집 중...
+  더 이상 수집할 비디오가 없습니다 (총 36개 수집)
+  비디오 ID 36개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 33개 채널
+  비디오 상세 정보 완료: 36개
+  품질 필터 적용 중...
+  필터 결과: 0개 통과 / 36개
+    - 채널 국가 불일치: 36개
+    - 카테고리 불일치: 9개
+    - 채널 규모 미달: 4개
+    - 참여율 미달: 17개
+  누적 필터링된 비디오: 0개 / 목표: 500개
+  [경고] 연속 2번째 빈 배치 (새 비디오 없음)
+
+[배치 3] 50개 비디오 수집 중...
+  비디오 ID 50개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 38개 채널
+  비디오 상세 정보 완료: 50개
+  품질 필터 적용 중...
+  필터 결과: 0개 통과 / 50개
+    - 채널 국가 불일치: 48개
+    - 카테고리 불일치: 8개
+    - 채널 규모 미달: 2개
+    - 참여율 미달: 16개
+  누적 필터링된 비디오: 0개 / 목표: 500개
+  [경고] 연속 3번째 빈 배치 (새 비디오 없음)
+
+[조기 종료] 3번 연속 새 비디오 없음 - 더 이상 수집 가능한 비디오 없음
+수집된 비디오: 0개 (목표: 500개)
+
+================================================================================
+수집 완료: samsung galaxy s launch storage in US
+  - 총 수집 비디오 수: 136개
+  - 필터링 후: 0개
+  - Raw 데이터: 136개
+  - 최종 반환: 0개
+  - 총 API 호출 수: 9
+================================================================================
+
+No videos found!
+
+[WARN] 'Samsung Galaxy S Launch Storage' returned no data
+
+Waiting 30 seconds before next keyword...
+
+================================================================================
+Processing keyword 35/44: 'Samsung Galaxy Note Launch Storage'
+================================================================================
+================================================================================
+YouTube Data Collection & Analysis Pipeline
+================================================================================
+Keyword: Samsung Galaxy Note Launch Storage
+Max videos: 500
+Max comments per video: 100
+Region: US
+Summarize comments: True
+Analyze sentiment: False
+================================================================================
+
+[Step 1/4] Collecting video data from YouTube API (500 videos with quality filter)...
+
+================================================================================
+품질 필터링 모드 활성화:
+  - 채널 국가: US (US 채널만)
+  - 카테고리: 28 (Science & Technology)
+  - 최소 구독자: 10,000 OR 채널 총 조회수: 100,000,000
+  - 최소 참여율: 2.0%
+  - 목표 비디오 수: 500개
+  - 배치 크기: 50개씩 수집
+================================================================================
+
+
+[배치 1] 50개 비디오 수집 중...
+  더 이상 수집할 비디오가 없습니다 (총 14개 수집)
+  비디오 ID 14개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 13개 채널
+  비디오 상세 정보 완료: 14개
+  품질 필터 적용 중...
+  필터 결과: 0개 통과 / 14개
+    - 채널 국가 불일치: 14개
+    - 카테고리 불일치: 3개
+    - 채널 규모 미달: 4개
+    - 참여율 미달: 9개
+  누적 필터링된 비디오: 0개 / 목표: 500개
+  [경고] 연속 1번째 빈 배치 (새 비디오 없음)
+
+[배치 2] 50개 비디오 수집 중...
+  더 이상 수집할 비디오가 없습니다 (총 14개 수집)
+  비디오 ID 14개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 13개 채널
+  비디오 상세 정보 완료: 14개
+  품질 필터 적용 중...
+  필터 결과: 0개 통과 / 14개
+    - 채널 국가 불일치: 14개
+    - 카테고리 불일치: 3개
+    - 채널 규모 미달: 4개
+    - 참여율 미달: 9개
+  누적 필터링된 비디오: 0개 / 목표: 500개
+  [경고] 연속 2번째 빈 배치 (새 비디오 없음)
+
+[배치 3] 50개 비디오 수집 중...
+  더 이상 수집할 비디오가 없습니다 (총 14개 수집)
+  비디오 ID 14개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 13개 채널
+  비디오 상세 정보 완료: 14개
+  품질 필터 적용 중...
+  필터 결과: 0개 통과 / 14개
+    - 채널 국가 불일치: 14개
+    - 카테고리 불일치: 3개
+    - 채널 규모 미달: 4개
+    - 참여율 미달: 9개
+  누적 필터링된 비디오: 0개 / 목표: 500개
+  [경고] 연속 3번째 빈 배치 (새 비디오 없음)
+
+[조기 종료] 3번 연속 새 비디오 없음 - 더 이상 수집 가능한 비디오 없음
+수집된 비디오: 0개 (목표: 500개)
+
+================================================================================
+수집 완료: samsung galaxy note launch storage in US
+  - 총 수집 비디오 수: 42개
+  - 필터링 후: 0개
+  - Raw 데이터: 42개
+  - 최종 반환: 0개
+  - 총 API 호출 수: 9
+================================================================================
+
+No videos found!
+
+[WARN] 'Samsung Galaxy Note Launch Storage' returned no data
+
+Waiting 30 seconds before next keyword...
+
+================================================================================
+Processing keyword 36/44: 'Samsung Galaxy Z Flip Launch Storage'
+================================================================================
+================================================================================
+YouTube Data Collection & Analysis Pipeline
+================================================================================
+Keyword: Samsung Galaxy Z Flip Launch Storage
+Max videos: 500
+Max comments per video: 100
+Region: US
+Summarize comments: True
+Analyze sentiment: False
+================================================================================
+
+[Step 1/4] Collecting video data from YouTube API (500 videos with quality filter)...
+
+================================================================================
+품질 필터링 모드 활성화:
+  - 채널 국가: US (US 채널만)
+  - 카테고리: 28 (Science & Technology)
+  - 최소 구독자: 10,000 OR 채널 총 조회수: 100,000,000
+  - 최소 참여율: 2.0%
+  - 목표 비디오 수: 500개
+  - 배치 크기: 50개씩 수집
+================================================================================
+
+
+[배치 1] 50개 비디오 수집 중...
+  더 이상 수집할 비디오가 없습니다 (총 12개 수집)
+  비디오 ID 12개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 10개 채널
+  비디오 상세 정보 완료: 12개
+  품질 필터 적용 중...
+  필터 결과: 0개 통과 / 12개
+    - 채널 국가 불일치: 10개
+    - 카테고리 불일치: 9개
+    - 채널 규모 미달: 3개
+    - 참여율 미달: 10개
+  누적 필터링된 비디오: 0개 / 목표: 500개
+  [경고] 연속 1번째 빈 배치 (새 비디오 없음)
+
+[배치 2] 50개 비디오 수집 중...
+  더 이상 수집할 비디오가 없습니다 (총 13개 수집)
+  비디오 ID 13개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 11개 채널
+  비디오 상세 정보 완료: 13개
+  품질 필터 적용 중...
+  필터 결과: 0개 통과 / 13개
+    - 채널 국가 불일치: 11개
+    - 카테고리 불일치: 9개
+    - 채널 규모 미달: 3개
+    - 참여율 미달: 10개
+  누적 필터링된 비디오: 0개 / 목표: 500개
+  [경고] 연속 2번째 빈 배치 (새 비디오 없음)
+
+[배치 3] 50개 비디오 수집 중...
+  더 이상 수집할 비디오가 없습니다 (총 12개 수집)
+  비디오 ID 12개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 10개 채널
+  비디오 상세 정보 완료: 12개
+  품질 필터 적용 중...
+  필터 결과: 0개 통과 / 12개
+    - 채널 국가 불일치: 10개
+    - 카테고리 불일치: 9개
+    - 채널 규모 미달: 3개
+    - 참여율 미달: 10개
+  누적 필터링된 비디오: 0개 / 목표: 500개
+  [경고] 연속 3번째 빈 배치 (새 비디오 없음)
+
+[조기 종료] 3번 연속 새 비디오 없음 - 더 이상 수집 가능한 비디오 없음
+수집된 비디오: 0개 (목표: 500개)
+
+================================================================================
+수집 완료: samsung galaxy z flip launch storage in US
+  - 총 수집 비디오 수: 37개
+  - 필터링 후: 0개
+  - Raw 데이터: 37개
+  - 최종 반환: 0개
+  - 총 API 호출 수: 9
+================================================================================
+
+No videos found!
+
+[WARN] 'Samsung Galaxy Z Flip Launch Storage' returned no data
+
+Waiting 30 seconds before next keyword...
+
+================================================================================
+Processing keyword 37/44: 'Samsung Galaxy Z Fold Launch Storage'
+================================================================================
+================================================================================
+YouTube Data Collection & Analysis Pipeline
+================================================================================
+Keyword: Samsung Galaxy Z Fold Launch Storage
+Max videos: 500
+Max comments per video: 100
+Region: US
+Summarize comments: True
+Analyze sentiment: False
+================================================================================
+
+[Step 1/4] Collecting video data from YouTube API (500 videos with quality filter)...
+
+================================================================================
+품질 필터링 모드 활성화:
+  - 채널 국가: US (US 채널만)
+  - 카테고리: 28 (Science & Technology)
+  - 최소 구독자: 10,000 OR 채널 총 조회수: 100,000,000
+  - 최소 참여율: 2.0%
+  - 목표 비디오 수: 500개
+  - 배치 크기: 50개씩 수집
+================================================================================
+
+
+[배치 1] 50개 비디오 수집 중...
+  더 이상 수집할 비디오가 없습니다 (총 34개 수집)
+  비디오 ID 34개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 29개 채널
+  비디오 상세 정보 완료: 34개
+  품질 필터 적용 중...
+  필터 결과: 0개 통과 / 34개
+    - 채널 국가 불일치: 31개
+    - 카테고리 불일치: 15개
+    - 채널 규모 미달: 11개
+    - 참여율 미달: 25개
+  누적 필터링된 비디오: 0개 / 목표: 500개
+  [경고] 연속 1번째 빈 배치 (새 비디오 없음)
+
+[배치 2] 50개 비디오 수집 중...
+  더 이상 수집할 비디오가 없습니다 (총 34개 수집)
+  비디오 ID 34개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 29개 채널
+  비디오 상세 정보 완료: 34개
+  품질 필터 적용 중...
+  필터 결과: 0개 통과 / 34개
+    - 채널 국가 불일치: 31개
+    - 카테고리 불일치: 15개
+    - 채널 규모 미달: 11개
+    - 참여율 미달: 25개
+  누적 필터링된 비디오: 0개 / 목표: 500개
+  [경고] 연속 2번째 빈 배치 (새 비디오 없음)
+
+[배치 3] 50개 비디오 수집 중...
+  더 이상 수집할 비디오가 없습니다 (총 34개 수집)
+  비디오 ID 34개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 29개 채널
+  비디오 상세 정보 완료: 34개
+  품질 필터 적용 중...
+  필터 결과: 0개 통과 / 34개
+    - 채널 국가 불일치: 31개
+    - 카테고리 불일치: 15개
+    - 채널 규모 미달: 11개
+    - 참여율 미달: 25개
+  누적 필터링된 비디오: 0개 / 목표: 500개
+  [경고] 연속 3번째 빈 배치 (새 비디오 없음)
+
+[조기 종료] 3번 연속 새 비디오 없음 - 더 이상 수집 가능한 비디오 없음
+수집된 비디오: 0개 (목표: 500개)
+
+================================================================================
+수집 완료: samsung galaxy z fold launch storage in US
+  - 총 수집 비디오 수: 102개
+  - 필터링 후: 0개
+  - Raw 데이터: 102개
+  - 최종 반환: 0개
+  - 총 API 호출 수: 9
+================================================================================
+
+No videos found!
+
+[WARN] 'Samsung Galaxy Z Fold Launch Storage' returned no data
+
+Waiting 30 seconds before next keyword...
+
+================================================================================
+Processing keyword 38/44: 'Samsung Galaxy A Launch Storage'
+================================================================================
+================================================================================
+YouTube Data Collection & Analysis Pipeline
+================================================================================
+Keyword: Samsung Galaxy A Launch Storage
+Max videos: 500
+Max comments per video: 100
+Region: US
+Summarize comments: True
+Analyze sentiment: False
+================================================================================
+
+[Step 1/4] Collecting video data from YouTube API (500 videos with quality filter)...
+
+================================================================================
+품질 필터링 모드 활성화:
+  - 채널 국가: US (US 채널만)
+  - 카테고리: 28 (Science & Technology)
+  - 최소 구독자: 10,000 OR 채널 총 조회수: 100,000,000
+  - 최소 참여율: 2.0%
+  - 목표 비디오 수: 500개
+  - 배치 크기: 50개씩 수집
+================================================================================
+
+
+[배치 1] 50개 비디오 수집 중...
+  비디오 ID 50개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 36개 채널
+  비디오 상세 정보 완료: 50개
+  품질 필터 적용 중...
+  필터 결과: 0개 통과 / 50개
+    - 채널 국가 불일치: 48개
+    - 카테고리 불일치: 7개
+    - 채널 규모 미달: 2개
+    - 참여율 미달: 14개
+  누적 필터링된 비디오: 0개 / 목표: 500개
+  [경고] 연속 1번째 빈 배치 (새 비디오 없음)
+
+[배치 2] 50개 비디오 수집 중...
+  비디오 ID 50개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 44개 채널
+  비디오 상세 정보 완료: 50개
+  품질 필터 적용 중...
+  필터 결과: 0개 통과 / 50개
+    - 채널 국가 불일치: 49개
+    - 카테고리 불일치: 13개
+    - 채널 규모 미달: 3개
+    - 참여율 미달: 31개
+  누적 필터링된 비디오: 0개 / 목표: 500개
+  [경고] 연속 2번째 빈 배치 (새 비디오 없음)
+
+[배치 3] 50개 비디오 수집 중...
+  더 이상 수집할 비디오가 없습니다 (총 4개 수집)
+  비디오 ID 4개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 4개 채널
+  비디오 상세 정보 완료: 4개
+  품질 필터 적용 중...
+  필터 결과: 0개 통과 / 4개
+    - 채널 국가 불일치: 4개
+    - 카테고리 불일치: 3개
+    - 채널 규모 미달: 3개
+    - 참여율 미달: 4개
+  누적 필터링된 비디오: 0개 / 목표: 500개
+  [경고] 연속 3번째 빈 배치 (새 비디오 없음)
+
+[조기 종료] 3번 연속 새 비디오 없음 - 더 이상 수집 가능한 비디오 없음
+수집된 비디오: 0개 (목표: 500개)
+
+================================================================================
+수집 완료: samsung galaxy a launch storage in US
+  - 총 수집 비디오 수: 104개
+  - 필터링 후: 0개
+  - Raw 데이터: 104개
+  - 최종 반환: 0개
+  - 총 API 호출 수: 9
+================================================================================
+
+No videos found!
+
+[WARN] 'Samsung Galaxy A Launch Storage' returned no data
+
+Waiting 30 seconds before next keyword...
+
+================================================================================
+Processing keyword 39/44: 'Apple Launch Storage'
+================================================================================
+================================================================================
+YouTube Data Collection & Analysis Pipeline
+================================================================================
+Keyword: Apple Launch Storage
+Max videos: 500
+Max comments per video: 100
+Region: US
+Summarize comments: True
+Analyze sentiment: False
+================================================================================
+
+[Step 1/4] Collecting video data from YouTube API (500 videos with quality filter)...
+
+================================================================================
+품질 필터링 모드 활성화:
+  - 채널 국가: US (US 채널만)
+  - 카테고리: 28 (Science & Technology)
+  - 최소 구독자: 10,000 OR 채널 총 조회수: 100,000,000
+  - 최소 참여율: 2.0%
+  - 목표 비디오 수: 500개
+  - 배치 크기: 50개씩 수집
+================================================================================
+
+
+[배치 1] 50개 비디오 수집 중...
+  비디오 ID 50개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 39개 채널
+  비디오 상세 정보 완료: 50개
+  품질 필터 적용 중...
+  필터 결과: 3개 통과 / 50개
+    - 채널 국가 불일치: 35개
+    - 카테고리 불일치: 21개
+    - 채널 규모 미달: 2개
+    - 참여율 미달: 25개
+  누적 필터링된 비디오: 3개 / 목표: 500개
+
+[배치 2] 50개 비디오 수집 중...
+  비디오 ID 50개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 45개 채널
+  비디오 상세 정보 완료: 50개
+  품질 필터 적용 중...
+  필터 결과: 2개 통과 / 50개
+    - 채널 국가 불일치: 42개
+    - 카테고리 불일치: 34개
+    - 채널 규모 미달: 7개
+    - 참여율 미달: 31개
+  누적 필터링된 비디오: 5개 / 목표: 500개
+
+[배치 3] 50개 비디오 수집 중...
+  비디오 ID 50개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 43개 채널
+  비디오 상세 정보 완료: 50개
+  품질 필터 적용 중...
+  필터 결과: 0개 통과 / 50개
+    - 채널 국가 불일치: 46개
+    - 카테고리 불일치: 38개
+    - 채널 규모 미달: 17개
+    - 참여율 미달: 34개
+  누적 필터링된 비디오: 5개 / 목표: 500개
+  [경고] 연속 1번째 빈 배치 (새 비디오 없음)
+
+[배치 4] 50개 비디오 수집 중...
+  비디오 ID 50개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 49개 채널
+  비디오 상세 정보 완료: 50개
+  품질 필터 적용 중...
+  필터 결과: 1개 통과 / 50개
+    - 채널 국가 불일치: 45개
+    - 카테고리 불일치: 39개
+    - 채널 규모 미달: 29개
+    - 참여율 미달: 33개
+  누적 필터링된 비디오: 6개 / 목표: 500개
+
+[배치 5] 50개 비디오 수집 중...
+  더 이상 수집할 비디오가 없습니다 (총 31개 수집)
+  비디오 ID 31개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 26개 채널
+  비디오 상세 정보 완료: 31개
+  품질 필터 적용 중...
+  필터 결과: 0개 통과 / 31개
+    - 채널 국가 불일치: 28개
+    - 카테고리 불일치: 24개
+    - 채널 규모 미달: 21개
+    - 참여율 미달: 19개
+  누적 필터링된 비디오: 6개 / 목표: 500개
+  [경고] 연속 1번째 빈 배치 (새 비디오 없음)
+
+[배치 6] 50개 비디오 수집 중...
+  비디오 ID 50개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 39개 채널
+  비디오 상세 정보 완료: 50개
+  품질 필터 적용 중...
+  필터 결과: 0개 통과 / 50개
+    - 채널 국가 불일치: 35개
+    - 카테고리 불일치: 21개
+    - 채널 규모 미달: 2개
+    - 참여율 미달: 25개
+  누적 필터링된 비디오: 6개 / 목표: 500개
+  [경고] 연속 2번째 빈 배치 (새 비디오 없음)
+
+[배치 7] 50개 비디오 수집 중...
+  비디오 ID 50개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 45개 채널
+  비디오 상세 정보 완료: 50개
+  품질 필터 적용 중...
+  필터 결과: 0개 통과 / 50개
+    - 채널 국가 불일치: 42개
+    - 카테고리 불일치: 34개
+    - 채널 규모 미달: 7개
+    - 참여율 미달: 31개
+  누적 필터링된 비디오: 6개 / 목표: 500개
+  [경고] 연속 3번째 빈 배치 (새 비디오 없음)
+
+[조기 종료] 3번 연속 새 비디오 없음 - 더 이상 수집 가능한 비디오 없음
+수집된 비디오: 6개 (목표: 500개)
+
+================================================================================
+수집 완료: apple launch storage in US
+  - 총 수집 비디오 수: 331개
+  - 필터링 후: 6개
+  - Raw 데이터: 331개
+  - 최종 반환: 6개
+  - 총 API 호출 수: 21
+================================================================================
+
+Collected 6 filtered videos
+Raw data: 331 total videos
+
+[Step 1.5/5] Saving raw and filtered videos to database...
+Connected to PostgreSQL database: samsung_dx_sentiment
+Tables created successfully (including youtube_videos_raw)
+Inserted/Updated 331 raw videos
+Error inserting videos: column "updated_at" of relation "youtube_videos" does not exist
+LINE 6:                 updated_at = CURRENT_TIMESTAMP
+                        ^
+
+  [OK] Saved to PostgreSQL:
+    - 331 raw videos (all collected)
+    - 0 filtered videos
+  => Videos are now safely stored in database!
+Disconnected from database
+
+[Step 2/5] Collecting comments from YouTube API...
+댓글 수집: eH7mR3Qwfug - 100개 스레드
+댓글 수집: cfPJNehU2wU - 100개 스레드
+댓글 수집: ocL33QgPaRU - 100개 스레드
+댓글 수집: bfOf2rQ62Qc - 18개 스레드
+댓글 수집: tDSj7dp5lgg - 19개 스레드
+댓글 수집: 0sJiBaVxtYQ - 2개 스레드
+전체 댓글 수집 완료: 551개
+Collected 551 comments
+
+[Step 3/5] Summarizing comments (per video)...
+  Summarizing comments for video: eH7mR3Qwfug (187 comments)
+  Summarizing comments for video: cfPJNehU2wU (190 comments)
+  Summarizing comments for video: ocL33QgPaRU (121 comments)
+  Summarizing comments for video: bfOf2rQ62Qc (28 comments)
+  Summarizing comments for video: tDSj7dp5lgg (23 comments)
+  Summarizing comments for video: 0sJiBaVxtYQ (2 comments)
+Summarized comments for 6 videos
+
+[Step 4/5] Saving comments and updating videos with summaries...
+  CSV saving disabled (save_csv=False)
+Connected to PostgreSQL database: samsung_dx_sentiment
+Error inserting comments: column "updated_at" of relation "youtube_comments" does not exist
+LINE 6:                 updated_at = CURRENT_TIMESTAMP
+                        ^
+
+Error inserting videos: column "updated_at" of relation "youtube_videos" does not exist
+LINE 6:                 updated_at = CURRENT_TIMESTAMP
+                        ^
+
+  [OK] Updated PostgreSQL:
+    - 0 videos updated (with comment summaries)
+    - 0 comments inserted
+Disconnected from database
+
+================================================================================
+Pipeline completed successfully!
+================================================================================
+Total videos processed: 6
+Total comments processed: 551
+Videos with comment summary: 6
+Connected to PostgreSQL database: samsung_dx_sentiment
+
+Database Statistics:
+  Total videos in DB: 7
+  Total comments in DB: 296
+Disconnected from database
+  Updated keyword for 6 videos
+
+[OK] 'Apple Launch Storage' completed: 6 videos, 551 comments
+
+Waiting 30 seconds before next keyword...
+
+================================================================================
+Processing keyword 40/44: 'iPhone Launch Storage'
+================================================================================
+================================================================================
+YouTube Data Collection & Analysis Pipeline
+================================================================================
+Keyword: iPhone Launch Storage
+Max videos: 500
+Max comments per video: 100
+Region: US
+Summarize comments: True
+Analyze sentiment: False
+================================================================================
+
+[Step 1/4] Collecting video data from YouTube API (500 videos with quality filter)...
+
+================================================================================
+품질 필터링 모드 활성화:
+  - 채널 국가: US (US 채널만)
+  - 카테고리: 28 (Science & Technology)
+  - 최소 구독자: 10,000 OR 채널 총 조회수: 100,000,000
+  - 최소 참여율: 2.0%
+  - 목표 비디오 수: 500개
+  - 배치 크기: 50개씩 수집
+================================================================================
+
+
+[배치 1] 50개 비디오 수집 중...
+
+[QUOTA EXCEEDED] API 할당량 초과 감지
+
+[KEY ROTATION] API 키 #4로 전환됨 (잔여 키: 4개)
+[RETRY] 새 API 키로 재시도...
+  비디오 ID 50개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 41개 채널
+  비디오 상세 정보 완료: 50개
+  품질 필터 적용 중...
+  필터 결과: 3개 통과 / 50개
+    - 채널 국가 불일치: 38개
+    - 카테고리 불일치: 21개
+    - 채널 규모 미달: 4개
+    - 참여율 미달: 20개
+  누적 필터링된 비디오: 3개 / 목표: 500개
+
+[배치 2] 50개 비디오 수집 중...
+  비디오 ID 50개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 44개 채널
+  비디오 상세 정보 완료: 50개
+  품질 필터 적용 중...
+  필터 결과: 2개 통과 / 50개
+    - 채널 국가 불일치: 42개
+    - 카테고리 불일치: 36개
+    - 채널 규모 미달: 9개
+    - 참여율 미달: 27개
+  누적 필터링된 비디오: 5개 / 목표: 500개
+
+[배치 3] 50개 비디오 수집 중...
+  더 이상 수집할 비디오가 없습니다 (총 0개 수집)
+  이 배치에서 수집된 비디오가 없습니다.
+
+================================================================================
+수집 완료: iphone launch storage in US
+  - 총 수집 비디오 수: 100개
+  - 필터링 후: 5개
+  - Raw 데이터: 100개
+  - 최종 반환: 5개
+  - 총 API 호출 수: 7
+================================================================================
+
+Collected 5 filtered videos
+Raw data: 100 total videos
+
+[Step 1.5/5] Saving raw and filtered videos to database...
+Connected to PostgreSQL database: samsung_dx_sentiment
+Tables created successfully (including youtube_videos_raw)
+Inserted/Updated 100 raw videos
+Inserted/Updated 5 videos
+  [OK] Saved to PostgreSQL:
+    - 100 raw videos (all collected)
+    - 5 filtered videos
+  => Videos are now safely stored in database!
+Disconnected from database
+
+[Step 2/5] Collecting comments from YouTube API...
+댓글 수집: eH7mR3Qwfug - 100개 스레드
+댓글 수집: cfPJNehU2wU - 100개 스레드
+댓글 수집: rDUabFEJ6eQ - 100개 스레드
+댓글 수집: ocL33QgPaRU - 100개 스레드
+댓글 수집: bfOf2rQ62Qc - 18개 스레드
+전체 댓글 수집 완료: 689개
+Collected 689 comments
+
+[Step 3/5] Summarizing comments (per video)...
+  Summarizing comments for video: eH7mR3Qwfug (187 comments)
+  Summarizing comments for video: cfPJNehU2wU (190 comments)
+  Summarizing comments for video: rDUabFEJ6eQ (163 comments)
+  Summarizing comments for video: ocL33QgPaRU (121 comments)
+  Summarizing comments for video: bfOf2rQ62Qc (28 comments)
+Summarized comments for 5 videos
+
+[Step 4/5] Saving comments and updating videos with summaries...
+  CSV saving disabled (save_csv=False)
+Connected to PostgreSQL database: samsung_dx_sentiment
+Inserted/Updated 689 comments
+Inserted/Updated 5 videos
+  [OK] Updated PostgreSQL:
+    - 5 videos updated (with comment summaries)
+    - 689 comments inserted
+Disconnected from database
+
+================================================================================
+Pipeline completed successfully!
+================================================================================
+Total videos processed: 5
+Total comments processed: 689
+Videos with comment summary: 5
+Connected to PostgreSQL database: samsung_dx_sentiment
+
+Database Statistics:
+  Total videos in DB: 12
+  Total comments in DB: 985
+Disconnected from database
+  Updated keyword for 5 videos
+
+[OK] 'iPhone Launch Storage' completed: 5 videos, 689 comments
+
+Waiting 30 seconds before next keyword...
+
+================================================================================
+Processing keyword 41/44: 'Lenovo Launch Storage'
+================================================================================
+================================================================================
+YouTube Data Collection & Analysis Pipeline
+================================================================================
+Keyword: Lenovo Launch Storage
+Max videos: 500
+Max comments per video: 100
+Region: US
+Summarize comments: True
+Analyze sentiment: False
+================================================================================
+
+[Step 1/4] Collecting video data from YouTube API (500 videos with quality filter)...
+
+================================================================================
+품질 필터링 모드 활성화:
+  - 채널 국가: US (US 채널만)
+  - 카테고리: 28 (Science & Technology)
+  - 최소 구독자: 10,000 OR 채널 총 조회수: 100,000,000
+  - 최소 참여율: 2.0%
+  - 목표 비디오 수: 500개
+  - 배치 크기: 50개씩 수집
+================================================================================
+
+
+[배치 1] 50개 비디오 수집 중...
+  더 이상 수집할 비디오가 없습니다 (총 20개 수집)
+  비디오 ID 20개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 15개 채널
+  비디오 상세 정보 완료: 20개
+  품질 필터 적용 중...
+  필터 결과: 0개 통과 / 20개
+    - 채널 국가 불일치: 20개
+    - 카테고리 불일치: 2개
+    - 채널 규모 미달: 3개
+    - 참여율 미달: 4개
+  누적 필터링된 비디오: 0개 / 목표: 500개
+  [경고] 연속 1번째 빈 배치 (새 비디오 없음)
+
+[배치 2] 50개 비디오 수집 중...
+  더 이상 수집할 비디오가 없습니다 (총 20개 수집)
+  비디오 ID 20개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 15개 채널
+  비디오 상세 정보 완료: 20개
+  품질 필터 적용 중...
+  필터 결과: 0개 통과 / 20개
+    - 채널 국가 불일치: 20개
+    - 카테고리 불일치: 2개
+    - 채널 규모 미달: 3개
+    - 참여율 미달: 4개
+  누적 필터링된 비디오: 0개 / 목표: 500개
+  [경고] 연속 2번째 빈 배치 (새 비디오 없음)
+
+[배치 3] 50개 비디오 수집 중...
+  더 이상 수집할 비디오가 없습니다 (총 20개 수집)
+  비디오 ID 20개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 15개 채널
+  비디오 상세 정보 완료: 20개
+  품질 필터 적용 중...
+  필터 결과: 0개 통과 / 20개
+    - 채널 국가 불일치: 20개
+    - 카테고리 불일치: 2개
+    - 채널 규모 미달: 3개
+    - 참여율 미달: 4개
+  누적 필터링된 비디오: 0개 / 목표: 500개
+  [경고] 연속 3번째 빈 배치 (새 비디오 없음)
+
+[조기 종료] 3번 연속 새 비디오 없음 - 더 이상 수집 가능한 비디오 없음
+수집된 비디오: 0개 (목표: 500개)
+
+================================================================================
+수집 완료: lenovo launch storage in US
+  - 총 수집 비디오 수: 60개
+  - 필터링 후: 0개
+  - Raw 데이터: 60개
+  - 최종 반환: 0개
+  - 총 API 호출 수: 9
+================================================================================
+
+No videos found!
+
+[WARN] 'Lenovo Launch Storage' returned no data
+
+Waiting 30 seconds before next keyword...
+
+================================================================================
+Processing keyword 42/44: 'moto Launch Storage'
+================================================================================
+================================================================================
+YouTube Data Collection & Analysis Pipeline
+================================================================================
+Keyword: moto Launch Storage
+Max videos: 500
+Max comments per video: 100
+Region: US
+Summarize comments: True
+Analyze sentiment: False
+================================================================================
+
+[Step 1/4] Collecting video data from YouTube API (500 videos with quality filter)...
+
+================================================================================
+품질 필터링 모드 활성화:
+  - 채널 국가: US (US 채널만)
+  - 카테고리: 28 (Science & Technology)
+  - 최소 구독자: 10,000 OR 채널 총 조회수: 100,000,000
+  - 최소 참여율: 2.0%
+  - 목표 비디오 수: 500개
+  - 배치 크기: 50개씩 수집
+================================================================================
+
+
+[배치 1] 50개 비디오 수집 중...
+  비디오 ID 50개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 41개 채널
+  비디오 상세 정보 완료: 50개
+  품질 필터 적용 중...
+  필터 결과: 0개 통과 / 50개
+    - 채널 국가 불일치: 50개
+    - 카테고리 불일치: 5개
+    - 채널 규모 미달: 5개
+    - 참여율 미달: 19개
+  누적 필터링된 비디오: 0개 / 목표: 500개
+  [경고] 연속 1번째 빈 배치 (새 비디오 없음)
+
+[배치 2] 50개 비디오 수집 중...
+  더 이상 수집할 비디오가 없습니다 (총 7개 수집)
+  비디오 ID 7개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 4개 채널
+  비디오 상세 정보 완료: 7개
+  품질 필터 적용 중...
+  필터 결과: 0개 통과 / 7개
+    - 채널 국가 불일치: 6개
+    - 카테고리 불일치: 3개
+    - 채널 규모 미달: 7개
+    - 참여율 미달: 3개
+  누적 필터링된 비디오: 0개 / 목표: 500개
+  [경고] 연속 2번째 빈 배치 (새 비디오 없음)
+
+[배치 3] 50개 비디오 수집 중...
+  비디오 ID 50개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 41개 채널
+  비디오 상세 정보 완료: 50개
+  품질 필터 적용 중...
+  필터 결과: 0개 통과 / 50개
+    - 채널 국가 불일치: 50개
+    - 카테고리 불일치: 5개
+    - 채널 규모 미달: 5개
+    - 참여율 미달: 19개
+  누적 필터링된 비디오: 0개 / 목표: 500개
+  [경고] 연속 3번째 빈 배치 (새 비디오 없음)
+
+[조기 종료] 3번 연속 새 비디오 없음 - 더 이상 수집 가능한 비디오 없음
+수집된 비디오: 0개 (목표: 500개)
+
+================================================================================
+수집 완료: moto launch storage in US
+  - 총 수집 비디오 수: 107개
+  - 필터링 후: 0개
+  - Raw 데이터: 107개
+  - 최종 반환: 0개
+  - 총 API 호출 수: 9
+================================================================================
+
+No videos found!
+
+[WARN] 'moto Launch Storage' returned no data
+
+Waiting 30 seconds before next keyword...
+
+================================================================================
+Processing keyword 43/44: 'Google Launch Storage'
+================================================================================
+================================================================================
+YouTube Data Collection & Analysis Pipeline
+================================================================================
+Keyword: Google Launch Storage
+Max videos: 500
+Max comments per video: 100
+Region: US
+Summarize comments: True
+Analyze sentiment: False
+================================================================================
+
+[Step 1/4] Collecting video data from YouTube API (500 videos with quality filter)...
+
+================================================================================
+품질 필터링 모드 활성화:
+  - 채널 국가: US (US 채널만)
+  - 카테고리: 28 (Science & Technology)
+  - 최소 구독자: 10,000 OR 채널 총 조회수: 100,000,000
+  - 최소 참여율: 2.0%
+  - 목표 비디오 수: 500개
+  - 배치 크기: 50개씩 수집
+================================================================================
+
+
+[배치 1] 50개 비디오 수집 중...
+  더 이상 수집할 비디오가 없습니다 (총 21개 수집)
+  비디오 ID 21개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 18개 채널
+  비디오 상세 정보 완료: 21개
+  품질 필터 적용 중...
+  필터 결과: 0개 통과 / 21개
+    - 채널 국가 불일치: 21개
+    - 카테고리 불일치: 17개
+    - 채널 규모 미달: 17개
+    - 참여율 미달: 18개
+  누적 필터링된 비디오: 0개 / 목표: 500개
+  [경고] 연속 1번째 빈 배치 (새 비디오 없음)
+
+[배치 2] 50개 비디오 수집 중...
+  더 이상 수집할 비디오가 없습니다 (총 40개 수집)
+  비디오 ID 40개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 36개 채널
+  비디오 상세 정보 완료: 40개
+  품질 필터 적용 중...
+  필터 결과: 0개 통과 / 40개
+    - 채널 국가 불일치: 40개
+    - 카테고리 불일치: 23개
+    - 채널 규모 미달: 21개
+    - 참여율 미달: 25개
+  누적 필터링된 비디오: 0개 / 목표: 500개
+  [경고] 연속 2번째 빈 배치 (새 비디오 없음)
+
+[배치 3] 50개 비디오 수집 중...
+  더 이상 수집할 비디오가 없습니다 (총 40개 수집)
+  비디오 ID 40개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 36개 채널
+  비디오 상세 정보 완료: 40개
+  품질 필터 적용 중...
+  필터 결과: 0개 통과 / 40개
+    - 채널 국가 불일치: 40개
+    - 카테고리 불일치: 23개
+    - 채널 규모 미달: 21개
+    - 참여율 미달: 25개
+  누적 필터링된 비디오: 0개 / 목표: 500개
+  [경고] 연속 3번째 빈 배치 (새 비디오 없음)
+
+[조기 종료] 3번 연속 새 비디오 없음 - 더 이상 수집 가능한 비디오 없음
+수집된 비디오: 0개 (목표: 500개)
+
+================================================================================
+수집 완료: google launch storage in US
+  - 총 수집 비디오 수: 101개
+  - 필터링 후: 0개
+  - Raw 데이터: 101개
+  - 최종 반환: 0개
+  - 총 API 호출 수: 9
+================================================================================
+
+No videos found!
+
+[WARN] 'Google Launch Storage' returned no data
+
+Waiting 30 seconds before next keyword...
+
+================================================================================
+Processing keyword 44/44: 'Pixel Launch Storage'
+================================================================================
+================================================================================
+YouTube Data Collection & Analysis Pipeline
+================================================================================
+Keyword: Pixel Launch Storage
+Max videos: 500
+Max comments per video: 100
+Region: US
+Summarize comments: True
+Analyze sentiment: False
+================================================================================
+
+[Step 1/4] Collecting video data from YouTube API (500 videos with quality filter)...
+
+================================================================================
+품질 필터링 모드 활성화:
+  - 채널 국가: US (US 채널만)
+  - 카테고리: 28 (Science & Technology)
+  - 최소 구독자: 10,000 OR 채널 총 조회수: 100,000,000
+  - 최소 참여율: 2.0%
+  - 목표 비디오 수: 500개
+  - 배치 크기: 50개씩 수집
+================================================================================
+
+
+[배치 1] 50개 비디오 수집 중...
+  더 이상 수집할 비디오가 없습니다 (총 12개 수집)
+  비디오 ID 12개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 11개 채널
+  비디오 상세 정보 완료: 12개
+  품질 필터 적용 중...
+  필터 결과: 0개 통과 / 12개
+    - 채널 국가 불일치: 11개
+    - 카테고리 불일치: 2개
+    - 채널 규모 미달: 2개
+    - 참여율 미달: 6개
+  누적 필터링된 비디오: 0개 / 목표: 500개
+  [경고] 연속 1번째 빈 배치 (새 비디오 없음)
+
+[배치 2] 50개 비디오 수집 중...
+  더 이상 수집할 비디오가 없습니다 (총 11개 수집)
+  비디오 ID 11개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 10개 채널
+  비디오 상세 정보 완료: 11개
+  품질 필터 적용 중...
+  필터 결과: 0개 통과 / 11개
+    - 채널 국가 불일치: 10개
+    - 카테고리 불일치: 1개
+    - 채널 규모 미달: 1개
+    - 참여율 미달: 5개
+  누적 필터링된 비디오: 0개 / 목표: 500개
+  [경고] 연속 2번째 빈 배치 (새 비디오 없음)
+
+[배치 3] 50개 비디오 수집 중...
+  더 이상 수집할 비디오가 없습니다 (총 11개 수집)
+  비디오 ID 11개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 10개 채널
+  비디오 상세 정보 완료: 11개
+  품질 필터 적용 중...
+  필터 결과: 0개 통과 / 11개
+    - 채널 국가 불일치: 10개
+    - 카테고리 불일치: 1개
+    - 채널 규모 미달: 1개
+    - 참여율 미달: 5개
+  누적 필터링된 비디오: 0개 / 목표: 500개
+  [경고] 연속 3번째 빈 배치 (새 비디오 없음)
+
+[조기 종료] 3번 연속 새 비디오 없음 - 더 이상 수집 가능한 비디오 없음
+수집된 비디오: 0개 (목표: 500개)
+
+================================================================================
+수집 완료: pixel launch storage in US
+  - 총 수집 비디오 수: 34개
+  - 필터링 후: 0개
+  - Raw 데이터: 34개
+  - 최종 반환: 0개
+  - 총 API 호출 수: 9
+================================================================================
+
+No videos found!
+
+[WARN] 'Pixel Launch Storage' returned no data
+
+================================================================================
+Batch Collection Summary
+================================================================================
+Completed at: 2025-11-12 19:49:20
+
+Keywords processed: 17/44
+Total videos collected: 68
+Total comments collected: 9960
+
+Failed keywords (27):
+  - 'Samsung Neo QLED 8K TV Launch': No data returned
+  - 'Samsung FHD TV Launch': No data returned
+  - 'QNED TV Launch': No data returned
+  - 'Evo TV Launch': No data returned
+  - 'Samsung Galaxy Launch Color': No data returned
+  - 'Samsung Flip Launch Color': No data returned
+  - 'Samsung Fold Launch Color': No data returned
+  - 'Samsung Galaxy Note Launch Color': No data returned
+  - 'Samsung OLED TV Launch': No data returned
+  - 'Samsung QLED TV Launch': No data returned
+  - 'Samsung Galaxy Z Flip Launch Color': No data returned
+  - 'Samsung Galaxy Z Fold Launch Color': No data returned
+  - 'Lenovo Launch Color': No data returned
+  - 'moto Launch Color': No data returned
+  - 'Google Launch Color': No data returned
+  - 'Samsung Galaxy Launch Storage': No data returned
+  - 'Samsung Flip Launch Storage': No data returned
+  - 'Samsung Fold Launch Storage': No data returned
+  - 'Samsung Galaxy S Launch Storage': No data returned
+  - 'Samsung Galaxy Note Launch Storage': No data returned
+  - 'Samsung Galaxy Z Flip Launch Storage': No data returned
+  - 'Samsung Galaxy Z Fold Launch Storage': No data returned
+  - 'Samsung Galaxy A Launch Storage': No data returned
+  - 'Lenovo Launch Storage': No data returned
+  - 'moto Launch Storage': No data returned
+  - 'Google Launch Storage': No data returned
+  - 'Pixel Launch Storage': No data returned
+
+================================================================================

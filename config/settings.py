@@ -2,6 +2,7 @@
 try:
     from .secrets import (
         YOUTUBE_API_KEY,
+        YOUTUBE_API_KEYS,
         OPENAI_API_KEY,
         TIKTOK_CLIENT_KEY,
         TIKTOK_CLIENT_SECRET,

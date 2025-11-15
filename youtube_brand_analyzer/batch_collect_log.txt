@@ -1,1854 +1,1501 @@
+YouTubeAnalyzer 초기화: 5개 API 키 사용 가능
 ================================================================================
 YouTube Batch Data Collection
 ================================================================================
-Started at: 2025-11-02 09:36:01
+Started at: 2025-11-10 16:41:26
 Dry run: False
 ================================================================================
 
-Found 3 active keywords:
+Found 2 active keywords:
 
-  1. 'Samsung TV' - 50 videos, 20 comments/video, region: US
-  2. '4k tv' - 50 videos, 20 comments/video, region: US
-  3. 'led tv' - 50 videos, 20 comments/video, region: US
-
-================================================================================
+  1. 'Samsung QLED' - 50 videos, 20 comments/video, region: US
+  2. 'Samsung TV' - 100 videos, 20 comments/video, region: US
 
 ================================================================================
-Processing keyword 1/3: 'Samsung TV'
+
+================================================================================
+Processing keyword 1/2: 'Samsung QLED'
+================================================================================
+================================================================================
+YouTube Data Collection & Analysis Pipeline
+================================================================================
+Keyword: Samsung QLED
+Max videos: 50
+Max comments per video: 20
+Region: US
+Summarize comments: True
+Analyze sentiment: False
+================================================================================
+
+[Step 1/4] Collecting video data from YouTube API...
+
+================================================================================
+품질 필터링 모드 활성화:
+  - 채널 국가: US (US 채널만)
+  - 카테고리: 28 (Science & Technology)
+  - 최소 구독자: 10,000 OR 채널 총 조회수: 100,000,000
+  - 최소 참여율: 2.0%
+  - 목표 비디오 수: 50개
+  - 배치 크기: 200개씩 수집
+================================================================================
+
+
+[배치 1] 200개 비디오 수집 중...
+
+[QUOTA EXCEEDED] API 할당량 초과 감지
+
+[KEY ROTATION] API 키 #2로 전환됨 (잔여 키: 3개)
+[RETRY] 새 API 키로 재시도...
+  비디오 ID 200개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 126개 채널
+  비디오 상세 정보 완료: 200개
+  품질 필터 적용 중...
+  필터 결과: 5개 통과 / 200개
+    - 채널 국가 불일치: 182개
+    - 카테고리 불일치: 60개
+    - 채널 규모 미달: 24개
+    - 참여율 미달: 118개
+  누적 필터링된 비디오: 5개 / 목표: 50개
+
+[배치 2] 200개 비디오 수집 중...
+  비디오 ID 200개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 122개 채널
+  비디오 상세 정보 완료: 200개
+  품질 필터 적용 중...
+  필터 결과: 1개 통과 / 200개
+    - 채널 국가 불일치: 185개
+    - 카테고리 불일치: 119개
+    - 채널 규모 미달: 117개
+    - 참여율 미달: 145개
+  누적 필터링된 비디오: 6개 / 목표: 50개
+
+[배치 3] 200개 비디오 수집 중...
+  더 이상 수집할 비디오가 없습니다 (총 196개 수집)
+  비디오 ID 196개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 137개 채널
+  비디오 상세 정보 완료: 196개
+  품질 필터 적용 중...
+  필터 결과: 0개 통과 / 196개
+    - 채널 국가 불일치: 180개
+    - 카테고리 불일치: 146개
+    - 채널 규모 미달: 137개
+    - 참여율 미달: 139개
+  누적 필터링된 비디오: 6개 / 목표: 50개
+
+[배치 4] 200개 비디오 수집 중...
+  비디오 ID 200개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 108개 채널
+  비디오 상세 정보 완료: 200개
+  품질 필터 적용 중...
+  필터 결과: 7개 통과 / 200개
+    - 채널 국가 불일치: 179개
+    - 카테고리 불일치: 59개
+    - 채널 규모 미달: 30개
+    - 참여율 미달: 109개
+  누적 필터링된 비디오: 13개 / 목표: 50개
+
+[배치 5] 200개 비디오 수집 중...
+  비디오 ID 200개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 124개 채널
+  비디오 상세 정보 완료: 200개
+  품질 필터 적용 중...
+  필터 결과: 1개 통과 / 200개
+    - 채널 국가 불일치: 187개
+    - 카테고리 불일치: 123개
+    - 채널 규모 미달: 117개
+    - 참여율 미달: 142개
+  누적 필터링된 비디오: 14개 / 목표: 50개
+
+[배치 6] 200개 비디오 수집 중...
+  더 이상 수집할 비디오가 없습니다 (총 196개 수집)
+  비디오 ID 196개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 137개 채널
+  비디오 상세 정보 완료: 196개
+  품질 필터 적용 중...
+  필터 결과: 0개 통과 / 196개
+    - 채널 국가 불일치: 180개
+    - 카테고리 불일치: 146개
+    - 채널 규모 미달: 137개
+    - 참여율 미달: 139개
+  누적 필터링된 비디오: 14개 / 목표: 50개
+
+[배치 7] 200개 비디오 수집 중...
+  비디오 ID 200개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 126개 채널
+  비디오 상세 정보 완료: 200개
+  품질 필터 적용 중...
+  필터 결과: 5개 통과 / 200개
+    - 채널 국가 불일치: 182개
+    - 카테고리 불일치: 60개
+    - 채널 규모 미달: 24개
+    - 참여율 미달: 118개
+  누적 필터링된 비디오: 19개 / 목표: 50개
+
+[배치 8] 200개 비디오 수집 중...
+  비디오 ID 200개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 126개 채널
+  비디오 상세 정보 완료: 200개
+  품질 필터 적용 중...
+  필터 결과: 1개 통과 / 200개
+    - 채널 국가 불일치: 186개
+    - 카테고리 불일치: 118개
+    - 채널 규모 미달: 111개
+    - 참여율 미달: 149개
+  누적 필터링된 비디오: 20개 / 목표: 50개
+
+[배치 9] 200개 비디오 수집 중...
+  더 이상 수집할 비디오가 없습니다 (총 196개 수집)
+  비디오 ID 196개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 128개 채널
+  비디오 상세 정보 완료: 196개
+  품질 필터 적용 중...
+  필터 결과: 0개 통과 / 196개
+    - 채널 국가 불일치: 180개
+    - 카테고리 불일치: 153개
+    - 채널 규모 미달: 147개
+    - 참여율 미달: 146개
+  누적 필터링된 비디오: 20개 / 목표: 50개
+
+[배치 10] 200개 비디오 수집 중...
+  비디오 ID 200개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 126개 채널
+  비디오 상세 정보 완료: 200개
+  품질 필터 적용 중...
+  필터 결과: 5개 통과 / 200개
+    - 채널 국가 불일치: 182개
+    - 카테고리 불일치: 60개
+    - 채널 규모 미달: 24개
+    - 참여율 미달: 118개
+  누적 필터링된 비디오: 25개 / 목표: 50개
+
+  [주의] API 호출 수: 110 (할당량: 10,000/day)
+
+[배치 11] 200개 비디오 수집 중...
+  비디오 ID 200개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 122개 채널
+  비디오 상세 정보 완료: 200개
+  품질 필터 적용 중...
+  필터 결과: 1개 통과 / 200개
+    - 채널 국가 불일치: 185개
+    - 카테고리 불일치: 122개
+    - 채널 규모 미달: 114개
+    - 참여율 미달: 145개
+  누적 필터링된 비디오: 26개 / 목표: 50개
+
+  [주의] API 호출 수: 121 (할당량: 10,000/day)
+
+[배치 12] 200개 비디오 수집 중...
+  더 이상 수집할 비디오가 없습니다 (총 113개 수집)
+  비디오 ID 113개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 81개 채널
+  비디오 상세 정보 완료: 113개
+  품질 필터 적용 중...
+  필터 결과: 0개 통과 / 113개
+    - 채널 국가 불일치: 103개
+    - 카테고리 불일치: 81개
+    - 채널 규모 미달: 69개
+    - 참여율 미달: 77개
+  누적 필터링된 비디오: 26개 / 목표: 50개
+
+  [주의] API 호출 수: 129 (할당량: 10,000/day)
+
+[배치 13] 200개 비디오 수집 중...
+  비디오 ID 200개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 126개 채널
+  비디오 상세 정보 완료: 200개
+  품질 필터 적용 중...
+  필터 결과: 5개 통과 / 200개
+    - 채널 국가 불일치: 182개
+    - 카테고리 불일치: 60개
+    - 채널 규모 미달: 24개
+    - 참여율 미달: 118개
+  누적 필터링된 비디오: 31개 / 목표: 50개
+
+  [주의] API 호출 수: 140 (할당량: 10,000/day)
+
+[배치 14] 200개 비디오 수집 중...
+  비디오 ID 200개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 126개 채널
+  비디오 상세 정보 완료: 200개
+  품질 필터 적용 중...
+  필터 결과: 1개 통과 / 200개
+    - 채널 국가 불일치: 185개
+    - 카테고리 불일치: 120개
+    - 채널 규모 미달: 117개
+    - 참여율 미달: 144개
+  누적 필터링된 비디오: 32개 / 목표: 50개
+
+  [주의] API 호출 수: 151 (할당량: 10,000/day)
+
+[배치 15] 200개 비디오 수집 중...
+  더 이상 수집할 비디오가 없습니다 (총 196개 수집)
+  비디오 ID 196개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 128개 채널
+  비디오 상세 정보 완료: 196개
+  품질 필터 적용 중...
+  필터 결과: 0개 통과 / 196개
+    - 채널 국가 불일치: 180개
+    - 카테고리 불일치: 154개
+    - 채널 규모 미달: 148개
+    - 참여율 미달: 147개
+  누적 필터링된 비디오: 32개 / 목표: 50개
+
+  [주의] API 호출 수: 162 (할당량: 10,000/day)
+
+[배치 16] 200개 비디오 수집 중...
+  비디오 ID 200개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 118개 채널
+  비디오 상세 정보 완료: 200개
+  품질 필터 적용 중...
+  필터 결과: 5개 통과 / 200개
+    - 채널 국가 불일치: 186개
+    - 카테고리 불일치: 65개
+    - 채널 규모 미달: 24개
+    - 참여율 미달: 119개
+  누적 필터링된 비디오: 37개 / 목표: 50개
+
+  [주의] API 호출 수: 173 (할당량: 10,000/day)
+
+[배치 17] 200개 비디오 수집 중...
+  비디오 ID 200개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 126개 채널
+  비디오 상세 정보 완료: 200개
+  품질 필터 적용 중...
+  필터 결과: 1개 통과 / 200개
+    - 채널 국가 불일치: 185개
+    - 카테고리 불일치: 120개
+    - 채널 규모 미달: 117개
+    - 참여율 미달: 144개
+  누적 필터링된 비디오: 38개 / 목표: 50개
+
+  [주의] API 호출 수: 184 (할당량: 10,000/day)
+
+[배치 18] 200개 비디오 수집 중...
+
+[QUOTA EXCEEDED] API 할당량 초과 감지
+
+[KEY ROTATION] API 키 #3로 전환됨 (잔여 키: 2개)
+[RETRY] 새 API 키로 재시도...
+  더 이상 수집할 비디오가 없습니다 (총 183개 수집)
+  비디오 ID 183개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 127개 채널
+  비디오 상세 정보 완료: 183개
+  품질 필터 적용 중...
+  필터 결과: 0개 통과 / 183개
+    - 채널 국가 불일치: 168개
+    - 카테고리 불일치: 138개
+    - 채널 규모 미달: 127개
+    - 참여율 미달: 132개
+  누적 필터링된 비디오: 38개 / 목표: 50개
+
+  [주의] API 호출 수: 195 (할당량: 10,000/day)
+
+[배치 19] 200개 비디오 수집 중...
+  비디오 ID 200개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 126개 채널
+  비디오 상세 정보 완료: 200개
+  품질 필터 적용 중...
+  필터 결과: 5개 통과 / 200개
+    - 채널 국가 불일치: 182개
+    - 카테고리 불일치: 60개
+    - 채널 규모 미달: 24개
+    - 참여율 미달: 118개
+  누적 필터링된 비디오: 43개 / 목표: 50개
+
+  [주의] API 호출 수: 206 (할당량: 10,000/day)
+
+[배치 20] 200개 비디오 수집 중...
+  비디오 ID 200개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 123개 채널
+  비디오 상세 정보 완료: 200개
+  품질 필터 적용 중...
+  필터 결과: 1개 통과 / 200개
+    - 채널 국가 불일치: 186개
+    - 카테고리 불일치: 120개
+    - 채널 규모 미달: 115개
+    - 참여율 미달: 144개
+  누적 필터링된 비디오: 44개 / 목표: 50개
+
+  [주의] API 호출 수: 217 (할당량: 10,000/day)
+
+[배치 21] 200개 비디오 수집 중...
+  더 이상 수집할 비디오가 없습니다 (총 196개 수집)
+  비디오 ID 196개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 134개 채널
+  비디오 상세 정보 완료: 196개
+  품질 필터 적용 중...
+  필터 결과: 0개 통과 / 196개
+    - 채널 국가 불일치: 179개
+    - 카테고리 불일치: 146개
+    - 채널 규모 미달: 136개
+    - 참여율 미달: 138개
+  누적 필터링된 비디오: 44개 / 목표: 50개
+
+  [주의] API 호출 수: 228 (할당량: 10,000/day)
+
+[배치 22] 200개 비디오 수집 중...
+  비디오 ID 200개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 126개 채널
+  비디오 상세 정보 완료: 200개
+  품질 필터 적용 중...
+  필터 결과: 5개 통과 / 200개
+    - 채널 국가 불일치: 182개
+    - 카테고리 불일치: 60개
+    - 채널 규모 미달: 24개
+    - 참여율 미달: 118개
+  누적 필터링된 비디오: 49개 / 목표: 50개
+
+  [주의] API 호출 수: 239 (할당량: 10,000/day)
+
+[배치 23] 200개 비디오 수집 중...
+  비디오 ID 200개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 129개 채널
+  비디오 상세 정보 완료: 200개
+  품질 필터 적용 중...
+  필터 결과: 1개 통과 / 200개
+    - 채널 국가 불일치: 185개
+    - 카테고리 불일치: 122개
+    - 채널 규모 미달: 116개
+    - 참여율 미달: 143개
+  누적 필터링된 비디오: 50개 / 목표: 50개
+
+[목표 달성] 50개 비디오 수집 완료!
+
+================================================================================
+수집 완료: samsung qled in US
+  - 총 수집 비디오 수: 4476개
+  - 필터링 후: 50개
+  - Raw 데이터: 4476개
+  - 최종 반환: 50개
+  - 총 API 호출 수: 250
+================================================================================
+
+Collected 50 filtered videos
+Raw data: 4476 total videos
+
+[Step 2/4] Collecting comments from YouTube API...
+댓글 수집: VvI0TtwsqX0 - 20개 스레드
+댓글 수집: m_LCI2rFDUY - 20개 스레드
+댓글 수집: V8UELS4di2g - 20개 스레드
+댓글 수집: YbuJ1XW_LSg - 6개 스레드
+댓글 수집: UkBS6gzxiRI - 20개 스레드
+댓글 수집: 0SkrCQyZB1k - 3개 스레드
+댓글 수집: VvI0TtwsqX0 - 20개 스레드
+댓글 수집: m_LCI2rFDUY - 20개 스레드
+댓글 수집: V8UELS4di2g - 20개 스레드
+댓글 수집: YbuJ1XW_LSg - 6개 스레드
+댓글 수집: V8UELS4di2g - 20개 스레드
+댓글 수집: YbuJ1XW_LSg - 6개 스레드
+댓글 수집: UkBS6gzxiRI - 20개 스레드
+댓글 수집: 0SkrCQyZB1k - 3개 스레드
+댓글 수집: VvI0TtwsqX0 - 20개 스레드
+댓글 수집: m_LCI2rFDUY - 20개 스레드
+댓글 수집: V8UELS4di2g - 20개 스레드
+댓글 수집: YbuJ1XW_LSg - 6개 스레드
+댓글 수집: UkBS6gzxiRI - 20개 스레드
+댓글 수집: 0SkrCQyZB1k - 3개 스레드
+댓글 수집: VvI0TtwsqX0 - 20개 스레드
+댓글 수집: m_LCI2rFDUY - 20개 스레드
+댓글 수집: V8UELS4di2g - 20개 스레드
+댓글 수집: YbuJ1XW_LSg - 6개 스레드
+댓글 수집: UkBS6gzxiRI - 20개 스레드
+댓글 수집: 0SkrCQyZB1k - 3개 스레드
+댓글 수집: VvI0TtwsqX0 - 20개 스레드
+댓글 수집: m_LCI2rFDUY - 20개 스레드
+댓글 수집: V8UELS4di2g - 20개 스레드
+댓글 수집: YbuJ1XW_LSg - 6개 스레드
+댓글 수집: UkBS6gzxiRI - 20개 스레드
+댓글 수집: 0SkrCQyZB1k - 3개 스레드
+댓글 수집: VvI0TtwsqX0 - 20개 스레드
+댓글 수집: m_LCI2rFDUY - 20개 스레드
+댓글 수집: V8UELS4di2g - 20개 스레드
+댓글 수집: YbuJ1XW_LSg - 6개 스레드
+댓글 수집: UkBS6gzxiRI - 20개 스레드
+댓글 수집: 0SkrCQyZB1k - 3개 스레드
+댓글 수집: VvI0TtwsqX0 - 20개 스레드
+댓글 수집: m_LCI2rFDUY - 20개 스레드
+댓글 수집: V8UELS4di2g - 20개 스레드
+댓글 수집: YbuJ1XW_LSg - 6개 스레드
+댓글 수집: UkBS6gzxiRI - 20개 스레드
+댓글 수집: 0SkrCQyZB1k - 3개 스레드
+댓글 수집: VvI0TtwsqX0 - 20개 스레드
+댓글 수집: m_LCI2rFDUY - 20개 스레드
+댓글 수집: V8UELS4di2g - 20개 스레드
+댓글 수집: YbuJ1XW_LSg - 6개 스레드
+댓글 수집: UkBS6gzxiRI - 20개 스레드
+댓글 수집: 0SkrCQyZB1k - 3개 스레드
+전체 댓글 수집 완료: 2271개
+Collected 2271 comments
+
+[Step 3/4] Summarizing comments (per video)...
+  Summarizing comments for video: VvI0TtwsqX0 (808 comments)
+  Summarizing comments for video: m_LCI2rFDUY (608 comments)
+  Summarizing comments for video: V8UELS4di2g (405 comments)
+  Summarizing comments for video: YbuJ1XW_LSg (90 comments)
+  Summarizing comments for video: UkBS6gzxiRI (328 comments)
+  Summarizing comments for video: 0SkrCQyZB1k (32 comments)
+  Summarizing comments for video: VvI0TtwsqX0 (808 comments)
+  Summarizing comments for video: m_LCI2rFDUY (608 comments)
+  Summarizing comments for video: V8UELS4di2g (405 comments)
+  Summarizing comments for video: YbuJ1XW_LSg (90 comments)
+  >>> Processed 10 videos, waiting 10 seconds...
+  Summarizing comments for video: V8UELS4di2g (405 comments)
+  Summarizing comments for video: YbuJ1XW_LSg (90 comments)
+  Summarizing comments for video: UkBS6gzxiRI (328 comments)
+  Summarizing comments for video: 0SkrCQyZB1k (32 comments)
+  Summarizing comments for video: VvI0TtwsqX0 (808 comments)
+  Summarizing comments for video: m_LCI2rFDUY (608 comments)
+  Summarizing comments for video: V8UELS4di2g (405 comments)
+  Summarizing comments for video: YbuJ1XW_LSg (90 comments)
+  Summarizing comments for video: UkBS6gzxiRI (328 comments)
+  Summarizing comments for video: 0SkrCQyZB1k (32 comments)
+  >>> Processed 20 videos, waiting 10 seconds...
+  Summarizing comments for video: VvI0TtwsqX0 (808 comments)
+  Summarizing comments for video: m_LCI2rFDUY (608 comments)
+  Summarizing comments for video: V8UELS4di2g (405 comments)
+  Summarizing comments for video: YbuJ1XW_LSg (90 comments)
+  Summarizing comments for video: UkBS6gzxiRI (328 comments)
+  Summarizing comments for video: 0SkrCQyZB1k (32 comments)
+  Summarizing comments for video: VvI0TtwsqX0 (808 comments)
+  Summarizing comments    - 카테고리 불일치: 120개
+    - 채널 규모 미달: 117개
+    - 참여율 미달: 144개
+  누적 필터링된 비디오: 74개 / 목표: 100개
+
+  [주의] API 호출 수: 328 (할당량: 10,000/day)
+
+[배치 33] 200개 비디오 수집 중...
+  더 이상 수집할 비디오가 없습니다 (총 196개 수집)
+  비디오 ID 196개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 123개 채널
+  비디오 상세 정보 완료: 196개
+  품질 필터 적용 중...
+  필터 결과: 0개 통과 / 196개
+    - 채널 국가 불일치: 168개
+    - 카테고리 불일치: 141개
+    - 채널 규모 미달: 138개
+    - 참여율 미달: 143개
+  누적 필터링된 비디오: 74개 / 목표: 100개
+
+  [주의] API 호출 수: 339 (할당량: 10,000/day)
+
+[배치 34] 200개 비디오 수집 중...
+  비디오 ID 200개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 112개 채널
+  비디오 상세 정보 완료: 200개
+  품질 필터 적용 중...
+  필터 결과: 3개 통과 / 200개
+    - 채널 국가 불일치: 185개
+    - 카테고리 불일치: 61개
+    - 채널 규모 미달: 22개
+    - 참여율 미달: 128개
+  누적 필터링된 비디오: 77개 / 목표: 100개
+
+  [주의] API 호출 수: 350 (할당량: 10,000/day)
+
+[배치 35] 200개 비디오 수집 중...
+  비디오 ID 200개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 126개 채널
+  비디오 상세 정보 완료: 200개
+  품질 필터 적용 중...
+  필터 결과: 1개 통과 / 200개
+    - 채널 국가 불일치: 185개
+    - 카테고리 불일치: 120개
+    - 채널 규모 미달: 117개
+    - 참여율 미달: 144개
+  누적 필터링된 비디오: 78개 / 목표: 100개
+
+  [주의] API 호출 수: 361 (할당량: 10,000/day)
+
+[배치 36] 200개 비디오 수집 중...
+  더 이상 수집할 비디오가 없습니다 (총 197개 수집)
+  비디오 ID 197개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 138개 채널
+  비디오 상세 정보 완료: 197개
+  품질 필터 적용 중...
+  필터 결과: 0개 통과 / 197개
+    - 채널 국가 불일치: 180개
+    - 카테고리 불일치: 147개
+    - 채널 규모 미달: 138개
+    - 참여율 미달: 140개
+  누적 필터링된 비디오: 78개 / 목표: 100개
+
+  [주의] API 호출 수: 372 (할당량: 10,000/day)
+
+[배치 37] 200개 비디오 수집 중...
+  비디오 ID 200개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 126개 채널
+  비디오 상세 정보 완료: 200개
+  품질 필터 적용 중...
+  필터 결과: 5개 통과 / 200개
+    - 채널 국가 불일치: 182개
+    - 카테고리 불일치: 60개
+    - 채널 규모 미달: 24개
+    - 참여율 미달: 118개
+  누적 필터링된 비디오: 83개 / 목표: 100개
+
+  [주의] API 호출 수: 383 (할당량: 10,000/day)
+
+[배치 38] 200개 비디오 수집 중...
+  비디오 ID 200개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 126개 채널
+  비디오 상세 정보 완료: 200개
+  품질 필터 적용 중...
+  필터 결과: 1개 통과 / 200개
+    - 채널 국가 불일치: 185개
+    - 카테고리 불일치: 120개
+    - 채널 규모 미달: 117개
+    - 참여율 미달: 144개
+  누적 필터링된 비디오: 84개 / 목표: 100개
+
+  [주의] API 호출 수: 394 (할당량: 10,000/day)
+
+[배치 39] 200개 비디오 수집 중...
+  더 이상 수집할 비디오가 없습니다 (총 196개 수집)
+  비디오 ID 196개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 118개 채널
+  비디오 상세 정보 완료: 196개
+  품질 필터 적용 중...
+  필터 결과: 0개 통과 / 196개
+    - 채널 국가 불일치: 184개
+    - 카테고리 불일치: 146개
+    - 채널 규모 미달: 136개
+    - 참여율 미달: 140개
+  누적 필터링된 비디오: 84개 / 목표: 100개
+
+  [주의] API 호출 수: 405 (할당량: 10,000/day)
+
+[배치 40] 200개 비디오 수집 중...
+  비디오 ID 200개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 125개 채널
+  비디오 상세 정보 완료: 200개
+  품질 필터 적용 중...
+  필터 결과: 5개 통과 / 200개
+    - 채널 국가 불일치: 179개
+    - 카테고리 불일치: 63개
+    - 채널 규모 미달: 27개
+    - 참여율 미달: 121개
+  누적 필터링된 비디오: 89개 / 목표: 100개
+
+  [주의] API 호출 수: 416 (할당량: 10,000/day)
+
+[배치 41] 200개 비디오 수집 중...
+  비디오 ID 200개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 129개 채널
+  비디오 상세 정보 완료: 200개
+  품질 필터 적용 중...
+  필터 결과: 0개 통과 / 200개
+    - 채널 국가 불일치: 180개
+    - 카테고리 불일치: 124개
+    - 채널 규모 미달: 120개
+    - 참여율 미달: 142개
+  누적 필터링된 비디오: 89개 / 목표: 100개
+
+  [주의] API 호출 수: 427 (할당량: 10,000/day)
+
+[배치 42] 200개 비디오 수집 중...
+  더 이상 수집할 비디오가 없습니다 (총 196개 수집)
+  비디오 ID 196개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 125개 채널
+  비디오 상세 정보 완료: 196개
+  품질 필터 적용 중...
+  필터 결과: 0개 통과 / 196개
+    - 채널 국가 불일치: 179개
+    - 카테고리 불일치: 150개
+    - 채널 규모 미달: 145개
+    - 참여율 미달: 147개
+  누적 필터링된 비디오: 89개 / 목표: 100개
+
+  [주의] API 호출 수: 438 (할당량: 10,000/day)
+
+[배치 43] 200개 비디오 수집 중...
+  비디오 ID 200개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 126개 채널
+  비디오 상세 정보 완료: 200개
+  품질 필터 적용 중...
+  필터 결과: 5개 통과 / 200개
+    - 채널 국가 불일치: 182개
+    - 카테고리 불일치: 60개
+    - 채널 규모 미달: 24개
+    - 참여율 미달: 118개
+  누적 필터링된 비디오: 94개 / 목표: 100개
+
+  [주의] API 호출 수: 449 (할당량: 10,000/day)
+
+[배치 44] 200개 비디오 수집 중...
+  비디오 ID 200개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 138개 채널
+  비디오 상세 정보 완료: 200개
+  품질 필터 적용 중...
+  필터 결과: 4개 통과 / 200개
+    - 채널 국가 불일치: 179개
+    - 카테고리 불일치: 107개
+    - 채널 규모 미달: 99개
+    - 참여율 미달: 133개
+  누적 필터링된 비디오: 98개 / 목표: 100개
+
+  [주의] API 호출 수: 460 (할당량: 10,000/day)
+
+[배치 45] 200개 비디오 수집 중...
+  더 이상 수집할 비디오가 없습니다 (총 196개 수집)
+  비디오 ID 196개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 137개 채널
+  비디오 상세 정보 완료: 196개
+  품질 필터 적용 중...
+  필터 결과: 0개 통과 / 196개
+    - 채널 국가 불일치: 180개
+    - 카테고리 불일치: 146개
+    - 채널 규모 미달: 137개
+    - 참여율 미달: 139개
+  누적 필터링된 비디오: 98개 / 목표: 100개
+
+  [주의] API 호출 수: 471 (할당량: 10,000/day)
+
+[배치 46] 200개 비디오 수집 중...
+  비디오 ID 200개 수집 완료
+  비디오 상세 정보 수집 중...
+
+[QUOTA EXCEEDED] API 할당량 초과 감지
+
+[KEY ROTATION] API 키 #5로 전환됨 (잔여 키: 0개)
+[RETRY] 새 API 키로 재시도...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 126개 채널
+  비디오 상세 정보 완료: 200개
+  품질 필터 적용 중...
+  필터 결과: 5개 통과 / 200개
+    - 채널 국가 불일치: 182개
+    - 카테고리 불일치: 60개
+    - 채널 규모 미달: 24개
+    - 참여율 미달: 118개
+  누적 필터링된 비디오: 103개 / 목표: 100개
+
+[목표 달성] 103개 비디오 수집 완료!
+
+================================================================================
+수집 완료: samsung qled in US
+  - 총 수집 비디오 수: 8613개
+  - 필터링 후: 103개
+  - Raw 데이터: 8613개
+  - 최종 반환: 100개
+  - 총 API 호출 수: 482
+================================================================================
+
+Collected 100 filtered videos
+Raw data: 8613 total videos
+
+[Step 2/4] Collecting comments from YouTube API...
+댓글 수집: VvI0TtwsqX0 - 20개 스레드
+댓글 수집: m_LCI2rFDUY - 20개 스레드
+댓글 수집: Vi0HB00DUE0 - 20개 스레드
+댓글 수집: V8UELS4di2g - 20개 스레드
+댓글 수집: YbuJ1XW_LSg - 6개 스레드
+댓글 수집: UkBS6gzxiRI - 20개 스레드
+댓글 수집: 0SkrCQyZB1k - 3개 스레드
+댓글 수집: VvI0TtwsqX0 - 20개 스레드
+댓글 수집: m_LCI2rFDUY - 20개 스레드
+댓글 수집: V8UELS4di2g - 20개 스레드
+댓글 수집: YbuJ1XW_LSg - 6개 스레드
+댓글 수집: UkBS6gzxiRI - 20개 스레드
+댓글 수집: 0SkrCQyZB1k - 3개 스레드
+댓글 수집: VvI0TtwsqX0 - 20개 스레드
+댓글 수집: m_LCI2rFDUY - 20개 스레드
+댓글 수집: V8UELS4di2g - 20개 스레드
+댓글 수집: YbuJ1XW_LSg - 6개 스레드
+댓글 수집: V8UELS4di2g - 20개 스레드
+댓글 수집: YbuJ1XW_LSg - 6개 스레드
+댓글 수집: V8UELS4di2g - 20개 스레드
+댓글 수집: YbuJ1XW_LSg - 6개 스레드
+댓글 수집: VvI0TtwsqX0 - 20개 스레드
+댓글 수집: m_LCI2rFDUY - 20개 스레드
+댓글 수집: V8UELS4di2g - 20개 스레드
+댓글 수집: YbuJ1XW_LSg - 6개 스레드
+댓글 수집: UkBS6gzxiRI - 20개 스레드
+댓글 수집: 0SkrCQyZB1k - 3개 스레드
+댓글 수집: VvI0TtwsqX0 - 20개 스레드
+댓글 수집: m_LCI2rFDUY - 20개 스레드
+댓글 수집: V8UELS4di2g - 20개 스레드
+댓글 수집: YbuJ1XW_LSg - 6개 스레드
+댓글 수집: UkBS6gzxiRI - 20개 스레드
+댓글 수집: 0SkrCQyZB1k - 3개 스레드
+댓글 수집: VvI0TtwsqX0 - 20개 스레드
+댓글 수집: m_LCI2rFDUY - 20개 스레드
+댓글 수집: V8UELS4di2g - 20개 스레드
+댓글 수집: YbuJ1XW_LSg - 6개 스레드
+댓글 수집: UkBS6gzxiRI - 20개 스레드
+댓글 수집: 0SkrCQyZB1k - 3개 스레드
+댓글 수집: VvI0TtwsqX0 - 20개 스레드
+댓글 수집: m_LCI2rFDUY - 20개 스레드
+댓글 수집: V8UELS4di2g - 20개 스레드
+댓글 수집: YbuJ1XW_LSg - 6개 스레드
+댓글 수집: UkBS6gzxiRI - 20개 스레드
+댓글 수집: 0SkrCQyZB1k - 3개 스레드
+댓글 수집: VvI0TtwsqX0 - 20개 스레드
+댓글 수집: m_LCI2rFDUY - 20개 스레드
+댓글 수집: V8UELS4di2g - 20개 스레드
+댓글 수집: YbuJ1XW_LSg - 6개 스레드
+댓글 수집: UkBS6gzxiRI - 20개 스레드
+댓글 수집: 0SkrCQyZB1k - 3개 스레드
+댓글 수집: VvI0TtwsqX0 - 20개 스레드
+댓글 수집: m_LCI2rFDUY - 20개 스레드
+댓글 수집: V8UELS4di2g - 20개 스레드
+댓글 수집: YbuJ1XW_LSg - 6개 스레드
+댓글 수집: V8UELS4di2g - 20개 스레드
+댓글 수집: YbuJ1XW_LSg - 6개 스레드
+댓글 수집: UkBS6gzxiRI - 20개 스레드
+댓글 수집: 0SkrCQyZB1k - 3개 스레드
+댓글 수집: VvI0TtwsqX0 - 20개 스레드
+댓글 수집: m_LCI2rFDUY - 20개 스레드
+댓글 수집: VvI0TtwsqX0 - 20개 스레드
+댓글 수집: m_LCI2rFDUY - 20개 스레드
+댓글 수집: V8UELS4di2g - 20개 스레드
+댓글 수집: YbuJ1XW_LSg - 6개 스레드
+댓글 수집: V8UELS4di2g - 20개 스레드
+댓글 수집: YbuJ1XW_LSg - 6개 스레드
+댓글 수집: 0SkrCQyZB1k - 3개 스레드
+댓글 수집: VvI0TtwsqX0 - 20개 스레드
+댓글 수집: m_LCI2rFDUY - 20개 스레드
+댓글 수집: V8UELS4di2g - 20개 스레드
+댓글 수집: YbuJ1XW_LSg - 6개 스레드
+댓글 수집: UkBS6gzxiRI - 20개 스레드
+댓글 수집: 0SkrCQyZB1k - 3개 스레드
+댓글 수집: VvI0TtwsqX0 - 20개 스레드
+댓글 수집: m_LCI2rFDUY - 20개 스레드
+댓글 수집: UkBS6gzxiRI - 20개 스레드
+댓글 수집: 0SkrCQyZB1k - 3개 스레드
+댓글 수집: VvI0TtwsqX0 - 20개 스레드
+댓글 수집: m_LCI2rFDUY - 20개 스레드
+댓글 수집: V8UELS4di2g - 20개 스레드
+댓글 수집: YbuJ1XW_LSg - 6개 스레드
+댓글 수집: UkBS6gzxiRI - 20개 스레드
+댓글 수집: 0SkrCQyZB1k - 3개 스레드
+댓글 수집: VvI0TtwsqX0 - 20개 스레드
+댓글 수집: m_LCI2rFDUY - 20개 스레드
+댓글 수집: V8UELS4di2g - 20개 스레드
+댓글 수집: YbuJ1XW_LSg - 6개 스레드
+댓글 수집: UkBS6gzxiRI - 20개 스레드
+댓글 수집: VvI0TtwsqX0 - 20개 스레드
+댓글 수집: m_LCI2rFDUY - 20개 스레드
+댓글 수집: V8UELS4di2g - 20개 스레드
+댓글 수집: YbuJ1XW_LSg - 6개 스레드
+댓글 수집: UkBS6gzxiRI - 20개 스레드
+댓글 수집: V8UELS4di2g - 20개 스레드
+댓글 수집: YbuJ1XW_LSg - 6개 스레드
+댓글 수집: UkBS6gzxiRI - 20개 스레드
+댓글 수집: 0SkrCQyZB1k - 3개 스레드
+댓글 수집: VvI0TtwsqX0 - 20개 스레드
+댓글 수집: m_LCI2rFDUY - 20개 스레드
+전체 댓글 수집 완료: 4710개
+Collected 4710 comments
+
+[Step 3/4] Summarizing comments (per video)...
+  Summarizing comments for video: VvI0TtwsqX0 (1717 comments)
+  Summarizing comments for video: m_LCI2rFDUY (1292 comments)
+  Summarizing comments for video: Vi0HB00DUE0 (30 comments)
+  Summarizing comments for video: V8UELS4di2g (855 comments)
+  Summarizing comments for video: YbuJ1XW_LSg (190 comments)
+  Summarizing comments for video: UkBS6gzxiRI (574 comments)
+  Summarizing comments for video: 0SkrCQyZB1k (52 comments)
+  Summarizing comments for video: VvI0TtwsqX0 (1717 comments)
+  Summarizing comments for video: m_LCI2rFDUY (1292 comments)
+  Summarizing comments for video: V8UELS4di2g (855 comments)
+  >>> Processed 10 videos, waiting 10 seconds...
+  Summarizing comments for video: YbuJ1XW_LSg (190 comments)
+  Summarizing comments for video: UkBS6gzxiRI (574 comments)
+  Summarizing comments for video: 0SkrCQyZB1k (52 comments)
+  Summarizing comments for video: VvI0TtwsqX0 (1717 comments)
+  Summarizing comments for video: m_LCI2rFDUY (1292 comments)
+  Summarizing comments for video: V8UELS4di2g (855 comments)
+  Summarizing comments for video: YbuJ1XW_LSg (190 comments)
+  Summarizing comments for video: V8UELS4di2g (855 comments)
+  Summarizing comments for video: YbuJ1XW_LSg (190 comments)
+  Summarizing comments for video: V8UELS4di2g (855 comments)
+  >>> Processed 20 videos, waiting 10 seconds...
+  Summarizing comments for video: YbuJ1XW_LSg (190 comments)
+  Summarizing comments for video: VvI0TtwsqX0 (1717 comments)
+  Summarizing comments for video: m_LCI2rFDUY (1292 comments)
+  Summarizing comments for video: V8UELS4di2g (855 comments)
+  Summarizing comments for video: YbuJ1XW_LSg (190 comments)
+  Summarizing comments for video: UkBS6gzxiRI (574 comments)
+  Summarizing comments for video: 0SkrCQyZB1k (52 comments)
+  Summarizing comments for video: VvI0TtwsqX0 (1717 comments)
+  Summarizing comments for video: m_LCI2rFDUY (1292 comments)
+  Summarizing comments for video: V8UELS4di2g (855 comments)
+  >>> Processed 30 videos, waiting 10 seconds...
+  Summarizing comments for video: YbuJ1XW_LSg (190 comments)
+  Summarizing comments for video: UkBS6gzxiRI (574 comments)
+  Summarizing comments for video: 0SkrCQyZB1k (52 comments)
+  Summarizing comments for video: VvI0TtwsqX0 (1717 comments)
+  Summarizing comments for video: m_LCI2rFDUY (1292 comments)
+  Summarizing comments for video: V8UELS4di2g (855 comments)
+  Summarizing comments for video: YbuJ1XW_LSg (190 comments)
+  Summarizing comments for video: UkBS6gzxiRI (574 comments)
+  Summarizing comments for video: 0SkrCQyZB1k (52 comments)
+  Summarizing comments for video: VvI0TtwsqX0 (1717 comments)
+  >>> Processed 40 videos, waiting 10 seconds...
+  Summarizing comments for video: m_LCI2rFDUY (1292 comments)
+  Summarizing comments for video: V8UELS4di2g (855 comments)
+  Summarizing comments for video: YbuJ1XW_LSg (190 comments)
+  Summarizing comments for video: UkBS6gzxiRI (574 comments)
+  Summarizing comments for video: 0SkrCQyZB1k (52 comments)
+  Summarizing comments for video: VvI0TtwsqX0 (1717 comments)
+  Summarizing comments for video: m_LCI2rFDUY (1292 comments)
+  Summarizing comments for video: V8UELS4di2g (855 comments)
+  Summarizing comments for video: YbuJ1XW_LSg (190 comments)
+  Summarizing comments for video: UkBS6gzxiRI (574 comments)
+  >>> Processed 50 videos, waiting 10 seconds...
+  Summarizing comments for video: 0SkrCQyZB1k (52 comments)
+  Summarizing comments for video: VvI0TtwsqX0 (1717 comments)
+  Summarizing comments for video: m_LCI2rFDUY (1292 comments)
+  Summarizing comments for video: V8UELS4di2g (855 comments)
+  Summarizing comments for video: YbuJ1XW_LSg (190 comments)
+  Summarizing comments for video: V8UELS4di2g (855 comments)
+  Summarizing comments for video: YbuJ1XW_LSg (190 comments)
+  Summarizing comments for video: UkBS6gzxiRI (574 comments)
+  Summarizing comments for video: 0SkrCQyZB1k (52 comments)
+  Summarizing comments for video: VvI0TtwsqX0 (1717 comments)
+  >>> Processed 60 videos, waiting 10 seconds...
+  Summarizing comments for video: m_LCI2rFDUY (1292 comments)
+  Summarizing comments for video: VvI0TtwsqX0 (1717 comments)
+  Summarizing comments for video: m_LCI2rFDUY (1292 comments)
+  Summarizing comments for video: V8UELS4di2g (855 comments)
+  Summarizing comments for video: YbuJ1XW_LSg (190 comments)
+  Summarizing comments for video: V8UELS4di2g (855 comments)
+  Summarizing comments for video: YbuJ1XW_LSg (190 comments)
+  Summarizing comments for video: 0SkrCQyZB1k (52 comments)
+  Summarizing comments for video: VvI0TtwsqX0 (1717 comments)
+  Summarizing comments for video: m_LCI2rFDUY (1292 comments)
+  >>> Processed 70 videos, waiting 10 seconds...
+  Summarizing comments for video: V8UELS4di2g (855 comments)
+  Summarizing comments for video: YbuJ1XW_LSg (190 comments)
+  Summarizing comments for video: UkBS6gzxiRI (574 comments)
+  Summarizing comments for video: 0SkrCQyZB1k (52 comments)
+  Summarizing comments for video: VvI0TtwsqX0 (1717 comments)
+  Summarizing comments for video: m_LCI2rFDUY (1292 comments)
+  Summarizing comments for video: UkBS6gzxiRI (574 comments)
+  Summarizing comments for video: 0SkrCQyZB1k (52 comments)
+  Summarizing comments for video: VvI0TtwsqX0 (1717 comments)
+  Summarizing comments for video: m_LCI2rFDUY (1292 comments)
+  >>> Processed 80 videos, waiting 10 seconds...
+  Summarizing comments for video: V8UELS4di2g (855 comments)
+  Summarizing comments for video: YbuJ1XW_LSg (190 comments)
+  Summarizing comments for video: UkBS6gzxiRI (574 comments)
+  Summarizing comments for video: 0SkrCQyZB1k (52 comments)
+  Summarizing comments for video: VvI0TtwsqX0 (1717 comments)
+  Summarizing comments for video: m_LCI2rFDUY (1292 comments)
+  Summarizing comments for video: V8UELS4di2g (855 comments)
+  Summarizing comments for video: YbuJ1XW_LSg (190 comments)
+  Summarizing comments for video: UkBS6gzxiRI (574 comments)
+  Summarizing comments for video: VvI0TtwsqX0 (1717 comments)
+  >>> Processed 90 videos, waiting 10 seconds...
+  Summarizing comments for video: m_LCI2rFDUY (1292 comments)
+  Summarizing comments for video: V8UELS4di2g (855 comments)
+  Summarizing comments for video: YbuJ1XW_LSg (190 comments)
+  Summarizing comments for video: UkBS6gzxiRI (574 comments)
+  Summarizing comments for video: V8UELS4di2g (855 comments)
+  Summarizing comments for video: YbuJ1XW_LSg (190 comments)
+  Summarizing comments for video: UkBS6gzxiRI (574 comments)
+  Summarizing comments for video: 0SkrCQyZB1k (52 comments)
+  Summarizing comments for video: VvI0TtwsqX0 (1717 comments)
+  Summarizing comments for video: m_LCI2rFDUY (1292 comments)
+  >>> Processed 100 videos, waiting 10 seconds...
+Summarized comments for 100 videos
+
+[Step 4/4] Saving data...
+  Raw data saved: data\raw_data\youtube_raw_Samsung_QLED_20251110_164315.json
+  Processed videos saved: data\processed_data\youtube_videos_Samsung_QLED_20251110_164315.csv
+  Processed comments saved: data\processed_data\youtube_comments_Samsung_QLED_20251110_164315.csv
+Connected to PostgreSQL database: samsung_dx_sentiment
+Tables created successfully (including youtube_videos_raw)
+Inserted/Updated 8613 raw videos
+Inserted/Updated 1666 videos
+Inserted/Updated 4710 comments
+Saved to PostgreSQL:
+  - 8613 raw videos (all collected)
+  - 1666 filtered videos
+  - 4710 comments
+Disconnected from database
+
+================================================================================
+Pipeline completed successfully!
+================================================================================
+Total videos processed: 1666
+Total comments processed: 4710
+Videos with comment summary: 1666
+Connected to PostgreSQL database: samsung_dx_sentiment
+
+Database Statistics:
+  Total videos in DB: 42
+  Total comments in DB: 1826
+Disconnected from database
+  [INFO] Country filter: 1666 → 1666 videos (US only)
+  Updated keyword for 1666 videos
+
+[OK] 'Samsung QLED' completed: 1666 videos, 4710 comments
+
+Waiting 30 seconds before next keyword...
+
+================================================================================
+Processing keyword 2/2: 'Samsung TV'
 ================================================================================
 ================================================================================
 YouTube Data Collection & Analysis Pipeline
 ================================================================================
 Keyword: Samsung TV
-Max videos: 50
+Max videos: 100
 Max comments per video: 20
 Region: US
-Summarize videos: True
 Summarize comments: True
+Analyze sentiment: False
 ================================================================================
 
-[Step 1/5] Collecting video data from YouTube API...
-채널 정보 수집 완료: 42개 채널
-포괄적 검색 완료: samsung tv in US - 50개 비디오
-Collected 50 videos
+[Step 1/4] Collecting video data from YouTube API...
 
-[Step 2/5] Collecting comments from YouTube API...
-댓글 수집: 93Khs-rwqSQ - 8개 스레드
-댓글 수집: iv3gFxZak0I - 20개 스레드
-댓글 수집: CMsgD1XCEFY - 20개 스레드
-댓글 수집: Jfgi3X5jBY0 - 9개 스레드
-댓글 수집: lL78TL3NaDU - 20개 스레드
-댓글 수집: ugpcp1Dt8Dk - 4개 스레드
-댓글 수집: RgR0HZcKRpM - 20개 스레드
-댓글 수집: z7bwUiDmgJk - 9개 스레드
+================================================================================
+품질 필터링 모드 활성화:
+  - 채널 국가: US (US 채널만)
+  - 카테고리: 28 (Science & Technology)
+  - 최소 구독자: 10,000 OR 채널 총 조회수: 100,000,000
+  - 최소 참여율: 2.0%
+  - 목표 비디오 수: 100개
+  - 배치 크기: 200개씩 수집
+================================================================================
+
+
+[배치 1] 200개 비디오 수집 중...
+  비디오 ID 200개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 125개 채널
+  비디오 상세 정보 완료: 200개
+  품질 필터 적용 중...
+  필터 결과: 8개 통과 / 200개
+    - 채널 국가 불일치: 174개
+    - 카테고리 불일치: 68개
+    - 채널 규모 미달: 11개
+    - 참여율 미달: 114개
+  누적 필터링된 비디오: 8개 / 목표: 100개
+
+[배치 2] 200개 비디오 수집 중...
+  비디오 ID 200개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 131개 채널
+  비디오 상세 정보 완료: 200개
+  품질 필터 적용 중...
+  필터 결과: 11개 통과 / 200개
+    - 채널 국가 불일치: 178개
+    - 카테고리 불일치: 81개
+    - 채널 규모 미달: 32개
+    - 참여율 미달: 116개
+  누적 필터링된 비디오: 19개 / 목표: 100개
+
+[배치 3] 200개 비디오 수집 중...
+  더 이상 수집할 비디오가 없습니다 (총 188개 수집)
+  비디오 ID 188개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 134개 채널
+  비디오 상세 정보 완료: 188개
+  품질 필터 적용 중...
+  필터 결과: 2개 통과 / 188개
+    - 채널 국가 불일치: 172개
+    - 카테고리 불일치: 122개
+    - 채널 규모 미달: 86개
+    - 참여율 미달: 132개
+  누적 필터링된 비디오: 21개 / 목표: 100개
+
+[배치 4] 200개 비디오 수집 중...
+  비디오 ID 200개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 124개 채널
+  비디오 상세 정보 완료: 200개
+  품질 필터 적용 중...
+  필터 결과: 8개 통과 / 200개
+    - 채널 국가 불일치: 175개
+    - 카테고리 불일치: 65개
+    - 채널 규모 미달: 9개
+    - 참여율 미달: 112개
+  누적 필터링된 비디오: 29개 / 목표: 100개
+
+[배치 5] 200개 비디오 수집 중...
+  비디오 ID 200개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 133개 채널
+  비디오 상세 정보 완료: 200개
+  품질 필터 적용 중...
+  필터 결과: 11개 통과 / 200개
+    - 채널 국가 불일치: 180개
+    - 카테고리 불일치: 79개
+    - 채널 규모 미달: 31개
+    - 참여율 미달: 116개
+  누적 필터링된 비디오: 40개 / 목표: 100개
+
+[배치 6] 200개 비디오 수집 중...
+  더 이상 수집할 비디오가 없습니다 (총 189개 수집)
+  비디오 ID 189개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 143개 채널
+  비디오 상세 정보 완료: 189개
+  품질 필터 적용 중...
+  필터 결과: 3개 통과 / 189개
+    - 채널 국가 불일치: 173개
+    - 카테고리 불일치: 121개
+    - 채널 규모 미달: 84개
+    - 참여율 미달: 130개
+  누적 필터링된 비디오: 43개 / 목표: 100개
+
+[배치 7] 200개 비디오 수집 중...
+  비디오 ID 200개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 125개 채널
+  비디오 상세 정보 완료: 200개
+  품질 필터 적용 중...
+  필터 결과: 8개 통과 / 200개
+    - 채널 국가 불일치: 175개
+    - 카테고리 불일치: 66개
+    - 채널 규모 미달: 9개
+    - 참여율 미달: 113개
+  누적 필터링된 비디오: 51개 / 목표: 100개
+
+[배치 8] 200개 비디오 수집 중...
+  비디오 ID 200개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 131개 채널
+  비디오 상세 정보 완료: 200개
+  품질 필터 적용 중...
+  필터 결과: 13개 통과 / 200개
+    - 채널 국가 불일치: 179개
+    - 카테고리 불일치: 87개
+    - 채널 규모 미달: 33개
+    - 참여율 미달: 112개
+  누적 필터링된 비디오: 64개 / 목표: 100개
+
+[배치 9] 200개 비디오 수집 중...
+  더 이상 수집할 비디오가 없습니다 (총 34개 수집)
+  비디오 ID 34개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 30개 채널
+  비디오 상세 정보 완료: 34개
+  품질 필터 적용 중...
+  필터 결과: 3개 통과 / 34개
+    - 채널 국가 불일치: 30개
+    - 카테고리 불일치: 14개
+    - 채널 규모 미달: 5개
+    - 참여율 미달: 15개
+  누적 필터링된 비디오: 67개 / 목표: 100개
+
+[배치 10] 200개 비디오 수집 중...
+  비디오 ID 200개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 122개 채널
+  비디오 상세 정보 완료: 200개
+  품질 필터 적용 중...
+  필터 결과: 11개 통과 / 200개
+    - 채널 국가 불일치: 165개
+    - 카테고리 불일치: 68개
+    - 채널 규모 미달: 8개
+    - 참여율 미달: 112개
+  누적 필터링된 비디오: 78개 / 목표: 100개
+
+  [주의] API 호출 수: 102 (할당량: 10,000/day)
+
+[배치 11] 200개 비디오 수집 중...
+  비디오 ID 200개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 133개 채널
+  비디오 상세 정보 완료: 200개
+  품질 필터 적용 중...
+  필터 결과: 11개 통과 / 200개
+    - 채널 국가 불일치: 179개
+    - 카테고리 불일치: 78개
+    - 채널 규모 미달: 31개
+    - 참여율 미달: 118개
+  누적 필터링된 비디오: 89개 / 목표: 100개
+
+  [주의] API 호출 수: 113 (할당량: 10,000/day)
+
+[배치 12] 200개 비디오 수집 중...
+  더 이상 수집할 비디오가 없습니다 (총 150개 수집)
+  비디오 ID 150개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 122개 채널
+  비디오 상세 정보 완료: 150개
+  품질 필터 적용 중...
+  필터 결과: 3개 통과 / 150개
+    - 채널 국가 불일치: 136개
+    - 카테고리 불일치: 97개
+    - 채널 규모 미달: 67개
+    - 참여율 미달: 102개
+  누적 필터링된 비디오: 92개 / 목표: 100개
+
+  [주의] API 호출 수: 123 (할당량: 10,000/day)
+
+[배치 13] 200개 비디오 수집 중...
+  비디오 ID 200개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 126개 채널
+  비디오 상세 정보 완료: 200개
+  품질 필터 적용 중...
+  필터 결과: 8개 통과 / 200개
+    - 채널 국가 불일치: 175개
+    - 카테고리 불일치: 67개
+    - 채널 규모 미달: 10개
+    - 참여율 미달: 113개
+  누적 필터링된 비디오: 100개 / 목표: 100개
+
+[목표 달성] 100개 비디오 수집 완료!
+
+================================================================================
+수집 완료: samsung tv in US
+  - 총 수집 비디오 수: 2361개
+  - 필터링 후: 100개
+  - Raw 데이터: 2361개
+  - 최종 반환: 100개
+  - 총 API 호출 수: 134
+================================================================================
+
+Collected 100 filtered videos
+Raw data: 2361 total videos
+
+[Step 2/4] Collecting comments from YouTube API...
+댓글 수집: VvI0TtwsqX0 - 20개 스레드
+댓글 수집: r6A7tZa3ZR8 - 20개 스레드
+댓글 수집: m_LCI2rFDUY - 20개 스레드
 댓글 수집: wLQUVIk3eR4 - 20개 스레드
-댓글 수집: DahDC_Gr2vE - 20개 스레드
-댓글 수집: XI9H5uIz3-0 - 0개 스레드
-댓글 수집: Qvp4hYSbLMg - 1개 스레드
-댓글 수집: ePrN6aX-g6g - 0개 스레드
-댓글 수집: DUyropoiUGQ - 20개 스레드
-댓글 수집: qNn1SLTjA2g - 20개 스레드
-댓글 수집: C6ojyr2ePvc - 20개 스레드
-댓글 수집: nImBWUvxU1I - 20개 스레드
-댓글 수집: YMk7ogzBGtQ - 1개 스레드
-댓글 수집: 9X-3uLoRYp8 - 20개 스레드
+댓글 수집: Vi0HB00DUE0 - 20개 스레드
+댓글 수집: 0agKva2O34Y - 20개 스레드
+댓글 수집: XtxR_M6zi9Y - 20개 스레드
+댓글 수집: Dq3gUqDA-Xw - 20개 스레드
+댓글 수집: d0KpULFsHxU - 20개 스레드
+댓글 수집: xFk_SefU6D8 - 15개 스레드
 댓글 수집: ovSa5WhVp4M - 10개 스레드
-댓글 수집: AOg-iVmy1j4 - 5개 스레드
-댓글 수집: nqL6JKEv3JU - 2개 스레드
+댓글 수집: _g8b74Vdp2Q - 13개 스레드
+댓글 수집: lL78TL3NaDU - 20개 스레드
+댓글 수집: Je3R27Y096E - 12개 스레드
+댓글 수집: V8UELS4di2g - 20개 스레드
 댓글 수집: YbuJ1XW_LSg - 6개 스레드
-댓글 수집: ij2Qu8Pjzxc - 10개 스레드
-댓글 수집: w6Nub94DYGI - 20개 스레드
-댓글 수집: ToVGr0_f6JI - 2개 스레드
-댓글 수집: P-tgq-LYIOE - 20개 스레드
-댓글 수집: LKdztNtK6G8 - 1개 스레드
-댓글 수집: h-AjO96FahA - 20개 스레드
-댓글 수집: HJ7uCEslbOk - 20개 스레드
-댓글 수집: h6wpDro1dbk - 1개 스레드
-댓글 수집: DX3l_oaPoPA - 20개 스레드
-댓글 수집: wWuxYEPovv0 - 1개 스레드
+댓글 수집: MCpmP8tzVxw - 9개 스레드
+댓글 수집: UkBS6gzxiRI - 20개 스레드
+댓글 수집: yN8o2-xivbI - 4개 스레드
+댓글 수집: uovydpa-3OE - 5개 스레드
+댓글 수집: hYULgFiob94 - 16개 스레드
+댓글 수집: VvI0TtwsqX0 - 20개 스레드
+댓글 수집: r6A7tZa3ZR8 - 20개 스레드
+댓글 수집: m_LCI2rFDUY - 20개 스레드
+댓글 수집: wLQUVIk3eR4 - 20개 스레드
+댓글 수집: Vi0HB00DUE0 - 20개 스레드
+댓글 수집: 0agKva2O34Y - 20개 스레드
+댓글 수집: XtxR_M6zi9Y - 20개 스레드
+댓글 수집: Dq3gUqDA-Xw - 20개 스레드
+댓글 수집: d0KpULFsHxU - 20개 스레드
+댓글 수집: xFk_SefU6D8 - 15개 스레드
+댓글 수집: ovSa5WhVp4M - 10개 스레드
+댓글 수집: _g8b74Vdp2Q - 13개 스레드
+댓글 수집: lL78TL3NaDU - 20개 스레드
+댓글 수집: Je3R27Y096E - 12개 스레드
+댓글 수집: V8UELS4di2g - 20개 스레드
+댓글 수집: YbuJ1XW_LSg - 6개 스레드
+댓글 수집: MCpmP8tzVxw - 9개 스레드
+댓글 수집: UkBS6gzxiRI - 20개 스레드
+댓글 수집: yN8o2-xivbI - 4개 스레드
+댓글 수집: uovydpa-3OE - 5개 스레드
+댓글 수집: hYULgFiob94 - 16개 스레드
+댓글 수집: 0SkrCQyZB1k - 3개 스레드
+댓글 수집: VvI0TtwsqX0 - 20개 스레드
+댓글 수집: r6A7tZa3ZR8 - 20개 스레드
+댓글 수집: m_LCI2rFDUY - 20개 스레드
+댓글 수집: wLQUVIk3eR4 - 20개 스레드
+댓글 수집: Vi0HB00DUE0 - 20개 스레드
+댓글 수집: 0agKva2O34Y - 20개 스레드
+댓글 수집: XtxR_M6zi9Y - 20개 스레드
+댓글 수집: Dq3gUqDA-Xw - 20개 스레드
+댓글 수집: d0KpULFsHxU - 20개 스레드
+댓글 수집: xFk_SefU6D8 - 15개 스레드
+댓글 수집: ovSa5WhVp4M - 10개 스레드
+댓글 수집: _g8b74Vdp2Q - 13개 스레드
+댓글 수집: lL78TL3NaDU - 20개 스레드
+댓글 수집: Je3R27Y096E - 12개 스레드
+댓글 수집: V8UELS4di2g - 20개 스레드
+댓글 수집: YbuJ1XW_LSg - 6개 스레드
+댓글 수집: MCpmP8tzVxw - 9개 스레드
+댓글 수집: UkBS6gzxiRI - 20개 스레드
+댓글 수집: yN8o2-xivbI - 4개 스레드
+댓글 수집: uovydpa-3OE - 5개 스레드
+댓글 수집: hYULgFiob94 - 16개 스레드
+댓글 수집: uovydpa-3OE - 5개 스레드
+댓글 수집: hYULgFiob94 - 16개 스레드
+댓글 수집: S6T0CNnw-dM - 20개 스레드
+댓글 수집: VvI0TtwsqX0 - 20개 스레드
+댓글 수집: bfPTQ7b2uWI - 20개 스레드
+댓글 수집: pg4S7ngJoDQ - 20개 스레드
+댓글 수집: r6A7tZa3ZR8 - 20개 스레드
+댓글 수집: m_LCI2rFDUY - 20개 스레드
 댓글 수집: g_r-1dwumuQ - 20개 스레드
-댓글 수집: ernTUIHFqlQ - 4개 스레드
-댓글 수집: 4CHUlI0Ild4 - 20개 스레드
-댓글 수집: gdriFKO8Ye8 - 20개 스레드
-댓글 수집: 29dNShISuE8 - 3개 스레드
-댓글 수집: Il2sp513uY8 - 11개 스레드
-댓글 수집: MC6EhaCLZMU - 6개 스레드
-댓글 수집: Muv1qmhjiKY - 6개 스레드
-댓글 수집: -J26aQSSgRs - 0개 스레드
-댓글 수집: hG9hzAEHUCE - 1개 스레드
-댓글 수집: 7D8vL0Hdd00 - 3개 스레드
-댓글 수집: iaXaSomzm7I - 20개 스레드
-댓글 수집: 3PEihW4VqsU - 20개 스레드
-댓글 수집: i5glB0aTSP0 - 9개 스레드
-댓글 수집: 6p-g0UQHDhA - 4개 스레드
-댓글 수집: 3b2S3GDveYg - 20개 스레드
-댓글 수집: 2jneTgJlh-s - 6개 스레드
-전체 댓글 수집 완료: 1221개
-Collected 1221 comments
-
-[Step 3/5] Summarizing videos (transcript-based)...
-  [1/50] Summarizing video: 93Khs-rwqSQ
-Extracting transcript for video: 93Khs-rwqSQ
-Transcript not available for 93Khs-rwqSQ: Transcripts are disabled for video 93Khs-rwqSQ
-Using title and description for summary...
-  [2/50] Summarizing video: iv3gFxZak0I
-Extracting transcript for video: iv3gFxZak0I
-Transcript not available for iv3gFxZak0I: Error getting transcript for video iv3gFxZak0I: 
-Could not retrieve a transcript for the video https://www.youtube.com/watch?v=iv3gFxZak0I! This is most likely caused by:
-
-YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
-- You have done too many requests and your IP has been blocked by YouTube
-- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
-
-Ways to work around this are explained in the "Working around IP bans" section of the README (https://github.com/jdepoix/youtube-transcript-api?tab=readme-ov-file#working-around-ip-bans-requestblocked-or-ipblocked-exception).
-
-
-If you are sure that the described cause is not responsible for this error and that a transcript should be retrievable, please create an issue at https://github.com/jdepoix/youtube-transcript-api/issues. Please add which version of youtube_transcript_api you are using and provide the information needed to replicate the error. Also make sure that there are no open issues which already describe your problem!
-Using title and description for summary...
-  [3/50] Summarizing video: CMsgD1XCEFY
-Extracting transcript for video: CMsgD1XCEFY
-Transcript not available for CMsgD1XCEFY: Error getting transcript for video CMsgD1XCEFY: 
-Could not retrieve a transcript for the video https://www.youtube.com/watch?v=CMsgD1XCEFY! This is most likely caused by:
-
-YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
-- You have done too many requests and your IP has been blocked by YouTube
-- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
-
-Ways to work around this are explained in the "Working around IP bans" section of the README (https://github.com/jdepoix/youtube-transcript-api?tab=readme-ov-file#working-around-ip-bans-requestblocked-or-ipblocked-exception).
-
-
-If you are sure that the described cause is not responsible for this error and that a transcript should be retrievable, please create an issue at https://github.com/jdepoix/youtube-transcript-api/issues. Please add which version of youtube_transcript_api you are using and provide the information needed to replicate the error. Also make sure that there are no open issues which already describe your problem!
-Using title and description for summary...
-  [4/50] Summarizing video: Jfgi3X5jBY0
-Extracting transcript for video: Jfgi3X5jBY0
-Transcript not available for Jfgi3X5jBY0: Error getting transcript for video Jfgi3X5jBY0: 
-Could not retrieve a transcript for the video https://www.youtube.com/watch?v=Jfgi3X5jBY0! This is most likely caused by:
-
-YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
-- You have done too many requests and your IP has been blocked by YouTube
-- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
-
-Ways to work around this are explained in the "Working around IP bans" section of the README (https://github.com/jdepoix/youtube-transcript-api?tab=readme-ov-file#working-around-ip-bans-requestblocked-or-ipblocked-exception).
-
-
-If you are sure that the described cause is not responsible for this error and that a transcript should be retrievable, please create an issue at https://github.com/jdepoix/youtube-transcript-api/issues. Please add which version of youtube_transcript_api you are using and provide the information needed to replicate the error. Also make sure that there are no open issues which already describe your problem!
-Using title and description for summary...
-  [5/50] Summarizing video: lL78TL3NaDU
-Extracting transcript for video: lL78TL3NaDU
-Transcript not available for lL78TL3NaDU: Error getting transcript for video lL78TL3NaDU: 
-Could not retrieve a transcript for the video https://www.youtube.com/watch?v=lL78TL3NaDU! This is most likely caused by:
-
-YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
-- You have done too many requests and your IP has been blocked by YouTube
-- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
-
-Ways to work around this are explained in the "Working around IP bans" section of the README (https://github.com/jdepoix/youtube-transcript-api?tab=readme-ov-file#working-around-ip-bans-requestblocked-or-ipblocked-exception).
-
-
-If you are sure that the described cause is not responsible for this error and that a transcript should be retrievable, please create an issue at https://github.com/jdepoix/youtube-transcript-api/issues. Please add which version of youtube_transcript_api you are using and provide the information needed to replicate the error. Also make sure that there are no open issues which already describe your problem!
-Using title and description for summary...
-  [6/50] Summarizing video: ugpcp1Dt8Dk
-Extracting transcript for video: ugpcp1Dt8Dk
-Transcript not available for ugpcp1Dt8Dk: Error getting transcript for video ugpcp1Dt8Dk: 
-Could not retrieve a transcript for the video https://www.youtube.com/watch?v=ugpcp1Dt8Dk! This is most likely caused by:
-
-YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
-- You have done too many requests and your IP has been blocked by YouTube
-- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
-
-Ways to work around this are explained in the "Working around IP bans" section of the README (https://github.com/jdepoix/youtube-transcript-api?tab=readme-ov-file#working-around-ip-bans-requestblocked-or-ipblocked-exception).
-
-
-If you are sure that the described cause is not responsible for this error and that a transcript should be retrievable, please create an issue at https://github.com/jdepoix/youtube-transcript-api/issues. Please add which version of youtube_transcript_api you are using and provide the information needed to replicate the error. Also make sure that there are no open issues which already describe your problem!
-Using title and description for summary...
-  [7/50] Summarizing video: RgR0HZcKRpM
-Extracting transcript for video: RgR0HZcKRpM
-Transcript not available for RgR0HZcKRpM: Transcripts are disabled for video RgR0HZcKRpM
-Using title and description for summary...
-  [8/50] Summarizing video: z7bwUiDmgJk
-Extracting transcript for video: z7bwUiDmgJk
-Transcript not available for z7bwUiDmgJk: Error getting transcript for video z7bwUiDmgJk: 
-Could not retrieve a transcript for the video https://www.youtube.com/watch?v=z7bwUiDmgJk! This is most likely caused by:
-
-YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
-- You have done too many requests and your IP has been blocked by YouTube
-- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
-
-Ways to work around this are explained in the "Working around IP bans" section of the README (https://github.com/jdepoix/youtube-transcript-api?tab=readme-ov-file#working-around-ip-bans-requestblocked-or-ipblocked-exception).
-
-
-If you are sure that the described cause is not responsible for this error and that a transcript should be retrievable, please create an issue at https://github.com/jdepoix/youtube-transcript-api/issues. Please add which version of youtube_transcript_api you are using and provide the information needed to replicate the error. Also make sure that there are no open issues which already describe your problem!
-Using title and description for summary...
-  [9/50] Summarizing video: wLQUVIk3eR4
-Extracting transcript for video: wLQUVIk3eR4
-Transcript not available for wLQUVIk3eR4: Error getting transcript for video wLQUVIk3eR4: 
-Could not retrieve a transcript for the video https://www.youtube.com/watch?v=wLQUVIk3eR4! This is most likely caused by:
-
-YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
-- You have done too many requests and your IP has been blocked by YouTube
-- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
-
-Ways to work around this are explained in the "Working around IP bans" section of the README (https://github.com/jdepoix/youtube-transcript-api?tab=readme-ov-file#working-around-ip-bans-requestblocked-or-ipblocked-exception).
-
-
-If you are sure that the described cause is not responsible for this error and that a transcript should be retrievable, please create an issue at https://github.com/jdepoix/youtube-transcript-api/issues. Please add which version of youtube_transcript_api you are using and provide the information needed to replicate the error. Also make sure that there are no open issues which already describe your problem!
-Using title and description for summary...
-  [10/50] Summarizing video: DahDC_Gr2vE
-Extracting transcript for video: DahDC_Gr2vE
-Transcript not available for DahDC_Gr2vE: Error getting transcript for video DahDC_Gr2vE: 
-Could not retrieve a transcript for the video https://www.youtube.com/watch?v=DahDC_Gr2vE! This is most likely caused by:
-
-YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
-- You have done too many requests and your IP has been blocked by YouTube
-- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
-
-Ways to work around this are explained in the "Working around IP bans" section of the README (https://github.com/jdepoix/youtube-transcript-api?tab=readme-ov-file#working-around-ip-bans-requestblocked-or-ipblocked-exception).
-
-
-If you are sure that the described cause is not responsible for this error and that a transcript should be retrievable, please create an issue at https://github.com/jdepoix/youtube-transcript-api/issues. Please add which version of youtube_transcript_api you are using and provide the information needed to replicate the error. Also make sure that there are no open issues which already describe your problem!
-Using title and description for summary...
-  >>> Processed 10 videos, waiting 10 seconds to avoid rate limits...
-  [11/50] Summarizing video: XI9H5uIz3-0
-Extracting transcript for video: XI9H5uIz3-0
-Transcript not available for XI9H5uIz3-0: Transcripts are disabled for video XI9H5uIz3-0
-Using title and description for summary...
-  [12/50] Summarizing video: Qvp4hYSbLMg
-Extracting transcript for video: Qvp4hYSbLMg
-Transcript not available for Qvp4hYSbLMg: Error getting transcript for video Qvp4hYSbLMg: 
-Could not retrieve a transcript for the video https://www.youtube.com/watch?v=Qvp4hYSbLMg! This is most likely caused by:
-
-YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
-- You have done too many requests and your IP has been blocked by YouTube
-- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
-
-Ways to work around this are explained in the "Working around IP bans" section of the README (https://github.com/jdepoix/youtube-transcript-api?tab=readme-ov-file#working-around-ip-bans-requestblocked-or-ipblocked-exception).
-
-
-If you are sure that the described cause is not responsible for this error and that a transcript should be retrievable, please create an issue at https://github.com/jdepoix/youtube-transcript-api/issues. Please add which version of youtube_transcript_api you are using and provide the information needed to replicate the error. Also make sure that there are no open issues which already describe your problem!
-Using title and description for summary...
-  [13/50] Summarizing video: ePrN6aX-g6g
-Extracting transcript for video: ePrN6aX-g6g
-Transcript not available for ePrN6aX-g6g: Transcripts are disabled for video ePrN6aX-g6g
-Using title and description for summary...
-  [14/50] Summarizing video: DUyropoiUGQ
-Extracting transcript for video: DUyropoiUGQ
-Transcript not available for DUyropoiUGQ: Error getting transcript for video DUyropoiUGQ: 
-Could not retrieve a transcript for the video https://www.youtube.com/watch?v=DUyropoiUGQ! This is most likely caused by:
-
-YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
-- You have done too many requests and your IP has been blocked by YouTube
-- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
-
-Ways to work around this are explained in the "Working around IP bans" section of the README (https://github.com/jdepoix/youtube-transcript-api?tab=readme-ov-file#working-around-ip-bans-requestblocked-or-ipblocked-exception).
-
-
-If you are sure that the described cause is not responsible for this error and that a transcript should be retrievable, please create an issue at https://github.com/jdepoix/youtube-transcript-api/issues. Please add which version of youtube_transcript_api you are using and provide the information needed to replicate the error. Also make sure that there are no open issues which already describe your problem!
-Using title and description for summary...
-  [15/50] Summarizing video: qNn1SLTjA2g
-Extracting transcript for video: qNn1SLTjA2g
-Transcript not available for qNn1SLTjA2g: Error getting transcript for video qNn1SLTjA2g: 
-Could not retrieve a transcript for the video https://www.youtube.com/watch?v=qNn1SLTjA2g! This is most likely caused by:
-
-YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
-- You have done too many requests and your IP has been blocked by YouTube
-- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
-
-Ways to work around this are explained in the "Working around IP bans" section of the README (https://github.com/jdepoix/youtube-transcript-api?tab=readme-ov-file#working-around-ip-bans-requestblocked-or-ipblocked-exception).
-
-
-If you are sure that the described cause is not responsible for this error and that a transcript should be retrievable, please create an issue at https://github.com/jdepoix/youtube-transcript-api/issues. Please add which version of youtube_transcript_api you are using and provide the information needed to replicate the error. Also make sure that there are no open issues which already describe your problem!
-Using title and description for summary...
-  [16/50] Summarizing video: C6ojyr2ePvc
-Extracting transcript for video: C6ojyr2ePvc
-Transcript not available for C6ojyr2ePvc: Error getting transcript for video C6ojyr2ePvc: 
-Could not retrieve a transcript for the video https://www.youtube.com/watch?v=C6ojyr2ePvc! This is most likely caused by:
-
-YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
-- You have done too many requests and your IP has been blocked by YouTube
-- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
-
-Ways to work around this are explained in the "Working around IP bans" section of the README (https://github.com/jdepoix/youtube-transcript-api?tab=readme-ov-file#working-around-ip-bans-requestblocked-or-ipblocked-exception).
-
-
-If you are sure that the described cause is not responsible for this error and that a transcript should be retrievable, please create an issue at https://github.com/jdepoix/youtube-transcript-api/issues. Please add which version of youtube_transcript_api you are using and provide the information needed to replicate the error. Also make sure that there are no open issues which already describe your problem!
-Using title and description for summary...
-  [17/50] Summarizing video: nImBWUvxU1I
-Extracting transcript for video: nImBWUvxU1I
-Transcript not available for nImBWUvxU1I: Error getting transcript for video nImBWUvxU1I: 
-Could not retrieve a transcript for the video https://www.youtube.com/watch?v=nImBWUvxU1I! This is most likely caused by:
-
-YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
-- You have done too many requests and your IP has been blocked by YouTube
-- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
-
-Ways to work around this are explained in the "Working around IP bans" section of the README (https://github.com/jdepoix/youtube-transcript-api?tab=readme-ov-file#working-around-ip-bans-requestblocked-or-ipblocked-exception).
-
-
-If you are sure that the described cause is not responsible for this error and that a transcript should be retrievable, please create an issue at https://github.com/jdepoix/youtube-transcript-api/issues. Please add which version of youtube_transcript_api you are using and provide the information needed to replicate the error. Also make sure that there are no open issues which already describe your problem!
-Using title and description for summary...
-  [18/50] Summarizing video: YMk7ogzBGtQ
-Extracting transcript for video: YMk7ogzBGtQ
-Transcript not available for YMk7ogzBGtQ: Error getting transcript for video YMk7ogzBGtQ: 
-Could not retrieve a transcript for the video https://www.youtube.com/watch?v=YMk7ogzBGtQ! This is most likely caused by:
-
-YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
-- You have done too many requests and your IP has been blocked by YouTube
-- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
-
-Ways to work around this are explained in the "Working around IP bans" section of the README (https://github.com/jdepoix/youtube-transcript-api?tab=readme-ov-file#working-around-ip-bans-requestblocked-or-ipblocked-exception).
-
-
-If you are sure that the described cause is not responsible for this error and that a transcript should be retrievable, please create an issue at https://github.com/jdepoix/youtube-transcript-api/issues. Please add which version of youtube_transcript_api you are using and provide the information needed to replicate the erTranscript not available for YMk7ogzBGtQ: Error getting transcript for video YMk7ogzBGtQUsing title and description for summary...
-  [19/50] Summarizing video: 9X-3uLoRYp8
-Extracting transcript for video: 9X-3uLoRYp8
-Transcript not available for 9X-3uLoRYp8: No transcript found for video 9X-3uLoRYp8 in languages ['en', 'ko', 'ja', 'es', 'pt', 'fr', 'de', 'it']
-Using title and description for summary...
-  [20/50] Summarizing video: ovSa5WhVp4M
-Extracting transcript for video: ovSa5WhVp4M
-Transcript not available for ovSa5WhVp4M: Error getting transcript for video ovSa5WhVp4M: 
-Could not retrieve a transcript for the video https://www.youtube.com/watch?v=ovSa5WhVp4M! This is most likely caused by:
-
-YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
-- You have done too many requests and your IP has been blocked by YouTube
-- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
-
-Ways to work around this are explained in the "Working around IP bans" section of the README (https://github.com/jdepoix/youtube-transcript-api?tab=readme-ov-file#working-around-ip-bans-requestblocked-or-ipblocked-exception).
-
-
-If you are sure that the described cause is not responsible for this error and that a transcript should be retrievable, please create an issue at https://github.com/jdepoix/youtube-transcript-api/issues. Please add which version of youtube_transcript_api you are using and provide the information needed to replicate the error. Also make sure that there are no open issues which already describe your problem!
-Using title and description for summary...
-  >>> Processed 20 videos, waiting 10 seconds to avoid rate limits...
-  [21/50] Summarizing video: AOg-iVmy1j4
-Extracting transcript for video: AOg-iVmy1j4
-Transcript not available for AOg-iVmy1j4: Error getting transcript for video AOg-iVmy1j4: 
-Could not retrieve a transcript for the video https://www.youtube.com/watch?v=AOg-iVmy1j4! This is most likely caused by:
-
-YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
-- You have done too many requests and your IP has been blocked by YouTube
-- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
-
-Ways to work around this are explained in the "Working around IP bans" section of the README (https://github.com/jdepoix/youtube-transcript-api?tab=readme-ov-file#working-around-ip-bans-requestblocked-or-ipblocked-exception).
-
-
-If you are sure that the described cause is not responsible for this error and that a transcript should be retrievable, please create an issue at https://github.com/jdepoix/youtube-transcript-api/issues. Please add which version of youtube_transcript_api you are using and provide the information needed to replicate the error. Also make sure that there are no open issues which already describe your problem!
-Using title and description for summary...
-  [22/50] Summarizing video: nqL6JKEv3JU
-Extracting transcript for video: nqL6JKEv3JU
-Transcript not available for nqL6JKEv3JU: No transcript found for video nqL6JKEv3JU in languages ['en', 'ko', 'ja', 'es', 'pt', 'fr', 'de', 'it']
-Using title and description for summary...
-  [23/50] Summarizing video: YbuJ1XW_LSg
-Extracting transcript for video: YbuJ1XW_LSg
-Transcript not available for YbuJ1XW_LSg: Error getting transcript for video YbuJ1XW_LSg: 
-Could not retrieve a transcript for the video https://www.youtube.com/watch?v=YbuJ1XW_LSg! This is most likely caused by:
-
-YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
-- You have done too many requests and your IP has been blocked by YouTube
-- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
-
-Ways to work around this are explained in the "Working around IP bans" section of the README (https://github.com/jdepoix/youtube-transcript-api?tab=readme-ov-file#working-around-ip-bans-requestblocked-or-ipblocked-exception).
-
-
-If you are sure that the described cause is not responsible for this error and that a transcript should be retrievable, please create an issue at https://github.com/jdepoix/youtube-transcript-api/issues. Please add which version of youtube_transcript_api you are using and provide the information needed to replicate the error. Also make sure that there are no open issues which already describe your problem!
-Using title and description for summary...
-  [24/50] Summarizing video: ij2Qu8Pjzxc
-Extracting transcript for video: ij2Qu8Pjzxc
-Transcript not available for ij2Qu8Pjzxc: Transcripts are disabled for video ij2Qu8Pjzxc
-Using title and description for summary...
-  [25/50] Summarizing video: w6Nub94DYGI
-Extracting transcript for video: w6Nub94DYGI
-Transcript not available for w6Nub94DYGI: Error getting transcript for video w6Nub94DYGI: 
-Could not retrieve a transcript for the video https://www.youtube.com/watch?v=w6Nub94DYGI! This is most likely caused by:
-
-YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
-- You have done too many requests and your IP has been blocked by YouTube
-- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
-
-Ways to work around this are explained in the "Working around IP bans" section of the README (https://github.com/jdepoix/youtube-transcript-api?tab=readme-ov-file#working-around-ip-bans-requestblocked-or-ipblocked-exception).
-
-
-If you are sure that the described cause is not responsible for this error and that a transcript should be retrievable, please create an issue at https://github.com/jdepoix/youtube-transcript-api/issues. Please add which version of youtube_transcript_api you are using and provide the information needed to replicate the error. Also make sure that there are no open issues which already describe your problem!
-Using title and description for summary...
-  [26/50] Summarizing video: ToVGr0_f6JI
-Extracting transcript for video: ToVGr0_f6JI
-Transcript not available for ToVGr0_f6JI: Error getting transcript for video ToVGr0_f6JI: 
-Could not retrieve a transcript for the video https://www.youtube.com/watch?v=ToVGr0_f6JI! This is most likely caused by:
-
-YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
-- You have done too many requests and your IP has been blocked by YouTube
-- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
-
-Ways to work around this are explained in the "Working around IP bans" section of the README (https://github.com/jdepoix/youtube-transcript-api?tab=readme-ov-file#working-around-ip-bans-requestblocked-or-ipblocked-exception).
-
-
-If you are sure that the described cause is not responsible for this error and that a transcript should be retrievable, please create an issue at https://github.com/jdepoix/youtube-transcript-api/issues. Please add which version of youtube_transcript_api you are using and provide the information needed to replicate the error. Also make sure that there are no open issues which already describe your problem!
-Using title and description for summary...
-  [27/50] Summarizing video: P-tgTranscript not available for g_r-1dwumuQ: Error gettingTranscript not available for P-tgq-LYIOE: Error getting transcript for video P-tgq-LYIOE: 
-Could not retrieve a transcript for the video https://www.youtube.com/watch?v=P-tgq-LYIOE! This is most likely caused by:
-
-YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
-- You have done too many requests and your IP has been blocked by YouTube
-- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
-
-Ways to work around this are explained in the "Working around IP bans" section of the README (https://github.com/jdepoix/youtube-transcript-api?tab=readme-ov-file#working-around-ip-bans-requestblocked-or-ipblocked-exception).
-
-
-If you are sure that the described cause is not responsible for this error and that a transcript should be retrievable, please create an issue at https://github.com/jdepoix/youtube-transcript-api/issues. Please add which version of youtube_transcript_api you are using and provide the information needed to replicate the error. Also make sure that there are no open issues which already describe your problem!
-Using title and description for summary...
-  [28/50] Summarizing video: LKdztNtK6G8
-Extracting transcript for video: LKdztNtK6G8
-Transcript not available for LKdztNtK6G8: Error getting transcript for video LKdztNtK6G8: 
-Could not retrieve a transcript for the video https://www.youtube.com/watch?v=LKdztNtK6G8! This is most likely caused by:
-
-YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
-- You have done too many requests and your IP has been blocked by YouTube
-- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
-
-Ways to work around this are explained in the "Working around IP bans" section of the README (https://github.com/jdepoix/youtube-transcript-api?tab=readme-ov-file#working-around-ip-bans-requestblocked-or-ipblocked-exception).
-
-
-If you are sure that the described cause is not responsible for this error and that a transcript should be retrievable, please create an issue at https://github.com/jdepoix/youtube-transcript-api/issues. Please add which version of youtube_transcript_api you are using and provide the information needed to replicate the error. Also make sure that there are no open issues which already describe your problem!
-Using title and description for summary...
-  [29/50] Summarizing video: h-AjO96FahA
-Extracting transcript for video: h-AjO96FahA
-Transcript not available for h-AjO96FahA: Error getting transcript for video h-AjO96FahA: 
-Could not retrieve a transcript for the video https://www.youtube.com/watch?v=h-AjO96FahA! This is most likely caused by:
-
-YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
-- You have done too many requests and your IP has been blocked by YouTube
-- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
-
-Ways to work around this are explained in the "Working around IP bans" section of the README (https://github.com/jdepoix/youtube-transcript-api?tab=readme-ov-file#working-around-ip-bans-requestblocked-or-ipblocked-exception).
-
-
-If you are sure that the described cause is not responsible for this error and that a transcript should be retrievable, please create an issue at https://github.com/jdepoix/youtube-transcript-api/issues. Please add which version of youtube_transcript_api you are using and provide the information needed to replicate the error. Also make sure that there are no open issues which already describe your problem!
-Using title and description for summary...
-  [30/50] Summarizing video: HJ7uCEslbOk
-Extracting transcript for video: HJ7uCEslbOk
-Transcript not available for HJ7uCEslbOk: Error getting transcript for video HJ7uCEslbOk: 
-Could not retrieve a transcript for the video https://www.youtube.com/watch?v=HJ7uCEslbOk! This is most likely caused by:
-
-YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
-- You have done too many requests and your IP has been blocked by YouTube
-- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
-
-Ways to work around this are explained in the "Working around IP bans" section of the README (https://github.com/jdepoix/youtube-transcript-api?tab=readme-ov-file#working-around-ip-bans-requestblocked-or-ipblocked-exception).
-
-
-If you are sure that the described cause is not responsible for this error and that a transcript should be retrievable, please create an issue at https://github.com/jdepoix/youtube-transcript-api/issues. Please add which version of youtube_transcript_api you are using and provide the information needed to replicate the error. Also make sure that there are no open issues which already describe your problem!
-Using title and description for summary...
-  >>> Processed 30 videos, waiting 10 seconds to avoid rate limits...
-  [31/50] Summarizing video: h6wpDro1dbk
-Extracting transcript for video: h6wpDro1dbk
-Transcript not available for h6wpDro1dbk: Transcripts are disabled for video h6wpDro1dbk
-Using title and description for summary...
-  [32/50] Summarizing video: DX3l_oaPoPA
-Extracting transcript for video: DX3l_oaPoPA
-Transcript not available for DX3l_oaPoPA: Error getting transcript for video DX3l_oaPoPA: 
-Could not retrieve a transcript for the video https://www.youtube.com/watch?v=DX3l_oaPoPA! This is most likely caused by:
-
-YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
-- You have done too many requests and your IP has been blocked by YouTube
-- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
-
-Ways to work around this are explained in the "Working around IP bans" section of the README (https://github.com/jdepoix/youtube-transcript-api?tab=readme-ov-file#working-around-ip-bans-requestblocked-or-ipblocked-exception).
-
-
-If you are sure that the described cause is not responsible for this error and that a transcript should be retrievable, please create an issue at https://github.com/jdepoix/youtube-transcript-api/issues. Please add which version of youtube_transcript_api you are using and provide the information needed to replicate the error. Also make sure that there are no open issues which already describe your problem!
-Using title and description for summary...
-  [33/50] Summarizing video: wWuxYEPovv0
-Extracting transcript for video: wWuxYEPovv0
-Transcript not available for wWuxYEPovv0: Error getting transcript for video wWuxYEPovv0: 
-Could not retrieve a transcript for the video https://www.youtube.com/watch?v=wWuxYEPovv0! This is most likely caused by:
-
-YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
-- You have done too many requests and your IP has been blocked by YouTube
-- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
-
-Ways to work around this are explained in the "Working around IP bans" section of the README (https://github.com/jdepoix/youtube-transcript-api?tab=readme-ov-file#working-around-ip-bans-requestblocked-or-ipblocked-exception).
-
-
-If you are sure that the described cause is not responsible for this error and that a transcript should be retrievable, please create an issue at https://github.com/jdepoix/youtube-transcript-api/issues. Please add which version of youtube_transcript_api you are using and provide the information needed to replicate the error. Also make sure that there are no open issues which already describe your problem!
-Using title and description for summary...
-  [34/50] Summarizing video: g_r-1dwumuQ
-Extracting transcript for video: g_r-1dwumuQ
-Transcript not available for g_r-1dwumuQ: Error getting transcript for video g_r-1dwumuQ: 
-Could not retrieve a transcript for the video https://www.youtube.com/watch?v=g_r-1dwumuQ! This is most likely caused by:
-
-YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
-- You have done too many requests and your IP has been blocked by YouTube
-- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
-
-Ways to work around this are explained in the "Working around IP bans" section of the README (https://github.com/jdepoix/youtube-transcript-api?tab=readme-ov-file#working-around-ip-bans-requestblocked-or-ipblocked-exception).
-
-
-If you are sure that the described cause is not responsible for this error and that a transcript should be retrievable, please create an issue at https://github.com/jdepoix/youtube-transcript-api/issues. Please add which version of youtube_transcript_api you are using and provide the information needed to replicate the error. Also make sure that there are no open issues which already describe your problem!
-Using title and description for summary...
-  [35/50] Summarizing video: ernTUIHFqlQ
-Extracting transcript for video: ernTUIHFqlQ
-Transcript not available for ernTUIHFqlQ: Error getting transcript for video ernTUIHFqlQ: 
-Could not retrieve a transcript for the video https://www.youtube.com/watch?v=ernTUIHFqlQ! This is most likely caused by:
-
-YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
-- You have done too many requests and your IP has been blocked by YouTube
-- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
-
-Ways to work around this are explained in the "Working around IP bans" section of the README (https://github.com/jdepoix/youtube-transcript-api?tab=readme-ov-file#working-around-ip-bans-requestblocked-or-ipblocked-exception).
-
-
-If you are sure that the described cause is not responsible for this error and that a transcript should be retrievable, please create an issue at https://github.com/jdepoix/youtube-transcript-api/issues. Please add which version of youtube_transcript_api you are using and provide the information needed to replicate the error. Also make sure that there are no open issues which already describe your problem!
-Using title and description for summary...
-  [36/50] Summarizing video: 4CHUlI0Ild4
-Extracting transcript for video: 4CHUlI0Ild4
-Transcript not available for 4CHUlI0Ild4: Error getting transcript for video 4CHUlI0Ild4: 
-Could not retrieve a transcript for the video https://www.youtube.com/watch?v=4CHUlI0Ild4! This is most likely caused by:
-
-YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
-- You have done too many requests and your IP has been blocked by YouTube
-- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
-
-Ways to work around this are explained in the "Working around IP bans" section of the README (https://github.com/jdepoix/youtube-transcript-api?tab=readme-ov-file#working-around-ip-bans-requestblocked-or-ipblocked-exception).
-
-
-If you are sure that the described cause is not responsible for this error and that a transcript should be retrievable, please create an issue at https://github.com/jdepoix/youtube-transcript-api/issues. Please add which version of youtube_transcript_api you are using and provide the information needed to replicate the error. Also make sure that there are no open issues which already describe your problem!
-Using title and description for summary...
-  [37/50] Summarizing video: gdriFKO8Ye8
-Extracting transcript for video: gdriFKO8Ye8
-Transcript not available for gdriFKO8Ye8: No transcript found for video gdriFKO8Ye8 in languages ['en', 'ko', 'ja', 'es', 'pt', 'fr', 'de', 'it']
-Using title and description for summary...
-  [38/50] Summarizing video: 29dNShISuE8
-Extracting transcript for video: 29dNShISuE8
-Transcript not available for 29dNShISuE8: Transcripts are disabled for video 29dNShISuE8
-Using title and description for summary...
-  [39/50] Summarizing video: Il2sp513uY8
-Extracting transcript for video: Il2sp513uY8
-Transcript not available for Il2sp513uY8: No transcript found for video Il2sp513uY8 in languages ['en', 'ko', 'ja', 'es', 'pt', 'fr', 'de', 'it']
-Using title and description for summary...
-  [40/50] Summarizing video: MC6EhaCLZMU
-Extracting transcript for video: MC6EhaCLZMU
-Transcript not available for MC6EhaCLZMU: No transcript found for video MC6EhaCLZMU in languages ['en', 'ko', 'ja', 'es', 'pt', 'fr', 'de', 'it']
-Using title and description for summary...
-  >>> Processed 40 videos, waiting 10 seconds to avoid rate limits...
-  [41/50] Summarizing video: Muv1qmhjiKY
-Extracting transcript for video: Muv1qmhjiKY
-Transcript not available for Muv1qmhjiKY: Transcripts are disabled for video Muv1qmhjiKY
-Using title and description for summary...
-  [42/50] Summarizing video: -J26aQSSgRs
-Extracting transcript for video: -J26aQSSgRs
-Transcript not available for -J26aQSSgRs: Error getting transcript for video -J26aQSSgRs: 
-Could not retrieve a transcript for the video https://www.youtube.com/watch?v=-J26aQSSgRs! This is most likely caused by:
-
-YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
-- You have done too many requests and your IP has been blocked by YouTube
-- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
-
-Ways to work around this are explained in the "Working around IP bans" section of the README (https://github.com/jdepoix/youtube-transcript-api?tab=readme-ov-file#working-around-ip-bans-requestblocked-or-ipblocked-exception).
-
-
-If you are sure that the described cause is not responsible for this error and that a transcript should be retrievable, please create an issue at https://github.com/jdepoix/youtube-transcript-api/issues. Please add which version of youtube_transcript_api you are using and provide the information needed to replicate the error. Also make sure that there are no open issues which already describe your problem!
-Using title and description for summary...
-  [43/50] Summarizing video: hTranscript not available for ovSa5WhVp4M: Error getting trTranscript not available for hG9hzAEHUCE: Error getting transcript for video hG9hzAEHUCE: 
-Could not retrieve a transcript for the video https://www.youtube.com/watch?v=hG9hzAEHUCE! This is most likely caused by:
-
-YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
-- You have done too many requests and your IP has been blocked by YouTube
-- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
-
-Ways to work around this are explained in the "Working around IP bans" section of the README (https://github.com/jdepoix/youtube-transcript-api?tab=readme-ov-file#working-around-ip-bans-requestblocked-or-ipblocked-exception).
-
-
-If you are sure that the described cause is not responsible for this error and that a transcript should be retrievable, please create an issue at https://github.com/jdepoix/youtube-transcript-api/issues. Please add which version of youtube_transcript_api you are using and provide the information needed to replicate the error. Also make sure that there are no open issues which already describe your problem!
-Using title and description for summary...
-  [44/50] Summarizing video: 7D8vL0Hdd00
-Extracting transcript for video: 7D8vL0Hdd00
-Transcript not available for 7D8vL0Hdd00: Error getting transcript for video 7D8vL0Hdd00: 
-Could not retrieve a transcript for the video https://www.youtube.com/watch?v=7D8vL0Hdd00! This is most likely caused by:
-
-YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
-- You have done too many requests and your IP has been blocked by YouTube
-- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
-
-Ways to work around this are explained in the "Working around IP bans" section of the README (https://github.com/jdepoix/youtube-transcript-api?tab=readme-ov-file#working-around-ip-bans-requestblocked-or-ipblocked-exception).
-
-
-If you are sure that the described cause is not responsible for this error and that a transcript should be retrievable, please create an issue at https://github.com/jdepoix/youtube-transcript-api/issues. Please add which version of youtube_transcript_api you are using and provide the information needed to replicate the error. Also make sure that there are no open issues which already describe your problem!
-Using title and description for summary...
-  [45/50] Summarizing video: iaXaSomzm7I
-Extracting transcript for video: iaXaSomzm7I
-Transcript not available for iaXaSomzm7I: No transcript found for video iaXaSomzm7I in languages ['en', 'ko', 'ja', 'es', 'pt', 'fr', 'de', 'it']
-Using title and description for summary...
-  [46/50] Summarizing video: 3PEihW4VqsU
-Extracting transcript for video: 3PEihW4VqsU
-Transcript not available for 3PEihW4VqsU: Error getting transcript for video 3PEihW4VqsU: 
-Could not retrieve a transcript for the video https://www.youtube.com/watch?v=3PEihW4VqsU! This is most likely caused by:
-
-YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
-- You have done too many requests and your IP has been blocked by YouTube
-- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
-
-Ways to work around this are explained in the "Working around IP bans" section of the README (https://github.com/jdepoix/youtube-transcript-api?tab=readme-ov-file#working-around-ip-bans-requestblocked-or-ipblocked-exception).
-
-
-If you are sure that the described cause is not responsible for this error and that a transcript should be retrievable, please create an issue at https://github.com/jdepoix/youtube-transcript-api/issues. Please add which version of youtube_transcript_api you are using and provide the information needed to replicate the error. Also make sure that there are no open issues which already describe your problem!
-Using title and description for summary...
-  [47/50] Summarizing video: i5glB0aTSP0
-Extracting transcript for video: i5glB0aTSP0
-Transcript not available for i5glB0aTSP0: No transcript found for video i5glB0aTSP0 in languages ['en', 'ko', 'ja', 'es', 'pt', 'fr', 'de', 'it']
-Using title and description for summary...
-  [48/50] Summarizing video: 6p-g0UQHDhA
-Extracting transcript for video: 6p-g0UQHDhA
-Transcript not available for 6p-g0UQHDhA: Error getting transcript for video 6p-g0UQHDhA: 
-Could not retrieve a transcript for the video https://www.youtube.com/watch?v=6p-g0UQHDhA! This is most likely caused by:
-
-YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
-- You have done too many requests and your IP has been blocked by YouTube
-- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
-
-Ways to work around this are explained in the "Working around IP bans" section of the README (https://github.com/jdepoix/youtube-transcript-api?tab=readme-ov-file#working-around-ip-bans-requestblocked-or-ipblocked-exception).
-
-
-If you are sure that the described cause is not responsible for this error and that a transcript should be retrievable, please create an issue at https://github.com/jdepoix/youtube-transcript-api/issues. Please add which version of youtube_transcript_api you are using and provide the information needed to replicate the error. Also make sure that there are no open issues which already describe your problem!
-Using title and description for summary...
-  [49/50] Summarizing video: 3b2S3GDveYg
-Extracting transcript for video: 3b2S3GDveYg
-Transcript not available for 3b2S3GDveYg: Error getting transcript for video 3b2S3GDveYg: 
-Could not retrieve a transcript for the video https://www.youtube.com/watch?v=3b2S3GDveYg! This is most likely caused by:
-
-YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
-- You have done too many requests and your IP has been blocked by YouTube
-- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
-
-Ways to work around this are explained in the "Working around IP bans" section of the README (https://github.com/jdepoix/youtube-transcript-api?tab=readme-ov-file#working-around-ip-bans-requestblocked-or-ipblocked-exception).
-
-
-If you are sure that the described cause is not responsible for this error and that a transcript should be retrievable, please create an issue at https://github.com/jdepoix/youtube-transcript-api/issues. Please add which version of youtube_transcript_api you are using and provide the information needed to replicate the error. Also make sure that there are no open issues which already describe your problem!
-Using title and description for summary...
-  [50/50] Summarizing video: 2jneTgJlh-s
-Extracting transcript for video: 2jneTgJlh-s
-Transcript not available for 2jneTgJlh-s: Error getting transcript for video 2jneTgJlh-s: 
-Could not retrieve a transcript for the video https://www.youtube.com/watch?v=2jneTgJlh-s! This is most likely caused by:
-
-YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
-- You have done too many requests and your IP has been blocked by YouTube
-- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
-
-Ways to work around this are explained in the "Working around IP bans" section of the README (https://github.com/jdepoix/youtube-transcript-api?tab=readme-ov-file#working-around-ip-bans-requestblocked-or-ipblocked-exception).
-
-
-If you are sure that the described cause is not responsible for this error and that a transcript should be retrievable, please create an issue at https://github.com/jdepoix/youtube-transcript-api/issues. Please add which version of youtube_transcript_api you are using and provide the information needed to replicate the error. Also make sure that there are no open issues which already describe your problem!
-Using title and description for summary...
-  >>> Processed 50 videos, waiting 10 seconds to avoid rate limits...
-Summarized 50 videos
-
-[Step 4/5] Summarizing comments (per video)...
-  Summarizing comments for video: 93Khs-rwqSQ (13 comments)
-  Summarizing comments for video: iv3gFxZak0I (30 comments)
-  Summarizing comments for video: CMsgD1XCEFY (47 comments)
-  Summarizing comments for video: Jfgi3X5jBY0 (14 comments)
-  Summarizing comments for video: lL78TL3NaDU (34 comments)
-  Summarizing comments for video: ugpcp1Dt8Dk (7 comments)
-  Summarizing comments for video: RgR0HZcKRpM (27 comments)
-  Summarizing comments for video: z7bwUiDmgJk (14 comments)
-  Summarizing comments for video: wLQUVIk3eR4 (44 comments)
-  Summarizing comments for video: DahDC_Gr2vE (34 comments)
+댓글 수집: wLQUVIk3eR4 - 20개 스레드
+댓글 수집: Vi0HB00DUE0 - 20개 스레드
+댓글 수집: 0agKva2O34Y - 20개 스레드
+댓글 수집: XtxR_M6zi9Y - 20개 스레드
+댓글 수집: Dq3gUqDA-Xw - 20개 스레드
+댓글 수집: d0KpULFsHxU - 20개 스레드
+댓글 수집: xFk_SefU6D8 - 15개 스레드
+댓글 수집: ovSa5WhVp4M - 10개 스레드
+댓글 수집: _g8b74Vdp2Q - 13개 스레드
+댓글 수집: lL78TL3NaDU - 20개 스레드
+댓글 수집: Je3R27Y096E - 12개 스레드
+댓글 수집: V8UELS4di2g - 20개 스레드
+댓글 수집: YbuJ1XW_LSg - 6개 스레드
+댓글 수집: MCpmP8tzVxw - 9개 스레드
+댓글 수집: UkBS6gzxiRI - 20개 스레드
+댓글 수집: yN8o2-xivbI - 4개 스레드
+댓글 수집: uovydpa-3OE - 5개 스레드
+댓글 수집: hYULgFiob94 - 16개 스레드
+댓글 수집: 0SkrCQyZB1k - 3개 스레드
+댓글 수집: VvI0TtwsqX0 - 20개 스레드
+댓글 수집: r6A7tZa3ZR8 - 20개 스레드
+댓글 수집: m_LCI2rFDUY - 20개 스레드
+댓글 수집: wLQUVIk3eR4 - 20개 스레드
+댓글 수집: Vi0HB00DUE0 - 20개 스레드
+댓글 수집: 0agKva2O34Y - 20개 스레드
+댓글 수집: XtxR_M6zi9Y - 20개 스레드
+댓글 수집: Dq3gUqDA-Xw - 20개 스레드
+전체 댓글 수집 완료: 3450개
+Collected 3450 comments
+
+[Step 3/4] Summarizing comments (per video)...
+  Summarizing comments for video: VvI0TtwsqX0 (505 comments)
+  Summarizing comments for video: r6A7tZa3ZR8 (260 comments)
+  Summarizing comments for video: m_LCI2rFDUY (380 comments)
+  Summarizing comments for video: wLQUVIk3eR4 (220 comments)
+  Summarizing comments for video: Vi0HB00DUE0 (150 comments)
+  Summarizing comments for video: 0agKva2O34Y (210 comments)
+  Summarizing comments for video: XtxR_M6zi9Y (180 comments)
+  Summarizing comments for video: Dq3gUqDA-Xw (170 comments)
+  Summarizing comments for video: d0KpULFsHxU (136 comments)
+  Summarizing comments for video: xFk_SefU6D8 (104 comments)
   >>> Processed 10 videos, waiting 10 seconds...
-  Summarizing comments for video: Qvp4hYSbLMg (1 comments)
-  Summarizing comments for video: DUyropoiUGQ (24 comments)
-  Summarizing comments for video: qNn1SLTjA2g (31 comments)
-  Summarizing comments for video: C6ojyr2ePvc (27 comments)
-  Summarizing comments for video: nImBWUvxU1I (36 comments)
-  Summarizing comments for video: YMk7ogzBGtQ (1 comments)
-  Summarizing comments for video: 9X-3uLoRYp8 (44 comments)
-  Summarizing comments for video: ovSa5WhVp4M (14 comments)
-  Summarizing comments for video: AOg-iVmy1j4 (7 comments)
-  Summarizing comments for video: nqL6JKEv3JU (4 comments)
+  Summarizing comments for video: ovSa5WhVp4M (56 comments)
+  Summarizing comments for video: _g8b74Vdp2Q (100 comments)
+  Summarizing comments for video: lL78TL3NaDU (140 comments)
+  Summarizing comments for video: Je3R27Y096E (68 comments)
+  Summarizing comments for video: V8UELS4di2g (180 comments)
+  Summarizing comments for video: YbuJ1XW_LSg (40 comments)
+  Summarizing comments for video: MCpmP8tzVxw (56 comments)
+  Summarizing comments for video: UkBS6gzxiRI (164 comments)
+  Summarizing comments for video: yN8o2-xivbI (16 comments)
+  Summarizing comments for video: uovydpa-3OE (50 comments)
   >>> Processed 20 videos, waiting 10 seconds...
-  Summarizing comments for video: YbuJ1XW_LSg (10 comments)
-  Summarizing comments for video: ij2Qu8Pjzxc (25 comments)
-  Summarizing comments for video: w6Nub94DYGI (47 comments)
-  Summarizing comments for video: ToVGr0_f6JI (2 comments)
-  Summarizing comments for video: P-tgq-LYIOE (86 comments)
-  Summarizing comments for video: LKdztNtK6G8 (2 comments)
-  Summarizing comments for video: h-AjO96FahA (55 comments)
-  Summarizing comments for video: HJ7uCEslbOk (36 comments)
-  Summarizing comments for video: h6wpDro1dbk (1 comments)
-  Summarizing comments for video: DX3l_oaPoPA (43 comments)
+  Summarizing comments for video: hYULgFiob94 (110 comments)
+  Summarizing comments for video: VvI0TtwsqX0 (505 comments)
+  Summarizing comments for video: r6A7tZa3ZR8 (260 comments)
+  Summarizing comments for video: m_LCI2rFDUY (380 comments)
+  Summarizing comments for video: wLQUVIk3eR4 (220 comments)
+  Summarizing comments for video: Vi0HB00DUE0 (150 comments)
+  Summarizing comments for video: 0agKva2O34Y (210 comments)
+  Summarizing comments for video: XtxR_M6zi9Y (180 comments)
+  Summarizing comments for video: Dq3gUqDA-Xw (170 comments)
+  Summarizing comments for video: d0KpULFsHxU (136 comments)
   >>> Processed 30 videos, waiting 10 seconds...
-  Summarizing comments for video: wWuxYEPovv0 (1 comments)
-  Summarizing comments for video: g_r-1dwumuQ (26 comments)
-  Summarizing comments for video: ernTUIHFqlQ (6 comments)
-  Summarizing comments for video: 4CHUlI0Ild4 (52 comments)
-  Summarizing comments for video: gdriFKO8Ye8 (58 comments)
-  Summarizing comments for video: 29dNShISuE8 (4 comments)
-  Summarizing comments for video: Il2sp513uY8 (22 comments)
-  Summarizing comments for video: MC6EhaCLZMU (15 comments)
-  Summarizing comments for video: Muv1qmhjiKY (9 comments)
-  Summarizing comments for video: hG9hzAEHUCE (2 comments)
+  Summarizing comments for video: xFk_SefU6D8 (104 comments)
+  Summarizing comments for video: ovSa5WhVp4M (56 comments)
+  Summarizing comments for video: _g8b74Vdp2Q (100 comments)
+  Summarizing comments for video: lL78TL3NaDU (140 comments)
+  Summarizing comments for video: Je3R27Y096E (68 comments)
+  Summarizing comments for video: V8UELS4di2g (180 comments)
+  Summarizing comments for video: YbuJ1XW_LSg (40 comments)
+  Summarizing comments for video: MCpmP8tzVxw (56 comments)
+  Summarizing comments for video: UkBS6gzxiRI (164 comments)
+  Summarizing comments for video: yN8o2-xivbI (16 comments)
   >>> Processed 40 videos, waiting 10 seconds...
-  Summarizing comments for video: 7D8vL0Hdd00 (3 comments)
-  Summarizing comments for video: iaXaSomzm7I (36 comments)
-  Summarizing comments for video: 3PEihW4VqsU (102 comments)
-  Summarizing comments for video: i5glB0aTSP0 (9 comments)
-  Summarizing comments for video: 6p-g0UQHDhA (9 comments)
-  Summarizing comments for video: 3b2S3GDveYg (95 comments)
-  Summarizing comments for video: 2jneTgJlh-s (12 comments)
-Summarized comments for 47 videos
+  Summarizing comments for video: uovydpa-3OE (50 comments)
+  Summarizing comments for video: hYULgFiob94 (110 comments)
+  Summarizing comments for video: 0SkrCQyZB1k (8 comments)
+  Summarizing comments for video: VvI0TtwsqX0 (505 comments)
+  Summarizing comments for video: r6A7tZa3ZR8 (260 comments)
+  Summarizing comments for video: m_LCI2rFDUY (380 comments)
+  Summarizing comments for video: wLQUVIk3eR4 (220 comments)
+  Summarizing comments for video: Vi0HB00DUE0 (150 comments)
+  Summarizing comments for video: 0agKva2O34Y (210 comments)
+  Summarizing comments for video: XtxR_M6zi9Y (180 comments)
+  >>> Processed 50 videos, waiting 10 seconds...
+  Summarizing comments for video: Dq3gUqDA-Xw (170 comments)
+  Summarizing comments for video: d0KpULFsHxU (136 comments)
+  Summarizing comments for video: xFk_SefU6D8 (104 comments)
+  Summarizing comments for video: ovSa5WhVp4M (56 comments)
+  Summarizing comments for video: _g8b74Vdp2Q (100 comments)
+  Summarizing comments for video: lL78TL3NaDU (140 comments)
+  Summarizing comments for video: Je3R27Y096E (68 comments)
+  Summarizing comments for video: V8UELS4di2g (180 comments)
+  Summarizing comments for video: YbuJ1XW_LSg (40 comments)
+  Summarizing comments for video: MCpmP8tzVxw (56 comments)
+  >>> Processed 60 videos, waiting 10 seconds...
+  Summarizing comments for video: UkBS6gzxiRI (164 comments)
+  Summarizing comments for video: yN8o2-xivbI (16 comments)
+  Summarizing comments for video: uovydpa-3OE (50 comments)
+  Summarizing comments for video: hYULgFiob94 (110 comments)
+  Summarizing comments for video: uovydpa-3OE (50 comments)
+  Summarizing comments for video: hYULgFiob94 (110 comments)
+  Summarizing comments for video: S6T0CNnw-dM (33 comments)
+  Summarizing comments for video: VvI0TtwsqX0 (505 comments)
+  Summarizing comments for video: bfPTQ7b2uWI (36 comments)
+  Summarizing comments for video: pg4S7ngJoDQ (37 comments)
+  >>> Processed 70 videos, waiting 10 seconds...
+  Summarizing comments for video: r6A7tZa3ZR8 (260 comments)
+  Summarizing comments for video: m_LCI2rFDUY (380 comments)
+  Summarizing comments for video: g_r-1dwumuQ (41 comments)
+  Summarizing comments for video: wLQUVIk3eR4 (220 comments)
+  Summarizing comments for video: Vi0HB00DUE0 (150 comments)
+  Summarizing comments for video: 0agKva2O34Y (210 comments)
+  Summarizing comments for video: XtxR_M6zi9Y (180 comments)
+  Summarizing comments for video: Dq3gUqDA-Xw (170 comments)
+  Summarizing comments for video: d0KpULFsHxU (136 comments)
+  Summarizing comments for video: xFk_SefU6D8 (104 comments)
+  >>> Processed 80 videos, waiting 10 seconds...
+  Summarizing comments for video: ovSa5WhVp4M (56 comments)
+  Summarizing comments for video: _g8b74Vdp2Q (100 comments)
+  Summarizing comments for video: lL78TL3NaDU (140 comments)
+  Summarizing comments for video: Je3R27Y096E (68 comments)
+  Summarizing comments for video: V8UELS4di2g (180 comments)
+  Summarizing comments for video: YbuJ1XW_LSg (40 comments)
+  Summarizing comments for video: MCpmP8tzVxw (56 comments)
+  Summarizing comments for video: UkBS6gzxiRI (164 comments)
+  Summarizing comments for video: yN8o2-xivbI (16 comments)
+  Summarizing comments for video: uovydpa-3OE (50 comments)
+  >>> Processed 90 videos, waiting 10 seconds...
+  Summarizing comments for video: hYULgFiob94 (110 comments)
+  Summarizing comments for video: 0SkrCQyZB1k (8 comments)
+  Summarizing comments for video: VvI0TtwsqX0 (505 comments)
+  Summarizing comments for video: r6A7tZa3ZR8 (260 comments)
+  Summarizing comments for video: m_LCI2rFDUY (380 comments)
+  Summarizing comments for video: wLQUVIk3eR4 (220 comments)
+  Summarizing comments for video: Vi0HB00DUE0 (150 comments)
+  Summarizing comments for video: 0agKva2O34Y (210 comments)
+  Summarizing comments for video: XtxR_M6zi9Y (180 comments)
+  Summarizing comments for video: Dq3gUqDA-Xw (170 comments)
+  >>> Processed 100 videos, waiting 10 seconds...
+Summarized comments for 100 videos
 
-[Step 5/5] Saving data to database...
+[Step 4/4] Saving data...
+  Raw data saved: data\raw_data\youtube_raw_Samsung_TV_20251110_170112.json
+  Processed videos saved: data\processed_data\youtube_videos_Samsung_TV_20251110_170112.csv
+  Processed comments saved: data\processed_data\youtube_comments_Samsung_TV_20251110_170112.csv
 Connected to PostgreSQL database: samsung_dx_sentiment
-Tables created successfully
-Inserted/Updated 50 videos
-Inserted/Updated 1221 comments
+Tables created successfully (including youtube_videos_raw)
+Inserted/Updated 2361 raw videos
+Inserted/Updated 434 videos
+Inserted/Updated 3450 comments
 Saved to PostgreSQL:
-  - 50 videos
-  - 1221 comments
+  - 2361 raw videos (all collected)
+  - 434 filtered videos
+  - 3450 comments
 Disconnected from database
 
 ================================================================================
 Pipeline completed successfully!
 ================================================================================
-Total videos processed: 50
-Total comments processed: 1221
-Videos with content summary: 50
-Videos with comment summary: 47
+Total videos processed: 434
+Total comments processed: 3450
+Videos with comment summary: 434
 Connected to PostgreSQL database: samsung_dx_sentiment
 
 Database Statistics:
-  Total videos in DB: 67
-  Total comments in DB: 1767
+  Total videos in DB: 49
+  Total comments in DB: 2013
 Disconnected from database
-  Updated keyword for 50 videos
+  [INFO] Country filter: 434 → 434 videos (US only)
+  Updated keyword for 434 videos
 
-[OK] 'Samsung TV' completed: 50 videos, 1221 comments
-
-Waiting 30 seconds before next keyword...
-
-================================================================================
-Processing keyword 2/3: '4k tv'
-================================================================================
-================================================================================
-YouTube Data Collection & Analysis Pipeline
-================================================================================
-Keyword: 4k tv
-Max videos: 50
-Max comments per video: 20
-Region: US
-Summarize videos: True
-Summarize comments: True
-================================================================================
-
-[Step 1/5] Collecting video data from YouTube API...
-채널 정보 수집 완료: 40개 채널
-포괄적 검색 완료: 4k tv in US - 50개 비디오
-Collected 50 videos
-
-[Step 2/5] Collecting comments from YouTube API...
-댓글 수집: UdqZ3xoaekk - 20개 스레드
-댓글 수집: z7bwUiDmgJk - 9개 스레드
-댓글 수집: 7yLZPHJyLsc - 20개 스레드
-댓글 수집: Gla005U5Ous - 9개 스레드
-댓글 수집: H-irrwipaiU - 3개 스레드
-댓글 수집: w6Nub94DYGI - 20개 스레드
-댓글 수집: oRZRBz0kEx4 - 20개 스레드
-댓글 수집: irgOVr731Rs - 9개 스레드
-댓글 수집: n173VbTlcQE - 20개 스레드
-댓글 수집: WgiPxH19ajE - 20개 스레드
-댓글 수집: QF2S_nPAH2U - 20개 스레드
-댓글 수집: 9I8Az1hPhdM - 20개 스레드
-댓글 수집: P-tgq-LYIOE - 20개 스레드
-댓글 수집: sxIQs8zby8g - 2개 스레드
-댓글 수집: t_EXhMsLPTE - 20개 스레드
-댓글 수집: ENUWyXRRZlc - 12개 스레드
-댓글 수집: kx-kAaN3uJY - 5개 스레드
-댓글 수집: 1SXabfwrIQc - 0개 스레드
-댓글 수집: EJ_Y4kZLZKM - 20개 스레드
-댓글 수집: sQzVIqdNFMI - 8개 스레드
-댓글 수집: KnCS6pXesw4 - 20개 스레드
-댓글 수집: CMsgD1XCEFY - 20개 스레드
-댓글 수집: McarPQqkNe8 - 20개 스레드
-댓글 수집: jjoC8EsrLfU - 0개 스레드
-댓글 수집: PoazLyFhaMA - 8개 스레드
-댓글 수집: 7__SH1dhlpA - 20개 스레드
-댓글 수집: 1_axdvsAAkU - 1개 스레드
-댓글 수집: 015OvdB9ZO8 - 20개 스레드
-댓글 수집: bfSqewKwLa0 - 8개 스레드
-댓글 수집: PGP_6CrWCag - 20개 스레드
-댓글 수집: c39WXgEgdyU - 7개 스레드
-댓글 수집: 1CQXVV0IhjU - 11개 스레드
-댓글 수집: dAfMdqWo-SM - 1개 스레드
-댓글 수집: AtuDEOvUiA4 - 7개 스레드
-댓글 수집: IHyfthiO9_0 - 20개 스레드
-댓글 수집: gUHVDbydcUE - 20개 스레드
-댓글 수집: q7zdP1K4aJY - 20개 스레드
-댓글 수집: i0olQZz5MnI - 3개 스레드
-댓글 수집: Chcwz5LYiHs - 20개 스레드
-댓글 수집: 2qWXQK1cWyA - 20개 스레드
-댓글 수집: agrw2tP3eMY - 1개 스레드
-댓글 수집: t_fdR8TSoj4 - 2개 스레드
-댓글 수집: R7_NENd-H4o - 0개 스레드
-댓글 수집: _bmcb5utybI - 2개 스레드
-댓글 수집: 5-t9yqa6hLk - 20개 스레드
-댓글 수집: gdriFKO8Ye8 - 20개 스레드
-댓글 수집: d0cZKMB8Cjg - 20개 스레드
-댓글 수집: SMTinDXEJ0c - 20개 스레드
-댓글 수집: iaXaSomzm7I - 20개 스레드
-댓글 수집: ZCyvj7DDvsk - 20개 스레드
-전체 댓글 수집 완료: 1470개
-Collected 1470 comments
-
-[Step 3/5] Summarizing videos (transcript-based)...
-  [1/50] Summarizing video: UdqZ3xoaekk
-Extracting transcript for video: UdqZ3xoaekk
-Transcript not available for UdqZ3xoaekk: Transcripts are disabled for video UdqZ3xoaekk
-Using title and description for summary...
-  [2/50] Summarizing video: z7bwUiDmgJk
-Extracting transcript for video: z7bwUiDmgJk
-Transcript not available for z7bwUiDmgJk: Error getting transcript for video z7bwUiDmgJk: 
-Could not retrieve a transcript for the video https://www.youtube.com/watch?v=z7bwUiDmgJk! This is most likely caused by:
-
-YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
-- You have done too many requests and your IP has been blocked by YouTube
-- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
-
-Ways to work around this are explained in the "Working around IP bans" section of the README (https://github.com/jdepoix/youtube-transcript-api?tab=readme-ov-file#working-around-ip-bans-requestblocked-or-ipblocked-exception).
-
-
-If you are sure that the described cause is not responsible for this error and that a transcript should be retrievable, please create an issue at https://github.com/jdepoix/youtube-transcript-api/issues. Please add which version of youtube_transcript_api you are using and provide the information needed to replicate the error. Also make sure that there are no open issues which already describe your problem!
-Using title and description for summary...
-  [3/50] Summarizing video: 7yLZPHJyLsc
-Extracting transcript for video: 7yLZPHJyLsc
-Transcript not available for 7yLZPHJyLsc: Error getting transcript for video 7yLZPHJyLsc: 
-Could not retrieve a transcript for the video https://www.youtube.com/watch?v=7yLZPHJyLsc! This is most likely caused by:
-
-YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
-- You have done too many requests and your IP has been blocked by YouTube
-- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
-
-Ways to work around this are explained in the "Working around IP bans" section of the README (https://github.com/jdepoix/youtube-transcript-api?tab=readme-ov-file#working-around-ip-bans-requestblocked-or-ipblocked-exception).
-
-
-If you are sure that the described cause is not responsible for this error and that a transcript should be retrievable, please create an issue at https://github.com/jdepoix/youtube-transcript-api/issues. Please add which version of youtube_transcript_api you are using and provide the information needed to replicate the error. Also make sure that there are no open issues which already describe your problem!
-Using title and description for summary...
-  [4/50] Summarizing video: Gla005U5Ous
-Extracting transcript for video: Gla005U5Ous
-Transcript not available for Gla005U5Ous: Error getting transcript for video Gla005U5Ous: 
-Could not retrieve a transcript for the video https://www.youtube.com/watch?v=Gla005U5Ous! This is most likely caused by:
-
-YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
-- You have done too many requests and your IP has been blocked by YouTube
-- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
-
-Ways to work around this are explained in the "Working around IP bans" section of the README (https://github.com/jdepoix/youtube-transcript-api?tab=readme-ov-file#working-around-ip-bans-requestblocked-or-ipblocked-exception).
-
-
-If you are sure that the described cause is not responsible for this error and that a transcript should be retrievable, please create an issue at https://github.com/jdepoix/youtube-transcript-api/issues. Please add which version of youtube_transcript_api you are using and provide the information needed to replicate the error. Also make sure that there are no open issues which already describe your problem!
-Using title and description for summary...
-  [5/50] Summarizing video: H-irrwipaiU
-Extracting transcript for video: H-irrwipaiU
-Transcript not available for H-irrwipaiU: No transcript found for video H-irrwipaiU in languages ['en', 'ko', 'ja', 'es', 'pt', 'fr', 'de', 'it']
-Using title and description for summary...
-  [6/50] Summarizing video: w6Nub94DYGI
-Extracting transcript for video: w6Nub94DYGI
-Transcript not available for w6Nub94DYGI: Error getting transcript for video w6Nub94DYGI: 
-Could not retrieve a transcript for the video https://www.youtube.com/watch?v=w6Nub94DYGI! This is most likely caused by:
-
-YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
-- You have done too many requests and your IP has been blocked by YouTube
-- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
-
-Ways to work around this are explained in the "Working around IP bans" section of the README (https://github.com/jdepoix/youtube-transcript-api?tab=readme-ov-file#working-around-ip-bans-requestblocked-or-ipblocked-exception).
-
-
-If you are sure that the described cause is not responsible for this error and that a transcript should be retrievable, please create an issue at https://github.com/jdepoix/youtube-transcript-api/issues. Please add which version of youtube_transcript_api you are using and provide the information needed to replicate the error. Also make sure that there are no open issues which already describe your problem!
-Using title and description for summary...
-  [7/50] Summarizing video: oRZRBz0kEx4
-Extracting transcript for video: oRZRBz0kEx4
-Transcript not available for oRZRBz0kEx4: Transcripts are disabled for video oRZRBz0kEx4
-Using title and description for summary...
-  [8/50] Summarizing video: irgOVr731Rs
-Extracting transcript for video: irgOVr731Rs
-Transcript not available for irgOVr731Rs: No transcript found for video irgOVr731Rs in languages ['en', 'ko', 'ja', 'es', 'pt', 'fr', 'de', 'it']
-Using title and description for summary...
-  [9/50] Summarizing video: n173VbTlcQE
-Extracting transcript for video: n173VbTlcQE
-Transcript not available for n173VbTlcQE: No transcript found for video n173VbTlcQE in languages ['en', 'ko', 'ja', 'es', 'pt', 'fr', 'de', 'it']
-Using title and description for summary...
-  [10/50] Summarizing video: WgiPxH19ajE
-Extracting transcript for video: WgiPxH19ajE
-Transcript not available for WgiPxH19ajE: Error getting transcript for video WgiPxH19ajE: 
-Could not retrieve a transcript for the video https://www.youtube.com/watch?v=WgiPxH19ajE! This is most likely caused by:
-
-YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
-- You have done too many requests and your IP has been blocked by YouTube
-- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
-
-Ways to work around this are explained in the "Working around IP bans" section of the README (https://github.com/jdepoix/youtube-transcript-api?tab=readme-ov-file#working-around-ip-bans-requestblocked-or-ipblocked-exception).
-
-
-If you are sure that the described cause is not responsible for this error and that a transcript should be retrievable, please create an issue at https://github.com/jdepoix/youtube-transcript-api/issues. Please add which version of youtube_transcript_api you are using and provide tTranscript not available for w6Nub94DYGI: Error getting transcript for video w6Nub94DYGI: 
-Could not retrieve a transcript for the video https://www.youtube.com/watch?v=w6Nub94DYGI! This is most likely caused by:
-
-YouTube is blocking requests from your IP. This usually is due to oneExtracting transcript for video: QF2S_nPAH2U
-Transcript not available for QF2S_nPAH2U: No transcript found for video QF2S_nPAH2U in languages ['en', 'ko', 'ja', 'es', 'pt', 'fr', 'de', 'it']
-Using title and description for summary...
-  [12/50] Summarizing video: 9I8Az1hPhdM
-Extracting transcript for video: 9I8Az1hPhdM
-Transcript not available for 9I8Az1hPhdM: Error getting transcript for video 9I8Az1hPhdM: 
-Could not retrieve a transcript for the video https://www.youtube.com/watch?v=9I8Az1hPhdM! This is most likely caused by:
-
-YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
-- You have done too many requests and your IP has been blocked by YouTube
-- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
-
-Ways to work around this are explained in the "Working around IP bans" section of the README (https://github.com/jdepoix/youtube-transcript-api?tab=readme-ov-file#working-around-ip-bans-requestblocked-or-ipblocked-exception).
-
-
-If you are sure that the described cause is not responsible for this error and that a transcript should be retrievable, please create an issue at https://github.com/jdepoix/youtube-transcript-api/issues. Please add which version of youtube_transcript_api you are using and provide the information needed to replicate the error. Also make sure that there are no open issues which already describe your problem!
-Using title and description for summary...
-  [13/50] Summarizing video: P-tgq-LYIOE
-Extracting transcript for video: P-tgq-LYIOE
-Transcript not available for P-tgq-LYIOE: Error getting transcript for video P-tgq-LYIOE: 
-Could not retrieve a transcript for the video https://www.youtube.com/watch?v=P-tgq-LYIOE! This is most likely caused by:
-
-YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
-- You have done too many requests and your IP has been blocked by YouTube
-- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
-
-Ways to work around this are explained in the "Working around IP bans" section of the README (https://github.com/jdepoix/youtube-transcript-api?tab=readme-ov-file#working-around-ip-bans-requestblocked-or-ipblocked-exception).
-
-
-If you are sure that the described cause is not responsible for this error and that a transcript should be retrievable, please create an issue at https://github.com/jdepoix/youtube-transcript-api/issues. Please add which version of youtube_transcript_api you are using and provide the information needed to replicate the error. Also make sure that there are no open issues which already describe your problem!
-Using title and description for summary...
-  [14/50] Summarizing video: sxIQs8zby8g
-Extracting transcript for video: sxIQs8zby8g
-Transcript not available for sxIQs8zby8g: No transcript found for video sxIQs8zby8g in languages ['en', 'ko', 'ja', 'es', 'pt', 'fr', 'de', 'it']
-Using title and description for summary...
-  [15/50] Summarizing video: t_EXhMsLPTE
-Extracting transcript for video: t_EXhMsLPTE
-Transcript not available for t_EXhMsLPTE: No transcript found for video t_EXhMsLPTE in languages ['en', 'ko', 'ja', 'es', 'pt', 'fr', 'de', 'it']
-Using title and description for summary...
-  [16/50] Summarizing video: ENUWyXRRZlc
-Extracting transcript for video: ENUWyXRRZlc
-Transcript not available for ENUWyXRRZlc: Error getting transcript for video ENUWyXRRZlc: 
-Could not retrieve a transcript for the video https://www.youtube.com/watch?v=ENUWyXRRZlc! This is most likely caused by:
-
-YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
-- You have done too many requests and your IP has been blocked by YouTube
-- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
-
-Ways to work around this are explained in the "Working around IP bans" section of the README (https://github.com/jdepoix/youtube-transcript-api?tab=readme-ov-file#working-around-ip-bans-requestblocked-or-ipblocked-exception).
-
-
-If you are sure that the described cause is not responsible for this error and that a transcript should be retrievable, please create an issue at https://github.com/jdepoix/youtube-transcript-api/issues. Please add which version of youtube_transcript_api you are using and provide the information needed to replicate the error. Also make sure that there are no open issues which already describe your problem!
-Using title and description for summary...
-  [17/50] Summarizing video: kx-kAaN3uJY
-Extracting transcript for video: kx-kAaN3uJY
-Transcript not available for kx-kAaN3uJY: Error getting transcript for video kx-kAaN3uJY: 
-Could not retrieve a transcript for the video https://www.youtube.com/watch?v=kx-kAaN3uJY! This is most likely caused by:
-
-YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
-- You have done too many requests and your IP has been blocked by YouTube
-- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
-
-Ways to work around this are explained in the "Working around IP bans" section of the README (https://github.com/jdepoix/youtube-transcript-api?tab=readme-ov-file#working-around-ip-bans-requestblocked-or-ipblocked-exception).
-
-
-If you are sure that the described cause is not responsible for this error and that a transcript should be retrievable, please create an issue at https://github.com/jdepoix/youtube-transcript-api/issues. Please add which version of youtube_transcript_api you are using and provide the information needed to replicate the error. Also make sure that there are no open issues which already describe your problem!
-Using title and description for summary...
-  [18/50] Summarizing video: 1SXabfwrIQc
-Extracting transcript for video: 1SXabfwrIQc
-Transcript not available for 1SXabfwrIQc: No transcript found for video 1SXabfwrIQc in languages ['en', 'ko', 'ja', 'es', 'pt', 'fr', 'de', 'it']
-Using title and description for summary...
-  [19/50] Summarizing video: EJ_Y4kZLZKM
-Extracting transcript for video: EJ_Y4kZLZKM
-Transcript not available for EJ_Y4kZLZKM: Error getting transcript for video EJ_Y4kZLZKM: 
-Could not retrieve a transcript for the video https://www.youtube.com/watch?v=EJ_Y4kZLZKM! This is most likely caused by:
-
-YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
-- You have done too many requests and your IP has been blocked by YouTube
-- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
-
-Ways to work around this are explained in the "Working around IP bans" section of the README (https://github.com/jdepoix/youtube-transcript-api?tab=readme-ov-file#working-around-ip-bans-requestblocked-or-ipblocked-exception).
-
-
-If you are sure that the described cause is not responsible for this error and that a transcript should be retrievable, please create an issue at https://github.com/jdepoix/youtube-transcript-api/issues. Please add which version of youtube_transcript_api you are using and provide the information needed to replicate the error. Also make sure that there are no open issues which already describe your problem!
-Using title and description for summary...
-  [20/50] Summarizing video: sQzVIqdNFMI
-Extracting transcript for video: sQzVIqdNFMI
-Transcript not available for sQzVIqdNFMI: No transcript found for video sQzVIqdNFMI in languages ['en', 'ko', 'ja', 'es', 'pt', 'fr', 'de', 'it']
-Using title and description for summary...
-  >>> Processed 20 videos, waiting 10 seconds to avoid rate limits...
-  [21/50] Summarizing video: KnCS6pXesw4
-Extracting transcript for video: KnCS6pXesw4
-Transcript not available for KnCS6pXesw4: No transcript found for video KnCS6pXesw4 in languages ['en', 'ko', 'ja', 'es', 'pt', 'fr', 'de', 'it']
-Using title and description for summary...
-  [22/50] Summarizing video: CMsgD1XCEFY
-Extracting transcript for video: CMsgD1XCEFY
-Transcript not available for CMsgD1XCEFY: Error getting transcript for video CMsgD1XCEFY: 
-Could not retrieve a transcript for the video https://www.youtube.com/watch?v=CMsgD1XCEFY! This is most likely caused by:
-
-YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
-- You have done too many requests and your IP has been blocked by YouTube
-- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
-
-Ways to work around this are explained in the "Working around IP bans" section of the README (https://github.com/jdepoix/youtube-transcript-api?tab=readme-ov-file#working-around-ip-bans-requestblocked-or-ipblocked-exception).
-
-
-If you are sure that the described cause is not responsible for this error and that a transcript should be retrievable, please create an issue at https://github.com/jdepoix/youtube-transcript-api/issues. Please add which version of youtube_transcript_api you are using and provide the information needed to replicate the error. Also make sure that there are no open issues which already describe your problem!
-Using title and description for summary...
-  [23/50] Summarizing video: McarPQqkNe8
-Extracting transcript for video: McarPQqkNe8
-Transcript not available for McarPQqkNe8: No transcript found for video McarPQqkNe8 in languages ['en', 'ko', 'ja', 'es', 'pt', 'fr', 'de', 'it']
-Using title and description for summary...
-  [24/50] Summarizing video: jjoC8EsrLfU
-Extracting transcript for video: jjoC8EsrLfU
-Transcript not available for jjoC8EsrLfU: No transcript found for video jjoC8EsrLfU in languages ['en', 'ko', 'ja', 'es', 'pt', 'fr', 'de', 'it']
-Using title and description for summary...
-  [25/50] Summarizing video: PoazLyFhaMA
-Extracting transcript for video: PoazLyFhaMA
-Transcript not available for PoazLyFhaMA: No transcript found for video PoazLyFhaMA in languages ['en', 'ko', 'ja', 'es', 'pt', 'fr', 'de', 'it']
-Using title and description for summary...
-  [26/50] Summarizing video: 7__SH1dhlpA
-Extracting transcript for video: 7__SH1dhlpA
-Transcript not available for 7__SH1dhlpA: No transcript found for video 7__SH1dhlpA in languages ['en', 'ko', 'ja', 'es', 'pt', 'fr', 'de', 'it']
-Using title and description for summary...
-  [27/50] Summarizing video: 1_axdvsAAkU
-Extracting transcript for video: 1_axdvsAAkU
-Transcript not available for 1_axdvsAAkU: Error getting transcript for video 1_axdvsAAkU: 
-Could not retrieve a transcript for the video https://www.youtube.com/watch?v=1_axdvsAAkU! This is most likely caused by:
-
-YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
-- You have done too many requests and your IP has been blocked by YouTube
-- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
-
-Ways to work around this are explained in the "Working around IP bans" section of the README (https://github.com/jdepoix/youtube-transcript-api?tab=readme-ov-file#working-around-ip-bans-requestblocked-or-ipblocked-exception).
-
-
-If you are sure that the described cause is not responsible for this error and that a transcript should be retrievable, please create an issue at https://github.com/jdepoix/youtube-transcript-api/issues. Please add which version of youtube_transcript_api you are using and provide the information needed to replicate the error. Also make sure that there are no open issues which already describe your problem!
-Using title and description for summary...
-  [28/50] Summarizing video: 015OvdB9ZO8
-Extracting transcript for video: 015OvdB9ZO8
-Transcript not available for 015OvdB9ZO8: Error getting transcript for video 015OvdB9ZO8: 
-Could not retrieve a transcript for the video https://www.youtube.com/watch?v=015OvdB9ZO8! This is most likely caused by:
-
-YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
-- You have done too many requests and your IP has been blocked by YouTube
-- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
-
-Ways to work around this are explained in the "Working around IP bans" section of the README (https://github.com/jdepoix/youtube-transcript-api?tab=readme-ov-file#working-around-ip-bans-requestblocked-or-ipblocked-exception).
-
-
-If you are sure that the described cause is not responsible for this error and that a transcript should be retrievable, please create an issue at https://github.com/jdepoix/youtube-transcript-api/issues. Please add which version of youtube_transcript_api you are using and provide the information needed to replicate the error. Also make sure that there are no open issues which already describe your problem!
-Using title and description for summary...
-  [29/50] Summarizing video: bfSqewKwLa0
-Extracting transcript for video: bfSqewKwLa0
-Transcript not available for bfSqewKwLa0: Transcripts are disabled for video bfSqewKwLa0
-Using title and description for summary...
-  [30/50] Summarizing video: PGP_6CrWCag
-Extracting transcript for video: PGP_6CrWCag
-Transcript not available for PGP_6CrWCag: No transcript found for video PGP_6CrWCag in languages ['en', 'ko', 'ja', 'es', 'pt', 'fr', 'de', 'it']
-Using title and description for summary...
-  >>> Processed 30 videos, waiting 10 seconds to avoid rate limits...
-  [31/50] Summarizing video: c39WXgEgdyU
-Extracting transcript for video: c39WXgEgdyU
-Transcript not available for c39WXgEgdyU: No transcript found for video c39WXgEgdyU in languages ['en', 'ko', 'ja', 'es', 'pt', 'fr', 'de', 'it']
-Using title and description for summary...
-  [32/50] Summarizing video: 1CQXVV0IhjU
-Extracting transcript for video: 1CQXVV0IhjU
-Transcript not available for 1CQXVV0IhjU: Transcripts are disabled for video 1CQXVV0IhjU
-Using title and description for summary...
-  [33/50] Summarizing video: dAfMdqWo-SM
-Extracting transcript for video: dAfMdqWo-SM
-Transcript not available for dAfMdqWo-SM: Error getting transcript for video dAfMdqWo-SM: 
-Could not retrieve a transcript for the video https://www.youtube.com/watch?v=dAfMdqWo-SM! This is most likely caused by:
-
-YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
-- You have done too many requests and your IP has been blocked by YouTube
-- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
-
-Ways to work around this are explained in the "Working around IP bans" section of the README (https://github.com/jdepoix/youtube-transcript-api?tab=readme-ov-file#working-around-ip-bans-requestblocked-or-ipblocked-excTranscript not available for 1_axdvsAAkU: Error getting transcript for video 1_axdvsAAkU: 
-Could not retrieve a transcript for the video https://www.youtube.com/watch?v=1_axdvsAAkU! This is most likely caused by:
-
-YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
-- You have done too many requests and your IP has been blocked by YouTube
-- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
-
-Ways to work around this are explained in the "Working around IP bans" section of the README (https://github.com/jdepoix/youtube-transcript-api?tab=readme-ov-file#working-around-ip-bans-requestblocked-or-ipblocked-eExtracting transcript for video: IHyfthiO9_0
-Transcript not available for IHyfthiO9_0: Error getting transcript for video IHyfthiO9_0: 
-Could not retrieve a transcript for the video https://www.youtube.com/watch?v=IHyfthiO9_0! This is most likely caused by:
-
-YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
-- You have done too many requests and your IP has been blocked by YouTube
-- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
-
-Ways to work around this are explained in the "Working around IP bans" section of the README (https://github.com/jdepoix/youtube-transcript-api?tab=readme-ov-file#working-around-ip-bans-requestblocked-or-ipblocked-exception).
-
-
-If you are sure that the described cause is not responsible for this error and that a transcript should be retrievable, please create an issue at https://github.com/jdepoix/youtube-transcript-api/issues. Please add which version of youtube_transcript_api you are using and provide the information needed to replicate the error. Also make sure that there are no open issues which already describe your problem!
-Using title and description for summary...
-  [36/50] Summarizing video: gUHVDbydcUE
-Extracting transcript for video: gUHVDbydcUE
-Transcript not available for gUHVDbydcUE: Error getting transcript for video gUHVDbydcUE: 
-Could not retrieve a transcript for the video https://www.youtube.com/watch?v=gUHVDbydcUE! This is most likely caused by:
-
-YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
-- You have done too many requests and your IP has been blocked by YouTube
-- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
-
-Ways to work around this are explained in the "Working around IP bans" section of the README (https://github.com/jdepoix/youtube-transcript-api?tab=readme-ov-file#working-around-ip-bans-requestblocked-or-ipblocked-exception).
-
-
-If you are sure that the described cause is not responsible for this error and that a transcript should be retrievable, please create an issue at https://github.com/jdepoix/youtube-transcript-api/issues. Please add which version of youtube_transcript_api you are using and provide the information needed to replicate the error. Also make sure that there are no open issues which already describe your problem!
-Using title and description for summary...
-  [37/50] Summarizing video: q7zdP1K4aJY
-Extracting transcript for video: q7zdP1K4aJY
-Transcript not available for q7zdP1K4aJY: Error getting transcript for video q7zdP1K4aJY: 
-Could not retrieve a transcript for the video https://www.youtube.com/watch?v=q7zdP1K4aJY! This is most likely caused by:
-
-YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
-- You have done too many requests and your IP has been blocked by YouTube
-- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
-
-Ways to work around this are explained in the "Working around IP bans" section of the README (https://github.com/jdepoix/youtube-transcript-api?tab=readme-ov-file#working-around-ip-bans-requestblocked-or-ipblocked-exception).
-
-
-If you are sure that the described cause is not responsible for this error and that a transcript should be retrievable, please create an issue at https://github.com/jdepoix/youtube-transcript-api/issues. Please add which version of youtube_transcript_api you are using and provide the information needed to replicate the error. Also make sure that there are no open issues which already describe your problem!
-Using title and description for summary...
-  [38/50] Summarizing video: i0olQZz5MnI
-Extracting transcript for video: i0olQZz5MnI
-Transcript not available for i0olQZz5MnI: No transcript found for video i0olQZz5MnI in languages ['en', 'ko', 'ja', 'es', 'pt', 'fr', 'de', 'it']
-Using title and description for summary...
-  [39/50] Summarizing video: Chcwz5LYiHs
-Extracting transcript for video: Chcwz5LYiHs
-Transcript not available for Chcwz5LYiHs: Error getting transcript for video Chcwz5LYiHs: 
-Could not retrieve a transcript for the video https://www.youtube.com/watch?v=Chcwz5LYiHs! This is most likely caused by:
-
-YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
-- You have done too many requests and your IP has been blocked by YouTube
-- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
-
-Ways to work around this are explained in the "Working around IP bans" section of the README (https://github.com/jdepoix/youtube-transcript-api?tab=readme-ov-file#working-around-ip-bans-requestblocked-or-ipblocked-exception).
-
-
-If you are sure that the described cause is not responsible for this error and that a transcript should be retrievable, please create an issue at https://github.com/jdepoix/youtube-transcript-api/issues. Please add which version of youtube_transcript_api you are using and provide the information needed to replicate the error. Also make sure that there are no open issues which already describe your problem!
-Using title and description for summary...
-  [40/50] Summarizing video: 2qWXQK1cWyA
-Extracting transcript for video: 2qWXQK1cWyA
-Transcript not available for 2qWXQK1cWyA: Error getting transcript for video 2qWXQK1cWyA: 
-Could not retrieve a transcript for the video https://www.youtube.com/watch?v=2qWXQK1cWyA! This is most likely caused by:
-
-YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
-- You have done too many requests and your IP has been blocked by YouTube
-- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
-
-Ways to work around this are explained in the "Working around IP bans" section of the README (https://github.com/jdepoix/youtube-transcript-api?tab=readme-ov-file#working-around-ip-bans-requestblocked-or-ipblocked-exception).
-
-
-If you are sure that the described cause is not responsible for this error and that a transcript should be retrievable, please create an issue at https://github.com/jdepoix/youtube-transcript-api/issues. Please add which version of youtube_transcript_api you are using and provide the information needed to replicate the error. Also make sure that there are no open issues which already describe your problem!
-Using title and description for summary...
-  >>> Processed 40 videos, waiting 10 seconds to avoid rate limits...
-  [41/50] Summarizing video: agrw2tP3eMY
-Extracting transcript for video: agrw2tP3eMY
-Transcript not available for agrw2tP3eMY: No transcript found for video agrw2tP3eMY in languages ['en', 'ko', 'ja', 'es', 'pt', 'fr', 'de', 'it']
-Using title and description for summary...
-  [42/50] Summarizing video: t_fdR8TSoj4
-Extracting transcript for video: t_fdR8TSoj4
-Transcript not available for t_fdR8TSoj4: Transcripts are disabled for video t_fdR8TSoj4
-Using title and description for summary...
-  [43/50] Summarizing video: R7_NENd-H4o
-Extracting transcript for video: R7_NENd-H4o
-Transcript not available for R7_NENd-H4o: No transcript found for video R7_NENd-H4o in languages ['en', 'ko', 'ja', 'es', 'pt', 'fr', 'de', 'it']
-Using title and description for summary...
-  [44/50] Summarizing video: _bmcb5utybI
-Extracting transcript for video: _bmcb5utybI
-Transcript not available for _bmcb5utybI: Error getting transcript for video _bmcb5utybI: 
-Could not retrieve a transcript for the video https://www.youtube.com/watch?v=_bmcb5utybI! This is most likely caused by:
-
-YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
-- You have done too many requests and your IP has been blocked by YouTube
-- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
-
-Ways to work around this are explained in the "Working around IP bans" section of the README (https://github.com/jdepoix/youtube-transcript-api?tab=readme-ov-file#working-around-ip-bans-requestblocked-or-ipblocked-exception).
-
-
-If you are sure that the described cause is not responsible for this error and that a transcript should be retrievable, please create an issue at https://github.com/jdepoix/youtube-transcript-api/issues. Please add which version of youtube_transcript_api you are using and provide the information needed to replicate the error. Also make sure that there are no open issues which already describe your problem!
-Using title and description for summary...
-  [45/50] Summarizing video: 5-t9yqa6hLk
-Extracting transcript for video: 5-t9yqa6hLk
-Transcript not available for 5-t9yqa6hLk: No transcript found for video 5-t9yqa6hLk in languages ['en', 'ko', 'ja', 'es', 'pt', 'fr', 'de', 'it']
-Using title and description for summary...
-  [46/50] Summarizing video: gdriFKO8Ye8
-Extracting transcript for video: gdriFKO8Ye8
-Transcript not available for gdriFKO8Ye8: No transcript found for video gdriFKO8Ye8 in languages ['en', 'ko', 'ja', 'es', 'pt', 'fr', 'de', 'it']
-Using title and description for summary...
-  [47/50] Summarizing video: d0cZKMB8Cjg
-Extracting transcript for video: d0cZKMB8Cjg
-Transcript not available for d0cZKMB8Cjg: Transcripts are disabled for video d0cZKMB8Cjg
-Using title and description for summary...
-  [48/50] Summarizing video: SMTinDXEJ0c
-Extracting transcript for video: SMTinDXEJ0c
-Transcript not available for SMTinDXEJ0c: No transcript found for video SMTinDXEJ0c in languages ['en', 'ko', 'ja', 'es', 'pt', 'fr', 'de', 'it']
-Using title and description for summary...
-  [49/50] Summarizing video: iaXaSomzm7I
-Extracting transcript for video: iaXaSomzm7I
-Transcript not available for iaXaSomzm7I: No transcript found for video iaXaSomzm7I in languages ['en', 'ko', 'ja', 'es', 'pt', 'fr', 'de', 'it']
-Using title and description for summary...
-  [50/50] Summarizing video: ZCyvj7DDvsk
-Extracting transcript for video: ZCyvj7DDvsk
-Transcript not available for ZCyvj7DDvsk: No transcript found for video ZCyvj7DDvsk in languages ['en', 'ko', 'ja', 'es', 'pt', 'fr', 'de', 'it']
-Using title and description for summary...
-  >>> Processed 50 videos, waiting 10 seconds to avoid rate limits...
-Summarized 50 videos
-
-[Step 4/5] Summarizing comments (per video)...
-  Summarizing comments for video: UdqZ3xoaekk (34 comments)
-  Summarizing comments for video: z7bwUiDmgJk (14 comments)
-  Summarizing comments for video: 7yLZPHJyLsc (32 comments)
-  Summarizing comments for video: Gla005U5Ous (9 comments)
-  Summarizing comments for video: H-irrwipaiU (7 comments)
-  Summarizing comments for video: w6Nub94DYGI (47 comments)
-  Summarizing comments for video: oRZRBz0kEx4 (31 comments)
-  Summarizing comments for video: irgOVr731Rs (13 comments)
-  Summarizing comments for video: n173VbTlcQE (35 comments)
-  Summarizing comments for video: WgiPxH19ajE (69 comments)
-  >>> Processed 10 videos, waiting 10 seconds...
-  Summarizing comments for video: QF2S_nPAH2U (49 comments)
-  Summarizing comments for video: 9I8Az1hPhdM (28 comments)
-  Summarizing comments for video: P-tgq-LYIOE (86 comments)
-  Summarizing comments for video: sxIQs8zby8g (2 comments)
-  Summarizing comments for video: t_EXhMsLPTE (68 comments)
-  Summarizing comments for video: ENUWyXRRZlc (16 comments)
-  Summarizing comments for video: kx-kAaN3uJY (6 comments)
-  Summarizing comments for video: EJ_Y4kZLZKM (26 comments)
-  Summarizing comments for video: sQzVIqdNFMI (23 comments)
-  Summarizing comments for video: KnCS6pXesw4 (23 comments)
-  >>> Processed 20 videos, waiting 10 seconds...
-  Summarizing comments for video: CMsgD1XCEFY (47 comments)
-  Summarizing comments for video: McarPQqkNe8 (29 comments)
-  Summarizing comments for video: PoazLyFhaMA (24 comments)
-  Summarizing comments for video: 7__SH1dhlpA (29 comments)
-  Summarizing comments for video: 1_axdvsAAkU (1 comments)
-  Summarizing comments for video: 015OvdB9ZO8 (60 comments)
-  Summarizing comments for video: bfSqewKwLa0 (19 comments)
-  Summarizing comments for video: PGP_6CrWCag (36 comments)
-  Summarizing comments for video: c39WXgEgdyU (25 comments)
-  Summarizing comments for video: 1CQXVV0IhjU (25 comments)
-  >>> Processed 30 videos, waiting 10 seconds...
-  Summarizing comments for video: dAfMdqWo-SM (1 comments)
-  Summarizing comments for video: AtuDEOvUiA4 (14 comments)
-  Summarizing comments for video: IHyfthiO9_0 (90 comments)
-  Summarizing comments for video: gUHVDbydcUE (41 comments)
-  Summarizing comments for video: q7zdP1K4aJY (28 comments)
-  Summarizing comments for video: i0olQZz5MnI (4 comments)
-  Summarizing comments for video: Chcwz5LYiHs (76 comments)
-  Summarizing comments for video: 2qWXQK1cWyA (42 comments)
-  Summarizing comments for video: agrw2tP3eMY (1 comments)
-  Summarizing comments for video: t_fdR8TSoj4 (2 comments)
-  >>> Processed 40 videos, waiting 10 seconds...
-  Summarizing comments for video: _bmcb5utybI (3 comments)
-  Summarizing comments for video: 5-t9yqa6hLk (44 comments)
-  Summarizing comments for video: gdriFKO8Ye8 (58 comments)
-  Summarizing comments for video: d0cZKMB8Cjg (64 comments)
-  Summarizing comments for video: SMTinDXEJ0c (31 comments)
-  Summarizing comments for video: iaXaSomzm7I (36 comments)
-  Summarizing comments for video: ZCyvj7DDvsk (22 comments)
-Summarized comments for 47 videos
-
-[Step 5/5] Saving data to database...
-Connected to PostgreSQL database: samsung_dx_sentiment
-Tables created successfully
-Inserted/Updated 50 videos
-Inserted/Updated 1470 comments
-Saved to PostgreSQL:
-  - 50 videos
-  - 1470 comments
-Disconnected from database
-
-================================================================================
-Pipeline completed successfully!
-================================================================================
-Total videos processed: 50
-Total comments processed: 1470
-Videos with content summary: 50
-Videos with comment summary: 47
-Connected to PostgreSQL database: samsung_dx_sentiment
-
-Database Statistics:
-  Total videos in DB: 111
-  Total comments in DB: 2939
-Disconnected from database
-  Updated keyword for 50 videos
-
-[OK] '4k tv' completed: 50 videos, 1470 comments
-
-Waiting 30 seconds before next keyword...
-
-================================================================================
-Processing keyword 3/3: 'led tv'
-================================================================================
-================================================================================
-YouTube Data Collection & Analysis Pipeline
-================================================================================
-Keyword: led tv
-Max videos: 50
-Max comments per video: 20
-Region: US
-Summarize videos: True
-Summarize comments: True
-================================================================================
-
-[Step 1/5] Collecting video data from YouTube API...
-채널 정보 수집 완료: 46개 채널
-포괄적 검색 완료: led tv in US - 50개 비디오
-Collected 50 videos
-
-[Step 2/5] Collecting comments from YouTube API...
-댓글 수집: k5oHiiEJPP8 - 20개 스레드
-댓글 수집: jkM-gO4I1M4 - 20개 스레드
-댓글 수집: ot6Pf5zeO6E - 7개 스레드
-댓글 수집: sQzVIqdNFMI - 8개 스레드
-댓글 수집: QF2S_nPAH2U - 20개 스레드
-댓글 수집: BchGt2bV-0s - 9개 스레드
-댓글 수집: McarPQqkNe8 - 20개 스레드
-댓글 수집: gdriFKO8Ye8 - 20개 스레드
-댓글 수집: 3-2LYtTNe-E - 7개 스레드
-댓글 수집: 9I8Az1hPhdM - 20개 스레드
-댓글 수집: iMQJIPVokvk - 12개 스레드
-댓글 수집: sxIQs8zby8g - 2개 스레드
-댓글 수집: MZVRhAQ7JmA - 6개 스레드
-댓글 수집: Kua635AXoyE - 20개 스레드
-댓글 수집: laBOkNkAGwU - 20개 스레드
-댓글 수집: dqRpyxtFSbA - 20개 스레드
-댓글 수집: _QCIydZIPPY - 8개 스레드
-댓글 수집: 7ND9I9wubeA - 4개 스레드
-댓글 수집: OTwNULYzU4k - 20개 스레드
-댓글 수집: gh2_6BbMHu0 - 8개 스레드
-댓글 수집: NghITf7VBvs - 11개 스레드
-댓글 수집: CMsgD1XCEFY - 20개 스레드
-댓글 수집: O2r4VQKXPIY - 20개 스레드
-댓글 수집: MBds37EvXDM - 20개 스레드
-댓글 수집: nTm0lygjpkQ - 2개 스레드
-댓글 수집: zj8X4lp7mTI - 15개 스레드
-댓글 수집: NRTknzjzMnI - 15개 스레드
-댓글 수집: K_Sbqj50ZnY - 20개 스레드
-댓글 수집: q7UjDy4ney0 - 1개 스레드
-댓글 수집: PHe-BMhB1v8 - 4개 스레드
-댓글 수집: w6Nub94DYGI - 20개 스레드
-댓글 수집: eBhCeJyfRKM - 20개 스레드
-댓글 수집: Qe4FdQwRhq8 - 11개 스레드
-댓글 수집: zEw2MDZkBsI - 3개 스레드
-댓글 수집: 9qyKLi4Uk4k - 20개 스레드
-댓글 수집: PGP_6CrWCag - 20개 스레드
-댓글 수집: pvQfB8Hp5_E - 0개 스레드
-댓글 수집: d9WRdFGGvx0 - 3개 스레드
-댓글 수집: agrw2tP3eMY - 1개 스레드
-댓글 수집: 51_3lLV3Ukc - 20개 스레드
-댓글 수집: H7GR_uq7nbA - 1개 스레드
-댓글 수집: 2q1TolUBW9I - 5개 스레드
-댓글 수집: -1dEYelivlE - 0개 스레드
-댓글 수집: t_EXhMsLPTE - 20개 스레드
-댓글 수집: fLzHZZw52hQ - 20개 스레드
-댓글 수집: prwH0TSluQw - 0개 스레드
-댓글 수집: pj7jLkohbIY - 20개 스레드
-댓글 수집: 0Of04g1eGb8 - 7개 스레드
-댓글 수집: H4FQ55aZnjU - 4개 스레드
-댓글 수집: GtuX6xZISKA - 20개 스레드
-전체 댓글 수집 완료: 1011개
-Collected 1011 comments
-
-[Step 3/5] Summarizing videos (transcript-based)...
-  [1/50] Summarizing video: k5oHiiEJPP8
-Extracting transcript for video: k5oHiiEJPP8
-Transcript not available for k5oHiiEJPP8: No transcript found for video k5oHiiEJPP8 in languages ['en', 'ko', 'ja', 'es', 'pt', 'fr', 'de', 'it']
-Using title and description for summary...
-  [2/50] Summarizing video: jkM-gO4I1M4
-Extracting transcript for video: jkM-gO4I1M4
-Transcript not available for jkM-gO4I1M4: Error getting transcript for video jkM-gO4I1M4: 
-Could not retrieve a transcript for the video https://www.youtube.com/watch?v=jkM-gO4I1M4! This is most likely caused by:
-
-YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
-- You have done too many requests and your IP has been blocked by YouTube
-- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
-
-Ways to work around this are explained in the "Working around IP bans" section of the README (https://github.com/jdepoix/youtube-transcript-api?tab=readme-ov-file#working-around-ip-bans-requestblocked-or-ipblocked-exception).
-
-
-If you are sure that the described cause is not responsible for this error and that a transcript should be retrievable, please create an issue at https://github.com/jdepoix/youtube-transcript-api/issues. Please add which version of youtube_transcript_api you are using and provide the information needed to replicate the error. Also make sure that there are no open issues which already describe your problem!
-Using title and description for summary...
-  [3/50] Summarizing video: ot6Pf5zeO6E
-Extracting transcript for video: ot6Pf5zeO6E
-Transcript not available for ot6Pf5zeO6E: Error getting transcript for video ot6Pf5zeO6E: 
-Could not retrieve a transcript for the video https://www.youtube.com/watch?v=ot6Pf5zeO6E! This is most likely caused by:
-
-YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
-- You have done too many requests and your IP has been blocked by YouTube
-- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
-
-Ways to work around this are explained in the "Working around IP bans" section of the README (https://github.com/jdepoix/youtube-transcript-api?tab=readme-ov-file#working-around-ip-bans-requestblocked-or-ipblocked-exception).
-
-
-If you are sure that the described cause is not responsible for this error and that a transcript should be retrievable, please create an issue at https://github.com/jdepoix/youtube-transcript-api/issues. Please add which version of youtube_transcript_api you are using and provide the information needed to replicate the error. Also make sure that there are no open issues which already describe your problem!
-Using title and description for summary...
-  [4/50] Summarizing video: sQzVIqdNFMI
-Extracting transcript for video: sQzVIqdNFMI
-Transcript not available for sQzVIqdNFMI: No transcript found for video sQzVIqdNFMI in languages ['en', 'ko', 'ja', 'es', 'pt', 'fr', 'de', 'it']
-Using title and description for summary...
-  [5/50] Summarizing video: QF2S_nPAH2U
-Extracting transcript for video: QF2S_nPAH2U
-Transcript not available for QF2S_nPAH2U: No transcript found for video QF2S_nPAH2U in languages ['en', 'ko', 'ja', 'es', 'pt', 'fr', 'de', 'it']
-Using title and description for summary...
-  [6/50] Summarizing video: BchGt2bV-0s
-Extracting transcript for video: BchGt2bV-0s
-Transcript not available for BchGt2bV-0s: No transcript found for video BchGt2bV-0s in languages ['en', 'ko', 'ja', 'es', 'pt', 'fr', 'de', 'it']
-Using title and description for summary...
-  [7/50] Summarizing video: McarPQqkNe8
-Extracting transcript for video: McarPQqkNe8
-Transcript not available for McarPQqkNe8: No transcript found for video McarPQqkNe8 in languages ['en', 'ko', 'ja', 'es', 'pt', 'fr', 'de', 'it']
-Using title and description for summary...
-  [8/50] Summarizing video: gdriFKO8Ye8
-Extracting transcript for video: gdriFKO8Ye8
-Transcript not available for gdriFKO8Ye8: No transcript found for video gdriFKO8Ye8 in languages ['en', 'ko', 'ja', 'es', 'pt', 'fr', 'de', 'it']
-Using title and description for summary...
-  [9/50] Summarizing video: 3-2LYtTNe-E
-Extracting transcript for video: 3-2LYtTNe-E
-Transcript not available for 3-2LYtTNe-E: No transcript found for video 3-2LYtTNe-E in languages ['en', 'ko', 'ja', 'es', 'pt', 'fr', 'de', 'it']
-Using title and description for summary...
-  [10/50] Summarizing video: 9I8Az1hPhdM
-Extracting transcript for video: 9I8Az1hPhdM
-Transcript not available for 9I8Az1hPhdM: Error getting transcript for video 9I8Az1hPhdM: 
-Could not retrieve a transcript for the video https://www.youtube.com/watch?v=9I8Az1hPhdM! This is most likely caused by:
-
-YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
-- You have done too many requests and your IP has been blocked by YouTube
-- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
-
-Ways to work around this are explained in the "Working around IP bans" section of the README (https://github.com/jdepoix/youtube-transcript-api?tab=readme-ov-file#working-around-ip-bans-requestblocked-or-ipblocked-exception).
-
-
-If you are sure that the described cause is not responsible for this error and that a transcript should be retrievable, please create an issue at https://github.com/jdepoix/youtube-transcript-api/issues. Please add which version of youtube_transcript_api you are using and provide the information needed to replicate the error. Also make sure that there are no open issues   [3/50] Summarizing video: ot6Pf5zeO6E
-Extracting transcript for video: ot6Pf5zeO6E
-Transcript not available for ot6Pf5zeO6E: Error getting transcript for video ot6Pf5zeO6E: 
-Could not retrieve a transcript for the video https://www.youtube.com/watch?v=ot6Pf5zeO6E! This is most likely caused by:
-
-YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
-- You have done too many requests and your IP has been blocked by YouTube
-- You are doing requests from an IP belonginTranscript not available for sxIQs8zby8g: No transcript found for video sxIQs8zby8g in languages ['en', 'ko', 'ja', 'es', 'pt', 'fr', 'de', 'it']
-Using title and description for summary...
-  [13/50] Summarizing video: MZVRhAQ7JmA
-Extracting transcript for video: MZVRhAQ7JmA
-Transcript not available for MZVRhAQ7JmA: Error getting transcript for video MZVRhAQ7JmA: 
-Could not retrieve a transcript for the video https://www.youtube.com/watch?v=MZVRhAQ7JmA! This is most likely caused by:
-
-YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
-- You have done too many requests and your IP has been blocked by YouTube
-- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
-
-Ways to work around this are explained in the "Working around IP bans" section of the README (https://github.com/jdepoix/youtube-transcript-api?tab=readme-ov-file#working-around-ip-bans-requestblocked-or-ipblocked-exception).
-
-
-If you are sure that the described cause is not responsible for this error and that a transcript should be retrievable, please create an issue at https://github.com/jdepoix/youtube-transcript-api/issues. Please add which version of youtube_transcript_api you are using and provide the information needed to replicate the error. Also make sure that there are no open issues which already describe your problem!
-Using title and description for summary...
-  [14/50] Summarizing video: Kua635AXoyE
-Extracting transcript for video: Kua635AXoyE
-Transcript not available for Kua635AXoyE: No transcript found for video Kua635AXoyE in languages ['en', 'ko', 'ja', 'es', 'pt', 'fr', 'de', 'it']
-Using title and description for summary...
-  [15/50] Summarizing video: laBOkNkAGwU
-Extracting transcript for video: laBOkNkAGwU
-Transcript not available for laBOkNkAGwU: Error getting transcript for video laBOkNkAGwU: 
-Could not retrieve a transcript for the video https://www.youtube.com/watch?v=laBOkNkAGwU! This is most likely caused by:
-
-YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
-- You have done too many requests and your IP has been blocked by YouTube
-- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
-
-Ways to work around this are explained in the "Working around IP bans" section of the README (https://github.com/jdepoix/youtube-transcript-api?tab=readme-ov-file#working-around-ip-bans-requestblocked-or-ipblocked-exception).
-
-
-If you are sure that the described cause is not responsible for this error and that a transcript should be retrievable, please create an issue at https://github.com/jdepoix/youtube-transcript-api/issues. Please add which version of youtube_transcript_api you are using and provide the information needed to replicate the error. Also make sure that there are no open issues which already describe your problem!
-Using title and description for summary...
-  [16/50] Summarizing video: dqRpyxtFSbA
-Extracting transcript for video: dqRpyxtFSbA
-Transcript not available for dqRpyxtFSbA: No transcript found for video dqRpyxtFSbA in languages ['en', 'ko', 'ja', 'es', 'pt', 'fr', 'de', 'it']
-Using title and description for summary...
-  [17/50] Summarizing video: _QCIydZIPPY
-Extracting transcript for video: _QCIydZIPPY
-Transcript not available for _QCIydZIPPY: No transcript found for video _QCIydZIPPY in languages ['en', 'ko', 'ja', 'es', 'pt', 'fr', 'de', 'it']
-Using title and description for summary...
-  [18/50] Summarizing video: 7ND9I9wubeA
-Extracting transcript for video: 7ND9I9wubeA
-Transcript not available for 7ND9I9wubeA: No transcript found for video 7ND9I9wubeA in languages ['en', 'ko', 'ja', 'es', 'pt', 'fr', 'de', 'it']
-Using title and description for summary...
-  [19/50] Summarizing video: OTwNULYzU4k
-Extracting transcript for video: OTwNULYzU4k
-Transcript not available for OTwNULYzU4k: No transcript found for video OTwNULYzU4k in languages ['en', 'ko', 'ja', 'es', 'pt', 'fr', 'de', 'it']
-Using title and description for summary...
-  [20/50] Summarizing video: gh2_6BbMHu0
-Extracting transcript for video: gh2_6BbMHu0
-Transcript not available for gh2_6BbMHu0: No transcript found for video gh2_6BbMHu0 in languages ['en', 'ko', 'ja', 'es', 'pt', 'fr', 'de', 'it']
-Using title and description for summary...
-  >>> Processed 20 videos, waiting 10 seconds to avoid rate limits...
-  [21/50] Summarizing video: NghITf7VBvs
-Extracting transcript for video: NghITf7VBvs
-Transcript not available for NghITf7VBvs: No transcript found for video NghITf7VBvs in languages ['en', 'ko', 'ja', 'es', 'pt', 'fr', 'de', 'it']
-Using title and description for summary...
-  [22/50] Summarizing video: CMsgD1XCEFY
-Extracting transcript for video: CMsgD1XCEFY
-Transcript not available for CMsgD1XCEFY: Error getting transcript for video CMsgD1XCEFY: 
-Could not retrieve a transcript for the video https://www.youtube.com/watch?v=CMsgD1XCEFY! This is most likely caused by:
-
-YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
-- You have done too many requests and your IP has been blocked by YouTube
-- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
-
-Ways to work around this are explained in the "Working around IP bans" section of the README (https://github.com/jdepoix/youtube-transcript-api?tab=readme-ov-file#working-around-ip-bans-requestblocked-or-ipblocked-exception).
-
-
-If you are sure that the described cause is not responsible for this error and that a transcript should be retrievable, please create an issue at https://github.com/jdepoix/youtube-transcript-api/issues. Please add which version of youtube_transcript_api you are using and provide the information needed to replicate the error. Also make sure that there are no open issues which already describe your problem!
-Using title and description for summary...
-  [23/50] Summarizing video: O2r4VQKXPIY
-Extracting transcript for video: O2r4VQKXPIY
-Transcript not available for O2r4VQKXPIY: Error getting transcript for video O2r4VQKXPIY: 
-Could not retrieve a transcript for the video https://www.youtube.com/watch?v=O2r4VQKXPIY! This is most likely caused by:
-
-YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
-- You have done too many requests and your IP has been blocked by YouTube
-- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
-
-Ways to work around this are explained in the "Working around IP bans" section of the README (https://github.com/jdepoix/youtube-transcript-api?tab=readme-ov-file#working-around-ip-bans-requestblocked-or-ipblocked-exception).
-
-
-If you are sure that the described cause is not responsible for this error and that a transcript should be retrievable, please create an issue at https://github.com/jdepoix/youtube-transcript-api/issues. Please add which version of youtube_transcript_api you are using and provide the information needed to replicate the error. Also make sure that there are no open issues which already describe your problem!
-Using title and description for summary...
-  [24/50] Summarizing video: MBds37EvXDM
-Extracting transcript for video: MBds37EvXDM
-Transcript not available for MBds37EvXDM: No transcript found for video MBds37EvXDM in languages ['en', 'ko', 'ja', 'es', 'pt', 'fr', 'de', 'it']
-Using title and description for summary...
-  [25/50] Summarizing video: nTm0lygjpkQ
-Extracting transcript for video: nTm0lygjpkQ
-Transcript not available for nTm0lygjpkQ: No transcript found for video nTm0lygjpkQ in languages ['en', 'ko', 'ja', 'es', 'pt', 'fr', 'de', 'it']
-Using title and description for summary...
-  [26/50] Summarizing video: zj8X4lp7mTI
-Extracting transcript for video: zj8X4lp7mTI
-Transcript not available for zj8X4lp7mTI: No transcript found for video zj8X4lp7mTI in languages ['en', 'ko', 'ja', 'es', 'pt', 'fr', 'de', 'it']
-Using title and description for summary...
-  [27/50] Summarizing video: NRTknzjzMnI
-Extracting transcript for video: NRTknzjzMnI
-Transcript not available for NRTknzjzMnI: No transcript found for video NRTknzjzMnI in languages ['en', 'ko', 'ja', 'es', 'pt', 'fr', 'de', 'it']
-Using title and description for summary...
-  [28/50] Summarizing video: K_Sbqj50ZnY
-Extracting transcript for video: K_Sbqj50ZnY
-Transcript not available for K_Sbqj50ZnY: No transcript found for video K_Sbqj50ZnY in languages ['en', 'ko', 'ja', 'es', 'pt', 'fr', 'de', 'it']
-Using title and description for summary...
-  [29/50] Summarizing video: q7UjDy4ney0
-Extracting transcript for video: q7UjDy4ney0
-Transcript not available for q7UjDy4ney0: Error getting transcript for video q7UjDy4ney0: 
-Could not retrieve a transcript for the video https://www.youtube.com/watch?v=q7UjDy4ney0! This is most likely caused by:
-
-YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
-- You have done too many requests and your IP has been blocked by YouTube
-- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
-
-Ways to work around this are explained in the "Working around IP bans" section of the README (https://github.com/jdepoix/youtube-transcript-api?tab=readme-ov-file#working-around-ip-bans-requestblocked-or-ipblocked-exception).
-
-
-If you are sure that the described cause is not responsible for this error and that a transcript should be retrievable, please create an issue at https://github.com/jdepoix/youtube-transcript-api/issues. Please add which version of youtube_transcript_api you are using and provide the information needed to replicate the error. Also make sure that there are no open issues which already describe your problem!
-Using title and description for summary...
-  [30/50] Summarizing video: PHe-BMhB1v8
-Extracting transcript for video: PHe-BMhB1v8
-Transcript not available for PHe-BMhB1v8: No transcript found for video PHe-BMhB1v8 in languages ['en', 'ko', 'ja', 'es', 'pt', 'fr', 'de', 'it']
-Using title and description for summary...
-  >>> Processed 30 videos, waiting 10 seconds to avoid rate limits...
-  [31/50] Summarizing video: w6Nub94DYGI
-Extracting transcript for video: w6Nub94DYGI
-Transcript not available for w6Nub94DYGI: Error getting transcript for video w6Nub94DYGI: 
-Could not retrieve a transcript for the video https://www.youtube.com/watch?v=w6Nub94DYGI! This is most likely caused by:
-
-YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
-- You have done too many requests and your IP has been blocked by YouTube
-- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
-
-Ways to work around this are explained in the "Working around IP bans" section of the README (https://github.com/jdepoix/youtube-transcript-api?tab=readme-ov-file#working-around-ip-bans-requestblocked-or-ipblocked-exception).
-
-
-If you are sure that the described cause is not responsible for this error and that a transcript should be retrievable, please create an issue at https://github.com/jdepoix/youtube-transcript-api/issues. Please add which version of youtube_transcript_api you are using and provide the information needed to replicate the error. Also make sure that there are no open issues which already describe your problem!
-Using title and description for summary...
-  [32/50] Summarizing video: eBhCeJyfRKM
-Extracting transcript for video: eBhCeJyfRKM
-Transcript not available for eBhCeJyfRKM: No transcript found for video eBhCeJyfRKM in languages ['en', 'ko', 'ja', 'es', 'pt', 'fr', 'de', 'it']
-Using title and description for summary...
-  [33/50] Summarizing video: Qe4FdQwRhq8
-Extracting transcript for video: Qe4FdQwRhq8
-Transcript not available for Qe4FdQwRhq8: No transcript found for video Qe4FdQwRhq8 in languages ['en', 'ko', 'ja', 'es', 'pt', 'fr', 'de', 'it']
-Using title and description for summary...
-  [34/50] Summarizing video: zEw2MDZkBsI
-Extracting transcript for video: zEw2MDZkBsI
-Transcript not available for zEw2MDZkBsI: No transcript found for video zEw2MDZkBsI in languages ['en', 'ko', 'ja', 'es', 'pt', 'fr', 'de', 'it']
-Using title and description for summary...
-  [35/50] Summarizing video: 9qyKLi4Uk4k
-Extracting transcript for video: 9qyKLi4Uk4k
-Transcript not available for 9qyKLi4Uk4k: No transcript found for video 9qyKLi4Uk4k in languages ['en', 'ko', 'ja', 'es', 'pt', 'fr', 'de', 'it']
-Using title and description for summary...
-  [36/50] Summarizing video: PGP_6CrWCag
-Extracting transcript for video: PGP_6CrWCag
-Transcript not available for PGP_6CrWCag: No transcript found for video PGP_6CrWCag in languages ['en', 'ko', 'ja', 'es', 'pt', 'fr', 'de', 'it']
-Using title and description for summary...
-  [37/50] Summarizing video: pvQfB8Hp5_E
-Extracting transcript for video: pvQfB8Hp5_E
-Transcript not available for pvQfB8Hp5_E: No transcript found for video pvQfB8Hp5_E in languages ['en', 'ko', 'ja', 'es', 'pt', 'fr', 'de', 'it']
-Using title and description for summary...
-  [38/50] Summarizing video: d9WRdFGGvx0
-Extracting transcript for video: d9WRdFGGvx0
-Transcript not available for d9WRdFGGvx0: Error getting transcript for video d9WRdFGGvx0: 
-Could not retrieve a transcript for the video https://www.youtube.com/watch?v=d9WRdFGGvx0! This is most likely caused by:
-
-YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
-- You have done too many requests and your IP has been blocked by YouTube
-- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
-
-Ways to work around this are explained in the "Working around IP bans" section of the README (https://github.com/jdepoix/youtube-transcript-api?tab=readme-ov-file#working-around-ip-bans-requestblocked-or-ipblocked-exception).
-
-
-If you are sure that the described cause is not responsible for this error and that a transcript should be retrievable, please create an issue at https://github.com/jdepoix/youtube-transcript-api/issues. Please add which version of youtube_transcript_api you are using and provide the information needed to replicate the error. Also make sure that there are no open issues which already describe your problem!
-Using title and description for summary...
-  [39/50] Summarizing video: agrw2tP3eMY
-Extracting transcript for video: agrw2tP3eMY
-Transcript not available for agrw2tP3eMY: No transcript found for video agrw2tP3eMY in languages ['en', 'ko', 'ja', 'es', 'pt', 'fr', 'de', 'it']
-Using title and description for summary...
-  [40/50] Summarizing video: 51_3lLV3Ukc
-Extracting transcript for video: 51_3lLV3Ukc
-Transcript not available for 51_3lLV3Ukc: No transcript found for video 51_3lLV3Ukc in languages ['en', 'ko', 'ja', 'es', 'pt', 'fr', 'de', 'it']
-Using title and description for summary...
-  >>> Processed 40 videos, waiting 10 seconds to avoid rate limits...
-  [41/50] Summarizing video: H7GR_uq7nbA
-Extracting transcript for video: H7GR_uq7nbA
-Transcript not available for H7GR_uq7nbA: No transcript found for video H7GR_uq7nbA in languages ['en', 'ko', 'ja', 'es', 'pt', 'fr', 'de', 'it']
-Using title and description for summary...
-  [42/50] Summarizing video: 2q1TolUBW9I
-Extracting transcript for video: 2q1TolUBW9I
-Transcript not available for 2q1TolUBW9I: No transcript found for video 2q1TolUBW9I in languages ['en', 'ko', 'ja', 'es', 'pt', 'fr', 'de', 'it']
-Using title and description for summary...
-  [43/50] Summarizing video: -1dEYelivlE
-Extracting transcript for video: -1dEYelivlE
-Transcript not available for -1dEYelivlE: No transcript found for video -1dEYelivlE in languages ['en', 'ko', 'ja', 'es', 'pt', 'fr', 'de', 'it']
-Using title and description for summary...
-  [44/50] Summarizing video: t_EXhMsLPTE
-Extracting transcript for video: t_EXhMsLPTE
-Transcript not available for t_EXhMsLPTE: No transcript found for video t_EXhMsLPTE in languages ['en', 'ko', 'ja', 'es', 'pt', 'fr', 'de', 'it']
-Using title and description for summary...
-  [45/50] Summarizing video: fLzHZZw52hQ
-Extracting transcript for video: fLzHZZw52hQ
-Transcript not available for fLzHZZw52hQ: No transcript found for video fLzHZZw52hQ in languages ['en', 'ko', 'ja', 'es', 'pt', 'fr', 'de', 'it']
-Using title and description for summary...
-  [46/50] Summarizing video: prwH0TSluQw
-Extracting transcript for video: prwH0TSluQw
-Transcript not available for prwH0TSluQw: No transcript found for video prwH0TSluQw in languages ['en', 'ko', 'ja', 'es', 'pt', 'fr', 'de', 'it']
-Using title and description for summary...
-  [47/50] Summarizing video: pj7jLkohbIY
-Extracting transcript for video: pj7jLkohbIY
-Transcript not available for pj7jLkohbIY: No transcript found for video pj7jLkohbIY in languages ['en', 'ko', 'ja', 'es', 'pt', 'fr', 'de', 'it']
-Using title and description for summary...
-  [48/50] Summarizing video: 0Of04g1eGb8
-Extracting transcript for video: 0Of04g1eGb8
-Transcript not available for 0Of04g1eGb8: Error getting transcript for video 0Of04g1eGb8: 
-Could not retrieve a transcript for the video https://www.youtube.com/watch?v=0Of04g1eGb8! This is most likely caused by:
-
-YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
-- You have done too many requests and your IP has been blocked by YouTube
-- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
-
-Ways to work around this are explained in the "Working around IP bans" section of the README (https://github.com/jdepoix/youtube-transcript-api?tab=readme-ov-file#working-around-ip-bans-requestblocked-or-ipblocked-exception).
-
-
-If you are sure that the described cause is not responsible for this error and that a transcript should be retrievable, please create an issue at https://github.com/jdepoix/youtube-transcript-api/issues. Please add which version of youtube_transcript_api you are using and provide the information needed to replicate the error. Also make sure that there are no open issues which already describe your problem!
-Using title and description for summary...
-  [49/50] Summarizing video: H4FQ55aZnjU
-Extracting transcript for video: H4FQ55aZnjU
-Transcript not available for H4FQ55aZnjU: No transcript found for video H4FQ55aZnjU in languages ['en', 'ko', 'ja', 'es', 'pt', 'fr', 'de', 'it']
-Using title and description for summary...
-  [50/50] Summarizing video: GtuX6xZISKA
-Extracting transcript for video: GtuX6xZISKA
-Transcript not available for GtuX6xZISKA: No transcript found for video GtuX6xZISKA in languages ['en', 'ko', 'ja', 'es', 'pt', 'fr', 'de', 'it']
-Using title and description for summary...
-  >>> Processed 50 videos, waiting 10 seconds to avoid rate limits...
-Summarized 50 videos
-
-[Step 4/5] Summarizing comments (per video)...
-  Summarizing comments for video: k5oHiiEJPP8 (20 comments)
-  Summarizing comments for video: jkM-gO4I1M4 (21 comments)
-  Summarizing comments for video: ot6Pf5zeO6E (11 comments)
-  Summarizing comments for video: sQzVIqdNFMI (23 comments)
-  Summarizing comments for video: QF2S_nPAH2U (52 comments)
-  Summarizing comments for video: BchGt2bV-0s (9 comments)
-  Summarizing comments for video: McarPQqkNe8 (29 comments)
-  Summarizing comments for video: gdriFKO8Ye8 (59 comments)
-  Summarizing comments for video: 3-2LYtTNe-E (11 comments)
-  Summarizing comments for video: 9I8Az1hPhdM (28 comments)
-  >>> Processed 10 videos, waiting 10 seconds...
-  Summarizing comments for video: iMQJIPVokvk (25 comments)
-  Summarizing comments for video: sxIQs8zby8g (2 comments)
-  Summarizing comments for video: MZVRhAQ7JmA (6 comments)
-  Summarizing comments for video: Kua635AXoyE (41 comments)
-  Summarizing comments for video: laBOkNkAGwU (25 comments)
-  Summarizing comments for video: dqRpyxtFSbA (21 comments)
-  Summarizing comments for video: _QCIydZIPPY (8 comments)
-  Summarizing comments for video: 7ND9I9wubeA (4 comments)
-  Summarizing comments for video: OTwNULYzU4k (47 comments)
-  Summarizing comments for video: gh2_6BbMHu0 (12 comments)
-  >>> Processed 20 videos, waiting 10 seconds...
-  Summarizing comments for video: NghITf7VBvs (11 comments)
-  Summarizing comments for video: CMsgD1XCEFY (47 comments)
-  Summarizing comments for video: O2r4VQKXPIY (31 comments)
-  Summarizing comments for video: MBds37EvXDM (21 comments)
-  Summarizing comments for video: nTm0lygjpkQ (2 comments)
-  Summarizing comments for video: zj8X4lp7mTI (29 comments)
-  Summarizing comments for video: NRTknzjzMnI (15 comments)
-  Summarizing comments for video: K_Sbqj50ZnY (28 comments)
-  Summarizing comments for video: q7UjDy4ney0 (1 comments)
-  Summarizing comments for video: PHe-BMhB1v8 (4 comments)
-  >>> Processed 30 videos, waiting 10 seconds...
-  Summarizing comments for video: w6Nub94DYGI (47 comments)
-  Summarizing comments for video: eBhCeJyfRKM (20 comments)
-  Summarizing comments for video: Qe4FdQwRhq8 (11 comments)
-  Summarizing comments for video: zEw2MDZkBsI (3 comments)
-  Summarizing comments for video: 9qyKLi4Uk4k (20 comments)
-  Summarizing comments for video: PGP_6CrWCag (36 comments)
-  Summarizing comments for video: d9WRdFGGvx0 (3 comments)
-  Summarizing comments for video: agrw2tP3eMY (1 comments)
-  Summarizing comments for video: 51_3lLV3Ukc (27 comments)
-  Summarizing comments for video: H7GR_uq7nbA (1 comments)
-  >>> Processed 40 videos, waiting 10 seconds...
-  Summarizing comments for video: 2q1TolUBW9I (13 comments)
-  Summarizing comments for video: t_EXhMsLPTE (68 comments)
-  Summarizing comments for video: fLzHZZw52hQ (28 comments)
-  Summarizing comments for video: pj7jLkohbIY (21 comments)
-  Summarizing comments for video: 0Of04g1eGb8 (9 comments)
-  Summarizing comments for video: H4FQ55aZnjU (12 comments)
-  Summarizing comments for video: GtuX6xZISKA (48 comments)
-Summarized comments for 47 videos
-
-[Step 5/5] Saving data to database...
-Connected to PostgreSQL database: samsung_dx_sentiment
-Tables created successfully
-Inserted/Updated 50 videos
-Inserted/Updated 1011 comments
-Saved to PostgreSQL:
-  - 50 videos
-  - 1011 comments
-Disconnected from database
-
-================================================================================
-Pipeline completed successfully!
-================================================================================
-Total videos processed: 50
-Total comments processed: 1011
-Videos with content summary: 50
-Videos with comment summary: 47
-Connected to PostgreSQL database: samsung_dx_sentiment
-
-Database Statistics:
-  Total videos in DB: 150
-  Total comments in DB: 3579
-Disconnected from database
-  Updated keyword for 50 videos
-
-[OK] 'led tv' completed: 50 videos, 1011 comments
+[OK] 'Samsung TV' completed: 434 videos, 3450 comments
 
 ================================================================================
 Batch Collection Summary
 ================================================================================
-Completed at: 2025-11-02 10:13:38
+Completed at: 2025-11-10 17:16:04
 
-Keywords processed: 3/3
-Total videos collected: 150
-Total comments collected: 3702
-
-================================================================================
-mments)
-  Summarizing comments for video: jkM-gO4I1M4 (21 comments)
-  Summarizing comments for video: ot6Pf5zeO6E (11 comments)
-  Summarizing comments for video: sQzVIqdNFMI (23 comments)
-  Summarizing comments for video: QF2S_nPAH2U (52 comments)
-  Summarizing comments for video: BchGt2bV-0s (9 comments)
-  Summarizing comments for video: McarPQqkNe8 (29 comments)
-  Summarizing comments for video: gdriFKO8Ye8 (57 comments)
-  Summarizing comments for video: 3-2LYtTNe-E (11 comments)
-  Summarizing comments for video: 9I8Az1hPhdM (28 comments)
-  >>> Processed 10 videos, waiting 10 seconds...
-  Summarizing comments for video: iMQJIPVokvk (25 comments)
-  Summarizing comments for video: sxIQs8zby8g (2 comments)
-  Summarizing comments for video: MZVRhAQ7JmA (6 comments)
-  Summarizing comments for video: Kua635AXoyE (41 comments)
-  Summarizing comments for video: laBOkNkAGwU (25 comments)
-  Summarizing comments for video: dqRpyxtFSbA (21 comments)
-  Summarizing comments for video: _QCIydZIPPY (8 comments)
-  Summarizing comments for video: 7ND9I9wubeA (4 comments)
-  Summarizing comments for video: OTwNULYzU4k (47 comments)
-  Summarizing comments for video: gh2_6BbMHu0 (12 comments)
-  >>> Processed 20 videos, waiting 10 seconds...
-  Summarizing comments for video: NghITf7VBvs (11 comments)
-  Summarizing comments for video: CMsgD1XCEFY (47 comments)
-  Summarizing comments for video: O2r4VQKXPIY (31 comments)
-  Summarizing comments for video: MBds37EvXDM (21 comments)
-  Summarizing comments for video: nTm0lygjpkQ (2 comments)
-  Summarizing comments for video: zj8X4lp7mTI (29 comments)
-  Summarizing comments for video: NRTknzjzMnI (15 comments)
-  Summarizing comments for video: K_Sbqj50ZnY (28 comments)
-  Summarizing comments for video: q7UjDy4ney0 (1 comments)
-  Summarizing comments for video: PHe-BMhB1v8 (4 comments)
-  >>> Processed 30 videos, waiting 10 seconds...
-  Summarizing comments for video: w6Nub94DYGI (47 comments)
-  Summarizing comments for video: eBhCeJyfRKM (20 comments)
-  Summarizing comments for video: Qe4FdQwRhq8 (11 comments)
-  Summarizing comments for video: zEw2MDZkBsI (3 comments)
-  Summarizing comments for video: 9qyKLi4Uk4k (20 comments)
-  Summarizing comments for video: PGP_6CrWCag (36 comments)
-  Summarizing comments for video: d9WRdFGGvx0 (3 comments)
-  Summarizing comments for video: agrw2tP3eMY (1 comments)
-  Summarizing comments for video: 51_3lLV3Ukc (26 comments)
-  Summarizing comments for video: H7GR_uq7nbA (1 comments)
-  >>> Processed 40 videos, waiting 10 seconds...
-  Summarizing comments for video: 2q1TolUBW9I (13 comments)
-  Summarizing comments for video: t_EXhMsLPTE (61 comments)
-  Summarizing comments for video: fLzHZZw52hQ (28 comments)
-  Summarizing comments for video: pj7jLkohbIY (21 comments)
-  Summarizing comments for video: 0Of04g1eGb8 (9 comments)
-  Summarizing comments for video: H4FQ55aZnjU (12 comments)
-  Summarizing comments for video: GtuX6xZISKA (48 comments)
-Summarized comments for 47 videos
-
-[Step 5/5] Saving data to database...
-Connected to PostgreSQL database: samsung_dx_sentiment
-Tables created successfully
-Inserted/Updated 50 videos
-Inserted/Updated 1001 comments
-Saved to PostgreSQL:
-  - 50 videos
-  - 1001 comments
-Disconnected from database
-
-================================================================================
-Pipeline completed successfully!
-================================================================================
-Total videos processed: 50
-Total comments processed: 1001
-Videos with content summary: 50
-Videos with comment summary: 47
-Connected to PostgreSQL database: samsung_dx_sentiment
-
-Database Statistics:
-  Total videos in DB: 150
-  Total comments in DB: 3569
-Disconnected from database
-  Updated keyword for 50 videos
-
-[OK] 'led tv' completed: 50 videos, 1001 comments
-
-================================================================================
-Batch Collection Summary
-================================================================================
-Completed at: 2025-11-02 10:12:54
-
-Keywords processed: 3/3
-Total videos collected: 150
-Total comments collected: 3710
+Keywords processed: 2/2
+Total videos collected: 2100
+Total comments collected: 8160
 
 ================================================================================

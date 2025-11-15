@@ -1,0 +1,195 @@
+YouTubeAnalyzer 초기화: 5개 API 키 사용 가능
+================================================================================
+YouTube Data Collection & Analysis Pipeline
+================================================================================
+Keyword: Samsung QLED
+Max videos: 50
+Max comments per video: 20
+Region: US
+Summarize comments: True
+Analyze sentiment: False
+================================================================================
+
+[Step 1/4] Collecting video data from YouTube API...
+
+================================================================================
+품질 필터링 모드 활성화:
+  - 카테고리: 28 (Science & Technology)
+  - 최소 구독자: 10,000 OR 채널 총 조회수: 100,000,000
+  - 최소 참여율: 2.0%
+  - 목표 비디오 수: 50개
+  - 배치 크기: 200개씩 수집
+================================================================================
+
+
+[배치 1] 200개 비디오 수집 중...
+
+[QUOTA EXCEEDED] API 할당량 초과 감지
+
+[KEY ROTATION] API 키 #2로 전환됨 (잔여 키: 3개)
+[RETRY] 새 API 키로 재시도...
+  비디오 ID 200개 수집 완료
+  비디오 상세 정보 수집 중...
+  채널 정보 수집 중...
+채널 정보 수집 완료: 126개 채널
+  비디오 상세 정보 완료: 200개
+  품질 필터 적용 중...
+  필터 결과: 68개 통과 / 200개
+    - 카테고리 불일치: 59개
+    - 채널 규모 미달: 24개
+    - 참여율 미달: 119개
+  누적 필터링된 비디오: 68개 / 목표: 50개
+
+[목표 달성] 68개 비디오 수집 완료!
+
+================================================================================
+수집 완료: samsung qled in US
+  - 총 수집 비디오 수: 200개
+  - 필터링 후: 68개
+  - Raw 데이터: 200개
+  - 최종 반환: 50개
+  - 총 API 호출 수: 11
+================================================================================
+
+Collected 50 filtered videos
+Raw data: 200 total videos
+
+[Step 2/4] Collecting comments from YouTube API...
+댓글 수집: VvI0TtwsqX0 - 20개 스레드
+댓글 수집: TC9gerLc9UM - 20개 스레드
+댓글 수집: uSkKZVZ8YjE - 20개 스레드
+댓글 수집: 4inN41SS0qU - 20개 스레드
+댓글 수집: 7l2o2fPdeeY - 20개 스레드
+댓글 수집: YTcl2ImdSfw - 20개 스레드
+댓글 수집: uzexB8FJ5rU - 20개 스레드
+댓글 수집: m_LCI2rFDUY - 20개 스레드
+댓글 수집: dkB8QLsR_Kw - 20개 스레드
+댓글 수집: RA726k1libI - 20개 스레드
+댓글 수집: yTkCXDdheOc - 20개 스레드
+댓글 수집: vzM1nZ1mhOA - 20개 스레드
+댓글 수집: eoE_efA4zPs - 18개 스레드
+댓글 수집: 4TAjRimzwMk - 20개 스레드
+댓글 수집: kGgO-teMGJE - 20개 스레드
+댓글 수집: hzur8Y3vTw0 - 20개 스레드
+댓글 수집: m9X0S8fAlB8 - 20개 스레드
+댓글 수집: CMsgD1XCEFY - 20개 스레드
+댓글 수집: rAyXusIy8RY - 20개 스레드
+댓글 수집: 1S_6f87bOWw - 15개 스레드
+댓글 수집: cPaCeqqudmg - 20개 스레드
+댓글 수집: 9I8Az1hPhdM - 20개 스레드
+댓글 수집: zWIsnYhH-Lc - 20개 스레드
+댓글 수집: lPwXsdpnbZI - 20개 스레드
+댓글 수집: Rgc2Iu5UgD0 - 20개 스레드
+댓글 수집: tTRPxBfpprY - 20개 스레드
+댓글 수집: PGOQze6E9ag - 20개 스레드
+댓글 수집: L60zs804qaI - 20개 스레드
+댓글 수집: ubyA0-ged74 - 20개 스레드
+댓글 수집: OpEEzjf-MyA - 20개 스레드
+댓글 수집: loHDQL3KJIY - 20개 스레드
+댓글 수집: 0cnIWOpkv5E - 20개 스레드
+댓글 수집: Fee_VqxpsgQ - 8개 스레드
+댓글 수집: DuAdCmxYGLQ - 20개 스레드
+댓글 수집: P8G4WZbISKE - 20개 스레드
+댓글 수집: padLk80894k - 20개 스레드
+댓글 수집: WUMC726j1Fg - 20개 스레드
+댓글 수집: ea8a6SkDWUs - 20개 스레드
+댓글 수집: 1T4AXuXWj4M - 20개 스레드
+댓글 수집: f1Q8J2LyV7o - 20개 스레드
+댓글 수집: W1jJMXDCPlg - 20개 스레드
+댓글 수집: gN68jidBE1I - 20개 스레드
+댓글 수집: IJZRiBHzcOA - 16개 스레드
+댓글 수집: enDkR_qN-8E - 7개 스레드
+댓글 수집: 8gVj0sEGemc - 20개 스레드
+댓글 수집: YbuJ1XW_LSg - 6개 스레드
+댓글 수집: Wielg45aejI - 20개 스레드
+댓글 수집: Ivyc--yt2Ek - 12개 스레드
+댓글 수집: jNKSz9Hq9rs - 20개 스레드
+댓글 수집: INjN-at2FUA - 4개 스레드
+전체 댓글 수집 완료: 1796개
+Collected 1796 comments
+
+[Step 3/4] Summarizing comments (per video)...
+  Summarizing comments for video: VvI0TtwsqX0 (101 comments)
+  Summarizing comments for video: TC9gerLc9UM (44 comments)
+  Summarizing comments for video: uSkKZVZ8YjE (61 comments)
+  Summarizing comments for video: 4inN41SS0qU (36 comments)
+  Summarizing comments for video: 7l2o2fPdeeY (41 comments)
+  Summarizing comments for video: YTcl2ImdSfw (42 comments)
+  Summarizing comments for video: uzexB8FJ5rU (32 comments)
+  Summarizing comments for video: m_LCI2rFDUY (76 comments)
+  Summarizing comments for video: dkB8QLsR_Kw (38 comments)
+  Summarizing comments for video: RA726k1libI (26 comments)
+  >>> Processed 10 videos, waiting 10 seconds...
+  Summarizing comments for video: yTkCXDdheOc (33 comments)
+  Summarizing comments for video: vzM1nZ1mhOA (28 comments)
+  Summarizing comments for video: eoE_efA4zPs (35 comments)
+  Summarizing comments for video: 4TAjRimzwMk (33 comments)
+  Summarizing comments for video: kGgO-teMGJE (27 comments)
+  Summarizing comments for video: hzur8Y3vTw0 (32 comments)
+  Summarizing comments for video: m9X0S8fAlB8 (21 comments)
+  Summarizing comments for video: CMsgD1XCEFY (46 comments)
+  Summarizing comments for video: rAyXusIy8RY (36 comments)
+  Summarizing comments for video: 1S_6f87bOWw (24 comments)
+  >>> Processed 20 videos, waiting 10 seconds...
+  Summarizing comments for video: cPaCeqqudmg (33 comments)
+  Summarizing comments for video: 9I8Az1hPhdM (28 comments)
+  Summarizing comments for video: zWIsnYhH-Lc (44 comments)
+  Summarizing comments for video: lPwXsdpnbZI (31 comments)
+  Summarizing comments for video: Rgc2Iu5UgD0 (40 comments)
+  Summarizing comments for video: tTRPxBfpprY (29 comments)
+  Summarizing comments for video: PGOQze6E9ag (36 comments)
+  Summarizing comments for video: L60zs804qaI (34 comments)
+  Summarizing comments for video: ubyA0-ged74 (50 comments)
+  Summarizing comments for video: OpEEzjf-MyA (41 comments)
+  >>> Processed 30 videos, waiting 10 seconds...
+  Summarizing comments for video: loHDQL3KJIY (59 comments)
+  Summarizing comments for video: 0cnIWOpkv5E (38 comments)
+  Summarizing comments for video: Fee_VqxpsgQ (13 comments)
+  Summarizing comments for video: DuAdCmxYGLQ (25 comments)
+  Summarizing comments for video: P8G4WZbISKE (27 comments)
+  Summarizing comments for video: padLk80894k (45 comments)
+  Summarizing comments for video: WUMC726j1Fg (34 comments)
+  Summarizing comments for video: ea8a6SkDWUs (31 comments)
+  Summarizing comments for video: 1T4AXuXWj4M (40 comments)
+  Summarizing comments for video: f1Q8J2LyV7o (37 comments)
+  >>> Processed 40 videos, waiting 10 seconds...
+  Summarizing comments for video: W1jJMXDCPlg (48 comments)
+  Summarizing comments for video: gN68jidBE1I (44 comments)
+  Summarizing comments for video: IJZRiBHzcOA (27 comments)
+  Summarizing comments for video: enDkR_qN-8E (11 comments)
+  Summarizing comments for video: 8gVj0sEGemc (46 comments)
+  Summarizing comments for video: YbuJ1XW_LSg (10 comments)
+  Summarizing comments for video: Wielg45aejI (29 comments)
+  Summarizing comments for video: Ivyc--yt2Ek (20 comments)
+  Summarizing comments for video: jNKSz9Hq9rs (26 comments)
+  Summarizing comments for video: INjN-at2FUA (8 comments)
+  >>> Processed 50 videos, waiting 10 seconds...
+Summarized comments for 50 videos
+
+[Step 4/4] Saving data...
+  Raw data saved: data\raw_data\youtube_raw_Samsung_QLED_20251110_161100.json
+  Processed videos saved: data\processed_data\youtube_videos_Samsung_QLED_20251110_161100.csv
+  Processed comments saved: data\processed_data\youtube_comments_Samsung_QLED_20251110_161100.csv
+Connected to PostgreSQL database: samsung_dx_sentiment
+Tables created successfully (including youtube_videos_raw)
+Inserted/Updated 200 raw videos
+Inserted/Updated 50 videos
+Inserted/Updated 1796 comments
+Saved to PostgreSQL:
+  - 200 raw videos (all collected)
+  - 50 filtered videos
+  - 1796 comments
+Disconnected from database
+
+================================================================================
+Pipeline completed successfully!
+================================================================================
+Total videos processed: 50
+Total comments processed: 1796
+Videos with comment summary: 50
+Connected to PostgreSQL database: samsung_dx_sentiment
+
+Database Statistics:
+  Total videos in DB: 101
+  Total comments in DB: 3770
+Disconnected from database

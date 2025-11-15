@@ -171,7 +171,7 @@ class KeywordManager:
         """Get all active keywords for batch processing"""
         try:
             query = """
-            SELECT keyword, max_videos, max_comments_per_video, region_code
+            SELECT keyword, max_videos, max_comments_per_video, region_code, category
             FROM youtube_keywords
             WHERE status = 'active'
             ORDER BY last_collected_at ASC NULLS FIRST
